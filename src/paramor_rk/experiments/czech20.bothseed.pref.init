@@ -1,0 +1,24 @@
+#
+# An initializations file for ParaMor v0.1
+# 
+# Written by Christian Monson -- June 26, 2009
+#
+#
+
+corpus ../resources/cz20/dev110kwPlain.txt
+
+manualSeed seed-cz.txt
+
+autoSeed autoSeed-cz20.txt
+
+prefixList prefixes-cz.txt
+
+language GENERIC
+
+throwOutNumbers on
+
+corpusEncoding utf8
+
+caseSensitive off
+
+typesToRead 50000

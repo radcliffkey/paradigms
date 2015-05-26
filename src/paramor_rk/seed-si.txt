@@ -1,0 +1,20 @@
+#stemvariant1/stemvariant2, ... + suffixes attaching to stemvariant1/ suffixes attaching to stemvariant2
+
+#some masc. nouns
+korak, vrelec/vrelc + 0 / a, u, om, ov, e, ih, i
+
+#fem. nouns
+lip + a, e, i, o, am, ah, ami
+perut + 0, i, jo, im, ih
+
+#neuter nouns
+mest + o, a, u, o, om, 0, ih, i 
+
+#verbs
+kupuj + em, eš, e, emo, ete, ejo
+kupova + l, la, li
+
+žel + im, iš, i, ita, imo, ite, ijo
+
+#adjectives
+dežurn + a, e, i, o, ega, emu, em, im, ima, ih

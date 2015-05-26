@@ -1,0 +1,49 @@
+slovenc/slovenec + e, ev, i/0
+vrtc/vrtec + u, e, a/0
+gledalc/gledalec + u, ev, e, a, em, i/0
+uslužbenc/uslužbenec + ev, e, ih, a, em, i/0
+proizvajalc/proizvajalec + u, e, a/0
+poslanc/poslanec + ev, e, a, em, i/0
+konec/konc + 0/ev, ih, a, em
+prebivalc/prebivalec + ev, e, i/0
+delavec/delavc + 0/u, e, ev, a, i
+izvajalec/izvajalc + 0/ev, a, em
+igralec/igralc + 0/u, ev, e, a, em, i
+roč/rok + ice/e, ami, a, o, i
+slik/slič + 0, e, a, o, ah, ovno, i/ice
+peč/pek + ice/o
+različ/razlik + ice/o
+dvig/dviž + 0, u, a/na
+prilož/prilog + ila/e, a, i
+dolž/dolg + na/0, e, a, o, i
+predlog/predlož + 0, u, e, a, o, i/ila
+druž/drug + ila/e, a, o, i
+razlog/razlož + e, a, i/ila
+vlož/vlog + ila/e, a, o, i
+knjig/knjiž + 0, e, a, o, i/na
+sneg/snež + 0, u, a/na
+obsež/obseg + na/0, u, a
+kratek/kratk + 0/e, ih, a
+prekršek/prekršk + 0/e, ih, a
+stavek/stavk + 0/e, ajo, ih, a
+postopek/postopk + 0/e, ih, a
+kotiček/kotičk + 0/e, ih, a
+nizek/nizk + 0/e, ih, a
+sestanek/sestank + 0/e, ih, a
+izdelek/izdelk + 0/e, ih, a
+znesek/znesk + 0/e, ih, a
+majhen/majhn + 0/e, ih, ega, a, emu, o, em, im, imi, i
+kakršen/kakršn + 0/e, ih, ega, a, o, i
+pristojen/pristojn + 0/e, ost, ih, ega, a, osti, o, im, i
+poseben/posebn + 0/e, ih, ost, ega, a, osti, o, em, im, imi, i
+socialen/socialn + 0/e, ih, ega, a, o, i
+uspešen/uspešn + 0/e, ih, ost, ega, a, osti, o, i
+takšn/takšen + e, ih, ega, a, o, em, im, i/0
+podoben/podobn + 0/e, ih, ost, ega, a, o, em, im, imi, i
+kakšen/kakšn + 0/e, ih, ega, a, o, emu, em, im, imi, i
+pomemben/pomembn + 0/e, ih, ega, a, o, i
+drugačen/drugačn + 0/e, ih, ost, ega, a, o, im, i
+skupen/skupn + 0/e, ih, ost, ega, a, osti, o, em, im, imi, i
+mor/moj + ate/e, ih, ega, a, emu, o, em, im, i
+študij/študir + a/ate
+gar/gaj + ate/a

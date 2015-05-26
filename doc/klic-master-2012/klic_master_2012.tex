@@ -1,0 +1,155 @@
+%%% Hlavní soubor. Zde se definují základní parametry a odkazuje se na ostatní části. %%%
+
+%% Verze pro jednostranný tisk:
+% Okraje: levý 40mm, pravý 25mm, horní a dolní 25mm
+% (ale pozor, LaTeX si sám přidává 1in)
+\documentclass[12pt,a4paper]{report}
+\setlength\textwidth{145mm}
+\setlength\textheight{247mm}
+\setlength\oddsidemargin{15mm}
+\setlength\evensidemargin{15mm}
+\setlength\topmargin{0mm}
+\setlength\headsep{0mm}
+\setlength\headheight{0mm}
+% \openright zařídí, aby následující text začínal na pravé straně knihy
+\let\openright=\clearpage
+
+%% Pokud tiskneme oboustranně:
+% \documentclass[12pt,a4paper,twoside,openright]{report}
+% \setlength\textwidth{145mm}
+% \setlength\textheight{247mm}
+% \setlength\oddsidemargin{15mm}
+% \setlength\evensidemargin{0mm}
+% \setlength\topmargin{0mm}
+% \setlength\headsep{0mm}
+% \setlength\headheight{0mm}
+% \let\openright=\cleardoublepage
+
+%% Použité kódování znaků: obvykle latin2, cp1250 nebo utf8:
+\usepackage[utf8x, utf8]{inputenc}
+
+%% Ostatní balíčky
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{mathptmx}
+%\usepackage[charter]{mathdesign}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\usepackage{ucs}
+\usepackage{setspace}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage[nottoc]{tocbibind}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage[hyphens]{url}
+\usepackage[unicode]{hyperref}   % Musí být za všemi ostatními balíčky
+\hypersetup{
+    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
+    pdftitle={Acquisition of inflectional paradigms with minimal supervision},    % title
+    pdfauthor={Radoslav Klíč},     % author
+    pdfsubject={Acquisition of inflectional paradigms with minimal supervision},   % subject of the document
+    pdfcreator={Radoslav Klíč},   % creator of the document
+    pdfkeywords={morphological analysis}, % list of keywords
+    pdfstartview={FitH},   %fit horizontally
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\newcommand{\todoa}[1]{[\textbf{TODOA} #1]}
+\newcommand{\todob}[1]{[\textbf{TODOB} #1]}
+\newcommand{\todoc}[1]{[\textbf{TODOC} #1]}
+
+\newcommand{\gloss}[2]{\emph{#1} `#2'}
+\newcommand{\supscr}[1]{$^\mathrm{#1}$}
+\newcommand{\subscr}[1]{$_\mathrm{#1}$}
+\newcommand{\e}[1]{\textit{#1}} % language expressions, examples
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\tbf}[1]{\textbf{#1}}
+\newcommand{\eg}{e.g.,~}
+\newcommand{\fromTo}[2]{\emph{#1} $\rightarrow$ \emph{#2}}
+
+%%% Drobné úpravy stylu
+
+% Tato makra přesvědčují mírně ošklivým trikem LaTeX, aby hlavičky kapitol
+% sázel příčetněji a nevynechával nad nimi spoustu místa. Směle ignorujte.
+%\makeatletter
+%\def\@makechapterhead#1{
+%  {\parindent \z@ \raggedright \normalfont
+%   \Huge\bfseries \thechapter. #1
+%   \par\nobreak
+%   \vskip 20\p@
+%}}
+%\def\@makeschapterhead#1{
+%  {\parindent \z@ \raggedright \normalfont
+%   \Huge\bfseries #1
+%   \par\nobreak
+%   \vskip 20\p@
+%}}
+%\makeatother
+
+% Toto makro definuje kapitolu, která není očíslovaná, ale je uvedena v obsahu.
+\def\chapwithtoc#1{
+\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+}
+
+\begin{document}
+
+% Trochu volnější nastavení dělení slov, než je default.
+\lefthyphenmin=2
+\righthyphenmin=2
+
+\input{formal_stuff}
+
+%% Strana s automaticky generovaným obsahem diplomové práce. U matematických
+%% prací je přípustné, aby seznam tabulek a zkratek, existují-li, byl umístěn
+%% na začátku práce, místo na jejím konci.
+\onehalfspacing
+\openright
+\pagestyle{plain}
+\setcounter{page}{1}
+\tableofcontents
+
+\input{introduction}
+\input{prev_works}
+\input{paramor}
+\input{modifications}
+\input{clustering}
+\input{experiments}
+\input{conclusion}
+
+\appendix
+
+\input{swpkg}
+%\input{czmorphology}
+\input{seeds}
+
+\bibliographystyle{plainnat}
+\bibliography{bibl} %{
+%\addcontentsline{toc}{chapter}{Bibliography}
+%}
+
+
+%%% Tabulky v diplomové práci, existují-li.
+%\chapwithtoc{Seznam tabulek}
+
+%%% Použité zkratky v diplomové práci, existují-li, včetně jejich vysvětlení.
+%\chapwithtoc{Seznam použitých zkratek}
+
+%%% Přílohy k diplomové práci, existují-li (různé dodatky jako výpisy programů,
+%%% diagramy apod.). Každá příloha musí být alespoň jednou odkazována z vlastního
+%%% textu práce. Přílohy se číslují.
+%\chapwithtoc{Přílohy}
+
+%\openright
+\end{document}

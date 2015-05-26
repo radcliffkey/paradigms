@@ -1,0 +1,7 @@
+Reading corpus file ../resources/cz10/dev37kw.p3m
+Number of types in the corpus: 11179
+Number of lemmas in the corpus: 5996
+Filtering out words not matching regexp [\D]{4,30}
+Number of filtered types: 10401
+True formset count: 5391
+candidate formset count: 10294

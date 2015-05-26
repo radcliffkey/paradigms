@@ -1,0 +1,70 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/radcliff/projects/thesis/paramor_rk/../resources/cz10/dev37kwPlain.txt
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+Start From, Vertical Metric, Bottom Max, Exhaustive Search at Level 1, Use Covered, Select Which?, Require |Stems| > |Affixes|, Vertical Cutoff, Top Cutoff, Bottom Cutoff, Max Level Cutoff, Calculate Similarity As, Cluster WRT, Filter at Cluster Time, Discriminative Clustering, Network Based Discriminative Clustering, level 2 Scheme must have >= N stems in network, Affixes In Common Required, Affixes in Common Forbidden, At least one child must cover >N types, Use Merge Credits, # of Positive Merge Credits, Tie in Type Covered Filtering, Left-looking Metric, Left-looking Cutoff, MBTF Right: Left-looking Metric, MBTF Right: Left-looking Cutoff
+ALL_LEVEL_1, Ratio, NONE, , false, false, TERMINAL_ONLY, true, 0.25, 0, 3, null, COSINE, AFFIX_STEM_PAIRS, false, false, true, 1, false, false, 20, true, 1, true, true, false, null, 20, ENTROPY, 0.5, ENTROPY, 0.5
+
+Evaluation Set, Evaluation Type, True +, False -, False +, True -, Total, Accuracy, Precision, Recall, F1, # of Schemes
+Union of All Suffixes, Global, 0, 1, 6, 0, 7, 0.000, 0.000, 0.000, 0.000, 2
+Union of All Suffixes, Global, 0, 0, 6, 0, 6, 0.000, 0.000, 0.000, 0.000, 2
+
+NO ACTUAL VALUES HAVE YET BEEN IMPLEMENTED, Single Best by F1, 0, 0, 0, 0, 0, 0.000, 0.000, 0.000, 0.000, 0
+NO ACTUAL VALUES HAVE YET BEEN IMPLEMENTED, Single Best out of achievable by strict F1, 0, 0, 0, 0, 0, 0.000, 0.000, 0.000, 0.000, 0
+
+NO ACTUAL VALUES HAVE YET BEEN IMPLEMENTED, Oracle Merge, 0, 0, 0, 0, 0, 0.000, 0.000, 0.000, 0.000, 0
+NO ACTUAL VALUES HAVE YET BEEN IMPLEMENTED, Oracle Merge out of Achievable by strict F1, 0, 0, 0, 0, 0, 0.000, 0.000, 0.000, 0.000, 0
+
+

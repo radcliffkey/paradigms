@@ -1,0 +1,1065 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/klicr5am/thesis/paramor_rk/../resources/cz10/dev37kwPlain.txt
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  29 Clusters
+-----------------------
+
+>- Children's similarity: 0.072835704
+ | Affixes (7): (*null* a i ovi y ? ?m)
+ | Stems   (168): (absolvent_ adres??_ akcion??_ architekt_ autooprav?r_autooprav??__ autor_ barevn?m_ bezpe?nost_ budoucnost_ cht?l_ dal??m_ denn?m_ deset_ dik_ dobrovolnost_ dom?cnost_ dost_ dostal_ dos?hl_ dvacet_ dvan?ct_ d?l_ d?ln?c_d?ln?k__ efektivnost_ hlavn?m_ hovo?il_ hranic_ hr?l_ investic_investi?__ investor_investo?__ ...)
+ | Types   (381)
+ |
+ |>- Children's similarity: 0.142610811
+ | | Affixes (7): (*null* a i ovi y ? ?m)
+ | | Stems   (166): (absolvent_ adres??_ akcion??_ autooprav?r_autooprav??__ autor_ barevn?m_ bezpe?nost_ budoucnost_ cht?l_ dal??m_ denn?m_ deset_ dik_ dobrovolnost_ dom?cnost_ dost_ dostal_ dos?hl_ dvacet_ dvan?ct_ d?l_ d?ln?c_d?ln?k__ efektivnost_ hlavn?m_ hovo?il_ hranic_ hr?l_ investic_investi?__ investor_investo?__ jakost_ ...)
+ | | Types   (377)
+ | |
+ | |>- Children's similarity: 0.405442427
+ | | | Affixes (7): (*null* a i ovi y ? ?m)
+ | | | Stems   (14): (autor_ dik_ d?l_ klient_ obchodn?c_obchodn?k__ partner_partne?__ podnikatel_ po??ta?_ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ student_ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | Types   (73)
+ | | |
+ | | |>- Children's similarity: 0.387147135
+ | | | | Affixes (7): (*null* a i ovi y ? ?m)
+ | | | | Stems   (14): (autor_ dik_ d?l_ klient_ obchodn?c_obchodn?k__ partner_partne?__ podnikatel_ po??ta?_ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ student_ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | Types   (73)
+ | | | |
+ | | | |>- Children's similarity: 0.548482756
+ | | | | | Affixes (7): (*null* a i ovi y ? ?m)
+ | | | | | Stems   (11): (autor_ dik_ d?l_ klient_ obchodn?c_obchodn?k__ partner_partne?__ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | | Types   (61)
+ | | | | |
+ | | | | |>- Children's similarity: 0.353553391
+ | | | | | | Affixes (7): (*null* a i ovi y ? ?m)
+ | | | | | | Stems   (11): (autor_ dik_ d?l_ klient_ obchodn?c_obchodn?k__ partner_partne?__ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | | | Types   (60)
+ | | | | | |
+ | | | | | |>- Children's similarity: 0.424264069
+ | | | | | | | Affixes (6): (*null* a i ovi y ?)
+ | | | | | | | Stems   (9): (autor_ klient_ obchodn?c_obchodn?k__ partner_partne?__ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | | | | Types   (48)
+ | | | | | | |
+ | | | | | | |>- Affixes (5): (*null* a i y ?)
+ | | | | | | | | Stems   (8): (klient_ obchodn?c_obchodn?k__ partner_partne?__ pracovn?c_pracovn?k__ spole?n?c_spole?n?k__ technic_technik__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | | | | | Types   (40)
+ | | | | | | |
+ | | | | | |  >- Affixes (4): (*null* a ovi y)
+ | | | | | |   | Stems   (5): (autor_ klient_ partner_partne?__ pracovn?c_pracovn?k__ z?kazn?c_z?kazn?k__)
+ | | | | | |   | Types   (20)
+ | | | | | |  
+ | | | | |  >- Affixes (4): (a y ? ?m)
+ | | | | |   | Stems   (6): (dik_ d?l_ obchodn?c_obchodn?k__ pracovn?c_pracovn?k__ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | | | |   | Types   (24)
+ | | | | |  
+ | | | |  >- Affixes (4): (*null* a ovi ?)
+ | | | |   | Stems   (5): (autor_ klient_ partner_partne?__ pracovn?c_pracovn?k__ z?kazn?c_z?kazn?k__)
+ | | | |   | Types   (20)
+ | | | |  
+ | | |  >- Affixes (4): (*null* i ? ?m)
+ | | |   | Stems   (7): (obchodn?c_obchodn?k__ podnikatel_ po??ta?_ pracovn?c_pracovn?k__ student_ vlastn?c_vlastn?k__ z?kazn?c_z?kazn?k__)
+ | | |   | Types   (28)
+ | | |  
+ | |  >- Affixes (3): (*null* i ovi)
+ | |   | Stems   (4): (klient_ partner_partne?__ pracovn?c_pracovn?k__ z?kazn?c_z?kazn?k__)
+ | |   | Types   (12)
+ | |  
+ |  >- Affixes (2): (*null* i)
+ |   | Stems   (163): (absolvent_ adres??_ akcion??_ autooprav?r_autooprav??__ barevn?m_ bezpe?nost_ budoucnost_ cht?l_ dal??m_ denn?m_ deset_ dobrovolnost_ dom?cnost_ dost_ dostal_ dos?hl_ dvacet_ dvan?ct_ d?ln?c_d?ln?k__ efektivnost_ hlavn?m_ hovo?il_ hranic_ hr?l_ investic_investi?__ investor_investo?__ jakost_ jej?m_ jin?m_ kalkuloval_ ...)
+ |   | Types   (326)
+ |  
+  >- Affixes (2): (ovi ?m)
+   | Stems   (4): (architekt_ pracovn?c_pracovn?k__ z?kazn?c_z?kazn?k__ ??f_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.039466852
+ | Affixes (12): (*null* a ami e ou ovn? ovn?ch u y ?ch ?m ?)
+ | Stems   (65): (aktivit_ banc_bank__ burz_ cen_ cest_ chyb_ dividend_ dla?b_dla?eb__ dob_ dom_ doprav_ ekonomic_ekonomik__ firm_ form_ hal_ hlav_ hodnot_ korun_ kvalit_ man?elc_man?elk__ metod_ m?r_m??__ nab?dc_nab?dek_nab?dk__ novinek_novink__ n?v?t?v_ oprav_ osob_ pam?tek_pam?tk__ platb_plateb__ podm?nek_podm?nk__ ...)
+ | Types   (327)
+ |
+ |>- Children's similarity: 0.047062081
+ | | Affixes (11): (*null* a ami e ou ovn?ch u y ?ch ?m ?)
+ | | Stems   (63): (aktivit_ banc_bank__ burz_ cen_ cest_ chyb_ dividend_ dla?b_dla?eb__ dob_ dom_ doprav_ ekonomic_ekonomik__ firm_ form_ hal_ hlav_ hodnot_ korun_ kvalit_ man?elc_man?elk__ metod_ m?r_m??__ nab?dc_nab?dek_nab?dk__ novinek_novink__ n?v?t?v_ oprav_ osob_ pam?tek_pam?tk__ platb_plateb__ podm?nek_podm?nk__ ...)
+ | | Types   (321)
+ | |
+ | |>- Children's similarity: 0.061649620
+ | | | Affixes (11): (*null* a ami e ou ovn?ch u y ?ch ?m ?)
+ | | | Stems   (58): (banc_bank__ burz_ cen_ cest_ chyb_ dividend_ dla?b_dla?eb__ dob_ dom_ doprav_ ekonomic_ekonomik__ firm_ form_ hal_ hlav_ hodnot_ korun_ kvalit_ man?elc_man?elk__ metod_ m?r_m??__ nab?dc_nab?dek_nab?dk__ novinek_novink__ n?v?t?v_ oprav_ osob_ platb_plateb__ pohled?vek_pohled?vk__ poji??ovn_ politic_politik__ ...)
+ | | | Types   (301)
+ | | |
+ | | |>- Children's similarity: 0.137037742
+ | | | | Affixes (10): (*null* a ami e ou u y ?ch ?m ?)
+ | | | | Stems   (57): (banc_bank__ burz_ cen_ cest_ chyb_ dividend_ dla?b_dla?eb__ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hal_ hlav_ hodnot_ korun_ kvalit_ man?elc_man?elk__ metod_ m?r_m??__ nab?dc_nab?dek_nab?dk__ novinek_novink__ n?v?t?v_ oprav_ osob_ platb_plateb__ pohled?vek_pohled?vk__ poji??ovn_ politic_politik__ popt?vc_popt?vk__ ...)
+ | | | | Types   (296)
+ | | | |
+ | | | |>- Children's similarity: 0.164660978
+ | | | | | Affixes (9): (*null* a ami ou u y ?ch ?m ?)
+ | | | | | Stems   (45): (cen_ cest_ chyb_ dividend_ dla?b_dla?eb__ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hlav_ hodnot_ korun_ kvalit_ metod_ nab?dc_nab?dek_nab?dk__ novinek_novink__ n?v?t?v_ oprav_ osob_ platb_plateb__ pohled?vek_pohled?vk__ poji??ovn_ pot?eb_ po?t_ p?edstav_ ruc_ruk_ru?__ sazb_sazeb__ skupin_ slu?b_slu?eb__ ...)
+ | | | | | Types   (243)
+ | | | | |
+ | | | | |>- Children's similarity: 0.306186218
+ | | | | | | Affixes (5): (ou u y ?ch ?m)
+ | | | | | | Stems   (12): (cen_ chyb_ ekonomic_ekonomik__ kvalit_ nab?dc_nab?dek_nab?dk__ novinek_novink__ pohled?vek_pohled?vk__ p?edstav_ ruc_ruk_ru?__ slu?b_slu?eb__ smlouv_ zkou?ek_zkou?k__)
+ | | | | | | Types   (51)
+ | | | | | |
+ | | | | | |>- Affixes (4): (ou u y ?ch)
+ | | | | | | | Stems   (9): (cen_ chyb_ ekonomic_ekonomik__ kvalit_ nab?dc_nab?dek_nab?dk__ novinek_novink__ p?edstav_ ruc_ruk_ru?__ slu?b_slu?eb__)
+ | | | | | | | Types   (36)
+ | | | | | |
+ | | | | |  >- Affixes (4): (u y ?ch ?m)
+ | | | | |   | Stems   (6): (cen_ ekonomic_ekonomik__ pohled?vek_pohled?vk__ slu?b_slu?eb__ smlouv_ zkou?ek_zkou?k__)
+ | | | | |   | Types   (24)
+ | | | | |  
+ | | | |  >- Children's similarity: 0.196620939
+ | | | |   | Affixes (9): (*null* a ami ou u y ?ch ?m ?)
+ | | | |   | Stems   (37): (cen_ cest_ dividend_ dla?b_dla?eb__ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hlav_ hodnot_ korun_ kvalit_ metod_ nab?dc_nab?dek_nab?dk__ n?v?t?v_ oprav_ osob_ platb_plateb__ poji??ovn_ pot?eb_ po?t_ sazb_sazeb__ skupin_ spot?eb_ stran_ s?zek_s?zk__ technic_technik__ vln_ v?rob_ ...)
+ | | | |   | Types   (209)
+ | | | |   |
+ | | | |   |>- Children's similarity: 0.341423970
+ | | | |   | | Affixes (9): (*null* a ami ou u y ?ch ?m ?)
+ | | | |   | | Stems   (34): (cen_ cest_ dividend_ dla?b_dla?eb__ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hlav_ hodnot_ korun_ kvalit_ metod_ nab?dc_nab?dek_nab?dk__ n?v?t?v_ oprav_ osob_ platb_plateb__ poji??ovn_ pot?eb_ po?t_ sazb_sazeb__ skupin_ spot?eb_ stran_ technic_technik__ vln_ v?rob_ v?stav_ ...)
+ | | | |   | | Types   (194)
+ | | | |   | |
+ | | | |   | |>- Children's similarity: 0.360387950
+ | | | |   | | | Affixes (9): (*null* a ami ou u y ?ch ?m ?)
+ | | | |   | | | Stems   (30): (cen_ cest_ dividend_ dla?b_dla?eb__ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hlav_ hodnot_ korun_ kvalit_ metod_ nab?dc_nab?dek_nab?dk__ n?v?t?v_ oprav_ osob_ pot?eb_ po?t_ sazb_sazeb__ skupin_ spot?eb_ stran_ vln_ v?rob_ v?stav_ zm?n_ z?kon_ z?sad_)
+ | | | |   | | | Types   (173)
+ | | | |   | | |
+ | | | |   | | |>- Children's similarity: 0.452733167
+ | | | |   | | | | Affixes (7): (*null* a ou u y ?ch ?)
+ | | | |   | | | | Stems   (18): (cen_ dividend_ dla?b_dla?eb__ hlav_ hodnot_ korun_ kvalit_ nab?dc_nab?dek_nab?dk__ oprav_ osob_ po?t_ sazb_sazeb__ skupin_ stran_ v?stav_ zm?n_ z?kon_ z?sad_)
+ | | | |   | | | | Types   (102)
+ | | | |   | | | |
+ | | | |   | | | |>- Children's similarity: 0.472455591
+ | | | |   | | | | | Affixes (6): (*null* a u y ?ch ?)
+ | | | |   | | | | | Stems   (16): (cen_ dividend_ hlav_ hodnot_ korun_ kvalit_ nab?dc_nab?dek_nab?dk__ oprav_ osob_ po?t_ skupin_ stran_ v?stav_ zm?n_ z?kon_ z?sad_)
+ | | | |   | | | | | Types   (85)
+ | | | |   | | | | |
+ | | | |   | | | | |>- Children's similarity: 0.666666667
+ | | | |   | | | | | | Affixes (6): (*null* a u y ?ch ?)
+ | | | |   | | | | | | Stems   (7): (cen_ dividend_ korun_ kvalit_ nab?dc_nab?dek_nab?dk__ skupin_ stran_)
+ | | | |   | | | | | | Types   (40)
+ | | | |   | | | | | |
+ | | | |   | | | | | |>- Affixes (5): (*null* a u y ?ch)
+ | | | |   | | | | | | | Stems   (6): (dividend_ korun_ kvalit_ nab?dc_nab?dek_nab?dk__ skupin_ stran_)
+ | | | |   | | | | | | | Types   (30)
+ | | | |   | | | | | |
+ | | | |   | | | | |  >- Affixes (5): (a u y ?ch ?)
+ | | | |   | | | | |   | Stems   (6): (cen_ dividend_ korun_ kvalit_ skupin_ stran_)
+ | | | |   | | | | |   | Types   (30)
+ | | | |   | | | | |  
+ | | | |   | | | |  >- Affixes (5): (*null* a u y ?)
+ | | | |   | | | |   | Stems   (14): (dividend_ hlav_ hodnot_ korun_ kvalit_ oprav_ osob_ po?t_ skupin_ stran_ v?stav_ zm?n_ z?kon_ z?sad_)
+ | | | |   | | | |   | Types   (70)
+ | | | |   | | | |  
+ | | | |   | | |  >- Affixes (5): (*null* a ou u y)
+ | | | |   | | |   | Stems   (9): (dla?b_dla?eb__ hodnot_ kvalit_ nab?dc_nab?dek_nab?dk__ osob_ po?t_ sazb_sazeb__ zm?n_ z?sad_)
+ | | | |   | | |   | Types   (45)
+ | | | |   | | |  
+ | | | |   | |  >- Children's similarity: 0.421887921
+ | | | |   | |   | Affixes (7): (a ami ou u y ?m ?)
+ | | | |   | |   | Stems   (20): (cen_ cest_ dob_ doprav_ ekonomic_ekonomik__ firm_ form_ hodnot_ kvalit_ metod_ n?v?t?v_ osob_ pot?eb_ po?t_ sazb_sazeb__ spot?eb_ vln_ v?rob_ zm?n_ z?sad_)
+ | | | |   | |   | Types   (109)
+ | | | |   | |   |
+ | | | |   | |   |>- Children's similarity: 0.483650833
+ | | | |   | |   | | Affixes (7): (a ami ou u y ?m ?)
+ | | | |   | |   | | Stems   (11): (cen_ cest_ dob_ ekonomic_ekonomik__ firm_ metod_ osob_ pot?eb_ po?t_ sazb_sazeb__ zm?n_)
+ | | | |   | |   | | Types   (63)
+ | | | |   | |   | |
+ | | | |   | |   | |>- Children's similarity: 0.617213400
+ | | | |   | |   | | | Affixes (6): (a ou u y ?m ?)
+ | | | |   | |   | | | Stems   (8): (cen_ cest_ dob_ ekonomic_ekonomik__ firm_ metod_ osob_ zm?n_)
+ | | | |   | |   | | | Types   (45)
+ | | | |   | |   | | |
+ | | | |   | |   | | |>- Affixes (5): (a ou u y ?m)
+ | | | |   | |   | | | | Stems   (7): (cen_ dob_ ekonomic_ekonomik__ firm_ metod_ osob_ zm?n_)
+ | | | |   | |   | | | | Types   (35)
+ | | | |   | |   | | |
+ | | | |   | |   | |  >- Affixes (5): (a ou u ?m ?)
+ | | | |   | |   | |   | Stems   (6): (cen_ cest_ dob_ firm_ osob_ zm?n_)
+ | | | |   | |   | |   | Types   (30)
+ | | | |   | |   | |  
+ | | | |   | |   |  >- Children's similarity: 0.489897949
+ | | | |   | |   |   | Affixes (6): (a ami ou u y ?m)
+ | | | |   | |   |   | Stems   (7): (cen_ ekonomic_ekonomik__ firm_ pot?eb_ po?t_ sazb_sazeb__ zm?n_)
+ | | | |   | |   |   | Types   (38)
+ | | | |   | |   |   |
+ | | | |   | |   |   |>- Affixes (5): (a ami ou u y)
+ | | | |   | |   |   | | Stems   (6): (cen_ ekonomic_ekonomik__ firm_ po?t_ sazb_sazeb__ zm?n_)
+ | | | |   | |   |   | | Types   (30)
+ | | | |   | |   |   |
+ | | | |   | |   |    >- Affixes (4): (a ami y ?m)
+ | | | |   | |   |     | Stems   (5): (cen_ ekonomic_ekonomik__ firm_ pot?eb_ zm?n_)
+ | | | |   | |   |     | Types   (20)
+ | | | |   | |   |    
+ | | | |   | |    >- Affixes (5): (a ou u y ?)
+ | | | |   | |     | Stems   (15): (cen_ dob_ doprav_ firm_ form_ hodnot_ kvalit_ n?v?t?v_ osob_ po?t_ spot?eb_ vln_ v?rob_ zm?n_ z?sad_)
+ | | | |   | |     | Types   (75)
+ | | | |   | |    
+ | | | |   |  >- Children's similarity: 0.287494454
+ | | | |   |   | Affixes (6): (*null* a ami u y ?)
+ | | | |   |   | Stems   (11): (cen_ firm_ platb_plateb__ poji??ovn_ pot?eb_ po?t_ sazb_sazeb__ skupin_ technic_technik__ zm?n_ z?loh_)
+ | | | |   |   | Types   (54)
+ | | | |   |   |
+ | | | |   |   |>- Affixes (5): (*null* a ami u y)
+ | | | |   |   | | Stems   (7): (pot?eb_ po?t_ sazb_sazeb__ skupin_ technic_technik__ zm?n_ z?loh_)
+ | | | |   |   | | Types   (35)
+ | | | |   |   |
+ | | | |   |    >- Affixes (4): (a ami y ?)
+ | | | |   |     | Stems   (7): (cen_ firm_ platb_plateb__ poji??ovn_ po?t_ skupin_ zm?n_)
+ | | | |   |     | Types   (28)
+ | | | |   |    
+ | | | |    >- Affixes (5): (*null* a u y ?m)
+ | | | |     | Stems   (6): (osob_ pot?eb_ s?zek_s?zk__ zm?n_ ?spor_ ?kol_)
+ | | | |     | Types   (30)
+ | | | |    
+ | | |  >- Children's similarity: 0.148522131
+ | | |   | Affixes (7): (a e ou u y ?ch ?m)
+ | | |   | Stems   (16): (banc_bank__ burz_ ekonomic_ekonomik__ hal_ man?elc_man?elk__ m?r_m??__ nab?dc_nab?dek_nab?dk__ politic_politik__ popt?vc_popt?vk__ republic_republik__ technic_technik__ v?uc_v?uk__ z?silc_z?silek_z?silk__ ?ten??c_?ten??k__ ??stc_??stk__ ?kol_)
+ | | |   | Types   (71)
+ | | |   |
+ | | |   |>- Children's similarity: 0.136797114
+ | | |   | | Affixes (6): (a e ou u y ?ch)
+ | | |   | | Stems   (16): (banc_bank__ burz_ ekonomic_ekonomik__ hal_ man?elc_man?elk__ m?r_m??__ nab?dc_nab?dek_nab?dk__ politic_politik__ popt?vc_popt?vk__ republic_republik__ technic_technik__ v?uc_v?uk__ z?silc_z?silek_z?silk__ ?ten??c_?ten??k__ ??stc_??stk__ ?kol_)
+ | | |   | | Types   (68)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.427352162
+ | | |   | | | Affixes (5): (a e ou u y)
+ | | |   | | | Stems   (13): (ekonomic_ekonomik__ man?elc_man?elk__ m?r_m??__ nab?dc_nab?dek_nab?dk__ politic_politik__ popt?vc_popt?vk__ republic_republik__ technic_technik__ v?uc_v?uk__ z?silc_z?silek_z?silk__ ?ten??c_?ten??k__ ??stc_??stk__ ?kol_)
+ | | |   | | | Types   (57)
+ | | |   | | |
+ | | |   | | |>- Affixes (4): (a e ou u)
+ | | |   | | | | Stems   (7): (ekonomic_ekonomik__ man?elc_man?elk__ m?r_m??__ nab?dc_nab?dek_nab?dk__ popt?vc_popt?vk__ v?uc_v?uk__ ??stc_??stk__)
+ | | |   | | | | Types   (28)
+ | | |   | | |
+ | | |   | |  >- Affixes (4): (a e u y)
+ | | |   | |   | Stems   (11): (ekonomic_ekonomik__ m?r_m??__ nab?dc_nab?dek_nab?dk__ politic_politik__ popt?vc_popt?vk__ republic_republik__ technic_technik__ z?silc_z?silek_z?silk__ ?ten??c_?ten??k__ ??stc_??stk__ ?kol_)
+ | | |   | |   | Types   (44)
+ | | |   | |  
+ | | |   |  >- Affixes (3): (a e ?ch)
+ | | |   |   | Stems   (5): (banc_bank__ burz_ ekonomic_ekonomik__ hal_ nab?dc_nab?dek_nab?dk__)
+ | | |   |   | Types   (15)
+ | | |   |  
+ | | |    >- Affixes (2): (e ?m)
+ | | |     | Stems   (3): (burz_ ekonomic_ekonomik__ ?kol_)
+ | | |     | Types   (6)
+ | | |    
+ | |  >- Affixes (2): (a ovn?ch)
+ | |   | Stems   (4): (burz_ cest_ dom_ po?t_)
+ | |   | Types   (8)
+ | |  
+ |  >- Affixes (4): (*null* ami y ?ch)
+ |   | Stems   (6): (aktivit_ pam?tek_pam?tk__ podm?nek_podm?nk__ potravin_ skupin_ zak?zek_zak?zk__)
+ |   | Types   (24)
+ |  
+  >- Affixes (2): (ovn? ovn?ch)
+   | Stems   (4): (cest_ po?t_ prac_ sport_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.053968707
+ | Affixes (10): (*null* e em i u y ? ?ch ? ?m)
+ | Stems   (118): (akademi_ akc_ akcion??_ brit?ni_ certifikac_ chc_ chv?l_ c?l_ distribuc_ doporu?uj_ druh_druz__ d?sledc_d?sledek_d?sledk__ evidenc_ existenc_ filozofi_ f?li_ galeri_ histori_ hokej_ hranic_ identifikac_identifika?__ ilustrac_ inflac_ informac_informa?__ inspekc_ investic_investi?__ jej?m_ kombinac_ komis_ konc_konk__ ...)
+ | Types   (316)
+ |
+ |>- Children's similarity: 0.043878223
+ | | Affixes (10): (*null* e em i u y ? ?ch ? ?m)
+ | | Stems   (115): (akademi_ akc_ akcion??_ brit?ni_ certifikac_ chc_ chv?l_ c?l_ distribuc_ doporu?uj_ druh_druz__ d?sledc_d?sledek_d?sledk__ evidenc_ existenc_ filozofi_ f?li_ galeri_ histori_ hokej_ hranic_ identifikac_identifika?__ ilustrac_ inflac_ informac_informa?__ inspekc_ investic_investi?__ kombinac_ komis_ konc_konk__ konkurenc_konkuren?__ ...)
+ | | Types   (309)
+ | |
+ | |>- Children's similarity: 0.180578780
+ | | | Affixes (7): (*null* em u y ?ch ? ?m)
+ | | | Stems   (10): (druh_druz__ d?sledc_d?sledek_d?sledk__ kroc_krok__ kruh_kruz__ podnic_podnik__ po??ta?_ statc_statek_statk__ veletrh_veletrz__ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | | Types   (49)
+ | | |
+ | | |>- Children's similarity: 0.254685816
+ | | | | Affixes (6): (*null* em u y ?ch ?)
+ | | | | Stems   (10): (druh_druz__ d?sledc_d?sledek_d?sledk__ kroc_krok__ kruh_kruz__ podnic_podnik__ po??ta?_ statc_statek_statk__ veletrh_veletrz__ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | | | Types   (46)
+ | | | |
+ | | | |>- Children's similarity: 0.578637562
+ | | | | | Affixes (5): (*null* u y ?ch ?)
+ | | | | | Stems   (8): (druh_druz__ d?sledc_d?sledek_d?sledk__ kruh_kruz__ podnic_podnik__ statc_statek_statk__ veletrh_veletrz__ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | | | | Types   (37)
+ | | | | |
+ | | | | |>- Affixes (4): (*null* u y ?ch)
+ | | | | | | Stems   (7): (druh_druz__ d?sledc_d?sledek_d?sledk__ podnic_podnik__ statc_statek_statk__ veletrh_veletrz__ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | | | | | Types   (28)
+ | | | | |
+ | | | |  >- Affixes (4): (*null* y ?ch ?)
+ | | | |   | Stems   (6): (druh_druz__ kruh_kruz__ podnic_podnik__ veletrh_veletrz__ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | | |   | Types   (24)
+ | | | |  
+ | | |  >- Affixes (3): (*null* em ?ch)
+ | | |   | Stems   (5): (kroc_krok__ podnic_podnik__ po??ta?_ v?robc_v?robek_v?robk__ v?sledc_v?sledek_v?sledk__)
+ | | |   | Types   (15)
+ | | |  
+ | |  >- Affixes (2): (?ch ?m)
+ | |   | Stems   (3): (podnic_podnik__ po??ta?_ v?sledc_v?sledek_v?sledk__)
+ | |   | Types   (6)
+ | |  
+ |  >- Children's similarity: 0.162960169
+ |   | Affixes (7): (*null* e em i ? ?ch ?)
+ |   | Stems   (107): (akademi_ akc_ akcion??_ brit?ni_ certifikac_ chc_ chv?l_ c?l_ distribuc_ doporu?uj_ evidenc_ existenc_ filozofi_ f?li_ galeri_ histori_ hokej_ hranic_ identifikac_identifika?__ ilustrac_ inflac_ informac_informa?__ inspekc_ investic_investi?__ kombinac_ komis_ konc_konk__ konkurenc_konkuren?__ konzultac_ konzumac_ ...)
+ |   | Types   (265)
+ |   |
+ |   |>- Children's similarity: 0.356957586
+ |   | | Affixes (4): (e i ? ?ch)
+ |   | | Stems   (107): (akademi_ akc_ akcion??_ brit?ni_ certifikac_ chc_ chv?l_ c?l_ distribuc_ doporu?uj_ evidenc_ existenc_ filozofi_ f?li_ galeri_ histori_ hokej_ hranic_ identifikac_identifika?__ ilustrac_ inflac_ informac_informa?__ inspekc_ investic_investi?__ kombinac_ komis_ konc_konk__ konkurenc_konkuren?__ konzultac_ konzumac_ ...)
+ |   | | Types   (241)
+ |   | |
+ |   | |>- Children's similarity: 0.412861412
+ |   | | | Affixes (4): (e i ? ?ch)
+ |   | | | Stems   (22): (akc_ doporu?uj_ filozofi_ hranic_ inflac_ informac_informa?__ kombinac_ konkurenc_konkuren?__ koup_ mar?_ moj_ na?_ obc_ operac_opera?__ ordinac_ organizac_organiza?__ potvrzuj_ prax_ profes_ pr?mi_ strategi_ svoj_)
+ |   | | | Types   (71)
+ |   | | |
+ |   | | |>- Affixes (3): (e i ?)
+ |   | | | | Stems   (22): (akc_ doporu?uj_ filozofi_ hranic_ inflac_ informac_informa?__ kombinac_ konkurenc_konkuren?__ koup_ mar?_ moj_ na?_ obc_ operac_opera?__ ordinac_ organizac_organiza?__ potvrzuj_ prax_ profes_ pr?mi_ strategi_ svoj_)
+ |   | | | | Types   (66)
+ |   | | |
+ |   | |  >- Affixes (4): (e i ? ?ch)
+ |   | |   | Stems   (5): (akc_ hranic_ operac_opera?__ profes_ pr?mi_)
+ |   | |   | Types   (20)
+ |   | |  
+ |   |  >- Affixes (2): (e i)
+ |   |   | Stems   (107): (akademi_ akc_ akcion??_ brit?ni_ certifikac_ chc_ chv?l_ c?l_ distribuc_ doporu?uj_ evidenc_ existenc_ filozofi_ f?li_ galeri_ histori_ hokej_ hranic_ identifikac_identifika?__ ilustrac_ inflac_ informac_informa?__ inspekc_ investic_investi?__ kombinac_ komis_ konc_konk__ konkurenc_konkuren?__ konzultac_ konzumac_ ...)
+ |   |   | Types   (214)
+ |   |  
+ |    >- Affixes (5): (*null* e em i ?)
+ |     | Stems   (8): (majitel_ podnikatel_ po??ta?_ sb?ratel_ v?robc_v?robek_v?robk__ zdroj_ zlod?j_ ?editel_)
+ |     | Types   (40)
+ |    
+  >- Affixes (2): (i u)
+   | Stems   (5): (jej?m_ lid_ technic_technik__ v?robc_v?robek_v?robk__ v?c_v?k__)
+   | Types   (10)
+  
+
+>- Children's similarity: 0.237199781
+ | Affixes (10): (ou ? ? ?ho ?m ?mu ? ?ch ?m ?mi)
+ | Stems   (20): (b??n_ cel_ da?ov_ druh_druz__ ekonomick_ jak_ jin_ kanadsk_ kter_ mal_ nov_ n?jak_ podnikatelsk_ p??slu?n_ slovensk_ stejn_ takov_ velk_ ?esk_ ??dn_)
+ | Types   (149)
+ |
+ |>- Children's similarity: 0.409158544
+ | | Affixes (9): (ou ? ? ?ho ?m ? ?ch ?m ?mi)
+ | | Stems   (17): (b??n_ cel_ da?ov_ druh_druz__ jin_ kanadsk_ kter_ mal_ nov_ n?jak_ podnikatelsk_ p??slu?n_ slovensk_ stejn_ takov_ velk_ ?esk_)
+ | | Types   (130)
+ | |
+ | |>- Children's similarity: 0.613940614
+ | | | Affixes (8): (ou ? ? ?ho ?m ? ?ch ?m)
+ | | | Stems   (15): (b??n_ cel_ da?ov_ druh_druz__ jin_ kanadsk_ kter_ mal_ nov_ n?jak_ p??slu?n_ stejn_ takov_ velk_ ?esk_)
+ | | | Types   (112)
+ | | |
+ | | |>- Children's similarity: 0.632455532
+ | | | | Affixes (8): (ou ? ? ?ho ?m ? ?ch ?m)
+ | | | | Stems   (12): (b??n_ cel_ druh_druz__ jin_ kanadsk_ mal_ nov_ n?jak_ stejn_ takov_ velk_ ?esk_)
+ | | | | Types   (91)
+ | | | |
+ | | | |>- Affixes (7): (ou ? ? ?ho ?m ? ?ch)
+ | | | | | Stems   (10): (b??n_ cel_ druh_druz__ jin_ mal_ nov_ stejn_ takov_ velk_ ?esk_)
+ | | | | | Types   (70)
+ | | | |
+ | | |  >- Affixes (7): (ou ? ? ?m ? ?ch ?m)
+ | | |   | Stems   (9): (cel_ jin_ kanadsk_ mal_ n?jak_ stejn_ takov_ velk_ ?esk_)
+ | | |   | Types   (63)
+ | | |  
+ | |  >- Affixes (7): (ou ? ? ?ho ? ?ch ?m)
+ | |   | Stems   (10): (cel_ da?ov_ jin_ kter_ mal_ p??slu?n_ stejn_ takov_ velk_ ?esk_)
+ | |   | Types   (70)
+ | |  
+ |  >- Affixes (6): (ou ? ? ? ?ch ?mi)
+ |   | Stems   (8): (jin_ kanadsk_ kter_ nov_ podnikatelsk_ slovensk_ velk_ ?esk_)
+ |   | Types   (48)
+ |  
+  >- Affixes (5): (ou ? ? ?m ?mu)
+   | Stems   (7): (ekonomick_ jak_ jin_ takov_ velk_ ?esk_ ??dn_)
+   | Types   (35)
+  
+
+>- Children's similarity: 0.209567028
+ | Affixes (10): (*null* ech em ov? ov?ho ov?ch u y ? ?m)
+ | Stems   (24): (byt_ dar_da?__ d?l_ fond_ hotel_ kapit?l_ katalog_ marketing_ n?klad_ obchod_ obraz_ podnic_podnik__ postup_ program_ pr?mysl_ skupin_ syst?m_ v?sledc_v?sledek_v?sledk__ z?kazn?c_z?kazn?k__ z?kon_ ?raz_ ?v?r_ ??ad_ ?len_)
+ | Types   (138)
+ |
+ |>- Children's similarity: 0.349927106
+ | | Affixes (7): (*null* ech em u y ? ?m)
+ | | Stems   (15): (byt_ dar_da?__ d?l_ fond_ hotel_ obchod_ obraz_ podnic_podnik__ postup_ program_ v?sledc_v?sledek_v?sledk__ z?kazn?c_z?kazn?k__ z?kon_ ??ad_ ?len_)
+ | | Types   (87)
+ | |
+ | |>- Children's similarity: 0.361813613
+ | | | Affixes (7): (*null* ech em u y ? ?m)
+ | | | Stems   (11): (byt_ dar_da?__ d?l_ fond_ hotel_ obchod_ podnic_podnik__ v?sledc_v?sledek_v?sledk__ z?kazn?c_z?kazn?k__ ??ad_ ?len_)
+ | | | Types   (63)
+ | | |
+ | | |>- Children's similarity: 0.534522484
+ | | | | Affixes (6): (*null* em u y ? ?m)
+ | | | | Stems   (10): (byt_ dar_da?__ d?l_ fond_ hotel_ obchod_ podnic_podnik__ v?sledc_v?sledek_v?sledk__ z?kazn?c_z?kazn?k__ ?len_)
+ | | | | Types   (55)
+ | | | |
+ | | | |>- Affixes (5): (*null* em y ? ?m)
+ | | | | | Stems   (7): (fond_ hotel_ obchod_ podnic_podnik__ v?sledc_v?sledek_v?sledk__ z?kazn?c_z?kazn?k__ ?len_)
+ | | | | | Types   (35)
+ | | | |
+ | | |  >- Affixes (5): (em u y ? ?m)
+ | | |   | Stems   (8): (byt_ dar_da?__ d?l_ fond_ hotel_ obchod_ podnic_podnik__ v?sledc_v?sledek_v?sledk__)
+ | | |   | Types   (40)
+ | | |  
+ | |  >- Affixes (4): (ech u y ?m)
+ | |   | Stems   (5): (d?l_ fond_ hotel_ obchod_ ??ad_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (6): (*null* ech em u y ?)
+ |   | Stems   (7): (fond_ hotel_ obchod_ obraz_ postup_ program_ z?kon_)
+ |   | Types   (42)
+ |  
+  >- Children's similarity: 0.268926437
+   | Affixes (7): (*null* ov? ov?ho ov?ch u y ?)
+   | Stems   (13): (hotel_ kapit?l_ katalog_ marketing_ n?klad_ obraz_ podnic_podnik__ program_ pr?mysl_ skupin_ syst?m_ ?raz_ ?v?r_)
+   | Types   (67)
+   |
+   |>- Children's similarity: 0.358568583
+   | | Affixes (6): (*null* ov? ov?ch u y ?)
+   | | Stems   (11): (hotel_ kapit?l_ katalog_ n?klad_ obraz_ podnic_podnik__ program_ pr?mysl_ skupin_ syst?m_ ?v?r_)
+   | | Types   (56)
+   | |
+   | |>- Affixes (4): (*null* ov? ov?ch u)
+   | | | Stems   (7): (hotel_ kapit?l_ obraz_ podnic_podnik__ pr?mysl_ skupin_ ?v?r_)
+   | | | Types   (28)
+   | |
+   |  >- Affixes (5): (*null* ov? u y ?)
+   |   | Stems   (8): (hotel_ katalog_ n?klad_ obraz_ podnic_podnik__ program_ syst?m_ ?v?r_)
+   |   | Types   (40)
+   |  
+    >- Affixes (4): (*null* ov? ov?ho u)
+     | Stems   (5): (kapit?l_ marketing_ podnic_podnik__ program_ ?raz_)
+     | Types   (20)
+    
+
+>- Children's similarity: 0.030261377
+ | Affixes (9): (en eni en? en?m il ila ili it ?)
+ | Stems   (27): (d?l_ nuc_ omez_ ozna?_ potvrd_ povol_ p?edlo?_ p?esv?d?_ p?iprav_ slo?_ sn??_ spoj_ stanov_ unav_ uved_ vyhl??_ vyj?d?_ vytvo?_ zah?j_ zalo?_ zam??_ zastav_ zjednodu?_ zjist_ zv??_ ?e?_ ?kol_)
+ | Types   (102)
+ |
+ |>- Children's similarity: 0.096900317
+ | | Affixes (8): (en en? en?m il ila ili it ?)
+ | | Stems   (23): (d?l_ omez_ ozna?_ potvrd_ povol_ p?edlo?_ p?esv?d?_ p?iprav_ slo?_ sn??_ spoj_ stanov_ vyj?d?_ vytvo?_ zah?j_ zalo?_ zam??_ zastav_ zjednodu?_ zjist_ zv??_ ?e?_ ?kol_)
+ | | Types   (91)
+ | |
+ | |>- Children's similarity: 0.118782774
+ | | | Affixes (7): (en en? il ila ili it ?)
+ | | | Stems   (17): (d?l_ ozna?_ potvrd_ povol_ p?edlo?_ p?esv?d?_ p?iprav_ slo?_ sn??_ spoj_ stanov_ vytvo?_ zah?j_ zalo?_ zam??_ zastav_ zjist_)
+ | | | Types   (71)
+ | | |
+ | | |>- Children's similarity: 0.212132034
+ | | | | Affixes (6): (en? il ila ili it ?)
+ | | | | Stems   (12): (d?l_ potvrd_ p?edlo?_ p?esv?d?_ p?iprav_ sn??_ stanov_ vytvo?_ zah?j_ zalo?_ zam??_ zjist_)
+ | | | | Types   (54)
+ | | | |
+ | | | |>- Children's similarity: 0.462910050
+ | | | | | Affixes (5): (en? il ila it ?)
+ | | | | | Stems   (9): (d?l_ p?edlo?_ p?esv?d?_ p?iprav_ sn??_ stanov_ vytvo?_ zah?j_ zam??_)
+ | | | | | Types   (40)
+ | | | | |
+ | | | | |>- Affixes (4): (en? ila it ?)
+ | | | | | | Stems   (7): (d?l_ p?esv?d?_ sn??_ stanov_ vytvo?_ zah?j_ zam??_)
+ | | | | | | Types   (28)
+ | | | | |
+ | | | |  >- Affixes (4): (il ila it ?)
+ | | | |   | Stems   (6): (p?edlo?_ p?esv?d?_ p?iprav_ sn??_ vytvo?_ zam??_)
+ | | | |   | Types   (24)
+ | | | |  
+ | | |  >- Affixes (4): (il ila ili it)
+ | | |   | Stems   (5): (potvrd_ p?edlo?_ p?esv?d?_ zalo?_ zjist_)
+ | | |   | Types   (20)
+ | | |  
+ | |  >- Affixes (3): (en en? it)
+ | |   | Stems   (7): (ozna?_ povol_ p?esv?d?_ slo?_ spoj_ zam??_ zastav_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (3): (en? en?m it)
+ |   | Stems   (8): (omez_ vyj?d?_ zah?j_ zam??_ zjednodu?_ zv??_ ?e?_ ?kol_)
+ |   | Types   (24)
+ |  
+  >- Affixes (2): (en eni)
+   | Stems   (6): (nuc_ p?esv?d?_ p?iprav_ unav_ uved_ vyhl??_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.095058638
+ | Affixes (9): (ala aly anou an? an? an?ch at ? ?na)
+ | Stems   (31): (d_ fingov_ objedn_ organizov_ o?ek?v_ podporov_ posuzov_ pou??v_ po??t_ po?adov_ po??d_ prezentov_ prod_ prok?z_ p?edeps_ p?edpokl?d_ rozebr_ sjedn_ specializov_ ud?l_ uk?z_ vybr_ vyd_ vyd?v_ vyhovov_ vyvol_ v?nov_ zasl_ zpracov_ zv_ z?sk_)
+ | Types   (92)
+ |
+ |>- Children's similarity: 0.073029674
+ | | Affixes (8): (ala aly an? an? an?ch at ? ?na)
+ | | Stems   (28): (d_ fingov_ objedn_ organizov_ o?ek?v_ podporov_ posuzov_ pou??v_ po??t_ po?adov_ po??d_ prezentov_ prod_ prok?z_ p?edpokl?d_ rozebr_ specializov_ ud?l_ uk?z_ vybr_ vyd_ vyd?v_ vyhovov_ vyvol_ v?nov_ zasl_ zpracov_ z?sk_)
+ | | Types   (83)
+ | |
+ | |>- Children's similarity: 0.078594378
+ | | | Affixes (7): (ala aly an? an?ch at ? ?na)
+ | | | Stems   (25): (objedn_ organizov_ o?ek?v_ podporov_ posuzov_ pou??v_ po??t_ po?adov_ po??d_ prezentov_ prod_ prok?z_ p?edpokl?d_ rozebr_ specializov_ ud?l_ uk?z_ vybr_ vyd_ vyd?v_ vyhovov_ vyvol_ v?nov_ zasl_ z?sk_)
+ | | | Types   (75)
+ | | |
+ | | |>- Children's similarity: 0.125988158
+ | | | | Affixes (4): (an? an?ch at ?)
+ | | | | Stems   (10): (o?ek?v_ pou??v_ po?adov_ p?edpokl?d_ specializov_ vybr_ vyd_ vyd?v_ vyvol_ z?sk_)
+ | | | | Types   (31)
+ | | | |
+ | | | |>- Affixes (3): (an? an?ch at)
+ | | | | | Stems   (4): (o?ek?v_ po?adov_ specializov_ vybr_)
+ | | | | | Types   (12)
+ | | | |
+ | | |  >- Affixes (3): (an? at ?)
+ | | |   | Stems   (7): (o?ek?v_ pou??v_ p?edpokl?d_ vyd_ vyd?v_ vyvol_ z?sk_)
+ | | |   | Types   (21)
+ | | |  
+ | |  >- Children's similarity: 0.082060994
+ | |   | Affixes (4): (ala aly at ?na)
+ | |   | Stems   (18): (objedn_ organizov_ podporov_ posuzov_ po??t_ po??d_ prezentov_ prod_ prok?z_ rozebr_ specializov_ ud?l_ uk?z_ vybr_ vyhovov_ vyvol_ v?nov_ zasl_)
+ | |   | Types   (47)
+ | |   |
+ | |   |>- Affixes (3): (ala aly at)
+ | |   | | Stems   (9): (objedn_ po??t_ po??d_ prok?z_ ud?l_ uk?z_ vyhovov_ vyvol_ v?nov_)
+ | |   | | Types   (27)
+ | |   |
+ | |    >- Affixes (2): (at ?na)
+ | |     | Stems   (11): (organizov_ podporov_ posuzov_ prezentov_ prod_ prok?z_ rozebr_ specializov_ vybr_ v?nov_ zasl_)
+ | |     | Types   (22)
+ | |    
+ |  >- Affixes (2): (an? an?)
+ |   | Stems   (5): (d_ fingov_ specializov_ vyd_ zpracov_)
+ |   | Types   (10)
+ |  
+  >- Affixes (2): (anou an?)
+   | Stems   (6): (d_ o?ek?v_ po?adov_ p?edeps_ sjedn_ zv_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.242091013
+ | Affixes (5): (ali at ?n? ?n?m ?v?n?)
+ | Stems   (40): (hled_ investov_ jedn_ konstatov_ nebr_ obchodov_ ochutn_ odebr_ organizov_ ovliv?ov_ pl?nov_ pod_ podnic_podnik__ pokra?ov_ posuzov_ pou??v_ po??d_ provozov_ p?edkl?d_ p?ekon_ reagov_ rozhodov_ setk_ sledov_ srovn_ srovn?v_ uplat?ov_ uva?ov_ vyd_ vyd?v_ ...)
+ | Types   (92)
+ |
+ |>- Children's similarity: 0.247593784
+ | | Affixes (4): (ali at ?n? ?n?m)
+ | | Stems   (40): (hled_ investov_ jedn_ konstatov_ nebr_ obchodov_ ochutn_ odebr_ organizov_ ovliv?ov_ pl?nov_ pod_ podnic_podnik__ pokra?ov_ posuzov_ pou??v_ po??d_ provozov_ p?edkl?d_ p?ekon_ reagov_ rozhodov_ setk_ sledov_ srovn_ srovn?v_ uplat?ov_ uva?ov_ vyd_ vyd?v_ ...)
+ | | Types   (91)
+ | |
+ | |>- Children's similarity: 0.341565026
+ | | | Affixes (3): (ali at ?n?)
+ | | | Stems   (40): (hled_ investov_ jedn_ konstatov_ nebr_ obchodov_ ochutn_ odebr_ organizov_ ovliv?ov_ pl?nov_ pod_ podnic_podnik__ pokra?ov_ posuzov_ pou??v_ po??d_ provozov_ p?edkl?d_ p?ekon_ reagov_ rozhodov_ setk_ sledov_ srovn_ srovn?v_ uplat?ov_ uva?ov_ vyd_ vyd?v_ ...)
+ | | | Types   (87)
+ | | |
+ | | |>- Affixes (3): (ali at ?n?)
+ | | | | Stems   (7): (hled_ investov_ po??d_ sledov_ srovn?v_ vystupov_ z?sk_)
+ | | | | Types   (21)
+ | | |
+ | |  >- Affixes (2): (at ?n?)
+ | |   | Stems   (40): (hled_ investov_ jedn_ konstatov_ nebr_ obchodov_ ochutn_ odebr_ organizov_ ovliv?ov_ pl?nov_ pod_ podnic_podnik__ pokra?ov_ posuzov_ pou??v_ po??d_ provozov_ p?edkl?d_ p?ekon_ reagov_ rozhodov_ setk_ sledov_ srovn_ srovn?v_ uplat?ov_ uva?ov_ vyd_ vyd?v_ ...)
+ | |   | Types   (80)
+ | |  
+ |  >- Affixes (3): (at ?n? ?n?m)
+ |   | Stems   (4): (podnic_podnik__ srovn?v_ vyd_ z?sk?v_)
+ |   | Types   (12)
+ |  
+  >- Affixes (3): (at ?n? ?v?n?)
+   | Stems   (4): (p?ekon_ srovn_ vyd_ z?sk_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.149992348
+ | Affixes (8): (ce ek ka kami kov? ku ky k?ch)
+ | Stems   (21): (dod?v_ ekonomi_ nab?d_ novin_ ot?z_ pam?t_ podni_ pohled?v_ politi_ popt?v_ p?est?v_ p?ihl??_ republi_ s?z_ techni_ zak?z_ zis_ zkou?_ z?sil_ ?ten??_ ??st_)
+ | Types   (92)
+ |
+ |>- Children's similarity: 0.316227766
+ | | Affixes (5): (ek kov? ku ky k?ch)
+ | | Stems   (8): (nab?d_ novin_ pam?t_ podni_ pohled?v_ zak?z_ zis_ zkou?_)
+ | | Types   (33)
+ | |
+ | |>- Affixes (4): (ek ku ky k?ch)
+ | | | Stems   (6): (nab?d_ novin_ pam?t_ pohled?v_ zak?z_ zkou?_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (3): (kov? ku ky)
+ |   | Stems   (5): (nab?d_ pam?t_ podni_ zak?z_ zis_)
+ |   | Types   (15)
+ |  
+  >- Children's similarity: 0.170940865
+   | Affixes (6): (ce ek ka kami ku ky)
+   | Stems   (16): (dod?v_ ekonomi_ nab?d_ ot?z_ pam?t_ politi_ popt?v_ p?est?v_ p?ihl??_ republi_ s?z_ techni_ zak?z_ z?sil_ ?ten??_ ??st_)
+   | Types   (66)
+   |
+   |>- Children's similarity: 0.192450090
+   | | Affixes (5): (ce ka kami ku ky)
+   | | Stems   (11): (ekonomi_ nab?d_ pam?t_ politi_ popt?v_ republi_ techni_ zak?z_ z?sil_ ?ten??_ ??st_)
+   | | Types   (44)
+   | |
+   | |>- Affixes (4): (ce ka ku ky)
+   | | | Stems   (9): (ekonomi_ nab?d_ politi_ popt?v_ republi_ techni_ z?sil_ ?ten??_ ??st_)
+   | | | Types   (36)
+   | |
+   |  >- Affixes (3): (kami ku ky)
+   |   | Stems   (4): (ekonomi_ pam?t_ techni_ zak?z_)
+   |   | Types   (12)
+   |  
+    >- Affixes (4): (ek ka ku ky)
+     | Stems   (7): (dod?v_ nab?d_ ot?z_ p?est?v_ p?ihl??_ s?z_ z?sil_)
+     | Types   (28)
+    
+
+>- Children's similarity: 0.072168784
+ | Affixes (6): (l la li lo ly t)
+ | Stems   (19): (by_ da_ dos?h_ moh_ muse_ m?_ neby_ odpov?da_ potvrdi_ po??da_ pracova_ p?edlo?i_ p?esv?d?i_ p?i?_ ud?la_ zalo?i_ za?a_ zjisti_ z?ska_)
+ | Types   (81)
+ |
+ |>- Children's similarity: 0.424264069
+ | | Affixes (5): (l la li lo ly)
+ | | Stems   (11): (by_ da_ dos?h_ moh_ muse_ m?_ neby_ po??da_ p?i?_ ud?la_ za?a_)
+ | | Types   (48)
+ | |
+ | |>- Affixes (4): (l la li ly)
+ | | | Stems   (5): (dos?h_ moh_ neby_ ud?la_ za?a_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (4): (la li lo ly)
+ |   | Stems   (10): (by_ da_ dos?h_ moh_ muse_ m?_ neby_ po??da_ p?i?_ za?a_)
+ |   | Types   (40)
+ |  
+  >- Affixes (4): (l la li t)
+   | Stems   (9): (odpov?da_ potvrdi_ pracova_ p?edlo?i_ p?esv?d?i_ ud?la_ zalo?i_ zjisti_ z?ska_)
+   | Types   (36)
+  
+
+>- Children's similarity: 0.223781696
+ | Affixes (7): (? ?ch ?ho ?m ?mi ?mu ?)
+ | Stems   (17): (dal?_ finan?n_ hlavn_ jej_ kontroln_ lep?_ nejv?t?_ n?rodn_ obchodn_ prodejn_ prvn_ soudn_ stavebn_ st?edn_ tr?n_ vlastn_ zahrani?n_)
+ | Types   (81)
+ |
+ |>- Children's similarity: 0.145478593
+ | | Affixes (7): (? ?ch ?ho ?m ?mi ?mu ?)
+ | | Stems   (14): (dal?_ finan?n_ hlavn_ jej_ lep?_ obchodn_ prodejn_ prvn_ soudn_ stavebn_ st?edn_ tr?n_ vlastn_ zahrani?n_)
+ | | Types   (71)
+ | |
+ | |>- Children's similarity: 0.326598632
+ | | | Affixes (6): (? ?ch ?ho ?m ?mi ?)
+ | | | Stems   (12): (dal?_ finan?n_ hlavn_ obchodn_ prodejn_ prvn_ soudn_ stavebn_ st?edn_ tr?n_ vlastn_ zahrani?n_)
+ | | | Types   (63)
+ | | |
+ | | |>- Affixes (5): (? ?ch ?ho ?m ?mi)
+ | | | | Stems   (6): (dal?_ hlavn_ obchodn_ prvn_ tr?n_ zahrani?n_)
+ | | | | Types   (30)
+ | | |
+ | |  >- Affixes (5): (? ?ch ?ho ?m ?)
+ | |   | Stems   (9): (finan?n_ hlavn_ prodejn_ prvn_ soudn_ stavebn_ st?edn_ tr?n_ vlastn_)
+ | |   | Types   (45)
+ | |  
+ |  >- Affixes (3): (? ?m ?mu)
+ |   | Stems   (4): (finan?n_ jej_ lep?_ vlastn_)
+ |   | Types   (12)
+ |  
+  >- Affixes (3): (? ?ho ?mu)
+   | Stems   (6): (finan?n_ kontroln_ lep?_ nejv?t?_ n?rodn_ vlastn_)
+   | Types   (18)
+  
+
+>- Children's similarity: 0.205879055
+ | Affixes (7): (ost ostech osti ostmi ost? ? ?)
+ | Stems   (21): (dom?cn_ jak_ minul_ mo?n_ nutn_ okoln_ platn_ povinn_ pozorn_ pravd?podobn_ p??le?it_ rychl_ schopn_ skute?n_ spole?n_ staro?itn_ velic_velik__ zku?en_ znal_ ?sp??n_ ?inn_)
+ | Types   (79)
+ |
+ |>- Children's similarity: 0.301940542
+ | | Affixes (4): (ost ostech osti ost?)
+ | | Stems   (15): (dom?cn_ mo?n_ nutn_ okoln_ povinn_ pozorn_ p??le?it_ schopn_ skute?n_ spole?n_ staro?itn_ velic_velik__ zku?en_ znal_ ?inn_)
+ | | Types   (49)
+ | |
+ | |>- Affixes (3): (ost osti ost?)
+ | | | Stems   (13): (dom?cn_ mo?n_ nutn_ povinn_ pozorn_ p??le?it_ schopn_ skute?n_ spole?n_ velic_velik__ zku?en_ znal_ ?inn_)
+ | | | Types   (39)
+ | |
+ |  >- Affixes (3): (ostech osti ost?)
+ |   | Stems   (6): (mo?n_ okoln_ spole?n_ staro?itn_ zku?en_ ?inn_)
+ |   | Types   (18)
+ |  
+  >- Children's similarity: 0.054554473
+   | Affixes (6): (ost osti ostmi ost? ? ?)
+   | Stems   (10): (jak_ minul_ mo?n_ platn_ povinn_ pravd?podobn_ rychl_ staro?itn_ znal_ ?sp??n_)
+   | Types   (39)
+   |
+   |>- Affixes (4): (ost osti ? ?)
+   | | Stems   (7): (jak_ minul_ mo?n_ platn_ pravd?podobn_ rychl_ ?sp??n_)
+   | | Types   (28)
+   |
+    >- Affixes (3): (osti ostmi ost?)
+     | Stems   (4): (mo?n_ povinn_ staro?itn_ znal_)
+     | Types   (12)
+    
+
+>- Children's similarity: 0.102062073
+ | Affixes (9): (sko skou sk? sk? sk?ho sk? sk?ch sk?mi ?tin?)
+ | Stems   (13): (d?n_ evrop_ francouz_ hospod??_ japon_ kanad_ l?ze?_ podnikatel_ pra?_ sloven_ zem?d?l_ ?e_ ?pan?l_)
+ | Types   (68)
+ |
+ |>- Children's similarity: 0.298142397
+ | | Affixes (8): (sko skou sk? sk? sk?ho sk? sk?ch sk?mi)
+ | | Stems   (12): (d?n_ evrop_ hospod??_ japon_ kanad_ l?ze?_ podnikatel_ pra?_ sloven_ zem?d?l_ ?e_ ?pan?l_)
+ | | Types   (64)
+ | |
+ | |>- Children's similarity: 0.336595628
+ | | | Affixes (7): (skou sk? sk? sk?ho sk? sk?ch sk?mi)
+ | | | Stems   (12): (d?n_ evrop_ hospod??_ japon_ kanad_ l?ze?_ podnikatel_ pra?_ sloven_ zem?d?l_ ?e_ ?pan?l_)
+ | | | Types   (60)
+ | | |
+ | | |>- Children's similarity: 0.535714286
+ | | | | Affixes (5): (sk? sk? sk?ho sk? sk?ch)
+ | | | | Stems   (9): (d?n_ evrop_ kanad_ l?ze?_ podnikatel_ pra?_ sloven_ ?e_ ?pan?l_)
+ | | | | Types   (41)
+ | | | |
+ | | | |>- Affixes (4): (sk? sk? sk?ho sk?ch)
+ | | | | | Stems   (7): (evrop_ l?ze?_ podnikatel_ pra?_ sloven_ ?e_ ?pan?l_)
+ | | | | | Types   (28)
+ | | | |
+ | | |  >- Affixes (4): (sk? sk? sk? sk?ch)
+ | | |   | Stems   (7): (d?n_ kanad_ l?ze?_ podnikatel_ pra?_ sloven_ ?e_)
+ | | |   | Types   (28)
+ | | |  
+ | |  >- Children's similarity: 0.421637021
+ | |   | Affixes (5): (skou sk? sk? sk?ch sk?mi)
+ | |   | Stems   (7): (hospod??_ japon_ kanad_ podnikatel_ sloven_ zem?d?l_ ?e_)
+ | |   | Types   (31)
+ | |   |
+ | |   |>- Affixes (4): (skou sk? sk? sk?ch)
+ | |   | | Stems   (6): (hospod??_ japon_ kanad_ podnikatel_ sloven_ ?e_)
+ | |   | | Types   (24)
+ | |   |
+ | |    >- Affixes (3): (skou sk? sk?mi)
+ | |     | Stems   (5): (kanad_ podnikatel_ sloven_ zem?d?l_ ?e_)
+ | |     | Types   (15)
+ | |    
+ |  >- Affixes (3): (sko sk? sk?)
+ |   | Stems   (4): (d?n_ japon_ sloven_ ?e_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (sk? ?tin?)
+   | Stems   (3): (francouz_ japon_ ?e_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.172061800
+ | Affixes (7): (aj? al at ? ?me ?te ?vat)
+ | Stems   (17): (dod_ dod?v_ domn?v_ dost?v_ hled_ ned?v_ nem_ o?ek?v_ pod_ podnic_podnik__ pou??v_ prod_ prod?v_ vyd?l_ za??n_ z?sk_ ?ek_)
+ | Types   (62)
+ |
+ |>- Children's similarity: 0.235702260
+ | | Affixes (5): (aj? al at ? ?vat)
+ | | Stems   (8): (dod_ dod?v_ pod_ podnic_podnik__ prod_ prod?v_ vyd?l_ z?sk_)
+ | | Types   (30)
+ | |
+ | |>- Affixes (4): (aj? al at ?)
+ | | | Stems   (6): (dod?v_ podnic_podnik__ prod_ prod?v_ vyd?l_ z?sk_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (3): (al at ?vat)
+ |   | Stems   (4): (dod_ pod_ prod_ z?sk_)
+ |   | Types   (12)
+ |  
+  >- Children's similarity: 0.192450090
+   | Affixes (4): (aj? ? ?me ?te)
+   | Stems   (12): (domn?v_ dost?v_ hled_ ned?v_ nem_ o?ek?v_ podnic_podnik__ pou??v_ prod?v_ za??n_ z?sk_ ?ek_)
+   | Types   (38)
+   |
+   |>- Affixes (3): (aj? ? ?me)
+   | | Stems   (8): (dost?v_ ned?v_ nem_ o?ek?v_ pou??v_ prod?v_ za??n_ ?ek_)
+   | | Types   (24)
+   |
+    >- Affixes (3): (aj? ? ?te)
+     | Stems   (6): (domn?v_ dost?v_ hled_ nem_ podnic_podnik__ z?sk_)
+     | Types   (18)
+    
+
+>- Children's similarity: 0.300000000
+ | Affixes (6): (nictv? n? n?ch n?ho n?m n?)
+ | Stems   (11): (financ_finan?__ hlav_ prodej_ prv_ soud_ stavb_staveb__ st?ed_ tr?_ vlast_ zdravot_ zku?eb_)
+ | Types   (56)
+ |
+ |>- Affixes (4): (nictv? n? n?ho n?)
+ | | Stems   (5): (financ_finan?__ stavb_staveb__ vlast_ zdravot_ zku?eb_)
+ | | Types   (20)
+ |
+  >- Affixes (5): (n? n?ch n?ho n?m n?)
+   | Stems   (9): (financ_finan?__ hlav_ prodej_ prv_ soud_ stavb_staveb__ st?ed_ tr?_ vlast_)
+   | Types   (45)
+  
+
+>- Children's similarity: 0.226455407
+ | Affixes (4): (a ech em o)
+ | Stems   (16): (aut_ dom_ d?l_ d?ev_ jm?n_ j?dr_ j?dl_ kol_ ministerstv_ mnoh_mnoz__ m?st_ m?st_ pravidl_ pr?v_ slov_ s?dl_)
+ | Types   (51)
+ |
+ |>- Affixes (3): (a ech o)
+ | | Stems   (6): (dom_ d?l_ j?dr_ kol_ m?st_ m?st_)
+ | | Types   (18)
+ |
+  >- Affixes (3): (a em o)
+   | Stems   (13): (aut_ dom_ d?l_ d?ev_ jm?n_ j?dl_ kol_ ministerstv_ mnoh_mnoz__ pravidl_ pr?v_ slov_ s?dl_)
+   | Types   (39)
+  
+
+>- Children's similarity: 0.178174161
+ | Affixes (4): (ovat ov?na ov?n? uje)
+ | Stems   (16): (invest_ konstat_ obchod_ organiz_ ovliv?_ pl?n_ pokra?_ posuz_ provoz_ rozhod_ specializ_ uplat?_ vystup_ v?n_ zvy?_ ??t_)
+ | Types   (50)
+ |
+ |>- Affixes (3): (ovat ov?na uje)
+ | | Stems   (4): (organiz_ posuz_ specializ_ v?n_)
+ | | Types   (12)
+ |
+  >- Affixes (3): (ovat ov?n? uje)
+   | Stems   (14): (invest_ konstat_ obchod_ organiz_ ovliv?_ pl?n_ pokra?_ posuz_ provoz_ rozhod_ uplat?_ vystup_ zvy?_ ??t_)
+   | Types   (42)
+  
+
+>- Children's similarity: 0.267261242
+ | Affixes (4): (oval ovat uje uj?)
+ | Stems   (15): (boj_ dosah_ exist_ inform_ obsah_ organiz_ ovliv?_ poskyt_ potvrz_ prac_ p?edstav_ usil_ vyhov_ v?n_ zvy?_)
+ | Types   (48)
+ |
+ |>- Affixes (3): (oval ovat uje)
+ | | Stems   (4): (obsah_ prac_ p?edstav_ vyhov_)
+ | | Types   (12)
+ |
+  >- Affixes (3): (ovat uje uj?)
+   | Stems   (14): (boj_ dosah_ exist_ inform_ obsah_ organiz_ ovliv?_ poskyt_ potvrz_ prac_ p?edstav_ usil_ v?n_ zvy?_)
+   | Types   (42)
+  
+
+>- Children's similarity: 0.072168784
+ | Affixes (5): (i?t? n? n?ch n?ho n?mi)
+ | Stems   (10): (cestov_ hlav_ kultur_ let_ obchod_ pracov_ prv_ tr?_ v?stav_ zahrani?_)
+ | Types   (37)
+ |
+ |>- Affixes (2): (i?t? n?ch)
+ | | Stems   (3): (let_ pracov_ v?stav_)
+ | | Types   (6)
+ |
+  >- Affixes (4): (n? n?ch n?ho n?mi)
+   | Stems   (8): (cestov_ hlav_ kultur_ obchod_ pracov_ prv_ tr?_ zahrani?_)
+   | Types   (32)
+  
+
+>- Affixes (3): (*null* me te)
+ | Stems   (12): (bude_ chce_ doporu?uje_ dostane_ dost?v?_ koup?_ m??e_ nem?_ nem??e_ nev?_ pot?ebuje_ vid?_)
+ | Types   (36)
+
+
+>- Children's similarity: 0.205737800
+ | Affixes (4): (*null* ovou ov? ov?)
+ | Stems   (11): (celek_celk__ da?_ katalog_ leasing_ n_ pobyt_ pr?mysl_ rozvoj_ tak_ t??milion_ ?pi?c_?pi?ek_?pi?k__)
+ | Types   (35)
+ |
+ |>- Affixes (3): (*null* ov? ov?)
+ | | Stems   (7): (celek_celk__ katalog_ leasing_ pobyt_ pr?mysl_ rozvoj_ ?pi?c_?pi?ek_?pi?k__)
+ | | Types   (21)
+ |
+  >- Affixes (3): (ovou ov? ov?)
+   | Stems   (6): (celek_celk__ da?_ leasing_ n_ tak_ t??milion_)
+   | Types   (18)
+  
+
+>- Children's similarity: 0.338061702
+ | Affixes (4): (ce ci ?n? ?n?ho)
+ | Stems   (9): (finan_ identifika_ informa_ investi_ konkuren_ koresponden_ likvida_ organiza_ privatiza_)
+ | Types   (30)
+ |
+ |>- Affixes (3): (ce ci ?n?)
+ | | Stems   (7): (identifika_ informa_ investi_ konkuren_ koresponden_ organiza_ privatiza_)
+ | | Types   (21)
+ |
+  >- Affixes (3): (ce ?n? ?n?ho)
+   | Stems   (5): (finan_ informa_ konkuren_ likvida_ privatiza_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.144337567
+ | Affixes (5): (st stech stem sti st?)
+ | Stems   (8): (mo?no_ obla_ p?edno_ r?_ spole?no_ zku?eno_ ?inno_ ??_)
+ | Types   (30)
+ |
+ |>- Affixes (4): (st stech sti st?)
+ | | Stems   (6): (mo?no_ obla_ spole?no_ zku?eno_ ?inno_ ??_)
+ | | Types   (24)
+ |
+  >- Affixes (2): (st stem)
+   | Stems   (4): (p?edno_ r?_ spole?no_ ?inno_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.251976315
+ | Affixes (4): (e eme ete ?)
+ | Stems   (9): (bud_ chc_ doporu?uj_ dosahuj_ dostan_ m??_ nem??_ pot?ebuj_ p?edstavuj_)
+ | Types   (29)
+ |
+ |>- Affixes (3): (e eme ete)
+ | | Stems   (7): (bud_ chc_ doporu?uj_ dostan_ m??_ nem??_ pot?ebuj_)
+ | | Types   (21)
+ |
+  >- Affixes (3): (e eme ?)
+   | Stems   (4): (doporu?uj_ dosahuj_ pot?ebuj_ p?edstavuj_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.083333333
+ | Affixes (5): (ek kem kov? ky k?)
+ | Stems   (8): (cel_ des?t_ pad?l_ posud_ ta_ v?d?l_ v?rob_ v?sled_)
+ | Types   (29)
+ |
+ |>- Affixes (4): (ek kem ky k?)
+ | | Stems   (6): (cel_ pad?l_ posud_ v?d?l_ v?rob_ v?sled_)
+ | | Types   (24)
+ |
+  >- Affixes (2): (kov? ky)
+   | Stems   (3): (des?t_ ta_ v?rob_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.083333333
+ | Affixes (4): (n? n? n?j?? n?j??mi)
+ | Stems   (10): (drob_ kr?s_ laci_ nejr?z_ pravd?podob_ rozum_ v?hod_ v?raz_ v?znam_ ??in_)
+ | Types   (29)
+ |
+ |>- Affixes (3): (n? n? n?j??)
+ | | Stems   (8): (drob_ kr?s_ pravd?podob_ rozum_ v?hod_ v?raz_ v?znam_ ??in_)
+ | | Types   (24)
+ |
+  >- Affixes (2): (n?j?? n?j??mi)
+   | Stems   (3): (laci_ nejr?z_ v?hod_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.089087081
+ | Affixes (4): (aj?c? aj?c?ch at ?)
+ | Stems   (9): (dod?v_ odpov?d_ op?r_ pou??v_ prod?v_ vznik_ zab?v_ za??n_ ?ek_)
+ | Types   (26)
+ |
+ |>- Affixes (3): (aj?c? at ?)
+ | | Stems   (7): (dod?v_ odpov?d_ op?r_ pou??v_ prod?v_ zab?v_ ?ek_)
+ | | Types   (21)
+ |
+  >- Affixes (2): (aj?c?ch ?)
+   | Stems   (3): (vznik_ zab?v_ za??n_)
+   | Types   (6)
+  
+
+>- Affixes (4): (*null* ech i ?)
+ | Stems   (6): (mo?nost_ oblast_ spole?nost_ zku?enost_ ?innost_ ??st_)
+ | Types   (24)
+
+
+>- Affixes (4): (ictv? ? ?ho ?)
+ | Stems   (5): (finan?n_ stavebn_ vlastn_ zdravotn_ zku?ebn_)
+ | Types   (20)
+
+
+
+

@@ -1,0 +1,47 @@
+\chapter{Clustering Framework}\label{chapter:clustering}
+
+The second software package developed for this thesis is a framework for bottom-up clustering. Although its primary purpose is creating and evaluating clusters of morphologically related words, it is general and allows clustering of any objects (not only strings) and using custom distance metrics. 
+
+The bottom-up clustering algorithm is simple: At the beginning, one cluster is created for each object. Then, until the stopping criterion is met, the two clusters with the smallest distance between them are merged in each step. Stopping criteria supported by the framework are reaching a predefined number of clusters or the smallest distance between clusters growing above a given threshold. 
+
+Once the distance measure between two objects is defined, there is a number of ways to define distance between clusters of objects. Currently, the framework supports 3 of them:
+\begin{enumerate}
+\item Nearest member. Distance between clusters A and B is defined as the \textbf{smallest} distance between a member of A and a member of B.
+\item Furthest member. Distance between clusters A and B is defined as the \textbf{largest} distance between a member of A and a member of B.
+\item Average distance. Distance between clusters A and B is defined as the \textbf{average} distance between a member of A and a member of B. 
+\end{enumerate}
+
+\section{Application to morphology}
+
+To use the framework for creating clusters of morphologically related words, it is necessary to define a distance measure between two words. The framework contains 3 pre-built distance measure types. The first one is based on modified edit distance and the other two allow results of unsupervised learners to be used in the clustering. The measures are described below. Euclidean combination of any number of distances is also supported.
+
+\subsection{Edit distance}
+As the basic form of the edit distance, the framework contains the Levenshtein distance \citep{levenshtein66}, a distance recognising three basic operations on a string: deletion, insertion or substitution of a single character. By default, each operation has the same cost contributing to the overall distance. 
+
+The distance metric can be customised by providing a cost matrix for substitution of characters. This matrix can, for example, represent the fact that some phonemes (represented by graphemes) share more phonological features than others. In such a case, it would make sense to decrease for example the cost of the \e{s/z} substitution. To design such matrix, one must have quite a detailed knowledge of given language's phonology and orthography. A more resource-light (but less linguistically adequate) approach would just decrease the distance between vowels and between characters differing only in a diacritic marks, such as \e{a/á} in Czech or \e{a/ä} in German.
+
+Besides the customisable Levenshtein distance, the framework also contains its modification in which the cost of an operation linearly decreases with the position in the string where it occurs. This distance can serve as a very simple model of suffix-based morphology. 
+In the experimental evaluation, I have used this distance in combination with the above-mentioned approach lowering the costs for diacritics adding/removing and vowel changes. Table \ref{table:edit_config} shows the concrete costs I have selected for use in the experiments.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\bf Change & \bf Cost\\
+\midrule
+vowel $ \leftrightarrow $ vowel 				& 0.7\\
+with diacritic $ \leftrightarrow $ w/o diac.    & 0.5\\
+other & 1.0\\
+\bottomrule
+\end{tabular}
+\caption{\label{table:edit_config} Edit costs used in the experiments.}
+\end{table}
+
+\subsection{Segmentation distance}
+To be able to employ morpheme segmentation algorithms such as Morfessor, I defined a string distance metric based on the words' morphemic segmentation. For a word with $m_1$ and a word with $m_2$ morphemes, the distance is: $1 - \frac{2c}{m_1 + m_2}$, where $c$ is the length of the longest common initial sequence of morphemes. That means that if the words don't share the initial morpheme, the distance is 1. This definition of the distance is aimed at languages with suffixal morphology.
+
+\subsection{Paradigm distance}\label{section:pdgm_dist}
+For utilisation of Paramor or another paradigm producing algorithm in the clustering, the framework contains so called paradigm distance. For a word $w_1$ belonging to a set of paradigms $P_1$ and a word $w_2$ with paradigm set $P_2$ it is defined as $ 1 - \frac{\left| P_1 \cap P_2 \right| }{\sqrt{|P_1| |P_2|}} $. The fraction expresses the cosine similarity between the two paradigm sets.
+
+\section{Combination of distance metrics}
+Currently, the framework supports the Euclidean combination of distance metrics, i.e. for metrics $d_1, \ldots, d_n$, the value of the combined distance between $w_1$ and $w_2$ is $\sqrt{d_1(w_1, w_2)^2 + \ldots + d_n(w_1, w_2)^2}$.

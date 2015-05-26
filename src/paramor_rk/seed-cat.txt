@@ -1,0 +1,58 @@
+#From wikipedia 2012-03-16  (needed 30 min+15min)
+#+ extra examples from http://www.orbilat.com/Languages/Catalan/Grammar/Catalan-Noun.htm 
+
+#=== Plural (Nouns, Adjectives) ===
+
+roure, fort + 0/s
+
+balanç/balanc, dolç/dolc, cuc/cuqu, sec/sequ, oblic/obliqü, Pasqu/Pasqü, inicu/iniqü, platj/platg, roj/rog, vag/vagu, amarg/amargu, llengu/llengü, ambigu/ambigüe + a/es
+
+cantó/canto, ple/ple + 0/ns
+
+gas, gos/goss, braç, reflex, gris, espès + 0/os
+
+#extra examples 
+#-s
+
+noi, gat, fill, pare, mare, mar, vent, índex, falç + 0, s
+
+#Nouns in -a: -es
+
+gat, fill, poet + a, es
+
+#Nouns in stressed vowel (à ó ò ú í é è): -ns
+
+missió/missio + 0 / ns
+nació/nacio + 0 / ns
+capità/capita + 0 / ns
+
+#Masculines with "unpronounceable" plural in -s: -os
+
+braç, pis, nas, peix, sufix, despatx, disc, gest, text + 0, os
+
+passeig/passej, lleig/lletj + 0 / os
+
+#end extra examples 
+
+
+#=== Adjectives ===
+
+blanc/blanqu + 0, a, s / es
+feliç/felic + 0, os / es
+diferent + 0, s
+
+#=== Verbs ===
+
+#Conj 1 
+#Roots that end in c, ç, g, j, gu, or qu before endings that begin with e or i, there is an orthographic alteration to qu, c, gu, g, gü, and qü, respectively. 
+cant, tanc/tanqu, caç/cac, furg/furgu, raj/rag, obliqu/obliqü + ar, ant, at, o, a, ava, aves, ava, àvem, àveu, aven, ares, à, àrem, àreu, aren, aré, aràs, arà, arem, areu, aran, aria, aries, aria, aríem, aríeu, arien, a / es, em, eu, en, í, i, is, i, em, eu, in, és, essis, és, éssim, éssiu, essin, i, em, eu, in
+
+
+#Conj 2
+perd + re, ent, ut, o, s, 0, em, eu, en, ia, ies, ia, íem, íeu, ien, í, eres, é, érem, éreu, eren, ré, ràs, rà, rem, reu, ran, ria, ries, ria, ríem, ríeu, rien, i, is, i, em, eu, in, és, essis, és, éssim, éssiu, essin, 0, i, em, eu, in
+tém/tem + er / ent, ut, o, s, 0, em, eu, en, ia, ies, ia, íem, íeu, ien, í, eres, é, érem, éreu, eren, eré, eràs, erà, erem, ereu, eran, eria, eries, eria, eríem, eríeu, erien, i, is, i, em, eu, in, és, essis, és, éssim, éssiu, essin, i, em, eu, in
+
+#Conj 3
+sent + ir, int, it, o, s, 0, im, iu, en, ia, ies, ia, íem, íeu, ien, í, ires, í, írem, íreu, iren, iré, iràs, irà, irem, ireu, iran, iria, iries, iria, iríem, iríeu, irien, i, is, i, im, iu, in, ís, issis, ís, íssim, íssiu, issin, 0, i, im, iu, in
+
+acolor + ir, int, it, eixo, eixes, eix, im, iu, eixen, ia, ies, ia, íem, íeu, ien, í, ires, í, írem, íreu, iren, iré, iràs, irà, irem, ireu, iran, iria, iries, iria, iríem, iríeu, irien, eixi, eixis, eixi, im, iu, eixin, ís, issis, ís, íssim, íssiu, issin, eix, eixi, im, iu, eixin

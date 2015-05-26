@@ -1,0 +1,1941 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/radcliff/projects/thesis/paramor_rk/../resources/cz20/dev110kwPlain.txt
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  53 Clusters
+-----------------------
+
+>- Children's similarity: 0.006918469
+ | Affixes (9): (*null* ch ho koliv m mi mkoliv mu si)
+ | Stems   (850): (absurdní_ adresáře_ akaši_ americký_ apartmánů_ arabské_ architektů_ aristide_ atraktivní_ atraktivnější_nejatraktivnější__ atriu_ autonomní_ bankovní_ barevný_ be_nebe_nejbe_nejnebe__ bezpečný_nebezpečný__ bezpečí_nebezpečí__ bezprostřední_ blahopřání_ bližní_ bližší_nejbližší__ blízké_ blížící_ boje_ bojí_nebojí__ bosenské_ bosenský_ britský_ brněnské_ brouzdaliště_ ...)
+ | Types   (1750)
+ |
+ |>- Children's similarity: 0.029377900
+ | | Affixes (7): (*null* ch ho m mi mkoliv mu)
+ | | Stems   (847): (absurdní_ adresáře_ akaši_ americký_ apartmánů_ arabské_ architektů_ aristide_ atraktivní_ atraktivnější_nejatraktivnější__ atriu_ autonomní_ bankovní_ barevný_ be_nebe_nejbe_nejnebe__ bezpečný_nebezpečný__ bezpečí_nebezpečí__ bezprostřední_ blahopřání_ bližní_ bližší_nejbližší__ blízké_ blížící_ boje_ bojí_nebojí__ bosenské_ bosenský_ britský_ brněnské_ brouzdaliště_ ...)
+ | | Types   (1741)
+ | |
+ | |>- Children's similarity: 0.065795169
+ | | | Affixes (6): (*null* ch ho m mi mu)
+ | | | Stems   (847): (absurdní_ adresáře_ akaši_ americký_ apartmánů_ arabské_ architektů_ aristide_ atraktivní_ atraktivnější_nejatraktivnější__ atriu_ autonomní_ bankovní_ barevný_ be_nebe_nejbe_nejnebe__ bezpečný_nebezpečný__ bezpečí_nebezpečí__ bezprostřední_ blahopřání_ bližní_ bližší_nejbližší__ blízké_ blížící_ boje_ bojí_nebojí__ bosenské_ bosenský_ britský_ brněnské_ brouzdaliště_ ...)
+ | | | Types   (1738)
+ | | |
+ | | |>- Affixes (6): (*null* ch ho m mi mu)
+ | | | | Stems   (11): (další_ hlavní_ její_ nejvyšší_vyšší__ největší_větší__ netržní_tržní__ ostatní_ pracovní_ první_ vlastní_ zahraniční_)
+ | | | | Types   (66)
+ | | |
+ | |  >- Affixes (2): (*null* m)
+ | |   | Stems   (847): (absurdní_ adresáře_ akaši_ americký_ apartmánů_ arabské_ architektů_ aristide_ atraktivní_ atraktivnější_nejatraktivnější__ atriu_ autonomní_ bankovní_ barevný_ be_nebe_nejbe_nejnebe__ bezpečný_nebezpečný__ bezpečí_nebezpečí__ bezprostřední_ blahopřání_ bližní_ bližší_nejbližší__ blízké_ blížící_ boje_ bojí_nebojí__ bosenské_ bosenský_ britský_ brněnské_ brouzdaliště_ ...)
+ | |   | Types   (1694)
+ | |  
+ |  >- Affixes (2): (*null* mkoliv)
+ |   | Stems   (3): (jaké_ jaký_ které_)
+ |   | Types   (6)
+ |  
+  >- Affixes (3): (*null* koliv si)
+   | Stems   (4): (jakou_ jaké_ jakého_ jakým_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.056199193
+ | Affixes (8): (*null* e ech emi i ní í ích)
+ | Stems   (177): (akademi_ akc_akč__ akci_ aplikac_ asi_ asociac_asociač__ averz_ belgi_ bezpečnost_ boj_neboj__ budoucnost_ církv_ demokraci_ devalvac_devalvač__ diskus_ domácnost_ doporučuj_ dospěl_ dotac_ duš_ děl_neděl__ energi_ euthanasi_ existenc_neexistenc__ federac_ filozofi_ funkc_funkč__ fáz_ galeri_ garanc_garanč__ ...)
+ | Types   (576)
+ |
+ |>- Children's similarity: 0.348315273
+ | | Affixes (4): (*null* ech i í)
+ | | Stems   (68): (akci_ bezpečnost_ budoucnost_ domácnost_ dospěl_ hranic_hranič__ jmenován_ kancelář_ minulost_ moc_nemoc__ možnost_nemožnost__ mysl_nemysl__ měl_měn_neměl_neměn__ neodpovědnost_odpovědnost__ nepřítomnost_přítomnost__ neschopnost_schopnost__ nesmrt_smrt__ nestál_stál_stán__ neviděl_viděl_viděn__ nezkušenost_zkušenost__ neznal_znal__ neznalost_znalost__ neúčast_účast__ nečinnost_činnost__ nutnost_ oblast_ obuv_ odhodlanost_ okolnost_ osobnost_ ...)
+ | | Types   (215)
+ | |
+ | |>- Affixes (4): (*null* ech i í)
+ | | | Stems   (11): (domácnost_ možnost_nemožnost__ nezkušenost_zkušenost__ neznalost_znalost__ nečinnost_činnost__ oblast_ okolnost_ společnost_ starost_ událost_ část_)
+ | | | Types   (44)
+ | |
+ |  >- Affixes (3): (*null* i í)
+ |   | Stems   (68): (akci_ bezpečnost_ budoucnost_ domácnost_ dospěl_ hranic_hranič__ jmenován_ kancelář_ minulost_ moc_nemoc__ možnost_nemožnost__ mysl_nemysl__ měl_měn_neměl_neměn__ neodpovědnost_odpovědnost__ nepřítomnost_přítomnost__ neschopnost_schopnost__ nesmrt_smrt__ nestál_stál_stán__ neviděl_viděl_viděn__ nezkušenost_zkušenost__ neznal_znal__ neznalost_znalost__ neúčast_účast__ nečinnost_činnost__ nutnost_ oblast_ obuv_ odhodlanost_ okolnost_ osobnost_ ...)
+ |   | Types   (204)
+ |  
+  >- Children's similarity: 0.199722800
+   | Affixes (6): (e emi i ní í ích)
+   | Stems   (117): (akademi_ akc_akč__ akci_ aplikac_ asi_ asociac_asociač__ averz_ belgi_ boj_neboj__ církv_ demokraci_ devalvac_devalvač__ diskus_ doporučuj_ dotac_ duš_ děl_neděl__ energi_ euthanasi_ existenc_neexistenc__ federac_ filozofi_ funkc_funkč__ fáz_ galeri_ garanc_garanč__ generac_ havári_ hranic_hranič__ inflac_inflač__ ...)
+   | Types   (377)
+   |
+   |>- Children's similarity: 0.253184842
+   | | Affixes (4): (e emi i í)
+   | | Stems   (117): (akademi_ akc_akč__ akci_ aplikac_ asi_ asociac_asociač__ averz_ belgi_ boj_neboj__ církv_ demokraci_ devalvac_devalvač__ diskus_ doporučuj_ dotac_ duš_ děl_neděl__ energi_ euthanasi_ existenc_neexistenc__ federac_ filozofi_ funkc_funkč__ fáz_ galeri_ garanc_garanč__ generac_ havári_ hranic_hranič__ inflac_inflač__ ...)
+   | | Types   (361)
+   | |
+   | |>- Affixes (4): (e emi i í)
+   | | | Stems   (10): (akci_ církv_ diskus_ garanc_garanč__ hranic_hranič__ informac_informač__ instituc_ preferenc_ profes_ restituc_restituč__)
+   | | | Types   (40)
+   | |
+   |  >- Affixes (3): (e i í)
+   |   | Stems   (117): (akademi_ akc_akč__ akci_ aplikac_ asi_ asociac_asociač__ averz_ belgi_ boj_neboj__ církv_ demokraci_ devalvac_devalvač__ diskus_ doporučuj_ dotac_ duš_ děl_neděl__ energi_ euthanasi_ existenc_neexistenc__ federac_ filozofi_ funkc_funkč__ fáz_ galeri_ garanc_garanč__ generac_ havári_ hranic_hranič__ inflac_inflač__ ...)
+   |   | Types   (351)
+   |  
+    >- Affixes (5): (e i ní í ích)
+     | Stems   (8): (akc_akč__ děl_neděl__ hranic_hranič__ operac_operač__ organizac_organizač__ profes_ restituc_restituč__ silnic_silnič__)
+     | Types   (40)
+    
+
+>- Children's similarity: 0.044676705
+ | Affixes (14): (*null* a ami e ou ovek ovní ovních ovního u y ách ám ě)
+ | Stems   (48): (adres_ agentur_agentuř__ banc_bank__ burz_ cen_nejcen__ cest_ chyb_nechyb__ dom_nedom__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nepředstav_představ__ neruč_ruc_ruk_ruč__ nestran_stran__ nezměn_změn__ nezůstal_zůstal_zůstan__ novel_ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ prac_ příloh_příloz__ ...)
+ | Types   (338)
+ |
+ |>- Children's similarity: 0.063952948
+ | | Affixes (13): (*null* a ami e ou ovní ovních ovního u y ách ám ě)
+ | | Stems   (47): (adres_ agentur_agentuř__ banc_bank__ burz_ cen_nejcen__ cest_ chyb_nechyb__ dom_nedom__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nepředstav_představ__ neruč_ruc_ruk_ruč__ nestran_stran__ nezměn_změn__ nezůstal_zůstal_zůstan__ novel_ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ prac_ příloh_příloz__ ...)
+ | | Types   (334)
+ | |
+ | |>- Children's similarity: 0.075955453
+ | | | Affixes (12): (*null* a ami e ou ovní ovních u y ách ám ě)
+ | | | Stems   (45): (adres_ agentur_agentuř__ banc_bank__ burz_ cen_nejcen__ cest_ chyb_nechyb__ dom_nedom__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nepředstav_představ__ neruč_ruc_ruk_ruč__ nestran_stran__ nezměn_změn__ nezůstal_zůstal_zůstan__ novel_ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ příloh_příloz__ republic_republik__ ...)
+ | | | Types   (326)
+ | | |
+ | | |>- Children's similarity: 0.277619306
+ | | | | Affixes (10): (*null* a ami e ou u y ách ám ě)
+ | | | | Stems   (43): (adres_ agentur_agentuř__ banc_bank__ cen_nejcen__ cest_ chyb_nechyb__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nepředstav_představ__ neruč_ruc_ruk_ruč__ nestran_stran__ nezměn_změn__ nezůstal_zůstal_zůstan__ novel_ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ příloh_příloz__ republic_republik__ schůzc_schůzek_schůzk__ skupin_ ...)
+ | | | | Types   (312)
+ | | | |
+ | | | |>- Children's similarity: 0.458400842
+ | | | | | Affixes (9): (*null* a ami ou u y ách ám ě)
+ | | | | | Stems   (26): (banc_bank__ cen_nejcen__ cest_ chyb_nechyb__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ nepředstav_představ__ nestran_stran__ nezměn_změn__ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ republic_republik__ schůzc_schůzek_schůzk__ skupin_ služb_služeb__ smlouv_ variant_ volb_voleb__ zásad_ škol_)
+ | | | | | Types   (199)
+ | | | | |
+ | | | | |>- Children's similarity: 0.488733613
+ | | | | | | Affixes (9): (*null* a ami ou u y ách ám ě)
+ | | | | | | Stems   (21): (banc_bank__ cen_nejcen__ cest_ chyb_nechyb__ ekonomic_ekonomik__ firm_ hodnoc_hodnot__ nestran_stran__ nezměn_změn__ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ republic_republik__ schůzc_schůzek_schůzk__ skupin_ služb_služeb__ smlouv_ volb_voleb__ škol_)
+ | | | | | | Types   (164)
+ | | | | | |
+ | | | | | |>- Children's similarity: 0.588348405
+ | | | | | | | Affixes (9): (*null* a ami ou u y ách ám ě)
+ | | | | | | | Stems   (13): (banc_bank__ cen_nejcen__ cest_ ekonomic_ekonomik__ firm_ nestran_stran__ nezměn_změn__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ služb_služeb__ smlouv_ volb_voleb__ škol_)
+ | | | | | | | Types   (105)
+ | | | | | | |
+ | | | | | | |>- Children's similarity: 0.632455532
+ | | | | | | | | Affixes (8): (*null* a ami ou u y ách ám)
+ | | | | | | | | Stems   (12): (banc_bank__ cen_nejcen__ cest_ ekonomic_ekonomik__ firm_ nestran_stran__ nezměn_změn__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ služb_služeb__ volb_voleb__ škol_)
+ | | | | | | | | Types   (91)
+ | | | | | | | |
+ | | | | | | | |>- Affixes (7): (*null* a ou u y ách ám)
+ | | | | | | | | | Stems   (9): (banc_bank__ cest_ nestran_stran__ nezměn_změn__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ služb_služeb__ volb_voleb__ škol_)
+ | | | | | | | | | Types   (63)
+ | | | | | | | |
+ | | | | | | |  >- Affixes (7): (a ami ou u y ách ám)
+ | | | | | | |   | Stems   (10): (banc_bank__ cen_nejcen__ cest_ ekonomic_ekonomik__ firm_ nestran_stran__ nezměn_změn__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ volb_voleb__)
+ | | | | | | |   | Types   (70)
+ | | | | | | |  
+ | | | | | |  >- Affixes (7): (a ou u y ách ám ě)
+ | | | | | |   | Stems   (8): (cen_nejcen__ cest_ firm_ nestran_stran__ nezměn_změn__ služb_služeb__ smlouv_ volb_voleb__)
+ | | | | | |   | Types   (56)
+ | | | | | |  
+ | | | | |  >- Children's similarity: 0.547722558
+ | | | | |   | Affixes (8): (*null* a ami ou u y ách ě)
+ | | | | |   | Stems   (15): (banc_bank__ cest_ chyb_nechyb__ hodnoc_hodnot__ nestran_stran__ nezměn_změn__ návštěv_ osob_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ pošt_ republic_republik__ schůzc_schůzek_schůzk__ skupin_ volb_voleb__)
+ | | | | |   | Types   (112)
+ | | | | |   |
+ | | | | |   |>- Affixes (7): (*null* a ami ou u y ách)
+ | | | | |   | | Stems   (12): (banc_bank__ cest_ chyb_nechyb__ hodnoc_hodnot__ nestran_stran__ nezměn_změn__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ republic_republik__ schůzc_schůzek_schůzk__ skupin_ volb_voleb__)
+ | | | | |   | | Types   (84)
+ | | | | |   |
+ | | | | |    >- Affixes (7): (*null* a ami ou u y ě)
+ | | | | |     | Stems   (10): (cest_ chyb_nechyb__ hodnoc_hodnot__ nestran_stran__ nezměn_změn__ návštěv_ osob_ pošt_ skupin_ volb_voleb__)
+ | | | | |     | Types   (70)
+ | | | | |    
+ | | | |  >- Affixes (7): (*null* a ou u y ách ě)
+ | | | |   | Stems   (13): (cest_ chyb_nechyb__ hodnoc_hodnot__ jistot_nejistot__ kvalit_nejkvalit_nekvalit__ nepředstav_představ__ nestran_stran__ nezměn_změn__ skupin_ služb_služeb__ variant_ volb_voleb__ zásad_)
+ | | | |   | Types   (91)
+ | | | |  
+ | | |  >- Children's similarity: 0.319255903
+ | | |   | Affixes (9): (*null* a ami e ou u y ách ám)
+ | | |   | Stems   (24): (adres_ agentur_agentuř__ banc_bank__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ neruč_ruc_ruk_ruč__ nezůstal_zůstal_zůstan__ novel_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ příloh_příloz__ republic_republik__ schůzc_schůzek_schůzk__ stovc_stovek_stovk__ struktur_struktuř__ sázc_sázek_sázk__ technic_technik__ válc_válk__ záloh_záloz__ částc_částek_částk__ škol_)
+ | | |   | Types   (163)
+ | | |   |
+ | | |   |>- Children's similarity: 0.410770961
+ | | |   | | Affixes (8): (*null* a ami e ou u y ách)
+ | | |   | | Stems   (22): (adres_ agentur_agentuř__ banc_bank__ dostal_dostan_nedostal_nedostan__ ekonomic_ekonomik__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ neruč_ruc_ruk_ruč__ nezůstal_zůstal_zůstan__ novel_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ příloh_příloz__ republic_republik__ schůzc_schůzek_schůzk__ stovc_stovek_stovk__ technic_technik__ válc_válk__ záloh_záloz__ částc_částek_částk__ škol_)
+ | | |   | | Types   (146)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.471597049
+ | | |   | | | Affixes (7): (*null* a ami e ou u y)
+ | | |   | | | Stems   (19): (adres_ agentur_agentuř__ banc_bank__ dostal_dostan_nedostal_nedostan__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nezůstal_zůstal_zůstan__ novel_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ příloh_příloz__ republic_republik__ schůzc_schůzek_schůzk__ stovc_stovek_stovk__ technic_technik__ záloh_záloz__ částc_částek_částk__ škol_)
+ | | |   | | | Types   (121)
+ | | |   | | |
+ | | |   | | |>- Affixes (6): (*null* a ami e u y)
+ | | |   | | | | Stems   (9): (banc_bank__ novel_ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ příloh_příloz__ republic_republik__ schůzc_schůzek_schůzk__ technic_technik__ záloh_záloz__)
+ | | |   | | | | Types   (54)
+ | | |   | | |
+ | | |   | |  >- Affixes (6): (*null* a e ou u y)
+ | | |   | |   | Stems   (17): (adres_ agentur_agentuř__ banc_bank__ dostal_dostan_nedostal_nedostan__ myšlenc_myšlenek_myšlenk__ nabídc_nabídek_nabídk__ nepolitič_politic_politik_politič__ nezůstal_zůstal_zůstan__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ republic_republik__ schůzc_schůzek_schůzk__ stovc_stovek_stovk__ technic_technik__ záloh_záloz__ částc_částek_částk__ škol_)
+ | | |   | |   | Types   (102)
+ | | |   | |  
+ | | |   |  >- Affixes (6): (a e ou u y ách)
+ | | |   |   | Stems   (10): (banc_bank__ ekonomic_ekonomik__ nabídc_nabídek_nabídk__ neruč_ruc_ruk_ruč__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ republic_republik__ schůzc_schůzek_schůzk__ válc_válk__ škol_)
+ | | |   |   | Types   (60)
+ | | |   |  
+ | | |    >- Affixes (6): (*null* a e u y ám)
+ | | |     | Stems   (7): (banc_bank__ otázc_otázek_otázk__ podmínc_podmínek_podmínk__ stovc_stovek_stovk__ struktur_struktuř__ sázc_sázek_sázk__ škol_)
+ | | |     | Types   (42)
+ | | |    
+ | |  >- Affixes (4): (a ovní ovních y)
+ | |   | Stems   (5): (banc_bank__ burz_ cest_ dom_nedom__ pošt_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (3): (ovní ovních ovního)
+ |   | Stems   (4): (banc_bank__ cest_ prac_ sport_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (ovek u)
+   | Stems   (3): (cen_nejcen__ cest_ sjezd_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.070476148
+ | Affixes (16): (ost osti ostmi ostí ou á é ého ém ému ý ých ým ými ě ější)
+ | Stems   (37): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ běžn_ cenov_ ekonomick_ jak_ jin_ kter_ mal_nemal__ minul_ možn_nemožn__ nejnov_nov__ nejrůzn_různ__ nejsprávn_nesprávn_správn__ nejstar_star_stař__ nejvhodn_nevhodn_vhodn__ nejčern_čern__ nejžád_nežád_žád__ nepovinn_povinn__ nevoln_voln__ neznal_znal__ německ_ odborn_ osobn_ otevřel_otevřen__ politick_ příslušn_ skutečn_ soukrom_ současn_ společn_ ...)
+ | Types   (320)
+ |
+ |>- Children's similarity: 0.086570531
+ | | Affixes (15): (ost osti ostí ou á é ého ém ému ý ých ým ými ě ější)
+ | | Stems   (33): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ běžn_ cenov_ ekonomick_ jak_ jin_ kter_ mal_nemal__ minul_ možn_nemožn__ nejnov_nov__ nejrůzn_různ__ nejsprávn_nesprávn_správn__ nejstar_star_stař__ nejvhodn_nevhodn_vhodn__ nejčern_čern__ nevoln_voln__ německ_ odborn_ otevřel_otevřen__ politick_ příslušn_ skutečn_ soukrom_ současn_ společn_ stejn_ určit_ velk_ veřejn_ ...)
+ | | Types   (302)
+ | |
+ | |>- Children's similarity: 0.213402898
+ | | | Affixes (12): (ost osti ostí ou á é ého ý ých ým ě ější)
+ | | | Stems   (24): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ běžn_ cenov_ jak_ minul_ možn_nemožn__ nejnov_nov__ nejrůzn_různ__ nejsprávn_nesprávn_správn__ nejstar_star_stař__ nejvhodn_nevhodn_vhodn__ nejčern_čern__ nevoln_voln__ odborn_ otevřel_otevřen__ příslušn_ skutečn_ soukrom_ současn_ společn_ stejn_ určit_ veřejn_ vzájemn_)
+ | | | Types   (205)
+ | | |
+ | | |>- Children's similarity: 0.623609564
+ | | | | Affixes (9): (ost osti ostí ou á é ého ý ých)
+ | | | | Stems   (11): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ jak_ minul_ možn_nemožn__ nejstar_star_stař__ odborn_ příslušn_ skutečn_ současn_ společn_ veřejn_)
+ | | | | Types   (93)
+ | | | |
+ | | | |>- Affixes (7): (ost osti ostí ou á é ý)
+ | | | | | Stems   (9): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ minul_ možn_nemožn__ nejstar_star_stař__ příslušn_ skutečn_ současn_ společn_ veřejn_)
+ | | | | | Types   (63)
+ | | | |
+ | | |  >- Affixes (8): (ost osti ou á é ého ý ých)
+ | | |   | Stems   (9): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ jak_ minul_ nejstar_star_stař__ odborn_ příslušn_ skutečn_ současn_ veřejn_)
+ | | |   | Types   (72)
+ | | |  
+ | |  >- Children's similarity: 0.314485451
+ | |   | Affixes (9): (ou á é ého ý ých ým ě ější)
+ | |   | Stems   (17): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ běžn_ cenov_ nejnov_nov__ nejrůzn_různ__ nejsprávn_nesprávn_správn__ nejvhodn_nevhodn_vhodn__ nejčern_čern__ nevoln_voln__ otevřel_otevřen__ příslušn_ skutečn_ soukrom_ současn_ stejn_ určit_ vzájemn_)
+ | |   | Types   (136)
+ | |   |
+ | |   |>- Affixes (8): (ou á é ého ý ých ým ě)
+ | |   | | Stems   (13): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ běžn_ cenov_ nejnov_nov__ nejrůzn_různ__ nevoln_voln__ příslušn_ skutečn_ soukrom_ současn_ stejn_ určit_ vzájemn_)
+ | |   | | Types   (104)
+ | |   |
+ | |    >- Affixes (7): (ou á é ý ých ě ější)
+ | |     | Stems   (8): (bezpečn_nebezpečn_nejbezpečn_nejnebezpečn__ nejnov_nov__ nejrůzn_různ__ nejsprávn_nesprávn_správn__ nejvhodn_nevhodn_vhodn__ nejčern_čern__ nevoln_voln__ otevřel_otevřen__)
+ | |     | Types   (56)
+ | |    
+ |  >- Affixes (10): (ou á é ého ém ému ý ých ým ými)
+ |   | Stems   (11): (ekonomick_ jak_ jin_ kter_ mal_nemal__ nejnov_nov__ německ_ politick_ velk_ vysoc_vysok__ česk_)
+ |   | Types   (110)
+ |  
+  >- Affixes (4): (ost osti ostmi ostí)
+   | Stems   (6): (možn_nemožn__ nejžád_nežád_žád__ nepovinn_povinn__ neznal_znal__ osobn_ skutečn_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.051571062
+ | Affixes (25): (ají al ala ali alo aly ané aných at á án ána ání áním ávají ával ávali ávaly ávat ává ávám áváme ělal ělat ělá)
+ | Stems   (42): (ch_nech_nejch_nenech__ d_jd_ned_nejd__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ naps_ nejob_neob_ob__ nejpod_nepod_pod__ neoček_oček__ neočekáv_očekáv__ nepad_pad__ neposl_posl__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nepřizn_přizn__ neud_ud__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nevěnov_věnov__ nezísk_získ__ nezůst_zůst__ neček_ček__ ...)
+ | Types   (291)
+ |
+ |>- Children's similarity: 0.021320072
+ | | Affixes (23): (ají al ala ali alo aly ané aných at á án ána ání áním ávají ával ávali ávaly ávat ává ávám áváme ělat)
+ | | Stems   (41): (ch_nech_nejch_nenech__ d_jd_ned_nejd__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ naps_ nejob_neob_ob__ nejpod_nepod_pod__ neoček_oček__ neočekáv_očekáv__ nepad_pad__ neposl_posl__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nevěnov_věnov__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ ...)
+ | | Types   (282)
+ | |
+ | |>- Children's similarity: 0.112075815
+ | | | Affixes (22): (ají al ala ali alo aly ané aných at á án ána ání áním ávají ával ávali ávaly ávat ává ávám áváme)
+ | | | Stems   (40): (ch_nech_nejch_nenech__ d_jd_ned_nejd__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ naps_ nejob_neob_ob__ nejpod_nepod_pod__ neoček_oček__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nevěnov_věnov__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ ...)
+ | | | Types   (275)
+ | | |
+ | | |>- Children's similarity: 0.282842712
+ | | | | Affixes (6): (ávají ával ávat ává ávám áváme)
+ | | | | Stems   (8): (d_jd_ned_nejd__ dod_nedod__ dost_nedost__ nejob_neob_ob__ neoček_oček__ neprod_prod__ nevyd_vyd__ nezísk_získ__)
+ | | | | Types   (39)
+ | | | |
+ | | | |>- Affixes (5): (ávají ával ávat ává áváme)
+ | | | | | Stems   (6): (d_jd_ned_nejd__ dod_nedod__ dost_nedost__ neoček_oček__ neprod_prod__ nevyd_vyd__)
+ | | | | | Types   (30)
+ | | | |
+ | | |  >- Affixes (3): (ávají ávat ávám)
+ | | |   | Stems   (5): (dost_nedost__ nejob_neob_ob__ neoček_oček__ neprod_prod__ nezísk_získ__)
+ | | |   | Types   (15)
+ | | |  
+ | |  >- Children's similarity: 0.133333333
+ | |   | Affixes (19): (ají al ala ali alo aly ané aných at á án ána ání áním ávají ávali ávaly ávat ává)
+ | |   | Stems   (37): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ naps_ nejpod_nepod_pod__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nevěnov_věnov__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ prokáz_ prosazov_ přid_ ...)
+ | |   | Types   (247)
+ | |   |
+ | |   |>- Children's similarity: 0.143019388
+ | |   | | Affixes (18): (ají al ala ali alo aly ané aných at á án ána ání áním ávají ávaly ávat ává)
+ | |   | | Stems   (36): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ naps_ nejpod_nepod_pod__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nevěnov_věnov__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ prokáz_ prosazov_ přid_ setk_ ...)
+ | |   | | Types   (240)
+ | |   | |
+ | |   | |>- Children's similarity: 0.172582614
+ | |   | | | Affixes (17): (ají al ala ali alo aly ané aných at á án ání áním ávají ávaly ávat ává)
+ | |   | | | Stems   (32): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ hled_nehled__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ konstatov_ nejpod_nepod_pod__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevybudov_vybudov__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ přid_ setk_ sledov_ srovn_ trv_ uspořád_ ...)
+ | |   | | | Types   (220)
+ | |   | | |
+ | |   | | |>- Children's similarity: 0.210993925
+ | |   | | | | Affixes (16): (ají al ala ali alo aly ané aných at á án ání ávají ávaly ávat ává)
+ | |   | | | | Stems   (27): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ nejpod_nepod_pod__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepředpoklád_předpoklád__ nepřizn_přizn__ neuděl_uděl__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ přid_ setk_ srovn_ trv_ vybr_ vyvol_)
+ | |   | | | | Types   (191)
+ | |   | | | |
+ | |   | | | |>- Children's similarity: 0.262298998
+ | |   | | | | | Affixes (13): (ají al ala ali alo aly ané aných at á án ání ávat)
+ | |   | | | | | Stems   (23): (dost_nedost__ informov_ jedn_nejedn_nejjedn__ jmenov_nejmenov__ kol_kon_nekon__ nejpod_nepod_pod__ neočekáv_očekáv__ neposl_posl__ neprod_prod__ nepředpoklád_předpoklád__ neuděl_uděl__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ setk_ srovn_ trv_ vybr_ vyvol_)
+ | |   | | | | | Types   (159)
+ | |   | | | | |
+ | |   | | | | |>- Children's similarity: 0.357142857
+ | |   | | | | | | Affixes (9): (ají al ala ali alo at á ání ávat)
+ | |   | | | | | | Stems   (13): (dost_nedost__ jedn_nejedn_nejjedn__ kol_kon_nekon__ nejpod_nepod_pod__ neočekáv_očekáv__ nevyd_vyd__ nezísk_získ__ neček_ček__ požád_ setk_ srovn_ trv_ vyvol_)
+ | |   | | | | | | Types   (92)
+ | |   | | | | | |
+ | |   | | | | | |>- Children's similarity: 0.450748936
+ | |   | | | | | | | Affixes (7): (al ala ali alo at ání ávat)
+ | |   | | | | | | | Stems   (9): (dost_nedost__ jedn_nejedn_nejjedn__ nejpod_nepod_pod__ nevyd_vyd__ nezísk_získ__ neček_ček__ požád_ setk_ srovn_)
+ | |   | | | | | | | Types   (56)
+ | |   | | | | | | |
+ | |   | | | | | | |>- Affixes (6): (al ala ali alo at ání)
+ | |   | | | | | | | | Stems   (7): (dost_nedost__ jedn_nejedn_nejjedn__ nejpod_nepod_pod__ nevyd_vyd__ nezísk_získ__ neček_ček__ požád_)
+ | |   | | | | | | | | Types   (42)
+ | |   | | | | | | |
+ | |   | | | | | |  >- Affixes (5): (al ali at ání ávat)
+ | |   | | | | | |   | Stems   (6): (dost_nedost__ nejpod_nepod_pod__ nevyd_vyd__ nezísk_získ__ setk_ srovn_)
+ | |   | | | | | |   | Types   (30)
+ | |   | | | | | |  
+ | |   | | | | |  >- Affixes (7): (ají al ala alo at á ání)
+ | |   | | | | |   | Stems   (8): (jedn_nejedn_nejjedn__ kol_kon_nekon__ neočekáv_očekáv__ nevyd_vyd__ nezísk_získ__ neček_ček__ trv_ vyvol_)
+ | |   | | | | |   | Types   (56)
+ | |   | | | | |  
+ | |   | | | |  >- Children's similarity: 0.286299167
+ | |   | | | |   | Affixes (8): (al ala ali aly ané aných at án)
+ | |   | | | |   | Stems   (16): (dost_nedost__ informov_ jmenov_nejmenov__ nejpod_nepod_pod__ neposl_posl__ neprod_prod__ nepředpoklád_předpoklád__ neuděl_uděl__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_ vybr_)
+ | |   | | | |   | Types   (91)
+ | |   | | | |   |
+ | |   | | | |   |>- Children's similarity: 0.349927106
+ | |   | | | |   | | Affixes (7): (al ala ali ané aných at án)
+ | |   | | | |   | | Stems   (11): (informov_ jmenov_nejmenov__ nejpod_nepod_pod__ neprod_prod__ nepředpoklád_předpoklád__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ neček_ček__ podeps_ vybr_)
+ | |   | | | |   | | Types   (61)
+ | |   | | | |   | |
+ | |   | | | |   | |>- Children's similarity: 0.493770720
+ | |   | | | |   | | | Affixes (6): (al ala ali ané aných at)
+ | |   | | | |   | | | Stems   (9): (nejpod_nepod_pod__ neprod_prod__ nepředpoklád_předpoklád__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ neček_ček__ podeps_ vybr_)
+ | |   | | | |   | | | Types   (49)
+ | |   | | | |   | | |
+ | |   | | | |   | | |>- Affixes (5): (al ala ali ané at)
+ | |   | | | |   | | | | Stems   (7): (nejpod_nepod_pod__ nevyd_vyd__ nevyrovn_vyrovn__ nezísk_získ__ neček_ček__ podeps_ vybr_)
+ | |   | | | |   | | | | Types   (35)
+ | |   | | | |   | | |
+ | |   | | | |   | |  >- Affixes (5): (al ali ané aných at)
+ | |   | | | |   | |   | Stems   (6): (neprod_prod__ nepředpoklád_předpoklád__ nevyd_vyd__ nezísk_získ__ podeps_ vybr_)
+ | |   | | | |   | |   | Types   (30)
+ | |   | | | |   | |  
+ | |   | | | |   |  >- Affixes (4): (al ala at án)
+ | |   | | | |   |   | Stems   (6): (informov_ jmenov_nejmenov__ nejpod_nepod_pod__ nevyd_vyd__ podeps_ vybr_)
+ | |   | | | |   |   | Types   (24)
+ | |   | | | |   |  
+ | |   | | | |    >- Affixes (5): (al ala ali aly at)
+ | |   | | | |     | Stems   (9): (dost_nedost__ informov_ neposl_posl__ neuděl_uděl__ nezísk_získ__ nezůst_zůst__ neček_ček__ podeps_ požád_)
+ | |   | | | |     | Types   (45)
+ | |   | | | |    
+ | |   | | |  >- Children's similarity: 0.258198890
+ | |   | | |   | Affixes (6): (al ala at ávají ávaly ává)
+ | |   | | |   | Stems   (11): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ nejpod_nepod_pod__ neprod_prod__ nepřizn_přizn__ nevyd_vyd__ nezísk_získ__ nezůst_zůst__ přid_ vyvol_)
+ | |   | | |   | Types   (51)
+ | |   | | |   |
+ | |   | | |   |>- Children's similarity: 0.501114829
+ | |   | | |   | | Affixes (5): (al ala at ávají ává)
+ | |   | | |   | | Stems   (10): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ nejpod_nepod_pod__ neprod_prod__ nepřizn_přizn__ nevyd_vyd__ nezůst_zůst__ přid_ vyvol_)
+ | |   | | |   | | Types   (45)
+ | |   | | |   | |
+ | |   | | |   | |>- Affixes (4): (al ala at ává)
+ | |   | | |   | | | Stems   (8): (ch_nech_nejch_nenech__ dod_nedod__ dost_nedost__ nejpod_nepod_pod__ nepřizn_přizn__ nevyd_vyd__ nezůst_zůst__ vyvol_)
+ | |   | | |   | | | Types   (32)
+ | |   | | |   | |
+ | |   | | |   |  >- Affixes (4): (al at ávají ává)
+ | |   | | |   |   | Stems   (7): (dod_nedod__ dost_nedost__ neprod_prod__ nepřizn_přizn__ nevyd_vyd__ nezůst_zůst__ přid_)
+ | |   | | |   |   | Types   (28)
+ | |   | | |   |  
+ | |   | | |    >- Affixes (3): (al at ávaly)
+ | |   | | |     | Stems   (4): (dod_nedod__ neprod_prod__ nezísk_získ__ přid_)
+ | |   | | |     | Types   (12)
+ | |   | | |    
+ | |   | |  >- Affixes (5): (al ali at ání áním)
+ | |   | |   | Stems   (9): (hled_nehled__ jedn_nejedn_nejjedn__ konstatov_ nevybudov_vybudov__ nevyd_vyd__ nezísk_získ__ setk_ sledov_ uspořád_)
+ | |   | |   | Types   (45)
+ | |   | |  
+ | |   |  >- Affixes (4): (al ala at ána)
+ | |   |   | Stems   (8): (informov_ naps_ neočekáv_očekáv__ nevěnov_věnov__ podeps_ prokáz_ prosazov_ vybr_)
+ | |   |   | Types   (32)
+ | |   |  
+ | |    >- Affixes (3): (ali at ávali)
+ | |     | Stems   (5): (dost_nedost__ neprod_prod__ nepřed_před__ nezůst_zůst__ srovn_)
+ | |     | Types   (15)
+ | |    
+ |  >- Affixes (2): (á ělat)
+ |   | Stems   (4): (d_jd_ned_nejd__ nepad_pad__ neprod_prod__ nevyd_vyd__)
+ |   | Types   (8)
+ |  
+  >- Affixes (3): (ělal ělat ělá)
+   | Stems   (4): (d_jd_ned_nejd__ neprod_prod__ neud_ud__ nevyd_vyd__)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.034145805
+ | Affixes (10): (*null* a em i o ovi u y ů ům)
+ | Stems   (51): (autor_ byl_nebyl__ chtěl_nechtěl__ dostal_dostan_nedostal_nedostan__ dosáhl_dosáhn_nedosáhl__ investor_investoř__ kandidát_ kapr_kapř__ klient_ manažer_manažeř__ ministr_ministř__ mohl_nemohl__ musel_nemusel__ měl_měn_neměl_neměn__ neobjevil_objevil__ neplatil_platil__ nepolitič_politic_politik_politič__ nepotvrdil_potvrdil__ nepřinesl_přinesl__ nestal_stal_stan__ nestačil_stačil__ nestál_stál_stán__ nesvobod_svobod__ neumožnil_umožnil__ nezměnil_změnil__ nezískal_získal__ nezůstal_zůstal_zůstan__ nečekal_čekal__ obchodníc_obchodník__ občan_ ...)
+ | Types   (288)
+ |
+ |>- Children's similarity: 0.133333333
+ | | Affixes (6): (*null* a i o u y)
+ | | Stems   (28): (byl_nebyl__ chtěl_nechtěl__ dostal_dostan_nedostal_nedostan__ dosáhl_dosáhn_nedosáhl__ mohl_nemohl__ musel_nemusel__ měl_měn_neměl_neměn__ neobjevil_objevil__ neplatil_platil__ nepolitič_politic_politik_politič__ nepotvrdil_potvrdil__ nepřinesl_přinesl__ nestal_stal_stan__ nestačil_stačil__ nestál_stál_stán__ neumožnil_umožnil__ nezměnil_změnil__ nezískal_získal__ nezůstal_zůstal_zůstan__ nečekal_čekal__ otevřel_otevřen__ požádal_ premiér_premiéř__ přestal_přestan__ technic_technik__ zahynul_ začal_ způsobil_)
+ | | Types   (142)
+ | |
+ | |>- Affixes (5): (*null* a i o y)
+ | | | Stems   (24): (byl_nebyl__ chtěl_nechtěl__ dostal_dostan_nedostal_nedostan__ dosáhl_dosáhn_nedosáhl__ mohl_nemohl__ musel_nemusel__ měl_měn_neměl_neměn__ neobjevil_objevil__ neplatil_platil__ nepotvrdil_potvrdil__ nepřinesl_přinesl__ nestal_stal_stan__ nestačil_stačil__ nestál_stál_stán__ neumožnil_umožnil__ nezměnil_změnil__ nezískal_získal__ nečekal_čekal__ otevřel_otevřen__ požádal_ přestal_přestan__ zahynul_ začal_ způsobil_)
+ | | | Types   (120)
+ | |
+ |  >- Affixes (5): (*null* a i u y)
+ |   | Stems   (6): (dostal_dostan_nedostal_nedostan__ měl_měn_neměl_neměn__ nepolitič_politic_politik_politič__ nezůstal_zůstal_zůstan__ premiér_premiéř__ technic_technik__)
+ |   | Types   (30)
+ |  
+  >- Children's similarity: 0.106198849
+   | Affixes (9): (*null* a em i ovi u y ů ům)
+   | Stems   (24): (autor_ investor_investoř__ kandidát_ kapr_kapř__ klient_ manažer_manažeř__ ministr_ministř__ nesvobod_svobod__ obchodníc_obchodník__ občan_ odborníc_odborník__ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ předsed_ příslušníc_příslušník__ senn_ smetan_ společníc_společník__ student_ vlastníc_vlastník__ zákazníc_zákazník__ člen_)
+   | Types   (151)
+   |
+   |>- Children's similarity: 0.426575581
+   | | Affixes (8): (*null* a em i ovi y ů ům)
+   | | Stems   (20): (autor_ investor_investoř__ kandidát_ kapr_kapř__ klient_ manažer_manažeř__ ministr_ministř__ obchodníc_obchodník__ občan_ odborníc_odborník__ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ příslušníc_příslušník__ společníc_společník__ student_ vlastníc_vlastník__ zákazníc_zákazník__ člen_)
+   | | Types   (133)
+   | |
+   | |>- Children's similarity: 0.462250164
+   | | | Affixes (8): (*null* a em i ovi y ů ům)
+   | | | Stems   (15): (autor_ investor_investoř__ klient_ manažer_manažeř__ obchodníc_obchodník__ občan_ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ příslušníc_příslušník__ student_ vlastníc_vlastník__ zákazníc_zákazník__ člen_)
+   | | | Types   (102)
+   | | |
+   | | |>- Children's similarity: 0.626600515
+   | | | | Affixes (8): (*null* a em i ovi y ů ům)
+   | | | | Stems   (11): (autor_ investor_investoř__ klient_ občan_ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ student_ zákazníc_zákazník__ člen_)
+   | | | | Types   (78)
+   | | | |
+   | | | |>- Children's similarity: 0.556794254
+   | | | | | Affixes (7): (*null* a em ovi y ů ům)
+   | | | | | Stems   (10): (autor_ klient_ občan_ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ student_ zákazníc_zákazník__ člen_)
+   | | | | | Types   (65)
+   | | | | |
+   | | | | |>- Affixes (6): (*null* a em ovi y ů)
+   | | | | | | Stems   (8): (autor_ občan_ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ zákazníc_zákazník__ člen_)
+   | | | | | | Types   (48)
+   | | | | |
+   | | | |  >- Affixes (6): (*null* a ovi y ů ům)
+   | | | |   | Stems   (7): (klient_ občan_ pacient_ pracovníc_pracovník__ student_ zákazníc_zákazník__ člen_)
+   | | | |   | Types   (42)
+   | | | |  
+   | | |  >- Affixes (6): (*null* a i ovi y ů)
+   | | |   | Stems   (8): (investor_investoř__ klient_ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ student_ zákazníc_zákazník__)
+   | | |   | Types   (48)
+   | | |  
+   | |  >- Affixes (6): (*null* a i y ů ům)
+   | |   | Stems   (9): (klient_ manažer_manažeř__ obchodníc_obchodník__ pacient_ pracovníc_pracovník__ příslušníc_příslušník__ student_ vlastníc_vlastník__ zákazníc_zákazník__)
+   | |   | Types   (54)
+   | |  
+   |  >- Affixes (6): (*null* a em i y ů)
+   |   | Stems   (11): (kandidát_ kapr_kapř__ manažer_manažeř__ ministr_ministř__ odborníc_odborník__ pacient_ partner_partneř__ pracovníc_pracovník__ premiér_premiéř__ společníc_společník__ zákazníc_zákazník__)
+   |   | Types   (66)
+   |  
+    >- Affixes (4): (a ovi u y)
+     | Stems   (6): (nesvobod_svobod__ premiér_premiéř__ předsed_ senn_ smetan_ člen_)
+     | Types   (24)
+    
+
+>- Children's similarity: 0.085125653
+ | Affixes (15): (*null* em ovou ová ové ového ovém ový ových ovým ovými ově u y ů)
+ | Stems   (35): (celek_celk__ cen_nejcen__ dal_dan_daň_nedal__ dom_nedom__ hot_ hotel_ kapitál_kapitán__ leasing_ levic_ lid_ majetek_majetk__ marketing_ mzd_ mír_míř__ měl_měn_neměl_neměn__ n_nejn_nen__ nepodnik_podnic_podnik__ neras_ras__ nezisk_zisk__ obraz_ odbor_ pobyt_ povrch_ program_ průmysl_ příjm_ příspěvek_příspěvk__ republic_republik__ svět_ tak_ ...)
+ | Types   (225)
+ |
+ |>- Children's similarity: 0.095079854
+ | | Affixes (15): (*null* em ovou ová ové ového ovém ový ových ovým ovými ově u y ů)
+ | | Stems   (31): (celek_celk__ cen_nejcen__ dal_dan_daň_nedal__ hot_ hotel_ kapitál_kapitán__ leasing_ levic_ lid_ majetek_majetk__ marketing_ mzd_ mír_míř__ měl_měn_neměl_neměn__ n_nejn_nen__ nepodnik_podnic_podnik__ neras_ras__ nezisk_zisk__ obraz_ odbor_ pobyt_ povrch_ program_ průmysl_ příspěvek_příspěvk__ republic_republik__ svět_ tak_ zásilc_zásilek_zásilk__ úvěr_ špičc_špiček_špičk__)
+ | | Types   (207)
+ | |
+ | |>- Children's similarity: 0.102778306
+ | | | Affixes (13): (*null* ovou ová ové ového ovém ový ových ovým ovými ově u y)
+ | | | Stems   (25): (celek_celk__ cen_nejcen__ dal_dan_daň_nedal__ hot_ kapitál_kapitán__ leasing_ levic_ lid_ majetek_majetk__ marketing_ mzd_ mír_míř__ měl_měn_neměl_neměn__ n_nejn_nen__ nepodnik_podnic_podnik__ neras_ras__ odbor_ povrch_ program_ průmysl_ republic_republik__ svět_ tak_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | Types   (160)
+ | | |
+ | | |>- Children's similarity: 0.149378879
+ | | | | Affixes (11): (*null* ovou ová ové ového ovém ový ových ovým u y)
+ | | | | Stems   (22): (celek_celk__ cen_nejcen__ dal_dan_daň_nedal__ kapitál_kapitán__ leasing_ lid_ majetek_majetk__ marketing_ mzd_ mír_míř__ měl_měn_neměl_neměn__ n_nejn_nen__ nepodnik_podnic_podnik__ odbor_ povrch_ program_ průmysl_ republic_republik__ svět_ tak_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | | Types   (142)
+ | | | |
+ | | | |>- Children's similarity: 0.196747751
+ | | | | | Affixes (9): (*null* ovou ová ové ového ovém ový ových u)
+ | | | | | Stems   (19): (celek_celk__ cen_nejcen__ dal_dan_daň_nedal__ kapitál_kapitán__ leasing_ lid_ majetek_majetk__ marketing_ mzd_ mír_míř__ n_nejn_nen__ nepodnik_podnic_podnik__ odbor_ povrch_ průmysl_ svět_ tak_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | | | Types   (121)
+ | | | | |
+ | | | | |>- Children's similarity: 0.358057437
+ | | | | | | Affixes (8): (*null* ovou ová ové ového ovém ových u)
+ | | | | | | Stems   (14): (celek_celk__ dal_dan_daň_nedal__ kapitál_kapitán__ majetek_majetk__ marketing_ n_nejn_nen__ nepodnik_podnic_podnik__ odbor_ povrch_ průmysl_ svět_ tak_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | | | | Types   (93)
+ | | | | | |
+ | | | | | |>- Children's similarity: 0.556794254
+ | | | | | | | Affixes (7): (*null* ovou ová ové ového ových u)
+ | | | | | | | Stems   (10): (celek_celk__ kapitál_kapitán__ majetek_majetk__ marketing_ nepodnik_podnic_podnik__ odbor_ průmysl_ svět_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | | | | | Types   (65)
+ | | | | | | |
+ | | | | | | |>- Affixes (6): (*null* ovou ové ového ových u)
+ | | | | | | | | Stems   (7): (celek_celk__ kapitál_kapitán__ majetek_majetk__ marketing_ nepodnik_podnic_podnik__ průmysl_ svět_)
+ | | | | | | | | Types   (42)
+ | | | | | | |
+ | | | | | |  >- Affixes (6): (*null* ová ové ového ových u)
+ | | | | | |   | Stems   (8): (celek_celk__ kapitál_kapitán__ nepodnik_podnic_podnik__ odbor_ průmysl_ svět_ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | | | | |   | Types   (48)
+ | | | | | |  
+ | | | | |  >- Affixes (6): (ovou ová ové ového ovém ových)
+ | | | | |   | Stems   (8): (celek_celk__ dal_dan_daň_nedal__ kapitál_kapitán__ n_nejn_nen__ nepodnik_podnic_podnik__ povrch_ svět_ tak_)
+ | | | | |   | Types   (48)
+ | | | | |  
+ | | | |  >- Affixes (5): (ovou ové ový ových u)
+ | | | |   | Stems   (8): (cen_nejcen__ kapitál_kapitán__ leasing_ lid_ marketing_ mzd_ mír_míř__ svět_)
+ | | | |   | Types   (40)
+ | | | |  
+ | | |  >- Affixes (5): (*null* ové ovým u y)
+ | | |   | Stems   (6): (celek_celk__ měl_měn_neměl_neměn__ program_ republic_republik__ zásilc_zásilek_zásilk__ špičc_špiček_špičk__)
+ | | |   | Types   (30)
+ | | |  
+ | |  >- Affixes (4): (ovou ové ovými ově)
+ | |   | Stems   (6): (celek_celk__ hot_ levic_ n_nejn_nen__ neras_ras__ průmysl_)
+ | |   | Types   (24)
+ | |  
+ |  >- Affixes (7): (*null* em ové ových u y ů)
+ |   | Stems   (8): (celek_celk__ hotel_ nepodnik_podnic_podnik__ nezisk_zisk__ obraz_ pobyt_ příspěvek_příspěvk__ úvěr_)
+ |   | Types   (56)
+ |  
+  >- Affixes (4): (em ově u y)
+   | Stems   (6): (celek_celk__ dom_nedom__ program_ příjm_ věc_věk_věč__ účel_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.066097897
+ | Affixes (20): (en ena eno enou eny ená ené eného eném enému ení ením ený ených eným eně il ila it í)
+ | Stems   (31): (dovol_nedovol__ hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neomez_omez__ neozbroj_ozbroj__ nepostav_postav__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ nevytvoř_vytvoř__ nezříz_zříz__ neřeš_řeš__ nuc_nut__ otevř_ potvrz_ slož_ sníž_ stanov_ urychl_ uved_ zaháj_ založ_ zamor_zamoř__ zaměř_ zařaz_ zrychl_ zvýš_ červ_)
+ | Types   (213)
+ |
+ |>- Children's similarity: 0.082060994
+ | | Affixes (19): (en ena eno enou eny ená ené eného eném ení ením ený ených eným eně il ila it í)
+ | | Stems   (29): (dovol_nedovol__ hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neomez_omez__ nepostav_postav__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ nevytvoř_vytvoř__ neřeš_řeš__ nuc_nut__ otevř_ potvrz_ slož_ sníž_ stanov_ urychl_ uved_ zaháj_ založ_ zamor_zamoř__ zaměř_ zařaz_ zrychl_ zvýš_ červ_)
+ | | Types   (206)
+ | |
+ | |>- Children's similarity: 0.098907071
+ | | | Affixes (18): (en ena eno enou eny ená ené eného eném ení ením ený ených eným il ila it í)
+ | | | Stems   (27): (dovol_nedovol__ hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neomez_omez__ nepostav_postav__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ nevytvoř_vytvoř__ neřeš_řeš__ otevř_ potvrz_ slož_ sníž_ stanov_ uved_ zaháj_ založ_ zamor_zamoř__ zaměř_ zařaz_ zrychl_ zvýš_ červ_)
+ | | | Types   (198)
+ | | |
+ | | |>- Children's similarity: 0.125988158
+ | | | | Affixes (16): (en ena eno enou eny ená ené eného ení ený ených eným il ila it í)
+ | | | | Stems   (26): (dovol_nedovol__ hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neomez_omez__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ nevytvoř_vytvoř__ neřeš_řeš__ otevř_ potvrz_ slož_ sníž_ stanov_ uved_ zaháj_ založ_ zamor_zamoř__ zaměř_ zařaz_ zrychl_ zvýš_ červ_)
+ | | | | Types   (184)
+ | | | |
+ | | | |>- Children's similarity: 0.158549278
+ | | | | | Affixes (15): (en ena eno enou eny ená ené ení ený ených eným il ila it í)
+ | | | | | Stems   (23): (hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neomez_omez__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ nevytvoř_vytvoř__ neřeš_řeš__ otevř_ potvrz_ slož_ sníž_ stanov_ uved_ zaháj_ založ_ zaměř_ zařaz_ zrychl_ zvýš_)
+ | | | | | Types   (168)
+ | | | | |
+ | | | | |>- Children's similarity: 0.357142857
+ | | | | | | Affixes (7): (en ena ení il ila it í)
+ | | | | | | Stems   (11): (hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neschvál_schvál__ neurč_urč__ nevytvoř_vytvoř__ neřeš_řeš__ sníž_ stanov_ zaháj_ zaměř_ zvýš_)
+ | | | | | | Types   (69)
+ | | | | | |
+ | | | | | |>- Affixes (6): (en ena ení ila it í)
+ | | | | | | | Stems   (7): (hodnoc_hodnot__ nejpřesvědč_nepřesvědč_přesvědč__ neschvál_schvál__ neurč_urč__ neřeš_řeš__ stanov_ zaměř_)
+ | | | | | | | Types   (42)
+ | | | | | |
+ | | | | |  >- Affixes (6): (ena ení il ila it í)
+ | | | | |   | Stems   (7): (nejpřesvědč_nepřesvědč_přesvědč__ neschvál_schvál__ nevytvoř_vytvoř__ sníž_ zaháj_ zaměř_ zvýš_)
+ | | | | |   | Types   (42)
+ | | | | |  
+ | | | |  >- Children's similarity: 0.199263349
+ | | | |   | Affixes (11): (en ena eno enou eny ená ené ení ený ených eným)
+ | | | |   | Stems   (17): (neomez_omez__ nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ otevř_ potvrz_ slož_ sníž_ stanov_ uved_ založ_ zaměř_ zařaz_ zrychl_)
+ | | | |   | Types   (113)
+ | | | |   |
+ | | | |   |>- Children's similarity: 0.275624731
+ | | | |   | | Affixes (10): (en ena eno enou eny ená ené ení ený ených)
+ | | | |   | | Stems   (15): (nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ neuzavř_uzavř__ otevř_ potvrz_ slož_ sníž_ stanov_ uved_ založ_ zaměř_ zařaz_)
+ | | | |   | | Types   (102)
+ | | | |   | |
+ | | | |   | |>- Children's similarity: 0.418853908
+ | | | |   | | | Affixes (9): (en ena eno eny ená ené ení ený ených)
+ | | | |   | | | Stems   (13): (nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ otevř_ potvrz_ slož_ stanov_ uved_ založ_ zaměř_ zařaz_)
+ | | | |   | | | Types   (86)
+ | | | |   | | |
+ | | | |   | | |>- Children's similarity: 0.370991117
+ | | | |   | | | | Affixes (8): (en ena eno eny ené ení ený ených)
+ | | | |   | | | | Stems   (12): (nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ neurč_urč__ otevř_ slož_ stanov_ uved_ založ_ zaměř_ zařaz_)
+ | | | |   | | | | Types   (76)
+ | | | |   | | | |
+ | | | |   | | | |>- Children's similarity: 0.487950036
+ | | | |   | | | | | Affixes (7): (en ena eno ené ení ený ených)
+ | | | |   | | | | | Stems   (10): (nepovol_povol__ nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ otevř_ slož_ uved_ založ_ zaměř_ zařaz_)
+ | | | |   | | | | | Types   (62)
+ | | | |   | | | | |
+ | | | |   | | | | |>- Affixes (5): (en ena ené ení ený)
+ | | | |   | | | | | | Stems   (8): (nepověř_pověř__ neschvál_schvál__ nespoj_spoj__ otevř_ slož_ založ_ zaměř_ zařaz_)
+ | | | |   | | | | | | Types   (40)
+ | | | |   | | | | |
+ | | | |   | | | |  >- Affixes (6): (en eno ené ení ený ených)
+ | | | |   | | | |   | Stems   (7): (nepovol_povol__ neschvál_schvál__ nespoj_spoj__ otevř_ uved_ zaměř_ zařaz_)
+ | | | |   | | | |   | Types   (42)
+ | | | |   | | | |  
+ | | | |   | | |  >- Affixes (5): (en ena eny ené ení)
+ | | | |   | | |   | Stems   (6): (nespoj_spoj__ neurč_urč__ otevř_ stanov_ založ_ zařaz_)
+ | | | |   | | |   | Types   (30)
+ | | | |   | | |  
+ | | | |   | |  >- Affixes (5): (en ena ená ené ení)
+ | | | |   | |   | Stems   (6): (nepověř_pověř__ neschvál_schvál__ otevř_ potvrz_ slož_ stanov_)
+ | | | |   | |   | Types   (30)
+ | | | |   | |  
+ | | | |   |  >- Affixes (5): (ena enou ené ení ených)
+ | | | |   |   | Stems   (6): (neschvál_schvál__ neurč_urč__ neuzavř_uzavř__ otevř_ sníž_ stanov_)
+ | | | |   |   | Types   (30)
+ | | | |   |  
+ | | | |    >- Affixes (4): (ené ení ený eným)
+ | | | |     | Stems   (5): (neomez_omez__ nespoj_spoj__ otevř_ uved_ zrychl_)
+ | | | |     | Types   (20)
+ | | | |    
+ | | |  >- Affixes (4): (enou ené eného ených)
+ | | |   | Stems   (6): (dovol_nedovol__ neschvál_schvál__ stanov_ uved_ zamor_zamoř__ červ_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (4): (ená eném ení ením)
+ | |   | Stems   (5): (neomez_omez__ nepostav_postav__ neschvál_schvál__ otevř_ uved_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (3): (enou ené eně)
+ |   | Stems   (4): (dovol_nedovol__ nuc_nut__ otevř_ urychl_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (enému ení)
+   | Stems   (5): (neomez_omez__ neozbroj_ozbroj__ nezříz_zříz__ otevř_ uved_)
+   | Types   (10)
+  
+
+>- Children's similarity: 0.139338253
+ | Affixes (13): (oval ovala ovali ovaly ovat ován ována ovány ování uje uji ují ující)
+ | Stems   (30): (boj_neboj__ dodrž_nedodrž__ fung_nefung__ inform_ jmen_men_nejmen__ navaz_ navrh_ neobsaz_obsah_obsaz__ nepodpoř_podpor_podpoř__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nereag_reag__ nerespekt_respekt__ nesled_sled__ neslib_slib__ nevyhov_vyhov__ nevěn_věn__ nezastup_zastup__ pohyb_ požad_ prac_ projev_ prosaz_ upozorn_upozorň__ vyjadř_ vyžad_ zvyš_)
+ | Types   (168)
+ |
+ |>- Children's similarity: 0.182616463
+ | | Affixes (12): (oval ovala ovali ovaly ovat ován ována ovány ování uje ují ující)
+ | | Stems   (26): (boj_neboj__ dodrž_nedodrž__ fung_nefung__ inform_ jmen_men_nejmen__ navaz_ neobsaz_obsah_obsaz__ nepodpoř_podpor_podpoř__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nereag_reag__ nerespekt_respekt__ nesled_sled__ nevyhov_vyhov__ nevěn_věn__ pohyb_ požad_ prac_ projev_ prosaz_ vyjadř_ vyžad_ zvyš_)
+ | | Types   (149)
+ | |
+ | |>- Children's similarity: 0.384900179
+ | | | Affixes (5): (ovat ován ovány uje ují)
+ | | | Stems   (8): (dodrž_nedodrž__ inform_ jmen_men_nejmen__ nepodpoř_podpor_podpoř__ neposkyt_poskyt__ nepovaž_považ__ nerespekt_respekt__ vyžad_)
+ | | | Types   (34)
+ | | |
+ | | |>- Affixes (3): (ovat ován uje)
+ | | | | Stems   (6): (dodrž_nedodrž__ inform_ jmen_men_nejmen__ nepodpoř_podpor_podpoř__ neposkyt_poskyt__ nepovaž_považ__)
+ | | | | Types   (18)
+ | | |
+ | |  >- Affixes (4): (ovat ovány uje ují)
+ | |   | Stems   (6): (inform_ jmen_men_nejmen__ neposkyt_poskyt__ nepovaž_považ__ nerespekt_respekt__ vyžad_)
+ | |   | Types   (24)
+ | |  
+ |  >- Children's similarity: 0.205075778
+ |   | Affixes (10): (oval ovala ovali ovaly ovat ována ování uje ují ující)
+ |   | Stems   (22): (boj_neboj__ fung_nefung__ inform_ jmen_men_nejmen__ navaz_ neobsaz_obsah_obsaz__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nereag_reag__ nesled_sled__ nevyhov_vyhov__ nevěn_věn__ pohyb_ požad_ prac_ projev_ prosaz_ vyjadř_ zvyš_)
+ |   | Types   (127)
+ |   |
+ |   |>- Children's similarity: 0.368229847
+ |   | | Affixes (9): (oval ovala ovaly ovat ována ování uje ují ující)
+ |   | | Stems   (18): (boj_neboj__ fung_nefung__ inform_ jmen_men_nejmen__ navaz_ neobsaz_obsah_obsaz__ nepokrač_pokrač__ neposkyt_poskyt__ nepovaž_považ__ nepředstav_představ__ nereag_reag__ nesled_sled__ nevyhov_vyhov__ nevěn_věn__ požad_ prac_ prosaz_ zvyš_)
+ |   | | Types   (107)
+ |   | |
+ |   | |>- Children's similarity: 0.435464843
+ |   | | | Affixes (6): (oval ovaly ovat uje ují ující)
+ |   | | | Stems   (11): (boj_neboj__ fung_nefung__ navaz_ neobsaz_obsah_obsaz__ nepokrač_pokrač__ neposkyt_poskyt__ nepředstav_představ__ nevyhov_vyhov__ nevěn_věn__ prac_ zvyš_)
+ |   | | | Types   (59)
+ |   | | |
+ |   | | |>- Affixes (5): (oval ovat uje ují ující)
+ |   | | | | Stems   (9): (boj_neboj__ fung_nefung__ neobsaz_obsah_obsaz__ nepokrač_pokrač__ nepředstav_představ__ nevyhov_vyhov__ nevěn_věn__ prac_ zvyš_)
+ |   | | | | Types   (45)
+ |   | | |
+ |   | |  >- Affixes (5): (ovaly ovat uje ují ující)
+ |   | |   | Stems   (6): (navaz_ neobsaz_obsah_obsaz__ nepokrač_pokrač__ neposkyt_poskyt__ nevyhov_vyhov__ nevěn_věn__)
+ |   | |   | Types   (30)
+ |   | |  
+ |   |  >- Children's similarity: 0.383570641
+ |   |   | Affixes (7): (oval ovala ovat ována ování uje ují)
+ |   |   | Stems   (13): (fung_nefung__ inform_ jmen_men_nejmen__ nepokrač_pokrač__ nepovaž_považ__ nereag_reag__ nesled_sled__ nevyhov_vyhov__ nevěn_věn__ požad_ prac_ prosaz_ zvyš_)
+ |   |   | Types   (72)
+ |   |   |
+ |   |   |>- Children's similarity: 0.346410162
+ |   |   | | Affixes (6): (oval ovala ovat ována uje ují)
+ |   |   | | Stems   (11): (fung_nefung__ inform_ jmen_men_nejmen__ nepovaž_považ__ nereag_reag__ nesled_sled__ nevyhov_vyhov__ nevěn_věn__ požad_ prac_ prosaz_)
+ |   |   | | Types   (58)
+ |   |   | |
+ |   |   | |>- Affixes (5): (oval ovala ovat uje ují)
+ |   |   | | | Stems   (8): (fung_nefung__ inform_ jmen_men_nejmen__ nereag_reag__ nevyhov_vyhov__ nevěn_věn__ prac_ prosaz_)
+ |   |   | | | Types   (40)
+ |   |   | |
+ |   |   |  >- Affixes (5): (oval ovat ována uje ují)
+ |   |   |   | Stems   (6): (inform_ nepovaž_považ__ nesled_sled__ nevěn_věn__ požad_ prosaz_)
+ |   |   |   | Types   (30)
+ |   |   |  
+ |   |    >- Affixes (5): (oval ovat ování uje ují)
+ |   |     | Stems   (6): (fung_nefung__ jmen_men_nejmen__ nepokrač_pokrač__ nereag_reag__ nesled_sled__ zvyš_)
+ |   |     | Types   (30)
+ |   |    
+ |    >- Affixes (4): (ovali ovat uje ují)
+ |     | Stems   (8): (inform_ nepotřeb_potřeb__ nereag_reag__ nesled_sled__ pohyb_ prac_ projev_ vyjadř_)
+ |     | Types   (32)
+ |    
+  >- Affixes (4): (oval uje uji ují)
+   | Stems   (7): (navrh_ nepovaž_považ__ nesled_sled__ neslib_slib__ nezastup_zastup__ prac_ upozorn_upozorň__)
+   | Types   (28)
+  
+
+>- Children's similarity: 0.066009836
+ | Affixes (12): (skou ská ské ského ském skému ský ských ským skými štině ští)
+ | Stems   (22): (evrop_neevrop__ francouz_ hospodář_ ital_ izrael_ japon_ kanad_ lid_ loň_ lázeň_ měst_ nejče_neče_če__ neru_ru__ obrov_ podnikatel_ praž_ silvestrov_ sloven_ sovět_ vojen_ zeměděl_ živnosten_)
+ | Types   (157)
+ |
+ |>- Children's similarity: 0.233632664
+ | | Affixes (11): (skou ská ské ského ském skému ský ských ským skými ští)
+ | | Stems   (21): (evrop_neevrop__ francouz_ hospodář_ ital_ izrael_ kanad_ lid_ loň_ lázeň_ měst_ nejče_neče_če__ neru_ru__ obrov_ podnikatel_ praž_ silvestrov_ sloven_ sovět_ vojen_ zeměděl_ živnosten_)
+ | | Types   (153)
+ | |
+ | |>- Children's similarity: 0.386920667
+ | | | Affixes (10): (skou ská ské ského ském ský ských ským skými ští)
+ | | | Stems   (18): (francouz_ hospodář_ ital_ izrael_ kanad_ lid_ lázeň_ měst_ nejče_neče_če__ neru_ru__ obrov_ podnikatel_ praž_ silvestrov_ sloven_ sovět_ vojen_ zeměděl_)
+ | | | Types   (134)
+ | | |
+ | | |>- Children's similarity: 0.419960526
+ | | | | Affixes (7): (ská ské ského ském ský ských ští)
+ | | | | Stems   (12): (francouz_ ital_ izrael_ kanad_ lid_ lázeň_ nejče_neče_če__ neru_ru__ praž_ sloven_ sovět_ vojen_)
+ | | | | Types   (76)
+ | | | |
+ | | | |>- Affixes (6): (ská ské ského ském ský ských)
+ | | | | | Stems   (9): (francouz_ ital_ kanad_ lid_ lázeň_ nejče_neče_če__ neru_ru__ praž_ sovět_)
+ | | | | | Types   (54)
+ | | | |
+ | | |  >- Affixes (6): (ská ské ského ský ských ští)
+ | | |   | Stems   (7): (izrael_ kanad_ nejče_neče_če__ neru_ru__ praž_ sloven_ vojen_)
+ | | |   | Types   (42)
+ | | |  
+ | |  >- Children's similarity: 0.363696484
+ | |   | Affixes (8): (skou ská ské ského ský ských ským skými)
+ | |   | Stems   (13): (hospodář_ ital_ kanad_ lid_ měst_ nejče_neče_če__ neru_ru__ obrov_ podnikatel_ silvestrov_ sloven_ vojen_ zeměděl_)
+ | |   | Types   (90)
+ | |   |
+ | |   |>- Affixes (7): (skou ská ské ského ský ských ským)
+ | |   | | Stems   (8): (hospodář_ ital_ kanad_ měst_ nejče_neče_če__ neru_ru__ obrov_ podnikatel_)
+ | |   | | Types   (56)
+ | |   |
+ | |    >- Affixes (6): (skou ská ské ského ský skými)
+ | |     | Stems   (9): (hospodář_ kanad_ lid_ nejče_neče_če__ podnikatel_ silvestrov_ sloven_ vojen_ zeměděl_)
+ | |     | Types   (54)
+ | |    
+ |  >- Affixes (5): (ské ského skému ský ských)
+ |   | Stems   (7): (evrop_neevrop__ hospodář_ loň_ nejče_neče_če__ neru_ru__ obrov_ živnosten_)
+ |   | Types   (35)
+ |  
+  >- Affixes (2): (ská štině)
+   | Stems   (3): (francouz_ japon_ nejče_neče_če__)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.034752402
+ | Affixes (10): (*null* nictvím ní ních ního ním ními nímu ně u)
+ | Stems   (22): (financ_finanč__ hlav_ komerč_ kompromis_nekompromis__ kvalit_nejkvalit_nekvalit__ mezinárod_ nejprv_prv__ nepůvod_původ__ netrž_trž__ národ_ osob_ ostat_ práv_ sociál_ soud_ speciál_ stavb_staveb__ střed_ vlast_ zahranič_ zvlášt_ účet_)
+ | Types   (143)
+ |
+ |>- Children's similarity: 0.264628062
+ | | Affixes (9): (*null* ní ních ního ním ními nímu ně u)
+ | | Stems   (20): (financ_finanč__ hlav_ komerč_ kvalit_nejkvalit_nekvalit__ mezinárod_ nejprv_prv__ nepůvod_původ__ netrž_trž__ národ_ osob_ ostat_ práv_ sociál_ soud_ speciál_ stavb_staveb__ střed_ vlast_ zahranič_ zvlášt_)
+ | | Types   (138)
+ | |
+ | |>- Children's similarity: 0.454545455
+ | | | Affixes (7): (ní ních ního ním ními nímu ně)
+ | | | Stems   (16): (financ_finanč__ hlav_ komerč_ kvalit_nejkvalit_nekvalit__ mezinárod_ nejprv_prv__ netrž_trž__ národ_ ostat_ sociál_ soud_ speciál_ stavb_staveb__ vlast_ zahranič_ zvlášt_)
+ | | | Types   (102)
+ | | |
+ | | |>- Affixes (6): (ní ních ního ním ními ně)
+ | | | | Stems   (11): (hlav_ komerč_ kvalit_nejkvalit_nekvalit__ nejprv_prv__ netrž_trž__ ostat_ sociál_ speciál_ vlast_ zahranič_ zvlášt_)
+ | | | | Types   (66)
+ | | |
+ | |  >- Affixes (6): (ní ních ního ním nímu ně)
+ | |   | Stems   (11): (financ_finanč__ hlav_ mezinárod_ nejprv_prv__ netrž_trž__ národ_ ostat_ soud_ stavb_staveb__ vlast_ zahranič_)
+ | |   | Types   (66)
+ | |  
+ |  >- Affixes (7): (*null* ní ních ního ním ně u)
+ |   | Stems   (8): (hlav_ kvalit_nejkvalit_nekvalit__ nepůvod_původ__ národ_ osob_ práv_ soud_ střed_)
+ |   | Types   (56)
+ |  
+  >- Affixes (2): (nictvím ní)
+   | Stems   (3): (kompromis_nekompromis__ vlast_ účet_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.103081220
+ | Affixes (7): (e eme í ící ících ícího ícím)
+ | Stems   (39): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ funguj_nefunguj__ hranic_hranič__ kupuj_ navazuj_ nepatr_nepatř_patr_patř__ nepokračuj_pokračuj__ neposkytuj_poskytuj__ nerespektuj_respektuj__ nerozhoduj_rozhoduj__ neumožňuj_umožňuj__ nevyhovuj_vyhovuj__ nevztahuj_vztahuj__ nezabývaj_zabývaj__ neříd_říd__ následuj_ obsahuj_ opakuj_ pracuj_ projevuj_ představuj_ převyšuj_ stávaj_ sídl_ síl_ týkaj_ vstupuj_ ...)
+ | Types   (143)
+ |
+ |>- Children's similarity: 0.311420549
+ | | Affixes (6): (e eme í ící ících ícím)
+ | | Stems   (34): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ funguj_nefunguj__ hranic_hranič__ kupuj_ navazuj_ nepatr_nepatř_patr_patř__ nepokračuj_pokračuj__ neposkytuj_poskytuj__ nerespektuj_respektuj__ nerozhoduj_rozhoduj__ neumožňuj_umožňuj__ nevyhovuj_vyhovuj__ nevztahuj_vztahuj__ následuj_ obsahuj_ opakuj_ pracuj_ projevuj_ představuj_ převyšuj_ sídl_ síl_ vstupuj_ vyjadřuj_ vysvětluj_ vyžaduj_ věnuj_ ...)
+ | | Types   (121)
+ | |
+ | |>- Children's similarity: 0.447811076
+ | | | Affixes (5): (e í ící ících ícím)
+ | | | Stems   (34): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ funguj_nefunguj__ hranic_hranič__ kupuj_ navazuj_ nepatr_nepatř_patr_patř__ nepokračuj_pokračuj__ neposkytuj_poskytuj__ nerespektuj_respektuj__ nerozhoduj_rozhoduj__ neumožňuj_umožňuj__ nevyhovuj_vyhovuj__ nevztahuj_vztahuj__ následuj_ obsahuj_ opakuj_ pracuj_ projevuj_ představuj_ převyšuj_ sídl_ síl_ vstupuj_ vyjadřuj_ vysvětluj_ vyžaduj_ věnuj_ ...)
+ | | | Types   (116)
+ | | |
+ | | |>- Children's similarity: 0.433012702
+ | | | | Affixes (5): (e í ící ících ícím)
+ | | | | Stems   (10): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ nerozhoduj_rozhoduj__ následuj_ pracuj_ vyžaduj_ zajišťuj_ žij_)
+ | | | | Types   (44)
+ | | | |
+ | | | |>- Affixes (4): (e í ící ících)
+ | | | | | Stems   (8): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ nerozhoduj_rozhoduj__ následuj_ pracuj_ žij_)
+ | | | | | Types   (32)
+ | | | |
+ | | |  >- Affixes (4): (e í ící ícím)
+ | | |   | Stems   (6): (blíž_nejblíž__ existuj_neexistuj__ nerozhoduj_rozhoduj__ následuj_ vyžaduj_ zajišťuj_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (3): (e í ící)
+ | |   | Stems   (34): (blíž_nejblíž__ bojuj_ doplňuj_ existuj_neexistuj__ funguj_nefunguj__ hranic_hranič__ kupuj_ navazuj_ nepatr_nepatř_patr_patř__ nepokračuj_pokračuj__ neposkytuj_poskytuj__ nerespektuj_respektuj__ nerozhoduj_rozhoduj__ neumožňuj_umožňuj__ nevyhovuj_vyhovuj__ nevztahuj_vztahuj__ následuj_ obsahuj_ opakuj_ pracuj_ projevuj_ představuj_ převyšuj_ sídl_ síl_ vstupuj_ vyjadřuj_ vysvětluj_ vyžaduj_ věnuj_ ...)
+ | |   | Types   (102)
+ | |  
+ |  >- Affixes (4): (e eme í ící)
+ |   | Stems   (5): (doplňuj_ nepokračuj_pokračuj__ neposkytuj_poskytuj__ představuj_ zajišťuj_)
+ |   | Types   (20)
+ |  
+  >- Affixes (4): (í ící ících ícího)
+   | Stems   (7): (nerozhoduj_rozhoduj__ nezabývaj_zabývaj__ neříd_říd__ následuj_ stávaj_ týkaj_ začínaj_)
+   | Types   (28)
+  
+
+>- Children's similarity: 0.082839431
+ | Affixes (14): (ek kem kovou ková kové kového kovém kový kových kovým ku ky ků kům)
+ | Stems   (27): (cel_necel__ desít_ dostat_nedostat__ důsled_nedůsled__ lůž_ myšlen_ nejprv_prv__ nepodni_podni__ nespol_spol__ neta_ta__ nevýděl_výděl__ nezis_zis__ paděl_ pohád_ poplat_ pozem_ požadav_ příspěv_ republi_ směn_ tis_ výrob_ výsled_ zám_ zásil_ člán_ špič_)
+ | Types   (141)
+ |
+ |>- Children's similarity: 0.248264416
+ | | Affixes (8): (ková kové kového kovém kových kovým ku ky)
+ | | Stems   (11): (cel_necel__ lůž_ nepodni_podni__ nespol_spol__ neta_ta__ nezis_zis__ příspěv_ republi_ tis_ zásil_ špič_)
+ | | Types   (61)
+ | |
+ | |>- Children's similarity: 0.310529502
+ | | | Affixes (7): (ková kové kového kových kovým ku ky)
+ | | | Stems   (10): (cel_necel__ nepodni_podni__ nespol_spol__ neta_ta__ nezis_zis__ příspěv_ republi_ tis_ zásil_ špič_)
+ | | | Types   (53)
+ | | |
+ | | |>- Children's similarity: 0.447213595
+ | | | | Affixes (6): (ková kové kového kových ku ky)
+ | | | | Stems   (8): (cel_necel__ nepodni_podni__ nespol_spol__ nezis_zis__ příspěv_ tis_ zásil_ špič_)
+ | | | | Types   (42)
+ | | | |
+ | | | |>- Affixes (4): (ková kové kového ku)
+ | | | | | Stems   (6): (cel_necel__ nepodni_podni__ nespol_spol__ tis_ zásil_ špič_)
+ | | | | | Types   (24)
+ | | | |
+ | | |  >- Affixes (5): (ková kové kových ku ky)
+ | | |   | Stems   (6): (cel_necel__ nepodni_podni__ nezis_zis__ příspěv_ zásil_ špič_)
+ | | |   | Types   (30)
+ | | |  
+ | |  >- Affixes (4): (ková kové kovým ky)
+ | |   | Stems   (5): (cel_necel__ neta_ta__ republi_ zásil_ špič_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (3): (kové kovém kových)
+ |   | Stems   (5): (cel_necel__ lůž_ nepodni_podni__ neta_ta__ špič_)
+ |   | Types   (15)
+ |  
+  >- Children's similarity: 0.060439789
+   | Affixes (8): (ek kem kovou kový ku ky ků kům)
+   | Stems   (19): (cel_necel__ desít_ dostat_nedostat__ důsled_nedůsled__ myšlen_ nejprv_prv__ nepodni_podni__ nevýděl_výděl__ paděl_ pohád_ poplat_ pozem_ požadav_ příspěv_ směn_ výrob_ výsled_ zám_ člán_)
+   | Types   (86)
+   |
+   |>- Children's similarity: 0.072739297
+   | | Affixes (7): (ek kem kový ku ky ků kům)
+   | | Stems   (15): (cel_necel__ desít_ dostat_nedostat__ důsled_nedůsled__ nejprv_prv__ nevýděl_výděl__ paděl_ pohád_ poplat_ požadav_ příspěv_ směn_ výrob_ výsled_ člán_)
+   | | Types   (73)
+   | |
+   | |>- Children's similarity: 0.326598632
+   | | | Affixes (6): (ek kem ku ky ků kům)
+   | | | Stems   (12): (cel_necel__ dostat_nedostat__ důsled_nedůsled__ nejprv_prv__ nevýděl_výděl__ paděl_ poplat_ požadav_ příspěv_ výrob_ výsled_ člán_)
+   | | | Types   (63)
+   | | |
+   | | |>- Affixes (5): (ek kem ku ky ků)
+   | | | | Stems   (9): (cel_necel__ důsled_nedůsled__ nevýděl_výděl__ paděl_ poplat_ příspěv_ výrob_ výsled_ člán_)
+   | | | | Types   (45)
+   | | |
+   | |  >- Affixes (5): (ek kem ky ků kům)
+   | |   | Stems   (6): (cel_necel__ dostat_nedostat__ nejprv_prv__ požadav_ výrob_ výsled_)
+   | |   | Types   (30)
+   | |  
+   |  >- Affixes (3): (ek kový ky)
+   |   | Stems   (4): (desít_ pohád_ směn_ výrob_)
+   |   | Types   (12)
+   |  
+    >- Affixes (3): (kovou ku ky)
+     | Stems   (5): (cel_necel__ myšlen_ nepodni_podni__ pozem_ zám_)
+     | Types   (15)
+    
+
+>- Children's similarity: 0.061545745
+ | Affixes (14): (cko ckou cku cky cká cké ckého ckém ckému cký ckých ckým ckými čtí)
+ | Stems   (21): (ameri_ belgi_ demokrati_ ekologi_ ekonomi_ etni_ komunisti_ lete_ libere_ magi_ nepoliti_politi__ nespecifi_specifi__ netypi_typi__ něme_ pedagogi_ poslane_ prakti_ techni_ ture_ uměle_ zdravotni_)
+ | Types   (138)
+ |
+ |>- Children's similarity: 0.170715840
+ | | Affixes (13): (cko ckou cky cká cké ckého ckém ckému cký ckých ckým ckými čtí)
+ | | Stems   (19): (ameri_ belgi_ demokrati_ ekologi_ ekonomi_ etni_ komunisti_ lete_ magi_ nepoliti_politi__ nespecifi_specifi__ netypi_typi__ něme_ pedagogi_ poslane_ prakti_ techni_ uměle_ zdravotni_)
+ | | Types   (132)
+ | |
+ | |>- Children's similarity: 0.191014362
+ | | | Affixes (12): (ckou cky cká cké ckého ckém ckému cký ckých ckým ckými čtí)
+ | | | Stems   (17): (ameri_ belgi_ demokrati_ ekologi_ ekonomi_ komunisti_ lete_ magi_ nepoliti_politi__ nespecifi_specifi__ netypi_typi__ něme_ poslane_ prakti_ techni_ uměle_ zdravotni_)
+ | | | Types   (122)
+ | | |
+ | | |>- Children's similarity: 0.321342293
+ | | | | Affixes (11): (ckou cky cká cké ckého ckém ckému cký ckých ckým ckými)
+ | | | | Stems   (15): (ameri_ demokrati_ ekologi_ ekonomi_ komunisti_ lete_ magi_ nepoliti_politi__ netypi_typi__ něme_ poslane_ prakti_ techni_ uměle_ zdravotni_)
+ | | | | Types   (111)
+ | | | |
+ | | | |>- Children's similarity: 0.489897949
+ | | | | | Affixes (6): (cká cké ckému cký ckých ckými)
+ | | | | | Stems   (7): (ameri_ demokrati_ ekologi_ ekonomi_ nepoliti_politi__ něme_ uměle_)
+ | | | | | Types   (38)
+ | | | | |
+ | | | | |>- Affixes (5): (cká cké ckému cký ckých)
+ | | | | | | Stems   (6): (ameri_ demokrati_ ekonomi_ nepoliti_politi__ něme_ uměle_)
+ | | | | | | Types   (30)
+ | | | | |
+ | | | |  >- Affixes (4): (cká cké ckých ckými)
+ | | | |   | Stems   (5): (ekologi_ ekonomi_ nepoliti_politi__ něme_ uměle_)
+ | | | |   | Types   (20)
+ | | | |  
+ | | |  >- Children's similarity: 0.385257064
+ | | |   | Affixes (9): (ckou cky cká cké ckého ckém cký ckých ckým)
+ | | |   | Stems   (13): (ameri_ ekologi_ ekonomi_ komunisti_ lete_ magi_ nepoliti_politi__ netypi_typi__ něme_ poslane_ prakti_ techni_ zdravotni_)
+ | | |   | Types   (92)
+ | | |   |
+ | | |   |>- Children's similarity: 0.499350227
+ | | |   | | Affixes (8): (ckou cky cká cké ckého cký ckých ckým)
+ | | |   | | Stems   (11): (ameri_ ekologi_ ekonomi_ komunisti_ lete_ nepoliti_politi__ netypi_typi__ něme_ poslane_ prakti_ techni_)
+ | | |   | | Types   (77)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.629940788
+ | | |   | | | Affixes (7): (ckou cká cké ckého cký ckých ckým)
+ | | |   | | | Stems   (10): (ameri_ ekologi_ ekonomi_ komunisti_ lete_ nepoliti_politi__ netypi_typi__ něme_ poslane_ techni_)
+ | | |   | | | Types   (66)
+ | | |   | | |
+ | | |   | | |>- Affixes (6): (ckou cká cké ckého cký ckých)
+ | | |   | | | | Stems   (9): (ameri_ ekologi_ ekonomi_ komunisti_ lete_ nepoliti_politi__ něme_ poslane_ techni_)
+ | | |   | | | | Types   (54)
+ | | |   | | |
+ | | |   | |  >- Affixes (6): (ckou cká cké ckého cký ckým)
+ | | |   | |   | Stems   (7): (ameri_ ekologi_ ekonomi_ nepoliti_politi__ netypi_typi__ něme_ techni_)
+ | | |   | |   | Types   (42)
+ | | |   | |  
+ | | |   |  >- Affixes (5): (ckou cky cké ckého cký)
+ | | |   |   | Stems   (7): (ekologi_ ekonomi_ lete_ netypi_typi__ něme_ prakti_ techni_)
+ | | |   |   | Types   (35)
+ | | |   |  
+ | | |    >- Affixes (5): (ckou cká cké ckého ckém)
+ | | |     | Stems   (7): (ekonomi_ lete_ magi_ nepoliti_politi__ něme_ techni_ zdravotni_)
+ | | |     | Types   (35)
+ | | |    
+ | |  >- Affixes (4): (cké cký ckých čtí)
+ | |   | Stems   (5): (ameri_ belgi_ nepoliti_politi__ nespecifi_specifi__ uměle_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (3): (cko cké ckých)
+ |   | Stems   (6): (ameri_ etni_ něme_ pedagogi_ techni_ uměle_)
+ |   | Types   (18)
+ |  
+  >- Affixes (2): (cku cké)
+   | Stems   (4): (ameri_ libere_ něme_ ture_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.062017367
+ | Affixes (10): (*null* a e em i u y ích ů ům)
+ | Stems   (23): (deníc_deník__ druh_druz__ důsledc_důsledek_důsledk__ kroc_krok__ majitel_ manažer_manažeř__ nejzákladn_základn__ nepodnik_podnic_podnik__ neprodejn_prodejn__ novinář_ podnikatel_ pokladn_ počítač_ prostředc_prostředek_prostředk__ prvc_prvek_prvk__ představitel_ sněmovn_ statc_statek_statk__ svátc_svátek_svátk__ veletrh_veletrz__ vítěz_ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ | Types   (134)
+ |
+ |>- Children's similarity: 0.240608305
+ | | Affixes (9): (*null* e em i u y ích ů ům)
+ | | Stems   (19): (deníc_deník__ druh_druz__ důsledc_důsledek_důsledk__ kroc_krok__ majitel_ manažer_manažeř__ nepodnik_podnic_podnik__ novinář_ podnikatel_ počítač_ prostředc_prostředek_prostředk__ prvc_prvek_prvk__ představitel_ statc_statek_statk__ svátc_svátek_svátk__ veletrh_veletrz__ vítěz_ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ | | Types   (117)
+ | |
+ | |>- Children's similarity: 0.536656315
+ | | | Affixes (6): (*null* em u y ích ů)
+ | | | Stems   (12): (deníc_deník__ druh_druz__ důsledc_důsledek_důsledk__ kroc_krok__ nepodnik_podnic_podnik__ prostředc_prostředek_prostředk__ prvc_prvek_prvk__ statc_statek_statk__ svátc_svátek_svátk__ veletrh_veletrz__ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ | | | Types   (66)
+ | | |
+ | | |>- Affixes (5): (*null* em y ích ů)
+ | | | | Stems   (8): (důsledc_důsledek_důsledk__ kroc_krok__ nepodnik_podnic_podnik__ prostředc_prostředek_prostředk__ prvc_prvek_prvk__ veletrh_veletrz__ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ | | | | Types   (40)
+ | | |
+ | |  >- Affixes (5): (*null* u y ích ů)
+ | |   | Stems   (10): (deníc_deník__ druh_druz__ důsledc_důsledek_důsledk__ kroc_krok__ nepodnik_podnic_podnik__ statc_statek_statk__ svátc_svátek_svátk__ veletrh_veletrz__ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ | |   | Types   (50)
+ | |  
+ |  >- Children's similarity: 0.390360029
+ |   | Affixes (7): (*null* e em i ích ů ům)
+ |   | Stems   (11): (majitel_ manažer_manažeř__ nepodnik_podnic_podnik__ novinář_ podnikatel_ počítač_ prvc_prvek_prvk__ představitel_ vítěz_ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ |   | Types   (67)
+ |   |
+ |   |>- Affixes (6): (*null* e em i ů ům)
+ |   | | Stems   (8): (majitel_ manažer_manažeř__ novinář_ podnikatel_ počítač_ představitel_ vítěz_ výrobc_výrobek_výrobk__)
+ |   | | Types   (48)
+ |   |
+ |    >- Affixes (5): (*null* em ích ů ům)
+ |     | Stems   (7): (majitel_ nepodnik_podnic_podnik__ podnikatel_ počítač_ prvc_prvek_prvk__ výrobc_výrobek_výrobk__ výsledc_výsledek_výsledk__)
+ |     | Types   (35)
+ |    
+  >- Affixes (4): (a u y ích)
+   | Stems   (5): (druh_druz__ nejzákladn_základn__ neprodejn_prodejn__ pokladn_ sněmovn_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.160128154
+ | Affixes (9): (st stech sti stmi stní stních stního stí u)
+ | Stems   (28): (bezpečno_nebezpečno__ domácno_ minulo_ možno_nemožno__ mí_nemí__ nepově_pově__ nezkušeno_zkušeno__ neznalo_znalo__ nečinno_činno__ nežádo_žádo__ nutno_ obla_ okolno_ osobno_ povinno_ předno_ příslušno_ skutečno_ slavno_ současno_ společno_ staro_ tre_ událo_ veliko_ veřejno_ vla_ čá_)
+ | Types   (123)
+ |
+ |>- Children's similarity: 0.046906503
+ | | Affixes (8): (st stech sti stmi stní stního stí u)
+ | | Stems   (27): (bezpečno_nebezpečno__ domácno_ minulo_ možno_nemožno__ mí_nemí__ nepově_pově__ nezkušeno_zkušeno__ neznalo_znalo__ nečinno_činno__ nežádo_žádo__ nutno_ obla_ okolno_ osobno_ povinno_ předno_ příslušno_ skutečno_ slavno_ současno_ společno_ staro_ tre_ událo_ veliko_ veřejno_ čá_)
+ | | Types   (117)
+ | |
+ | |>- Children's similarity: 0.235702260
+ | | | Affixes (6): (st stech sti stmi stí u)
+ | | | Stems   (23): (bezpečno_nebezpečno__ domácno_ minulo_ možno_nemožno__ nepově_pově__ nezkušeno_zkušeno__ neznalo_znalo__ nečinno_činno__ nežádo_žádo__ nutno_ obla_ okolno_ osobno_ povinno_ příslušno_ skutečno_ současno_ společno_ staro_ událo_ veliko_ veřejno_ čá_)
+ | | | Types   (101)
+ | | |
+ | | |>- Children's similarity: 0.313590754
+ | | | | Affixes (5): (st stech sti stí u)
+ | | | | Stems   (19): (bezpečno_nebezpečno__ domácno_ minulo_ možno_nemožno__ nezkušeno_zkušeno__ neznalo_znalo__ nečinno_činno__ nutno_ obla_ okolno_ příslušno_ skutečno_ současno_ společno_ staro_ událo_ veliko_ veřejno_ čá_)
+ | | | | Types   (81)
+ | | | |
+ | | | |>- Affixes (4): (st stech sti stí)
+ | | | | | Stems   (11): (domácno_ možno_nemožno__ nezkušeno_zkušeno__ neznalo_znalo__ nečinno_činno__ obla_ okolno_ společno_ staro_ událo_ čá_)
+ | | | | | Types   (44)
+ | | | |
+ | | |  >- Affixes (4): (st sti stí u)
+ | | |   | Stems   (13): (bezpečno_nebezpečno__ minulo_ možno_nemožno__ nezkušeno_zkušeno__ nečinno_činno__ nutno_ příslušno_ skutečno_ současno_ společno_ staro_ veliko_ veřejno_)
+ | | |   | Types   (52)
+ | | |  
+ | |  >- Affixes (4): (st sti stmi stí)
+ | |   | Stems   (8): (možno_nemožno__ nepově_pově__ neznalo_znalo__ nežádo_žádo__ obla_ osobno_ povinno_ skutečno_)
+ | |   | Types   (32)
+ | |  
+ |  >- Affixes (3): (st stní stního)
+ |   | Stems   (6): (bezpečno_nebezpečno__ mí_nemí__ obla_ předno_ slavno_ tre_)
+ |   | Types   (18)
+ |  
+  >- Affixes (3): (stní stních stního)
+   | Stems   (4): (bezpečno_nebezpečno__ mí_nemí__ obla_ vla_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.167443672
+ | Affixes (9): (ce ci cí ční čních čního čním čními čnímu)
+ | Stems   (21): (funk_ hrani_ infla_ informa_ investi_ koali_ konkuren_ konven_nekonven__ koresponden_ likvida_ lustra_ měsí_ nemocni_ netradi_tradi__ opera_ opozi_ organiza_ orienta_ privatiza_ propaga_ restitu_)
+ | Types   (113)
+ |
+ |>- Children's similarity: 0.237728656
+ | | Affixes (8): (ce ci cí ční čních čního čním čními)
+ | | Stems   (20): (funk_ hrani_ informa_ investi_ koali_ konkuren_ konven_nekonven__ koresponden_ likvida_ lustra_ měsí_ nemocni_ netradi_tradi__ opera_ opozi_ organiza_ orienta_ privatiza_ propaga_ restitu_)
+ | | Types   (107)
+ | |
+ | |>- Children's similarity: 0.251754407
+ | | | Affixes (7): (ce ci cí ční čních čního čním)
+ | | | Stems   (17): (funk_ hrani_ informa_ investi_ koali_ konkuren_ likvida_ lustra_ měsí_ nemocni_ netradi_tradi__ opera_ organiza_ orienta_ privatiza_ propaga_ restitu_)
+ | | | Types   (91)
+ | | |
+ | | |>- Children's similarity: 0.505964426
+ | | | | Affixes (6): (ce ci cí ční čního čním)
+ | | | | Stems   (13): (funk_ hrani_ informa_ koali_ konkuren_ likvida_ lustra_ měsí_ netradi_tradi__ opera_ organiza_ orienta_ propaga_)
+ | | | | Types   (71)
+ | | | |
+ | | | |>- Affixes (5): (ce ci cí ční čním)
+ | | | | | Stems   (10): (funk_ hrani_ informa_ konkuren_ likvida_ lustra_ netradi_tradi__ opera_ organiza_ orienta_)
+ | | | | | Types   (50)
+ | | | |
+ | | |  >- Affixes (5): (ce ci ční čního čním)
+ | | |   | Stems   (9): (hrani_ informa_ koali_ konkuren_ likvida_ lustra_ měsí_ netradi_tradi__ propaga_)
+ | | |   | Types   (45)
+ | | |  
+ | |  >- Affixes (4): (ce ci ční čních)
+ | |   | Stems   (8): (hrani_ informa_ investi_ koali_ konkuren_ nemocni_ privatiza_ restitu_)
+ | |   | Types   (32)
+ | |  
+ |  >- Affixes (4): (ce ci ční čními)
+ |   | Stems   (7): (hrani_ investi_ konven_nekonven__ koresponden_ netradi_tradi__ opozi_ propaga_)
+ |   | Types   (28)
+ |  
+  >- Affixes (3): (ce ci čnímu)
+   | Stems   (4): (infla_ lustra_ měsí_ organiza_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.078567420
+ | Affixes (13): (ba bami bou bu by bách bám bě eb ební ebních ebního ebním)
+ | Stems   (18): (chy_nechy__ dlaž_ do_jdo_nedo_nejdo__ hud_ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ předvol_ saz_ sklad_ služ_ spotře_ stav_ vaz_ výro_ výstav_)
+ | Types   (112)
+ |
+ |>- Children's similarity: 0.226455407
+ | | Affixes (12): (ba bami bou bu by bách bám bě eb ební ebních ebního)
+ | | Stems   (17): (chy_nechy__ dlaž_ do_jdo_nedo_nejdo__ hud_ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ saz_ sklad_ služ_ spotře_ stav_ vaz_ výro_ výstav_)
+ | | Types   (108)
+ | |
+ | |>- Children's similarity: 0.174963553
+ | | | Affixes (11): (ba bami bou bu by bách bám bě eb ební ebních)
+ | | | Stems   (17): (chy_nechy__ dlaž_ do_jdo_nedo_nejdo__ hud_ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ saz_ sklad_ služ_ spotře_ stav_ vaz_ výro_ výstav_)
+ | | | Types   (104)
+ | | |
+ | | |>- Children's similarity: 0.321274937
+ | | | | Affixes (10): (ba bami bou bu by bách bám bě eb ební)
+ | | | | Stems   (16): (chy_nechy__ dlaž_ do_jdo_nedo_nejdo__ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ saz_ sklad_ služ_ spotře_ stav_ vaz_ výro_ výstav_)
+ | | | | Types   (98)
+ | | | |
+ | | | |>- Children's similarity: 0.347182537
+ | | | | | Affixes (5): (ba bami bu by eb)
+ | | | | | Stems   (10): (chy_nechy__ dlaž_ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ saz_ sklad_ služ_ vaz_)
+ | | | | | Types   (43)
+ | | | | |
+ | | | | |>- Affixes (4): (ba bami bu by)
+ | | | | | | Stems   (6): (chy_nechy__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ saz_)
+ | | | | | | Types   (24)
+ | | | | |
+ | | | |  >- Affixes (4): (ba bu by eb)
+ | | | |   | Stems   (7): (dlaž_ neplat_plac_plat__ nevol_vol__ saz_ sklad_ služ_ vaz_)
+ | | | |   | Types   (28)
+ | | | |  
+ | | |  >- Children's similarity: 0.342326598
+ | | |   | Affixes (8): (ba bou bu by bách bám bě ební)
+ | | |   | Stems   (13): (chy_nechy__ do_jdo_nedo_nejdo__ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ služ_ spotře_ stav_ vaz_ výro_ výstav_)
+ | | |   | Types   (73)
+ | | |   |
+ | | |   |>- Children's similarity: 0.408248290
+ | | |   | | Affixes (6): (ba by bách bám bě ební)
+ | | |   | | Stems   (10): (chy_nechy__ do_jdo_nedo_nejdo__ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ oso_ služ_ stav_ vaz_)
+ | | |   | | Types   (48)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.507092553
+ | | |   | | | Affixes (5): (ba by bách bě ební)
+ | | |   | | | Stems   (8): (chy_nechy__ nejry_ry__ neplat_plac_plat__ nepotře_potře__ nevol_vol__ služ_ stav_ vaz_)
+ | | |   | | | Types   (36)
+ | | |   | | |
+ | | |   | | |>- Affixes (4): (ba by bách bě)
+ | | |   | | | | Stems   (7): (chy_nechy__ nejry_ry__ nepotře_potře__ nevol_vol__ služ_ stav_ vaz_)
+ | | |   | | | | Types   (28)
+ | | |   | | |
+ | | |   | |  >- Affixes (4): (ba by bě ební)
+ | | |   | |   | Stems   (5): (neplat_plac_plat__ nevol_vol__ služ_ stav_ vaz_)
+ | | |   | |   | Types   (20)
+ | | |   | |  
+ | | |   |  >- Affixes (4): (ba by bám bě)
+ | | |   |   | Stems   (6): (do_jdo_nedo_nejdo__ nepotře_potře__ nevol_vol__ oso_ služ_ stav_)
+ | | |   |   | Types   (24)
+ | | |   |  
+ | | |    >- Affixes (5): (ba bou bu by bě)
+ | | |     | Stems   (8): (chy_nechy__ do_jdo_nedo_nejdo__ nevol_vol__ oso_ služ_ spotře_ výro_ výstav_)
+ | | |     | Types   (40)
+ | | |    
+ | |  >- Affixes (3): (by ební ebních)
+ | |   | Stems   (4): (hud_ nevol_vol__ služ_ stav_)
+ | |   | Types   (12)
+ | |  
+ |  >- Affixes (3): (by ební ebního)
+ |   | Stems   (4): (hud_ nevol_vol__ služ_ stav_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (ební ebním)
+   | Stems   (3): (nevol_vol__ předvol_ stav_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.018857857
+ | Affixes (13): (ali aná ané aného aný aných aným at án ána áno ány ání)
+ | Stems   (27): (d_jd_ned_nejd__ dodržov_ jmenov_nejmenov__ komplikov_ nazýv_ nejpod_nepod_pod__ neočekáv_očekáv__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nevyd_vyd__ nevyužív_využív__ nezv_zv__ nezísk_získ__ neček_ček__ nominov_ odebr_ plánov_ poskytov_ použív_ považov_ požadov_ smích_ specializov_ takzv_ vybr_ váh_váz__)
+ | Types   (111)
+ |
+ |>- Children's similarity: 0.273861279
+ | | Affixes (5): (aná ané aný aných ána)
+ | | Stems   (10): (d_jd_ned_nejd__ komplikov_ nepředpoklád_předpoklád__ nezv_zv__ nezísk_získ__ plánov_ požadov_ specializov_ takzv_ vybr_)
+ | | Types   (38)
+ | |
+ | |>- Affixes (4): (aná ané aných ána)
+ | | | Stems   (5): (d_jd_ned_nejd__ nezv_zv__ plánov_ specializov_ vybr_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (3): (ané aný aných)
+ |   | Stems   (8): (d_jd_ned_nejd__ komplikov_ nepředpoklád_předpoklád__ nezv_zv__ nezísk_získ__ požadov_ specializov_ takzv_)
+ |   | Types   (24)
+ |  
+  >- Children's similarity: 0.130120010
+   | Affixes (9): (ali ané aného aným at án áno ány ání)
+   | Stems   (18): (dodržov_ jmenov_nejmenov__ nazýv_ nejpod_nepod_pod__ neočekáv_očekáv__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nevyd_vyd__ nevyužív_využív__ neček_ček__ nominov_ odebr_ poskytov_ použív_ považov_ smích_ váh_váz__)
+   | Types   (74)
+   |
+   |>- Children's similarity: 0.063757671
+   | | Affixes (8): (ali ané aného at án áno ány ání)
+   | | Stems   (15): (dodržov_ jmenov_nejmenov__ nazýv_ nejpod_nepod_pod__ neprod_prod__ nepřed_před__ nepředpoklád_předpoklád__ nevyd_vyd__ neček_ček__ nominov_ odebr_ poskytov_ použív_ považov_ váh_váz__)
+   | | Types   (63)
+   | |
+   | |>- Children's similarity: 0.136930639
+   | | | Affixes (7): (ali ané aného at án ány ání)
+   | | | Stems   (8): (jmenov_nejmenov__ nepřed_před__ nepředpoklád_předpoklád__ nevyd_vyd__ neček_ček__ odebr_ poskytov_ použív_)
+   | | | Types   (41)
+   | | |
+   | | |>- Affixes (4): (ali ané aného at)
+   | | | | Stems   (6): (nepřed_před__ nepředpoklád_předpoklád__ nevyd_vyd__ neček_ček__ odebr_ použív_)
+   | | | | Types   (24)
+   | | |
+   | |  >- Affixes (4): (at án ány ání)
+   | |   | Stems   (5): (jmenov_nejmenov__ nepřed_před__ nevyd_vyd__ odebr_ poskytov_)
+   | |   | Types   (20)
+   | |  
+   |  >- Affixes (3): (at án áno)
+   |   | Stems   (8): (dodržov_ nazýv_ nejpod_nepod_pod__ neprod_prod__ nevyd_vyd__ nominov_ považov_ váh_váz__)
+   |   | Types   (24)
+   |  
+    >- Affixes (3): (aným at ání)
+     | Stems   (5): (jmenov_nejmenov__ neočekáv_očekáv__ nevyužív_využív__ poskytov_ smích_)
+     | Types   (15)
+    
+
+>- Children's similarity: 0.104328106
+ | Affixes (9): (ají ající al ali at ejme á áme áte)
+ | Stems   (20): (d_jd_ned_nejd__ dodáv_nedodáv__ domnív_nedomnív__ dostáv_nedostáv__ douf_ děl_neděl__ hled_nehled__ jedn_nejedn_nejjedn__ neodpovíd_odpovíd__ nepodnik_podnic_podnik__ nepočít_počít__ neprod_prod__ nept_pt__ nepředpoklád_předpoklád__ nezabýv_zabýv__ nezísk_získ__ neček_ček__ neřík_říc_řík_říč__ prodáv_ trv_)
+ | Types   (109)
+ |
+ |>- Children's similarity: 0.167541563
+ | | Affixes (8): (ají ající al ali at á áme áte)
+ | | Stems   (17): (dodáv_nedodáv__ domnív_nedomnív__ dostáv_nedostáv__ děl_neděl__ hled_nehled__ jedn_nejedn_nejjedn__ neodpovíd_odpovíd__ nepodnik_podnic_podnik__ nepočít_počít__ neprod_prod__ nepředpoklád_předpoklád__ nezabýv_zabýv__ nezísk_získ__ neček_ček__ neřík_říc_řík_říč__ prodáv_ trv_)
+ | | Types   (98)
+ | |
+ | |>- Children's similarity: 0.273861279
+ | | | Affixes (7): (ají ající al ali at á áme)
+ | | | Stems   (13): (dodáv_nedodáv__ dostáv_nedostáv__ děl_neděl__ jedn_nejedn_nejjedn__ neodpovíd_odpovíd__ nepodnik_podnic_podnik__ nepočít_počít__ neprod_prod__ nepředpoklád_předpoklád__ nezabýv_zabýv__ neček_ček__ prodáv_ trv_)
+ | | | Types   (76)
+ | | |
+ | | |>- Affixes (5): (ají ající al at á)
+ | | | | Stems   (8): (dodáv_nedodáv__ neodpovíd_odpovíd__ nepodnik_podnic_podnik__ nepočít_počít__ nezabýv_zabýv__ neček_ček__ prodáv_ trv_)
+ | | | | Types   (40)
+ | | |
+ | |  >- Affixes (6): (ají al ali at á áme)
+ | |   | Stems   (8): (dostáv_nedostáv__ děl_neděl__ jedn_nejedn_nejjedn__ neprod_prod__ nepředpoklád_předpoklád__ nezabýv_zabýv__ neček_ček__ prodáv_)
+ | |   | Types   (48)
+ | |  
+ |  >- Affixes (5): (ají al at á áte)
+ |   | Stems   (6): (domnív_nedomnív__ dostáv_nedostáv__ hled_nehled__ nepodnik_podnic_podnik__ nezísk_získ__ neřík_říc_řík_říč__)
+ |   | Types   (30)
+ |  
+  >- Affixes (3): (ají ejme á)
+   | Stems   (5): (d_jd_ned_nejd__ douf_ nepočít_počít__ nept_pt__ neřík_říc_řík_říč__)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.073192505
+ | Affixes (8): (*null* e ech em u y ů ům)
+ | Stems   (16): (dol_nedol__ fond_ hotel_ nejzáklad_základ__ nezákon_zákon__ názor_ obchod_ okres_ princip_ problém_ případ_ tábor_táboř__ týdn_ výkon_ zápas_ úřad_)
+ | Types   (101)
+ |
+ |>- Affixes (7): (*null* ech em u y ů ům)
+ | | Stems   (12): (fond_ hotel_ nejzáklad_základ__ nezákon_zákon__ názor_ obchod_ princip_ problém_ případ_ výkon_ zápas_ úřad_)
+ | | Types   (84)
+ |
+  >- Affixes (4): (e ech u ů)
+   | Stems   (5): (dol_nedol__ okres_ tábor_táboř__ týdn_ zápas_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.119736868
+ | Affixes (5): (*null* jší jších jšího jším)
+ | Stems   (42): (bezpečně_nejbezpečně__ důsledně_ efektivně_nejefektivně__ kvalitně_nejkvalitně__ levně_nejlevně__ moderně_nejmoderně__ nejnově_nově__ nejpodrobně_podrobně__ nejpozdě_pozdě__ nejrychle_rychle__ nejrůzně_různě__ nejsilně_silně__ nejsprávně_nesprávně_správně__ nejvhodně_nevhodně_vhodně__ nejvzácně_vzácně__ nejvýhodně_výhodně__ nejvřele_vřele__ nejúspěšně_úspěšně__ nejúčinně_účinně__ nejčerně_černě__ nepochopitelně_pochopitelně__ nepravděpodobně_pravděpodobně__ nepříznivě_příznivě__ normálně_ nyně_ někde_ obecně_ otevřeně_ přísně_ radostně_ ...)
+ | Types   (101)
+ |
+ |>- Children's similarity: 0.361448698
+ | | Affixes (4): (*null* jší jších jším)
+ | | Stems   (40): (bezpečně_nejbezpečně__ důsledně_ efektivně_nejefektivně__ kvalitně_nejkvalitně__ levně_nejlevně__ moderně_nejmoderně__ nejnově_nově__ nejpodrobně_podrobně__ nejpozdě_pozdě__ nejrychle_rychle__ nejrůzně_různě__ nejsilně_silně__ nejsprávně_nesprávně_správně__ nejvhodně_nevhodně_vhodně__ nejvzácně_vzácně__ nejvýhodně_výhodně__ nejvřele_vřele__ nejúspěšně_úspěšně__ nejúčinně_účinně__ nejčerně_černě__ nepochopitelně_pochopitelně__ nepravděpodobně_pravděpodobně__ nepříznivě_příznivě__ normálně_ někde_ obecně_ otevřeně_ přísně_ radostně_ samostatně_ ...)
+ | | Types   (93)
+ | |
+ | |>- Children's similarity: 0.411475600
+ | | | Affixes (4): (*null* jší jších jším)
+ | | | Stems   (9): (levně_nejlevně__ moderně_nejmoderně__ nejpozdě_pozdě__ nejrychle_rychle__ nejrůzně_různě__ nejúspěšně_úspěšně__ nepravděpodobně_pravděpodobně__ někde_ výrazně_)
+ | | | Types   (31)
+ | | |
+ | | |>- Affixes (3): (*null* jší jších)
+ | | | | Stems   (6): (levně_nejlevně__ moderně_nejmoderně__ nejpozdě_pozdě__ nejrůzně_různě__ nejúspěšně_úspěšně__ někde_)
+ | | | | Types   (18)
+ | | |
+ | |  >- Affixes (3): (*null* jší jším)
+ | |   | Stems   (7): (moderně_nejmoderně__ nejpozdě_pozdě__ nejrychle_rychle__ nejrůzně_různě__ nepravděpodobně_pravděpodobně__ někde_ výrazně_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (2): (*null* jší)
+ |   | Stems   (40): (bezpečně_nejbezpečně__ důsledně_ efektivně_nejefektivně__ kvalitně_nejkvalitně__ levně_nejlevně__ moderně_nejmoderně__ nejnově_nově__ nejpodrobně_podrobně__ nejpozdě_pozdě__ nejrychle_rychle__ nejrůzně_různě__ nejsilně_silně__ nejsprávně_nesprávně_správně__ nejvhodně_nevhodně_vhodně__ nejvzácně_vzácně__ nejvýhodně_výhodně__ nejvřele_vřele__ nejúspěšně_úspěšně__ nejúčinně_účinně__ nejčerně_černě__ nepochopitelně_pochopitelně__ nepravděpodobně_pravděpodobně__ nepříznivě_příznivě__ normálně_ někde_ obecně_ otevřeně_ přísně_ radostně_ samostatně_ ...)
+ |   | Types   (80)
+ |  
+  >- Affixes (3): (jší jších jšího)
+   | Stems   (4): (levně_nejlevně__ nejpozdě_pozdě__ nyně_ včere_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.389249472
+ | Affixes (9): (ce ek ka kami kou ku ky kách kám)
+ | Stems   (14): (ban_ ekonomi_ myšlen_ nabíd_ neru_ru__ otáz_ podmín_ republi_ schůz_ stov_ strán_ sáz_ vál_ část_)
+ | Types   (98)
+ |
+ |>- Children's similarity: 0.379868588
+ | | Affixes (8): (ce ek ka kami kou ku ky kách)
+ | | Stems   (13): (ban_ ekonomi_ myšlen_ nabíd_ neru_ru__ otáz_ podmín_ republi_ schůz_ stov_ strán_ vál_ část_)
+ | | Types   (88)
+ | |
+ | |>- Children's similarity: 0.629940788
+ | | | Affixes (7): (ce ka kami kou ku ky kách)
+ | | | Stems   (10): (ban_ ekonomi_ nabíd_ neru_ru__ otáz_ podmín_ republi_ schůz_ strán_ vál_)
+ | | | Types   (66)
+ | | |
+ | | |>- Affixes (6): (ce ka kami ku ky kách)
+ | | | | Stems   (7): (ban_ ekonomi_ otáz_ podmín_ republi_ schůz_ strán_)
+ | | | | Types   (42)
+ | | |
+ | |  >- Affixes (6): (ce ka kou ku ky kách)
+ | |   | Stems   (9): (ban_ ekonomi_ nabíd_ neru_ru__ otáz_ podmín_ republi_ schůz_ vál_)
+ | |   | Types   (54)
+ | |  
+ |  >- Affixes (6): (ce ek ka kou ku ky)
+ |   | Stems   (7): (myšlen_ nabíd_ otáz_ podmín_ schůz_ stov_ část_)
+ |   | Types   (42)
+ |  
+  >- Affixes (5): (ce ka ku ky kám)
+   | Stems   (6): (ban_ ekonomi_ otáz_ podmín_ stov_ sáz_)
+   | Types   (30)
+  
+
+>- Children's similarity: 0.065372045
+ | Affixes (7): (l la li lo ly t čů)
+ | Stems   (16): (dosta_nedosta__ hrá_ kou_nekou__ muse_nemuse__ neobjevi_objevi__ neplati_plati__ nepotvrdi_potvrdi__ nestači_stači__ nestá_stá__ neumožni_umožni__ nevoli_voli__ nezměni_změni__ nezíska_získa__ nečeka_čeka__ požáda_ způsobi_)
+ | Types   (88)
+ |
+ |>- Affixes (6): (l la li lo ly t)
+ | | Stems   (13): (dosta_nedosta__ muse_nemuse__ neobjevi_objevi__ neplati_plati__ nepotvrdi_potvrdi__ nestači_stači__ nestá_stá__ neumožni_umožni__ nezměni_změni__ nezíska_získa__ nečeka_čeka__ požáda_ způsobi_)
+ | | Types   (78)
+ |
+  >- Affixes (3): (li t čů)
+   | Stems   (4): (hrá_ kou_nekou__ neplati_plati__ nevoli_voli__)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.082572282
+ | Affixes (7): (ictví í ích ího ím ími ímu)
+ | Stems   (15): (bankovn_ dalš_ finančn_ hlavn_ jej_ nejvyšš_vyšš__ největš_větš__ netržn_tržn__ ostatn_ pracovn_ prvn_ stavebn_ vlastn_ zahraničn_ účetn_)
+ | Types   (83)
+ |
+ |>- Affixes (4): (ictví í ích ího)
+ | | Stems   (5): (bankovn_ finančn_ stavebn_ vlastn_ účetn_)
+ | | Types   (20)
+ |
+  >- Affixes (6): (í ích ího ím ími ímu)
+   | Stems   (11): (dalš_ hlavn_ jej_ nejvyšš_vyšš__ největš_větš__ netržn_tržn__ ostatn_ pracovn_ prvn_ vlastn_ zahraničn_)
+   | Types   (66)
+  
+
+>- Children's similarity: 0.202030509
+ | Affixes (8): (dil dila dili dit dí zen zené zení)
+ | Stems   (19): (hra_ nahra_nenahra__ naří_nenaří__ nejtvr_netvr_tvr__ neobsa_obsa__ nepora_pora__ nepotvr_potvr__ nepřibrz_přibrz__ nezařa_zařa__ nezří_zří__ neří_ří__ odsou_ posou_ poří_ prosa_ soustře_ uhra_ vsa_ vyří_)
+ | Types   (76)
+ |
+ |>- Children's similarity: 0.450748936
+ | | Affixes (4): (dil dila dili dit)
+ | | Stems   (8): (nahra_nenahra__ nejtvr_netvr_tvr__ nepotvr_potvr__ nepřibrz_přibrz__ prosa_ uhra_ vsa_ vyří_)
+ | | Types   (28)
+ | |
+ | |>- Affixes (3): (dil dila dit)
+ | | | Stems   (7): (nejtvr_netvr_tvr__ nepotvr_potvr__ nepřibrz_přibrz__ prosa_ uhra_ vsa_ vyří_)
+ | | | Types   (21)
+ | |
+ |  >- Affixes (3): (dil dili dit)
+ |   | Stems   (5): (nahra_nenahra__ nejtvr_netvr_tvr__ nepotvr_potvr__ prosa_ vyří_)
+ |   | Types   (15)
+ |  
+  >- Children's similarity: 0.206196525
+   | Affixes (6): (dil dit dí zen zené zení)
+   | Stems   (15): (hra_ nahra_nenahra__ naří_nenaří__ nejtvr_netvr_tvr__ neobsa_obsa__ nepora_pora__ nepotvr_potvr__ nezařa_zařa__ nezří_zří__ neří_ří__ odsou_ posou_ poří_ soustře_ uhra_)
+   | Types   (56)
+   |
+   |>- Children's similarity: 0.281091348
+   | | Affixes (5): (dil dit dí zené zení)
+   | | Stems   (14): (hra_ nahra_nenahra__ naří_nenaří__ nejtvr_netvr_tvr__ neobsa_obsa__ nepora_pora__ nepotvr_potvr__ nezařa_zařa__ nezří_zří__ neří_ří__ posou_ poří_ soustře_ uhra_)
+   | | Types   (49)
+   | |
+   | |>- Children's similarity: 0.338061702
+   | | | Affixes (4): (dit dí zené zení)
+   | | | Stems   (9): (hra_ nejtvr_netvr_tvr__ neobsa_obsa__ nepotvr_potvr__ nezařa_zařa__ nezří_zří__ neří_ří__ posou_ poří_)
+   | | | Types   (30)
+   | | |
+   | | |>- Affixes (3): (dit dí zení)
+   | | | | Stems   (7): (hra_ nejtvr_netvr_tvr__ nezařa_zařa__ nezří_zří__ neří_ří__ posou_ poří_)
+   | | | | Types   (21)
+   | | |
+   | |  >- Affixes (3): (dit zené zení)
+   | |   | Stems   (5): (hra_ neobsa_obsa__ nepotvr_potvr__ nezařa_zařa__ neří_ří__)
+   | |   | Types   (15)
+   | |  
+   |  >- Affixes (3): (dil dit dí)
+   |   | Stems   (9): (hra_ nahra_nenahra__ naří_nenaří__ nejtvr_netvr_tvr__ nepora_pora__ nezařa_zařa__ nezří_zří__ soustře_ uhra_)
+   |   | Types   (27)
+   |  
+    >- Affixes (3): (dil zen zení)
+     | Stems   (4): (nepotvr_potvr__ nezařa_zařa__ nezří_zří__ odsou_)
+     | Types   (12)
+    
+
+>- Children's similarity: 0.222239159
+ | Affixes (7): (ované ovaných ovat uje ujeme ujete ují)
+ | Stems   (16): (dopln_doplň__ dosah_dosaz_nedosah__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nepřiprav_připrav__ nesled_sled__ opak_ ovlivn_ovlivň__ plán_ posuz_ požad_ specializ_ uvaž_)
+ | Types   (72)
+ |
+ |>- Children's similarity: 0.474341649
+ | | Affixes (5): (ované ovaných ovat uje ují)
+ | | Stems   (9): (neposkyt_poskyt__ nepředstav_představ__ nepřiprav_připrav__ nesled_sled__ opak_ ovlivn_ovlivň__ plán_ požad_ specializ_)
+ | | Types   (40)
+ | |
+ | |>- Affixes (4): (ované ovaných ovat uje)
+ | | | Stems   (5): (neposkyt_poskyt__ nepřiprav_připrav__ plán_ požad_ specializ_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (4): (ované ovat uje ují)
+ |   | Stems   (8): (neposkyt_poskyt__ nepředstav_představ__ nepřiprav_připrav__ nesled_sled__ opak_ ovlivn_ovlivň__ plán_ požad_)
+ |   | Types   (32)
+ |  
+  >- Children's similarity: 0.273861279
+   | Affixes (5): (ovat uje ujeme ujete ují)
+   | Stems   (10): (dopln_doplň__ dosah_dosaz_nedosah__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nesled_sled__ posuz_ uvaž_)
+   | Types   (41)
+   |
+   |>- Affixes (4): (ovat uje ujeme ují)
+   | | Stems   (8): (dopln_doplň__ dosah_dosaz_nedosah__ nepokrač_pokrač__ neposkyt_poskyt__ nepotřeb_potřeb__ nepovaž_považ__ nepředstav_představ__ nesled_sled__)
+   | | Types   (32)
+   |
+    >- Affixes (3): (ovat uje ujete)
+     | Stems   (5): (nepotřeb_potřeb__ nepovaž_považ__ nesled_sled__ posuz_ uvaž_)
+     | Types   (15)
+    
+
+>- Children's similarity: 0.044901326
+ | Affixes (11): (k čnou čná čné čného čném čný čných čným čně čnější)
+ | Stems   (12): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nenáro_náro__ nevýděle_výděle__ nezna_zna__ patři_ skute_ spole_ užite_ výlu_ závěre_)
+ | Types   (69)
+ |
+ |>- Children's similarity: 0.080064077
+ | | Affixes (10): (k čnou čná čné čného čném čný čných čným čně)
+ | | Stems   (10): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nenáro_náro__ nevýděle_výděle__ nezna_zna__ patři_ skute_ spole_ závěre_)
+ | | Types   (62)
+ | |
+ | |>- Children's similarity: 0.255376959
+ | | | Affixes (8): (čnou čná čné čného čný čných čným čně)
+ | | | Stems   (8): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nezna_zna__ patři_ skute_ spole_ závěre_)
+ | | | Types   (52)
+ | | |
+ | | |>- Children's similarity: 0.608580619
+ | | | | Affixes (7): (čnou čná čné čného čný čným čně)
+ | | | | Stems   (7): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nezna_zna__ skute_ spole_ závěre_)
+ | | | | Types   (46)
+ | | | |
+ | | | |>- Children's similarity: 0.800000000
+ | | | | | Affixes (6): (čnou čná čné čný čným čně)
+ | | | | | Stems   (6): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nezna_zna__ skute_ spole_)
+ | | | | | Types   (36)
+ | | | | |
+ | | | | |>- Affixes (5): (čnou čná čné čný čným)
+ | | | | | | Stems   (6): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nezna_zna__ skute_ spole_)
+ | | | | | | Types   (30)
+ | | | | |
+ | | | |  >- Affixes (5): (čnou čná čné čný čně)
+ | | | |   | Stems   (6): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ kone_nekone__ nezna_zna__ skute_ spole_)
+ | | | |   | Types   (30)
+ | | | |  
+ | | |  >- Affixes (5): (čnou čná čné čného čný)
+ | | |   | Stems   (6): (bezpe_nebezpe_nejbezpe_nejnebezpe__ dostate_nedostate__ nezna_zna__ skute_ spole_ závěre_)
+ | | |   | Types   (30)
+ | | |  
+ | |  >- Affixes (3): (čnou čné čných)
+ | |   | Stems   (4): (bezpe_nebezpe_nejbezpe_nejnebezpe__ patři_ skute_ závěre_)
+ | |   | Types   (12)
+ | |  
+ |  >- Affixes (3): (k čné čném)
+ |   | Stems   (4): (dostate_nedostate__ nenáro_náro__ nevýděle_výděle__ spole_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (čným čnější)
+   | Stems   (4): (bezpe_nebezpe_nejbezpe_nejnebezpe__ nenáro_náro__ užite_ výlu_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.106298801
+ | Affixes (8): (l la li lo ne nete nout nuto)
+ | Stems   (15): (dohod_nedohod__ dopad_nedopad__ dosta_nedosta__ dosáh_nedosáh__ nabíd_ nejsta_nesta_sta__ nepad_pad__ neposkyt_poskyt__ nerozhod_rozhod__ netáh_táh__ nevznik_vznik__ odmít_ pokles_ proběh_ přesta_)
+ | Types   (63)
+ |
+ |>- Children's similarity: 0.122474487
+ | | Affixes (7): (l la li lo ne nout nuto)
+ | | Stems   (14): (dohod_nedohod__ dosta_nedosta__ dosáh_nedosáh__ nabíd_ nejsta_nesta_sta__ nepad_pad__ neposkyt_poskyt__ nerozhod_rozhod__ netáh_táh__ nevznik_vznik__ odmít_ pokles_ proběh_ přesta_)
+ | | Types   (59)
+ | |
+ | |>- Children's similarity: 0.149071198
+ | | | Affixes (6): (l la li lo ne nout)
+ | | | Stems   (12): (dosta_nedosta__ dosáh_nedosáh__ nejsta_nesta_sta__ nepad_pad__ neposkyt_poskyt__ nerozhod_rozhod__ netáh_táh__ nevznik_vznik__ odmít_ pokles_ proběh_ přesta_)
+ | | | Types   (50)
+ | | |
+ | | |>- Affixes (5): (l la li lo ne)
+ | | | | Stems   (6): (dosta_nedosta__ dosáh_nedosáh__ nejsta_nesta_sta__ nerozhod_rozhod__ odmít_ přesta_)
+ | | | | Types   (30)
+ | | |
+ | |  >- Affixes (3): (la ne nout)
+ | |   | Stems   (8): (dosáh_nedosáh__ nepad_pad__ neposkyt_poskyt__ nerozhod_rozhod__ netáh_táh__ nevznik_vznik__ pokles_ proběh_)
+ | |   | Types   (24)
+ | |  
+ |  >- Affixes (3): (li nout nuto)
+ |   | Stems   (4): (dohod_nedohod__ nabíd_ neposkyt_poskyt__ nerozhod_rozhod__)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (li nete)
+   | Stems   (3): (dopad_nedopad__ dosta_nedosta__ nabíd_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.278524250
+ | Affixes (7): (*null* ce ci ců cům ec eckých)
+ | Stems   (13): (chlap_ cizin_ jednotliv_ neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ neznal_znal__ nezájem_zájem__ nájem_ něm_ tisí_ uměl_ vlád_ zástup_)
+ | Types   (62)
+ |
+ |>- Children's similarity: 0.373543684
+ | | Affixes (6): (*null* ce ci ců cům ec)
+ | | Stems   (12): (chlap_ cizin_ jednotliv_ neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ neznal_znal__ nezájem_zájem__ nájem_ tisí_ uměl_ vlád_ zástup_)
+ | | Types   (55)
+ | |
+ | |>- Children's similarity: 0.355756237
+ | | | Affixes (5): (*null* ce ci ců ec)
+ | | | Stems   (10): (chlap_ cizin_ neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ neznal_znal__ nezájem_zájem__ nájem_ uměl_ vlád_ zástup_)
+ | | | Types   (43)
+ | | |
+ | | |>- Affixes (4): (*null* ce ci ců)
+ | | | | Stems   (8): (chlap_ neposlal_poslal_poslan__ neznal_znal__ nezájem_zájem__ nájem_ uměl_ vlád_ zástup_)
+ | | | | Types   (32)
+ | | |
+ | |  >- Affixes (4): (ce ci ců ec)
+ | |   | Stems   (5): (chlap_ cizin_ neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ neznal_znal__)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (4): (ce ci ců cům)
+ |   | Stems   (6): (jednotliv_ neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ nezájem_zájem__ tisí_ zástup_)
+ |   | Types   (24)
+ |  
+  >- Affixes (3): (ce ci eckých)
+   | Stems   (5): (neposlal_poslal_poslan__ nezaměstnan_zaměstnan__ neznal_znal__ něm_ uměl_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.121267813
+ | Affixes (7): (nil nila nili nit ní nění ňuje)
+ | Stems   (15): (dopl_nedopl__ nejči_neči_či__ neodstra_odstra__ nespl_spl__ neumož_umož__ neuplat_uplat__ neuskuteč_uskuteč__ neuči_uči__ nezmě_změ__ nezúčast_zúčast__ oce_ upozor_ zabrá_ zdůraz_ zpřes_)
+ | Types   (62)
+ |
+ |>- Children's similarity: 0.547722558
+ | | Affixes (5): (nil nila nili nit ní)
+ | | Stems   (7): (nejči_neči_či__ nespl_spl__ neumož_umož__ neuči_uči__ nezmě_změ__ zabrá_ zdůraz_)
+ | | Types   (32)
+ | |
+ | |>- Affixes (4): (nil nila nili nit)
+ | | | Stems   (6): (nejči_neči_či__ neumož_umož__ neuči_uči__ nezmě_změ__ zabrá_ zdůraz_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (4): (nil nila nit ní)
+ |   | Stems   (5): (nejči_neči_či__ nespl_spl__ neumož_umož__ nezmě_změ__ zabrá_)
+ |   | Types   (20)
+ |  
+  >- Children's similarity: 0.384900179
+   | Affixes (4): (nil nit nění ňuje)
+   | Stems   (10): (dopl_nedopl__ neodstra_odstra__ nespl_spl__ neumož_umož__ neuplat_uplat__ neuskuteč_uskuteč__ nezúčast_zúčast__ oce_ upozor_ zpřes_)
+   | Types   (34)
+   |
+   |>- Affixes (3): (nil nit nění)
+   | | Stems   (6): (dopl_nedopl__ nespl_spl__ neumož_umož__ nezúčast_zúčast__ oce_ upozor_)
+   | | Types   (18)
+   |
+    >- Affixes (3): (nit nění ňuje)
+     | Stems   (8): (dopl_nedopl__ neodstra_odstra__ neumož_umož__ neuplat_uplat__ neuskuteč_uskuteč__ oce_ upozor_ zpřes_)
+     | Types   (24)
+    
+
+>- Children's similarity: 0.109108945
+ | Affixes (8): (ovalo ovat ovníky uje ují ující ujících ujícím)
+ | Stems   (12): (boj_neboj__ dopln_doplň__ exist_neexist__ nepokrač_pokrač__ nepostup_postup__ nerozhod_rozhod__ nespoluprac_spoluprac__ nevyhov_vyhov__ násled_ prac_ směř_ vyžad_)
+ | Types   (60)
+ |
+ |>- Children's similarity: 0.286909521
+ | | Affixes (7): (ovalo ovat uje ují ující ujících ujícím)
+ | | Stems   (11): (boj_neboj__ dopln_doplň__ exist_neexist__ nepokrač_pokrač__ nepostup_postup__ nerozhod_rozhod__ nevyhov_vyhov__ násled_ prac_ směř_ vyžad_)
+ | | Types   (56)
+ | |
+ | |>- Children's similarity: 0.367423461
+ | | | Affixes (6): (ovat uje ují ující ujících ujícím)
+ | | | Stems   (8): (boj_neboj__ dopln_doplň__ exist_neexist__ nepostup_postup__ nerozhod_rozhod__ násled_ prac_ vyžad_)
+ | | | Types   (41)
+ | | |
+ | | |>- Affixes (5): (ovat uje ují ující ujících)
+ | | | | Stems   (6): (boj_neboj__ dopln_doplň__ exist_neexist__ nerozhod_rozhod__ násled_ prac_)
+ | | | | Types   (30)
+ | | |
+ | |  >- Affixes (4): (ovat uje ující ujícím)
+ | |   | Stems   (5): (exist_neexist__ nepostup_postup__ nerozhod_rozhod__ násled_ vyžad_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (4): (ovalo ovat uje ují)
+ |   | Stems   (6): (exist_neexist__ nepokrač_pokrač__ nevyhov_vyhov__ násled_ prac_ směř_)
+ |   | Types   (24)
+ |  
+  >- Affixes (2): (ovat ovníky)
+   | Stems   (3): (nespoluprac_spoluprac__ násled_ prac_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.164957220
+ | Affixes (6): (í ěl ěla ěli ělo ět)
+ | Stems   (16): (cht_necht_nenecht__ chyb_nechyb__ jm_m_nejm_nem__ nalet_ nejvěd_nevěd_věd__ neodpověd_odpověd__ neum_um__ nevid_vid__ předpověd_ převád_ přilet_ přisp_ stav_ utrp_ vypověd_ vypráv_)
+ | Types   (57)
+ |
+ |>- Children's similarity: 0.232495277
+ | | Affixes (5): (í ěl ěla ěli ět)
+ | | Stems   (14): (chyb_nechyb__ nalet_ nejvěd_nevěd_věd__ neodpověd_odpověd__ neum_um__ nevid_vid__ předpověd_ převád_ přilet_ přisp_ stav_ utrp_ vypověd_ vypráv_)
+ | | Types   (49)
+ | |
+ | |>- Children's similarity: 0.356348323
+ | | | Affixes (4): (í ěl ěla ět)
+ | | | Stems   (11): (chyb_nechyb__ nalet_ nejvěd_nevěd_věd__ neodpověd_odpověd__ neum_um__ nevid_vid__ převád_ přilet_ přisp_ stav_ vypráv_)
+ | | | Types   (37)
+ | | |
+ | | |>- Affixes (3): (í ěl ět)
+ | | | | Stems   (8): (chyb_nechyb__ nejvěd_nevěd_věd__ neodpověd_odpověd__ neum_um__ nevid_vid__ převád_ přilet_ stav_)
+ | | | | Types   (24)
+ | | |
+ | |  >- Affixes (3): (ěl ěla ět)
+ | |   | Stems   (7): (chyb_nechyb__ nalet_ neodpověd_odpověd__ nevid_vid__ přisp_ stav_ vypráv_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (3): (ěl ěli ět)
+ |   | Stems   (6): (nejvěd_nevěd_věd__ neodpověd_odpověd__ nevid_vid__ předpověd_ utrp_ vypověd_)
+ |   | Types   (18)
+ |  
+  >- Affixes (3): (ěl ěla ělo)
+   | Stems   (4): (cht_necht_nenecht__ chyb_nechyb__ jm_m_nejm_nem__ přisp_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.054554473
+ | Affixes (6): (*null* a ova ovním ovo ovy)
+ | Stems   (15): (banc_bank__ dobal_ gorbačov_ jelcin_ karl_karn__ masaryk_ ministr_ministř__ moravčík_ nejsn_nesl_nesn_sl_sn__ petr_ pošt_ pracovníc_pracovník__ schneider_ společníc_společník__ sport_)
+ | Types   (49)
+ |
+ |>- Children's similarity: 0.198029509
+ | | Affixes (5): (*null* a ova ovo ovy)
+ | | Stems   (12): (dobal_ gorbačov_ jelcin_ karl_karn__ masaryk_ ministr_ministř__ moravčík_ nejsn_nesl_nesn_sl_sn__ petr_ pracovníc_pracovník__ schneider_ společníc_společník__)
+ | | Types   (42)
+ | |
+ | |>- Children's similarity: 0.380952381
+ | | | Affixes (4): (*null* a ova ovy)
+ | | | Stems   (10): (dobal_ gorbačov_ karl_karn__ masaryk_ ministr_ministř__ moravčík_ nejsn_nesl_nesn_sl_sn__ petr_ schneider_ společníc_společník__)
+ | | | Types   (34)
+ | | |
+ | | |>- Affixes (3): (*null* a ova)
+ | | | | Stems   (7): (dobal_ gorbačov_ masaryk_ ministr_ministř__ nejsn_nesl_nesn_sl_sn__ petr_ schneider_)
+ | | | | Types   (21)
+ | | |
+ | |  >- Affixes (3): (*null* a ovy)
+ | |   | Stems   (7): (dobal_ karl_karn__ masaryk_ moravčík_ nejsn_nesl_nesn_sl_sn__ schneider_ společníc_společník__)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (3): (*null* a ovo)
+ |   | Stems   (4): (jelcin_ karl_karn__ nejsn_nesl_nesn_sl_sn__ pracovníc_pracovník__)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (*null* ovním)
+   | Stems   (4): (banc_bank__ nejsn_nesl_nesn_sl_sn__ pošt_ sport_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.355756237
+ | Affixes (5): (*null* cí cích cího cím)
+ | Stems   (10): (blíží_ budou_nebudou__ existují_neexistují__ nerozhodují_rozhodují__ nezabývají_zabývají__ neřídí_řídí__ následují_ stávají_ týkají_ začínají_)
+ | Types   (43)
+ |
+ |>- Affixes (4): (*null* cí cích cího)
+ | | Stems   (8): (budou_nebudou__ nerozhodují_rozhodují__ nezabývají_zabývají__ neřídí_řídí__ následují_ stávají_ týkají_ začínají_)
+ | | Types   (32)
+ |
+  >- Affixes (4): (*null* cí cích cím)
+   | Stems   (5): (blíží_ budou_nebudou__ existují_neexistují__ nerozhodují_rozhodují__ následují_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.195180015
+ | Affixes (6): (ká ké kého kých tví tvím)
+ | Stems   (9): (děts_ hospodářs_ lékařs_ nepotravinářs_potravinářs__ občans_ poradens_ společens_ vlastnic_ zdravotnic_)
+ | Types   (43)
+ |
+ |>- Affixes (5): (ká ké kého kých tví)
+ | | Stems   (7): (děts_ hospodářs_ lékařs_ nepotravinářs_potravinářs__ občans_ vlastnic_ zdravotnic_)
+ | | Types   (35)
+ |
+  >- Affixes (3): (ké tví tvím)
+   | Stems   (4): (občans_ poradens_ společens_ vlastnic_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.365148372
+ | Affixes (5): (ají ající ajících ajícího á)
+ | Stems   (9): (kles_ nepodnik_podnic_podnik__ nevyplýv_vyplýv__ nevznik_vznik__ nezabýv_zabýv__ neček_ček__ stáv_ týk_ začín_)
+ | Types   (39)
+ |
+ |>- Affixes (4): (ají ající ajících á)
+ | | Stems   (8): (nepodnik_podnic_podnik__ nevyplýv_vyplýv__ nevznik_vznik__ nezabýv_zabýv__ neček_ček__ stáv_ týk_ začín_)
+ | | Types   (32)
+ |
+  >- Affixes (3): (ající ajícího á)
+   | Stems   (5): (kles_ nezabýv_zabýv__ stáv_ týk_ začín_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.410791918
+ | Affixes (5): (ha hou hu hy ze)
+ | Stems   (8): (dru_ kni_ nejsna_nesna_sna__ nepra_pra__ nepředlo_předlo__ přílo_ zálo_ úva_)
+ | Types   (35)
+ |
+ |>- Affixes (4): (ha hou hu hy)
+ | | Stems   (5): (dru_ nejsna_nesna_sna__ nepra_pra__ nepředlo_předlo__ zálo_)
+ | | Types   (20)
+ |
+  >- Affixes (4): (ha hu hy ze)
+   | Stems   (6): (kni_ nejsna_nesna_sna__ nepra_pra__ přílo_ zálo_ úva_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.410791918
+ | Affixes (5): (ra rou ru ry ře)
+ | Stems   (8): (agentu_ atmosfé_ důvě_nedůvě__ mí_nemí__ nejvýh_nevýh_výh__ nepodpo_podpo__ premié_ struktu_)
+ | Types   (35)
+ |
+ |>- Affixes (4): (ra rou ru ry)
+ | | Stems   (6): (agentu_ důvě_nedůvě__ mí_nemí__ nejvýh_nevýh_výh__ nepodpo_podpo__ premié_)
+ | | Types   (24)
+ |
+  >- Affixes (4): (ra ru ry ře)
+   | Stems   (5): (agentu_ atmosfé_ mí_nemí__ nepodpo_podpo__ struktu_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.117851130
+ | Affixes (6): (ejí ející ela et í íme)
+ | Stems   (8): (mus_nemus__ nabíz_ nepřicház_přicház__ nevrat_vrac_vrat__ nevycház_vycház__ nevytvář_vytvář__ přecház_ předcház_)
+ | Types   (34)
+ |
+ |>- Affixes (4): (ejí et í íme)
+ | | Stems   (6): (mus_nemus__ nabíz_ nepřicház_přicház__ nevrat_vrac_vrat__ nevycház_vycház__ přecház_)
+ | | Types   (24)
+ |
+  >- Affixes (3): (ející ela et)
+   | Stems   (4): (nabíz_ nevycház_vycház__ nevytvář_vytvář__ předcház_)
+   | Types   (12)
+  
+
+>- Affixes (4): (*null* m me te)
+ | Stems   (7): (dostává_nedostává__ musí_nemusí__ má_nemá__ nabízí_ nejví_neví_ví__ nevidí_vidí__ nezná_zná__)
+ | Types   (28)
+
+
+>- Affixes (3): (*null* a ův)
+ | Stems   (7): (christopher_ clinton_ manžel_nemanžel__ premiér_premiéř__ prezident_ ullmann_ völler_)
+ | Types   (21)
+
+
+>- Affixes (4): (*null* je ji jí)
+ | Stems   (5): (bo_nebo__ nesledu_sledu__ opaku_ slibu_ účtu_)
+ | Types   (20)
+
+
+>- Affixes (4): (cení tila tit tí)
+ | Stems   (5): (hodno_ nepla_pla__ nevrá_vrá__ nezapla_zapla__ zkrá_)
+ | Types   (20)
+
+
+>- Affixes (4): (e eme ete i)
+ | Stems   (5): (chc_nechc__ doporučuj_ dostal_dostan_nedostal_nedostan__ nepovažuj_považuj__ nesleduj_sleduj__)
+ | Types   (20)
+
+
+>- Affixes (4): (en eni eny it)
+ | Stems   (5): (nepřiprav_připrav__ nespokoj_spokoj__ nezvol_zvol__ vystav_ zastoup_)
+ | Types   (20)
+
+
+>- Affixes (4): (l lem lu ly)
+ | Stems   (5): (hote_ materiá_ venti_ úko_ úče_)
+ | Types   (20)
+
+
+>- Affixes (4): (mu mus tické té)
+ | Stems   (5): (fašis_ komunis_ nejrealis_realis__ optimis_ socialis_)
+ | Types   (20)
+
+
+>- Affixes (4): (nictví ní ních ního)
+ | Stems   (5): (bankov_ financ_finanč__ stavb_staveb__ vlast_ účet_)
+ | Types   (20)
+
+
+>- Affixes (4): (nilo nily nit ní)
+ | Stems   (5): (nespl_spl__ neumož_umož__ neuskuteč_uskuteč__ nezmě_změ__ ovliv_)
+ | Types   (20)
+
+
+>- Affixes (4): (ované ovaný uje ují)
+ | Stems   (5): (komplik_ navrh_ nepředstav_představ__ opak_ požad_)
+ | Types   (20)
+
+
+>- Affixes (4): (é ého ě ěji)
+ | Stems   (5): (běžn_ nejvýhodn_výhodn__ nepohodln_pohodln__ obtížn_ přesn_)
+ | Types   (20)
+
+
+>- Affixes (4): (é ého ější ějším)
+ | Stems   (5): (nejrůzn_různ__ nejvzdálen_vzdálen__ nejvýznamn_významn__ nepravděpodobn_pravděpodobn__ nevýrazn_výrazn__)
+ | Types   (20)
+
+
+
+

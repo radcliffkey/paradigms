@@ -1,0 +1,24 @@
+#format:
+#stemvariant1/stemvariant2, ... + suffixes attaching to stemvariant1/ suffixes attaching to stemvariant2
+
+#masc. animate nouns
+kluk/kluc, vlk/vlc, politik/politic, logik/logic, vrah/vraz + a, u, ovi, em, y, ů, ům / i, ích
+maďar/maďař + a, u, ovi, em, ech, y, ů, ům / i
+
+#masc. inanimate nouns
+hrad, článek/článk + 0 / u, em, y, ům
+
+#fem. nouns
+politik/politic, logik/logic, agentur/agentuř + a, ou, y, 0, ami, ách, ám / e
+svadb/svadeb + a, ou, y, ě, ami, ách, ám / 0
+klec + 0, í, e, i, ích
+
+#verbs
+píš, buduj + i, eš, e, eme, ete, í
+piš, buduj + 0, me, te
+
+psa + l, la, li, ly
+
+#adjectives
+letn + í, ím, ího, ímu
+hrub + ý, ého, ých, á, ou, é, ého, ým

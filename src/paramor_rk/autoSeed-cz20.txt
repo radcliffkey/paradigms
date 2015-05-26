@@ -1,0 +1,114 @@
+vrác/vrát + ení/ila, í, it
+plac/plat + ení/ila, í, it
+hodnot/hodnoc + ila, í, it/ení
+zkrát/zkrác + ila, í, it/ení
+zaplat/zaplac + ila, í, it/ení
+snaz/snah + e/u, ou, a, y
+záloz/záloh + e/u, ou, a, y
+kniz/knih + e/u, a, y
+praz/prah + e/u, ou, a, y
+příloh/příloz + u, a, y/e
+úvaz/úvah + e/u, a, y
+stránk/stránc + ách, u, ami, a, y/e
+ekonomic/ekonomik + e/ám, ách, u, ami, ou, a, y
+banc/bank + e/ám, u, ách, ami, ou, a, y
+otázk/otázek/otázc + ám, u, ách, ou, ami, a, y/0/e
+stovek/stovc/stovk + 0/e/ám, u, ou, a, y
+republic/republik + e/u, ách, ami, ou, a, y
+sázk/sázc + ám, u, a, y/e
+částek/částk/částc + 0/u, ou, a, y/e
+myšlenk/myšlenek/myšlenc + u, ou, a, y/0/e
+válc/válk + e/ách, u, ou, a, y
+podmínc/podmínk/podmínek + e/ám, ách, u, ami, ou, a, y/0
+ruc/ruk + e/u, ách, ou, a, y
+schůzc/schůzek/schůzk + e/0/u, ách, ami, ou, a, y
+nabídk/nabídek/nabídc + ách, u, ou, a, y/0/e
+ovlivn/ovlivň + ilo, í, it/ování
+uskutečn/uskutečň + ilo, í, it/ování
+zmírň/zmírn + ování/ilo, í, it
+uplatn/uplatň + ilo, it/ování
+konkurenc/konkurenč + í, e, i/ní, ním, ního, ních
+informač/informac + ní, ním, ního, ních/í, e, emi, i
+tradic/tradič + í, e, i/ní, ními, ního
+koalic/koalič + e, i/ní, ních
+likvidac/likvidač + í, e, i/ní, ním, ního
+korespondenc/korespondenč + e, i/ní, ními
+hranič/hranic + ní, ním, ními, ního, ních/í, e, emi, i
+nemocnič/nemocnic + ní, ních/e, i
+privatizač/privatizac + ní, ního, ních/í, e, i
+funkč/funkc + ní, ním/í, e, i
+orientac/orientač + í, e, i/ním, ní
+organizač/organizac + ní, ním/í, e, i
+lustrač/lustrac + ním, ní, ního/í, e, i
+propagac/propagač + e, i/ní, ními
+restituc/restituč + í, e, emi, i/ní, ních
+opozic/opozič + í, e, i/ní, ními, ního
+investic/investič + e, i/ní, ními, ních
+operac/operač + í, e, i/ní, ním
+oceň/ocen + uje/it, il, ění
+zpřesn/zpřesň + it, ění/uje
+odstraň/odstran + uje/it, ění
+doplň/dopln + uje/it, il, ění
+uskutečn/uskutečň + ila, í, it, ění/uje, oval
+upozorň/upozorn + uje, oval/it, il, ění
+uplatn/uplatň + it, ění/uje
+umožň/umožn + uje/ila, í, it, ily, ili, il, ění
+zdůrazn/zdůrazň + ila, it, il, ili/oval
+padl/padn + a/e, out
+stan/stal + e/0, a, o, i
+dostal/dostan + 0, a, o, i/e
+táhn/táhl + e, out/a
+poklesl/poklesn + a/e, out
+poskytn/poskytl + e, uto, out/a, i
+odmítn/odmítl + e/0, a, o, i
+rozhodl/rozhodn + 0, a, o, i/e, ut, uto, out
+dosáhn/dosáhl + e, out/0, a, o, i
+přestan/přestal + e/0, a, o, i
+vznikn/vznikl + e, out/a
+proběhl/proběhn + a/e, out
+služb/služeb + ám, u, ách, ou, a, ě, y/0, ní, ního, ních
+hudeb/hudb + ní, ního, ních/y
+skladeb/skladb + 0/u, a, y
+stavb/staveb + ám, ách, a, ě, y/ní, ním, ního, ních
+vazeb/vazb + 0, ní/u, ách, a, ě, y
+dlažeb/dlažb + 0/u, a, y
+voleb/volb + ním, ní, 0, ního, ních/ám, ách, u, ami, ou, a, ě, y
+plateb/platb + ní, 0/u, ami, a, ě, y
+sazeb/sazb + 0/u, ami, a, y
+slovens/slovenš + ká, kého, ký, kých, kými, ké, kou/tí
+vojens/vojenš + ká, kého, kých, ký, kými, ké, kou/tí
+pražs/pražš + ká, kého, kých, ký, ké, kém/tí
+kanadš/kanads + tí/ká, kého, ký, kých, kými, ké, kým, kém, kou
+čes/češ + ká, kého, ký, kých, kými, ké, kým, kém, kému, kou/tině, tí
+izraels/izraelš + ká, kého, kých, ký, ké/tí
+ruš/rus + tí/ká, kého, ký, kých, ké, kým, kém, kému, kou
+americ/američ + ká, kého, ku, kých, ký, ké, ko, kým, kému, kou/tí
+specifič/specific + tí/ký, kých, ké
+umělec/uměleč + ká, kých, ký, kými, ké, ko, kému/tí
+politič/politic + tí/ká, kého, kých, ký, kými, ké, kým, kém, kému, kou
+belgič/belgic + tí/ký, kých, ké
+podpor/podpoř + u, a, y/e
+struktur/struktuř + u, a, y/e
+agentuř/agentur + e/u, a, y
+atmosféř/atmosfér + e/u, a, y
+mír/míř + u, a, ové, y/e
+památk/památek + u, ové, ových, y/0
+příspěvk/příspěvek + u, ové, em, ů, y, ových/0
+výsledek/výsledk + 0/u, ům, ů, em, y
+poplatk/poplatek + u, ů, em, y/0
+výrobek/výrobk + 0/u, ům, em, ů, ový, y
+celek/celk + 0/ová, ovou, ovými, ům, ovém, ovým, u, ové, em, ů, ových, y, ového
+padělek/padělk + 0/u, em, ů, y
+nabídk/nabídek + u, ové, y/0
+článk/článek + u, ů, em, y/0
+prvek/prvk + 0/ům, ů, em, y
+zásilek/zásilk + 0/u, ová, ovými, ové, y, ových, ového, ovým
+nedostatk/nedostatek + ům, ů, em, y/0
+požadavk/požadavek + ům, em, ů, y/0
+výdělek/výdělk + 0/u, ů, em, y
+důsledk/důsledek + u, em, ů, y/0
+špiček/špičk + 0/u, ová, ové, ovém, y, ových, ovým, ového
+desítek/desítk + 0/ový, y
+směnk/směnek + ový, y/0
+pohádk/pohádek + ový, y/0
+zakázk/zakázek + u, ové, y/0

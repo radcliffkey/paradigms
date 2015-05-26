@@ -1,0 +1,16 @@
+#nouns
+bild + 0, e, es, er, ern
+tisch + 0, es, e, en
+diamant + 0, en
+fahrer + 0, s, n
+buchstab + e, en, ens
+radio + 0, s
+mutter/mütter + 0/0, n
+vater/väter + 0, s / 0, n
+
+#adjectives
+neu + er, en, es, e, em
+
+#verbs
+lieb, kauf, arbeit/arbeite + e, en / st, t, te, test, ten, tet
+handel/handl + n, e, st, t, n, te, test, ten, tet / e

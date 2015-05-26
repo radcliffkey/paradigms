@@ -1,0 +1,20 @@
+#
+# An initializations file for ParaMor v0.1
+# 
+# Written by Christian Monson -- June 26, 2009
+#
+#
+
+corpus ../resources/si/jos100kv2_0-sl.txt
+
+manualSeed seed-si.txt
+
+language GENERIC
+
+throwOutNumbers on
+
+corpusEncoding utf8
+
+caseSensitive off
+
+typesToRead 50000

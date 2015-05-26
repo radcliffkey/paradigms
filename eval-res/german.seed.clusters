@@ -1,0 +1,258 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/radcliff/projects/thesis/paramor_rk/../resources/de/tiger100kt.plain
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  8 Clusters
+-----------------------
+
+>- Children's similarity: 0.002947507
+ | Affixes (13): (*null* e en er ern es et ete eten n t te ten)
+ | Stems   (205): (alban_ angreif_ anh?ng_ anleg_ anteilseign_ arab_ arbeit_arbeite__ arbeitgeb_ arbeitnehm_ asylbewerb_ atommeil_ aufseh_ ausland_ausl?nd__ autofahr_ bann_ bau_ bedeut_bedeute__ behaupt_behaupte__ belast_belaste_bel?st__ beobacht_beobachte__ berat_ber?t__ bericht_berichte__ berlin_ besser_ bewert_bewerte__ bewohn_ bild_ billiger_ bosni_ bundesland_bundesl?nd__ ...)
+ | Types   (696)
+ |
+ |>- Children's similarity: 0.014044168
+ | | Affixes (12): (*null* e en er es et ete eten n t te ten)
+ | | Stems   (75): (arbeit_arbeite__ bedeut_bedeute__ behaupt_behaupte__ belast_belaste_bel?st__ bericht_berichte__ besser_ bewert_bewerte__ billiger_ demokratisch_ dies_ eigen_ eindeutig_ einig_ einzig_ entscheidend_ entsprechend_ erkl?rt_erkl?rte__ erst_erste__ erwart_erwarte__ europ?isch_ frei_ fr?her_ furcht_f?rcht_f?rchte__ ganz_g?nz__ gebiet_gebiete__ gemeinsam_ gestalt_gestalte__ gleich_ gro?_ gut_gute__ ...)
+ | | Types   (435)
+ | |
+ | |>- Children's similarity: 0.308802827
+ | | | Affixes (10): (*null* e en et ete eten n t te ten)
+ | | | Stems   (22): (arbeit_arbeite__ bedeut_bedeute__ behaupt_behaupte__ belast_belaste_bel?st__ bericht_berichte__ bewert_bewerte__ erwart_erwarte__ furcht_f?rcht_f?rchte__ gestalt_gestalte__ kampf_k?mpf__ kost_koste__ mark_m?rk__ mein_ reich_ richt_richte__ sicher_ spiel_ teil_ versuch_ verzicht_verzichte__ wart_warte__ wunsch_w?nsch__)
+ | | | Types   (169)
+ | | |
+ | | |>- Children's similarity: 0.450051437
+ | | | | Affixes (10): (*null* e en et ete eten n t te ten)
+ | | | | Stems   (14): (arbeit_arbeite__ bedeut_bedeute__ behaupt_behaupte__ belast_belaste_bel?st__ bericht_berichte__ bewert_bewerte__ erwart_erwarte__ furcht_f?rcht_f?rchte__ gestalt_gestalte__ kost_koste__ richt_richte__ sicher_ verzicht_verzichte__ wart_warte__)
+ | | | | Types   (121)
+ | | | |
+ | | | |>- Children's similarity: 0.545544726
+ | | | | | Affixes (9): (*null* en et ete eten n t te ten)
+ | | | | | Stems   (10): (arbeit_arbeite__ behaupt_behaupte__ belast_belaste_bel?st__ bericht_berichte__ bewert_bewerte__ gestalt_gestalte__ richt_richte__ sicher_ verzicht_verzichte__ wart_warte__)
+ | | | | | Types   (84)
+ | | | | |
+ | | | | |>- Affixes (6): (*null* en n t te ten)
+ | | | | | | Stems   (7): (arbeit_arbeite__ bericht_berichte__ gestalt_gestalte__ richt_richte__ sicher_ verzicht_verzichte__ wart_warte__)
+ | | | | | | Types   (42)
+ | | | | |
+ | | | |  >- Affixes (8): (en et ete eten n t te ten)
+ | | | |   | Stems   (9): (arbeit_arbeite__ behaupt_behaupte__ belast_belaste_bel?st__ bericht_berichte__ bewert_bewerte__ gestalt_gestalte__ richt_richte__ verzicht_verzichte__ wart_warte__)
+ | | | |   | Types   (72)
+ | | | |  
+ | | |  >- Affixes (8): (*null* e en et eten n t ten)
+ | | |   | Stems   (9): (arbeit_arbeite__ bedeut_bedeute__ bericht_berichte__ erwart_erwarte__ furcht_f?rcht_f?rchte__ kost_koste__ richt_richte__ verzicht_verzichte__ wart_warte__)
+ | | |   | Types   (72)
+ | | |  
+ | |  >- Affixes (6): (*null* e en t te ten)
+ | |   | Stems   (13): (arbeit_arbeite__ bericht_berichte__ kampf_k?mpf__ mark_m?rk__ mein_ reich_ richt_richte__ spiel_ teil_ versuch_ verzicht_verzichte__ wart_warte__ wunsch_w?nsch__)
+ | |   | Types   (78)
+ | |  
+ |  >- Affixes (5): (*null* e en er es)
+ |   | Stems   (54): (besser_ billiger_ demokratisch_ dies_ eigen_ eindeutig_ einig_ einzig_ entscheidend_ entsprechend_ erkl?rt_erkl?rte__ erst_erste__ europ?isch_ frei_ fr?her_ ganz_g?nz__ gebiet_gebiete__ gemeinsam_ gleich_ gro?_ gut_gute__ kein_ klein_ kleiner_ land_l?nd__ langfristig_ letzt_letzte__ mein_ milit?risch_ moralisch_ ...)
+ |   | Types   (269)
+ |  
+  >- Affixes (2): (er ern)
+   | Stems   (132): (alban_ angreif_ anh?ng_ anleg_ anteilseign_ arab_ arbeitgeb_ arbeitnehm_ asylbewerb_ atommeil_ aufseh_ ausland_ausl?nd__ autofahr_ bann_ bau_ beobacht_beobachte__ berat_ber?t__ berlin_ bewohn_ bild_ bosni_ bundesland_bundesl?nd__ b?rg_ comput_ dach_d?ch__ dau_ ddr-b?rg_ ddr-richt_ d?rf_ einwohn_ ...)
+   | Types   (264)
+  
+
+>- Children's similarity: 0.036822985
+ | Affixes (7): (n ne nen ner nes st ten)
+ | Stems   (139): (abgebroche_ abgegebe_ abgehalte_ abgelaufe_ abgeschlage_ abgewiese_ aktio_ allgemei_ angemesse_ aufgenomme_ ausgerufe_ ausgesproche_ autobah_ bah_ balko_ be_ began_ begin_ begonne_ bei_ beschlosse_ betroffe_ billio_ delegatio_ demonstratio_ diskussio_ e-versio_ ebe_ eige_ einbehalte_ ...)
+ | Types   (302)
+ |
+ |>- Children's similarity: 0.034199278
+ | | Affixes (6): (n ne nen ner nes st)
+ | | Stems   (136): (abgebroche_ abgegebe_ abgehalte_ abgelaufe_ abgeschlage_ abgewiese_ aktio_ allgemei_ angemesse_ aufgenomme_ ausgerufe_ ausgesproche_ autobah_ bah_ balko_ began_ begin_ begonne_ bei_ beschlosse_ betroffe_ billio_ delegatio_ demonstratio_ diskussio_ e-versio_ ebe_ eige_ einbehalte_ einberufe_ ...)
+ | | Types   (294)
+ | |
+ | |>- Children's similarity: 0.145643816
+ | | | Affixes (5): (n ne nen ner nes)
+ | | | Stems   (132): (abgebroche_ abgegebe_ abgehalte_ abgelaufe_ abgeschlage_ abgewiese_ aktio_ allgemei_ angemesse_ aufgenomme_ ausgerufe_ ausgesproche_ autobah_ bah_ balko_ began_ begin_ begonne_ bei_ beschlosse_ betroffe_ billio_ delegatio_ demonstratio_ diskussio_ e-versio_ ebe_ eige_ einbehalte_ einberufe_ ...)
+ | | | Types   (284)
+ | | |
+ | | |>- Affixes (5): (n ne nen ner nes)
+ | | | | Stems   (7): (eige_ kei_ klei_ mei_ offe_ rei_ sei_)
+ | | | | Types   (35)
+ | | |
+ | |  >- Affixes (2): (n nen)
+ | |   | Stems   (132): (abgebroche_ abgegebe_ abgehalte_ abgelaufe_ abgeschlage_ abgewiese_ aktio_ allgemei_ angemesse_ aufgenomme_ ausgerufe_ ausgesproche_ autobah_ bah_ balko_ began_ begin_ begonne_ bei_ beschlosse_ betroffe_ billio_ delegatio_ demonstratio_ diskussio_ e-versio_ ebe_ eige_ einbehalte_ einberufe_ ...)
+ | |   | Types   (263)
+ | |  
+ |  >- Affixes (2): (n st)
+ |   | Stems   (6): (klei_ last_laste_l?st__ mei_ sollt_sollte__ wei_ ?u?er_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (st ten)
+   | Stems   (5): (be_ schrei_ war_ wei_ ?u?er_)
+   | Types   (10)
+  
+
+>- Children's similarity: 0.034259435
+ | Affixes (3): (*null* - test)
+ | Stems   (73): (agrar_ alkohol_ arbeiter_ arbeitnehmer_ armee_ aufbau_ auswahl_ bahn_ balkan_ basis_ binnen_ blut_ breiten_ bundes_ b?rger_ b?ro_ chemie_ drei_ energie_ familien_ feuer_ fr?chte_ gast_g?st__ geld_ gewerbe_ golf_ handels_ hotel_ industrie_ infrastruktur_ ...)
+ | Types   (147)
+ |
+ |>- Affixes (2): (*null* -)
+ | | Stems   (71): (agrar_ arbeiter_ arbeitnehmer_ armee_ aufbau_ auswahl_ bahn_ balkan_ basis_ binnen_ breiten_ bundes_ b?rger_ b?ro_ chemie_ drei_ energie_ familien_ feuer_ fr?chte_ gast_g?st__ geld_ gewerbe_ golf_ handels_ hotel_ industrie_ infrastruktur_ innen_ insel_ ...)
+ | | Types   (142)
+ |
+  >- Affixes (2): (*null* test)
+   | Stems   (3): (alkohol_ blut_ soll_)
+   | Types   (6)
+  
+
+>- Affixes (2): (en ens)
+ | Stems   (73): (abkomm_ albani_ algeri_ argentini_ asi_ belgi_ bosni_ bulgari_ b?rgerbegehr_ chr?ti_ eig_ einkomm_ erst_erste__ fehlverhalt_ fernseh_ fisch_ flughaf_ fried_ friedensabkomm_ gazastreif_ gedank_ georgi_ gescheh_ gesundheitswes_ gipfeltreff_ grau_ gro?britanni_ haf_ hess_ h?chst_ ...)
+ | Types   (146)
+
+
+>- Affixes (5): (*null* m n r s)
+ | Stems   (25): (alle_ andere_ besondere_ diese_ eigene_ eine_ einige_ freie_ gleiche_ gro?e_ gut_gute__ ihre_ jede_ jene_ keine_ meine_ neue_ offene_ politische_ seine_ st?ndige_ unsere_ welche_ wirtschaftliche_ ?hnliche_)
+ | Types   (125)
+
+
+>- Children's similarity: 0.131558703
+ | Affixes (6): (t te ten tens tes ts)
+ | Stems   (28): (attenta_ berich_ entdeck_ entwickel_entwickl__ erkl?r_ erns_ ers_ gebie_ geeigne_ geschaf_gesch?f__ haushal_haush?l__ h?chs_ institu_ konflik_ konkre_ mark_m?rk__ mona_ obers_ priva_ projek_ protes_ rech_ schlech_ sei_ standor_ verbo_ wes_ wor_)
+ | Types   (118)
+ |
+ |>- Children's similarity: 0.210042013
+ | | Affixes (5): (t te ten tes ts)
+ | | Stems   (25): (attenta_ berich_ entdeck_ entwickel_entwickl__ erkl?r_ erns_ ers_ gebie_ geeigne_ geschaf_gesch?f__ haushal_haush?l__ institu_ konflik_ konkre_ mark_m?rk__ mona_ obers_ priva_ projek_ protes_ rech_ schlech_ standor_ verbo_ wor_)
+ | | Types   (104)
+ | |
+ | |>- Affixes (4): (t te ten tes)
+ | | | Stems   (17): (entdeck_ entwickel_entwickl__ erkl?r_ erns_ ers_ gebie_ geeigne_ institu_ konflik_ konkre_ mark_m?rk__ obers_ priva_ schlech_ standor_ verbo_ wor_)
+ | | | Types   (68)
+ | |
+ |  >- Affixes (4): (t te ten ts)
+ |   | Stems   (12): (attenta_ berich_ gebie_ geschaf_gesch?f__ haushal_haush?l__ institu_ konflik_ mona_ projek_ protes_ rech_ verbo_)
+ |   | Types   (48)
+ |  
+  >- Affixes (4): (t te ten tens)
+   | Stems   (5): (ers_ h?chs_ rech_ sei_ wes_)
+   | Types   (20)
+  
+
+>- Affixes (4): (t te ten tet)
+ | Stems   (8): (ach_ arbei_ berich_ brus_br?s__ furch_f?rch__ gebie_ lau_ verzich_)
+ | Types   (32)
+
+
+>- Children's similarity: 0.069006556
+ | Affixes (4): (e en st te)
+ | Stems   (11): (dien_ ein_ ern_ jung_j?ng__ kenn_ m?glich_ sollt_sollte__ war_ wei_ will_ ?u?er_)
+ | Types   (30)
+ |
+ |>- Affixes (3): (e en st)
+ | | Stems   (7): (ein_ jung_j?ng__ kenn_ m?glich_ sollt_sollte__ war_ will_)
+ | | Types   (21)
+ |
+  >- Affixes (2): (st te)
+   | Stems   (5): (dien_ ern_ war_ wei_ ?u?er_)
+   | Types   (10)
+  
+
+
+

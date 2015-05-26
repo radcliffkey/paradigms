@@ -1,0 +1,64 @@
+\chapter{Introduction}
+
+Morphological analysis is important for many applications working with natural language in written or spoken form. An analyser can be built manually (for example, using finite-state technology) or machine learning (ML) with various levels of supervision can be employed. Completely supervised techniques and hand-written analysers can achieve very high quality of results. 
+
+However, supervised ML approaches usually require an annotated corpus, which for many of the world's languages is an unavailable resource and it would be expensive or straight out impossible to create one. Similar problem arises with the hand-written analysers, for which experts with deep knowledge of given language and strong linguistic and programming background are needed. Another important resource to be taken into account is time, as creating an analyser manually by experts is considerably time-consuming.
+
+In cases where the expensive resources are not available, one may use one of the unsupervised or semi-supervised morphology learners. The semi-supervised approaches are attempting to use the fact that even for underresourced languages there is (nearly) always possible to get some useful resources without spending much time or money. These resources may include inflections of individual words or inflection classes from a grammar textbook. 
+ 
+Analyses vary not only in the type and amount of learning data they require, but also in the output they provide to the user. Morphological analysis in its standard sense returns all possible lemmas and part-of-speech tags for each word in the text, disregarding the context. For example, \e{handles} should be analysed as a 3\supscr{rd} person singular verb form and a plural noun; using the Penn Treebank tagset \citep{marcus93} this could be encoded as \{(\e{handle}, VBZ), (\e{handle}, NNS)\}. Resource-light approaches to MA are not always able to provide such detailed analysis, but can produce results such as:
+
+ \begin{enumerate}
+\item Related word forms. For \emph{run}, the analyser may return \emph{runs}, \emph{running}. This kind of analysis is useful in information retrieval. For example, if you search for \emph{table} on Google, you expect it to find  \emph{tables} as well.
+\item Morphemic segmentation, i.e. splitting words into morphemes. For \emph{tables},  \emph{table} + \emph{s} is returned. Speech recognition systems can benefit from this kind of analysis by building morpheme level language models.
+\end{enumerate}
+
+The system developed for this thesis is semi-supervised as it uses manually entered inflections with marked morpheme boundary as one of its inputs. It contains two almost independent modules: 
+\begin{enumerate}
+\item \label{li:mod_par} Modified Paramor \citep{monson09} analyser. Modifications aim at improving its results by using the manual seed mentioned above. The seed is used (1) to help Paramor recognise true suffixes and paradigms and (2) generate simple rules capturing stem allomorphy. Treating allomorfic variants as a single stem enables the algorithm to find more complete paradigms and place morpheme boundaries more adequately. Like the original Paramor, the system is capable of inducing inflectional paradigms as well as using them for morphemic segmentation.
+\item Word clustering framework which allows combination of multiple sources of information, for example output of a paradigm producing algorithm such as the one from (\ref{li:mod_par}), morphology segmentation algorithm or modified edit distance. It also provides evaluation of resulting clusters' adequacy if a lemmatised corpus is available.
+\end{enumerate} 
+
+The target languages are inflectional, especially Slavic languages, but the system should yield acceptable results for any language with suffixal morphology.
+
+\section{Terminology}
+Terms from the field of morphology are used quite loosely in various publications. In this section, I briefly summarise some of them and clarify in what sense they will be used in this thesis.
+
+\textbf{Morpheme} is the smallest unit in a language bearing a meaning. It is an abstract entity, which may be realised in speech or writing by more than one form. The individual realisations are called \textbf{morphs}. Every word consist of one or more morphs \eg \e{talk + ing, un + avail + able}.
+
+\textbf{Allomorphs} are morphs realising the same morpheme, depending on the context. They occur due to phonological/graphemic changes or irregularities. For example, consider the declension of the Czech word \e{matka} `mother' in Table \ref{table:matka}. It exhibits stem-final conso\-nant chan\-ge (palatalisation of \e{k} to \e{c}) triggered by the dative and local singular ending, and epenthesis (insertion of \e{-e-}) in the bare stem genitive plural. As a result, the stem has 3 allomorphs: \e{matk}, \e{matc} and \e{matek}.
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{lll}
+\toprule \bf Case & \bf Singular & \bf Plural \\ \midrule
+nom & mat\textbf{k}+a & mat\textbf{k}+y \\
+gen & mat\textbf{k}+y & mat\textbf{ek}+0 \\
+dat & mat\textbf{c}+e & mat\textbf{k}+ám\\
+acc & mat\textbf{k}+u & mat\textbf{k}+y \\
+voc & mat\textbf{k}+o & mat\textbf{k}+y \\
+loc & mat\textbf{c}+e & mat\textbf{k}+ách \\
+inst & mat\textbf{k}+ou & mat\textbf{k}+ami \\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:matka} Declension of the word \gloss{matka}{mother}. Changing part of the stem is in bold.}
+\end{table}
+
+\noindent \textbf{Inflection} is a morphological process which creates different forms of one word:
+\begin{quote}
+\e{walk, walks, walked, walking}
+\end{quote} \tbf{Derivation} is a process which creates new words: \begin{quote}
+\e{relent $\rightarrow$ relentless $\rightarrow$ relentlessness}
+\end{quote} 
+
+\noindent \textbf{Lexeme} is a set of words related by inflection. For example, all forms of the word \gloss{matka}{mother} in Table \ref{table:matka} form a lexeme. Lexeme is also sometimes used in a related but slightly different meaning -- as a unit of language that has a semantic meaning.
+
+\textbf{Canonical form}, or dictionary form, is a form selected by a convention to represent a lexeme. For example, usually infinitive is chosen for verbs and nominative singular for nouns.
+
+\textbf{Lemma} is a unique identifier for a lexeme. Typically, the canonical form can serve as a lemma (possibly with indexes disambiguating polysemous words, such as \e{bank\subscr{1}}/\e{bank\subscr{2}}). Nevertheless, lemma can be any arbitrarily chosen unique identifier (at least in NLP).
+
+Inflections of most of the words follow regular patterns, called \textbf{paradigms}. Definitions of a paradigm in various works differ. Paradigms as taught in Czech schools consist of suffix for each combination of relevant grammatical categories\footnote{case and number for nouns, person and number for verbs} and a word inflected according to the paradigm. This word serves as an example and an easy-to-remember identifier of the paradigm. In this thesis, the term paradigm will be used for a set of suffixes. 
+%For a set of inflections of the same lemma, I will use the term \textbf{l-paradigm}.
+
+\section{Layout of the thesis}
+The rest of the thesis is organised as follows: Chapter \ref{chapter:prev_works} reviews some of the important previous works related to the subject of the thesis. Detailed description of Paramor is provided in Chapter \ref{chapter:paramor}. Chapter \ref{chapter:modifications} presents modifications of Paramor to handle basic allomorphy and use a manually provided seed. The clustering framework and implemented string distance measures are described in Chapter \ref{chapter:clustering}. Experiments and their results are presented in Chapter \ref{chapter:results}. Chapter \ref{chapter:conclusion} summarises the thesis and outlines possible future improvements. 

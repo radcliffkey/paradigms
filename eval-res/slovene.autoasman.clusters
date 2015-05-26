@@ -1,0 +1,1952 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/klicr5am/thesis/paramor_rk/../resources/si/jos100kv2_0-sl.txt
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  48 Clusters
+-----------------------
+
+>- Children's similarity: 0.134675492
+ | Affixes (6): (*null* ga h m mi mu)
+ | Stems   (1000): (akcija_ aktivnosti_ amandmaje_ ameri?ki_ angle?ke_ angle?ki_ arbitra?ne_ atena_ avstralski_ avstrijske_ avto_ avtorji_ avtorske_ bala_ banka_ barantanje_ bavarske_ begunce_ beli_ beseda_ besedilo_ besedni_ bistri_ biv?i_ blago_ bli?nje_ bli?njevzhodni_ bli?nji_ bogastvo_ bogati_ ...)
+ | Types   (2318)
+ |
+ |>- Children's similarity: 0.362971313
+ | | Affixes (4): (*null* ga m mu)
+ | | Stems   (585): (amandmaje_ ameri?ki_ angle?ke_ arbitra?ne_ avstrijske_ avto_ avtorske_ barantanje_ bavarske_ begunce_ beli_ besedilo_ blago_ bli?nje_ bli?nji_ bogastvo_ bogati_ boje_ boji_ bolezni_ bole?ina_ bolj?e_ bo?je_ bralce_ branje_ brezdelje_ bre?i?ke_ britanski_ cele_ celotne_ ...)
+ | | Types   (1321)
+ | |
+ | |>- Children's similarity: 0.404111930
+ | | | Affixes (4): (*null* ga m mu)
+ | | | Stems   (124): (angle?ke_ avstrijske_ avtorske_ bli?nje_ bolj?e_ bo?je_ celotne_ cestne_ dalj?e_ dana?nje_ dav?ne_ delovne_ dnevne_ dolo?ene_ doma?e_ druge_ dr?avne_ enake_ evropske_ glavne_ goste_ hitre_ hrva?ke_ invalidske_ iste_ italijanske_ japonske_ javne_ jezikovne_ jugoslovanske_ ...)
+ | | | Types   (399)
+ | | |
+ | | |>- Affixes (3): (*null* ga m)
+ | | | | Stems   (124): (angle?ke_ avstrijske_ avtorske_ bli?nje_ bolj?e_ bo?je_ celotne_ cestne_ dalj?e_ dana?nje_ dav?ne_ delovne_ dnevne_ dolo?ene_ doma?e_ druge_ dr?avne_ enake_ evropske_ glavne_ goste_ hitre_ hrva?ke_ invalidske_ iste_ italijanske_ japonske_ javne_ jezikovne_ jugoslovanske_ ...)
+ | | | | Types   (372)
+ | | |
+ | |  >- Affixes (4): (*null* ga m mu)
+ | |   | Stems   (27): (bolj?e_ delovne_ druge_ dr?avne_ evropske_ italijanske_ javne_ kak?ne_ katere_ kratke_ majhne_ moje_ naslednje_ na?e_ neke_ njegove_ njene_ njihove_ parlamentarne_ prve_ slovenske_ stare_ svoje_ tiste_ umetni?ke_ velike_ vsake_)
+ | |   | Types   (108)
+ | |  
+ |  >- Affixes (2): (*null* m)
+ |   | Stems   (585): (amandmaje_ ameri?ki_ angle?ke_ arbitra?ne_ avstrijske_ avto_ avtorske_ barantanje_ bavarske_ begunce_ beli_ besedilo_ blago_ bli?nje_ bli?nji_ bogastvo_ bogati_ boje_ boji_ bolezni_ bole?ina_ bolj?e_ bo?je_ bralce_ branje_ brezdelje_ bre?i?ke_ britanski_ cele_ celotne_ ...)
+ |   | Types   (1170)
+ |  
+  >- Children's similarity: 0.207148371
+   | Affixes (4): (*null* h m mi)
+   | Stems   (536): (akcija_ aktivnosti_ ameri?ki_ angle?ki_ atena_ avstralski_ avtorji_ bala_ banka_ beli_ beseda_ besedni_ bistri_ biv?i_ bli?njevzhodni_ bli?nji_ bogati_ boji_ bojni_ boki_ bolezni_ bole?ina_ bolni?nica_ bolonjski_ bori_ britanski_ cesta_ cestni_ civilni_ dana?nji_ ...)
+   | Types   (1164)
+   |
+   |>- Affixes (2): (*null* h)
+   | | Stems   (536): (akcija_ aktivnosti_ ameri?ki_ angle?ki_ atena_ avstralski_ avtorji_ bala_ banka_ beli_ beseda_ besedni_ bistri_ biv?i_ bli?njevzhodni_ bli?nji_ bogati_ boji_ bojni_ boki_ bolezni_ bole?ina_ bolni?nica_ bolonjski_ bori_ britanski_ cesta_ cestni_ civilni_ dana?nji_ ...)
+   | | Types   (1072)
+   |
+    >- Affixes (4): (*null* h m mi)
+     | Stems   (46): (dobri_ drugi_ evropski_ ideja_ kak?ni_ kateri_ lastni_ majhni_ mladi_ mlaj?i_ mnogi_ na?i_ nekateri_ njegovi_ njeni_ njihovi_ notranji_ novi_ ob?ina_ osebni_ ostali_ plesni_ podobni_ posamezni_ posebni_ prvi_ razli?ni_ sami_ skupni_ slovenski_ ...)
+     | Types   (184)
+    
+
+>- Children's similarity: 0.075352152
+ | Affixes (24): (*null* a ajo e i ijo il ila ile ili ilni ilno ilo imo ita ite iti i? na no o om ov u)
+ | Stems   (68): (avtomobil_ besed_ cilj_ dob_ dogovor_ dolo?_ gost_ govor_ interes_ izdaj_ izgub_ izid_ letal_ lokal_ mam_ mest_ misl_ napad_ nared_ naslov_ nastop_ objav_ odgovor_ odkr_ odlok_odlo?__ odprav_ omogo?_ otrok_otro?__ pla?_ pojav_ ...)
+ | Types   (514)
+ |
+ |>- Children's similarity: 0.115818031
+ | | Affixes (12): (*null* a ajo e i ila na no o om ov u)
+ | | Stems   (35): (avtomobil_ cilj_ dogovor_ gost_ govor_ interes_ izdaj_ izid_ letal_ lokal_ mest_ napad_ naslov_ nastop_ otrok_otro?__ poro?il_ poskus_ postopek_postopk__ prav_ predlog_predlo?__ primer_ problem_ program_ sistem_ sklad_ sklep_ sporo?il_ stavek_stavk__ svet_ teden_tedn__ ...)
+ | | Types   (238)
+ | |
+ | |>- Children's similarity: 0.124878108
+ | | | Affixes (11): (*null* a e i ila na no o om ov u)
+ | | | Stems   (31): (avtomobil_ cilj_ dogovor_ gost_ govor_ interes_ izid_ letal_ lokal_ mest_ napad_ naslov_ nastop_ otrok_otro?__ poro?il_ poskus_ postopek_postopk__ prav_ predlog_predlo?__ primer_ problem_ program_ sistem_ sklep_ sporo?il_ stavek_stavk__ svet_ teden_tedn__ teles_ zakon_ ?port_)
+ | | | Types   (213)
+ | | |
+ | | |>- Children's similarity: 0.203281234
+ | | | | Affixes (9): (*null* a e i ila o om ov u)
+ | | | | Stems   (25): (avtomobil_ dogovor_ gost_ govor_ interes_ izid_ letal_ mest_ napad_ naslov_ nastop_ otrok_otro?__ poro?il_ poskus_ postopek_postopk__ prav_ predlog_predlo?__ problem_ program_ sistem_ sporo?il_ stavek_stavk__ svet_ teden_tedn__ zakon_)
+ | | | | Types   (171)
+ | | | |
+ | | | |>- Children's similarity: 0.344265186
+ | | | | | Affixes (7): (*null* a i ila o om u)
+ | | | | | Stems   (13): (dogovor_ gost_ govor_ letal_ mest_ nastop_ poro?il_ poskus_ prav_ predlog_predlo?__ sporo?il_ stavek_stavk__ svet_)
+ | | | | | Types   (78)
+ | | | | |
+ | | | | |>- Affixes (5): (*null* a i ila u)
+ | | | | | | Stems   (8): (dogovor_ gost_ govor_ nastop_ poskus_ prav_ predlog_predlo?__ svet_)
+ | | | | | | Types   (40)
+ | | | | |
+ | | | |  >- Affixes (6): (*null* a i o om u)
+ | | | |   | Stems   (9): (gost_ letal_ mest_ poro?il_ prav_ predlog_predlo?__ sporo?il_ stavek_stavk__ svet_)
+ | | | |   | Types   (54)
+ | | | |  
+ | | |  >- Affixes (7): (*null* a e i om ov u)
+ | | |   | Stems   (16): (avtomobil_ gost_ interes_ izid_ napad_ naslov_ nastop_ otrok_otro?__ postopek_postopk__ predlog_predlo?__ problem_ program_ sistem_ svet_ teden_tedn__ zakon_)
+ | | |   | Types   (112)
+ | | |  
+ | |  >- Affixes (6): (*null* a i na no u)
+ | |   | Stems   (9): (cilj_ lokal_ mest_ naslov_ prav_ primer_ sklep_ teles_ ?port_)
+ | |   | Types   (54)
+ | |  
+ |  >- Affixes (5): (*null* a ajo e i)
+ |   | Stems   (7): (izdaj_ nastop_ sklad_ sklep_ stavek_stavk__ zadev_ zahtev_)
+ |   | Types   (35)
+ |  
+  >- Children's similarity: 0.097590007
+   | Affixes (18): (*null* a e i ijo il ila ile ili ilni ilno ilo imo ita ite iti i? o)
+   | Stems   (38): (besed_ dob_ dolo?_ gost_ govor_ izgub_ mam_ misl_ nared_ nastop_ objav_ odgovor_ odkr_ odlok_odlo?__ odprav_ omogo?_ pla?_ pojav_ poskus_ postav_ povzro?_ pozab_ prav_ predstav_ priprav_ pust_ razv_ re?_ sled_ spremen_ ...)
+   | Types   (296)
+   |
+   |>- Children's similarity: 0.122144127
+   | | Affixes (17): (*null* a e i ijo il ila ile ili ilni ilno ilo imo ita ite iti o)
+   | | Stems   (35): (besed_ dob_ dolo?_ gost_ govor_ izgub_ mam_ misl_ nastop_ objav_ odgovor_ odkr_ odlok_odlo?__ odprav_ omogo?_ pla?_ pojav_ poskus_ postav_ povzro?_ pozab_ prav_ predstav_ priprav_ pust_ razv_ re?_ sled_ spremen_ spust_ ...)
+   | | Types   (280)
+   | |
+   | |>- Children's similarity: 0.273861279
+   | | | Affixes (6): (a i il ila ilni ilno)
+   | | | Stems   (8): (besed_ gost_ odlok_odlo?__ pla?_ prav_ re?_ vod_ zdrav_)
+   | | | Types   (38)
+   | | |
+   | | |>- Affixes (4): (a i ila ilni)
+   | | | | Stems   (6): (gost_ odlok_odlo?__ pla?_ prav_ vod_ zdrav_)
+   | | | | Types   (24)
+   | | |
+   | |  >- Affixes (4): (i il ila ilno)
+   | |   | Stems   (5): (besed_ odlok_odlo?__ prav_ re?_ vod_)
+   | |   | Types   (20)
+   | |  
+   |  >- Children's similarity: 0.176501127
+   |   | Affixes (15): (*null* a e i ijo il ila ile ili ilo imo ita ite iti o)
+   |   | Stems   (30): (dob_ dolo?_ govor_ izgub_ mam_ misl_ nastop_ objav_ odgovor_ odkr_ odlok_odlo?__ odprav_ omogo?_ pojav_ poskus_ postav_ povzro?_ pozab_ prav_ predstav_ priprav_ pust_ razv_ sled_ spremen_ spust_ ugotov_ ustvar_ vlog_vlo?__ vod_)
+   |   | Types   (254)
+   |   |
+   |   |>- Children's similarity: 0.269679945
+   |   | | Affixes (14): (*null* a e i ijo il ila ili ilo imo ita ite iti o)
+   |   | | Stems   (24): (dob_ dolo?_ govor_ izgub_ mam_ misl_ nastop_ objav_ odgovor_ odkr_ odlok_odlo?__ odprav_ omogo?_ poskus_ postav_ pozab_ prav_ predstav_ priprav_ pust_ razv_ ugotov_ vlog_vlo?__ vod_)
+   |   | | Types   (214)
+   |   | |
+   |   | |>- Children's similarity: 0.428571429
+   |   | | | Affixes (13): (*null* a e i ijo il ila ili ilo imo ite iti o)
+   |   | | | Stems   (22): (dob_ dolo?_ govor_ izgub_ mam_ misl_ nastop_ objav_ odgovor_ odlok_odlo?__ odprav_ omogo?_ poskus_ postav_ pozab_ prav_ predstav_ priprav_ pust_ ugotov_ vlog_vlo?__ vod_)
+   |   | | | Types   (198)
+   |   | | |
+   |   | | |>- Children's similarity: 0.600000000
+   |   | | | | Affixes (10): (*null* a i ijo il ila ili imo ite iti)
+   |   | | | | Stems   (15): (dob_ govor_ izgub_ misl_ nastop_ odgovor_ odlok_odlo?__ poskus_ postav_ pozab_ predstav_ priprav_ pust_ ugotov_ vod_)
+   |   | | | | Types   (126)
+   |   | | | |
+   |   | | | |>- Children's similarity: 0.574988908
+   |   | | | | | Affixes (8): (*null* a i il ila ili imo iti)
+   |   | | | | | Stems   (12): (dob_ govor_ izgub_ nastop_ odgovor_ odlok_odlo?__ poskus_ postav_ predstav_ priprav_ pust_ vod_)
+   |   | | | | | Types   (90)
+   |   | | | | |
+   |   | | | | |>- Affixes (7): (*null* a i il ila ili iti)
+   |   | | | | | | Stems   (8): (govor_ nastop_ odgovor_ odlok_odlo?__ poskus_ predstav_ priprav_ pust_)
+   |   | | | | | | Types   (56)
+   |   | | | | |
+   |   | | | |  >- Affixes (7): (a i il ila ili imo iti)
+   |   | | | |   | Stems   (10): (dob_ govor_ izgub_ odgovor_ odlok_odlo?__ poskus_ postav_ priprav_ pust_ vod_)
+   |   | | | |   | Types   (70)
+   |   | | | |  
+   |   | | |  >- Children's similarity: 0.571428571
+   |   | | |   | Affixes (8): (i ijo il ila ili imo ite iti)
+   |   | | |   | Stems   (12): (dob_ govor_ izgub_ misl_ odlok_odlo?__ poskus_ postav_ pozab_ priprav_ pust_ ugotov_ vod_)
+   |   | | |   | Types   (90)
+   |   | | |   |
+   |   | | |   |>- Affixes (7): (i ijo il ila ili imo iti)
+   |   | | |   | | Stems   (9): (dob_ govor_ izgub_ misl_ postav_ pozab_ priprav_ ugotov_ vod_)
+   |   | | |   | | Types   (63)
+   |   | | |   |
+   |   | | |    >- Affixes (7): (i il ila ili imo ite iti)
+   |   | | |     | Stems   (9): (dob_ misl_ odlok_odlo?__ poskus_ pozab_ priprav_ pust_ ugotov_ vod_)
+   |   | | |     | Types   (63)
+   |   | | |    
+   |   | |  >- Children's similarity: 0.455842306
+   |   | |   | Affixes (9): (a e i il ila ili ilo iti o)
+   |   | |   | Stems   (16): (dob_ dolo?_ izgub_ mam_ nastop_ objav_ odgovor_ odlok_odlo?__ odprav_ omogo?_ postav_ prav_ predstav_ priprav_ vlog_vlo?__ vod_)
+   |   | |   | Types   (126)
+   |   | |   |
+   |   | |   |>- Children's similarity: 0.653802918
+   |   | |   | | Affixes (8): (a e i il ila ili iti o)
+   |   | |   | | Stems   (13): (dob_ izgub_ mam_ nastop_ objav_ odgovor_ odprav_ postav_ prav_ predstav_ priprav_ vlog_vlo?__ vod_)
+   |   | |   | | Types   (99)
+   |   | |   | |
+   |   | |   | |>- Affixes (7): (a e i il ila ili iti)
+   |   | |   | | | Stems   (11): (dob_ izgub_ nastop_ objav_ odgovor_ odprav_ postav_ predstav_ priprav_ vlog_vlo?__ vod_)
+   |   | |   | | | Types   (77)
+   |   | |   | |
+   |   | |   |  >- Affixes (7): (a e i il ila ili o)
+   |   | |   |   | Stems   (10): (dob_ izgub_ mam_ objav_ odprav_ prav_ predstav_ priprav_ vlog_vlo?__ vod_)
+   |   | |   |   | Types   (70)
+   |   | |   |  
+   |   | |    >- Affixes (7): (a i il ila ili ilo iti)
+   |   | |     | Stems   (9): (dob_ dolo?_ nastop_ odgovor_ odlok_odlo?__ odprav_ omogo?_ predstav_ vod_)
+   |   | |     | Types   (63)
+   |   | |    
+   |   |  >- Affixes (5): (il ila ili ita iti)
+   |   |   | Stems   (8): (dob_ dolo?_ govor_ nastop_ odkr_ odprav_ razv_ vod_)
+   |   |   | Types   (40)
+   |   |  
+   |    >- Affixes (6): (i ijo il ila ile ili)
+   |     | Stems   (10): (izgub_ misl_ pojav_ povzro?_ priprav_ sled_ spremen_ spust_ ustvar_ vod_)
+   |     | Types   (60)
+   |    
+    >- Affixes (4): (e i ijo i?)
+     | Stems   (6): (dob_ izgub_ nared_ prav_ vid_ ?el_)
+     | Types   (24)
+    
+
+>- Children's similarity: 0.014693177
+ | Affixes (15): (*null* a e ega em emu i ih im imi o ost osti ote otni)
+ | Stems   (42): (cel_ drug_dru?__ druga?en_druga?n__ dr?avn_ enak_ evropsk_ javn_ kak?en_kak?n__ kater_ kratek_kratk__ lep_ majhen_majhn__ mlad_ nacionaln_ na?_ njegov_ njen_ njihov_ notranj_ nov_ osebn_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ prv_ sam_ skupen_skupn__ slab_ slovensk_ ...)
+ | Types   (397)
+ |
+ |>- Children's similarity: 0.059391387
+ | | Affixes (14): (*null* a e ega em emu i ih im imi o ost osti otni)
+ | | Stems   (39): (cel_ drug_dru?__ druga?en_druga?n__ dr?avn_ enak_ evropsk_ javn_ kak?en_kak?n__ kater_ kratek_kratk__ majhen_majhn__ mlad_ nacionaln_ na?_ njegov_ njen_ njihov_ notranj_ nov_ osebn_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ prv_ skupen_skupn__ slab_ slovensk_ sob_ spoln_ ...)
+ | | Types   (386)
+ | |
+ | |>- Children's similarity: 0.270029246
+ | | | Affixes (13): (*null* a e ega em emu i ih im imi o ost osti)
+ | | | Stems   (37): (drug_dru?__ druga?en_druga?n__ dr?avn_ enak_ evropsk_ javn_ kak?en_kak?n__ kater_ kratek_kratk__ majhen_majhn__ mlad_ nacionaln_ na?_ njegov_ njen_ njihov_ notranj_ nov_ osebn_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ prv_ skupen_skupn__ slab_ slovensk_ spoln_ star_ svoj_ ...)
+ | | | Types   (378)
+ | | |
+ | | |>- Children's similarity: 0.586471691
+ | | | | Affixes (11): (*null* a e ega em emu i ih im imi o)
+ | | | | Stems   (21): (drug_dru?__ evropsk_ kak?en_kak?n__ kater_ kratek_kratk__ majhen_majhn__ mlad_ na?_ njegov_ njen_ njihov_ podoben_podobn__ poseben_posebn__ prv_ skupen_skupn__ slovensk_ star_ svoj_ tist_ velik_veli?__ vsak_)
+ | | | | Types   (217)
+ | | | |
+ | | | |>- Children's similarity: 0.634663062
+ | | | | | Affixes (11): (*null* a e ega em emu i ih im imi o)
+ | | | | | Stems   (15): (drug_dru?__ kak?en_kak?n__ kratek_kratk__ majhen_majhn__ mlad_ njegov_ njen_ njihov_ podoben_podobn__ poseben_posebn__ skupen_skupn__ star_ svoj_ velik_veli?__ vsak_)
+ | | | | | Types   (157)
+ | | | | |
+ | | | | |>- Affixes (9): (*null* a e ega em emu ih im o)
+ | | | | | | Stems   (11): (drug_dru?__ kak?en_kak?n__ kratek_kratk__ majhen_majhn__ njegov_ njen_ njihov_ star_ svoj_ velik_veli?__ vsak_)
+ | | | | | | Types   (99)
+ | | | | |
+ | | | |  >- Affixes (10): (*null* a e ega em i ih im imi o)
+ | | | |   | Stems   (13): (drug_dru?__ kak?en_kak?n__ majhen_majhn__ mlad_ njegov_ njen_ njihov_ podoben_podobn__ poseben_posebn__ skupen_skupn__ star_ svoj_ velik_veli?__)
+ | | | |   | Types   (130)
+ | | | |  
+ | | |  >- Affixes (10): (a e ega em emu i ih im imi o)
+ | | |   | Stems   (15): (drug_dru?__ evropsk_ kak?en_kak?n__ kater_ majhen_majhn__ na?_ njegov_ njen_ njihov_ prv_ slovensk_ star_ svoj_ tist_ velik_veli?__)
+ | | |   | Types   (150)
+ | | |  
+ | |  >- Children's similarity: 0.564496243
+ | |   | Affixes (12): (*null* a e ega em i ih im imi o ost osti)
+ | |   | Stems   (22): (druga?en_druga?n__ dr?avn_ enak_ javn_ mlad_ nacionaln_ notranj_ nov_ osebn_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ spoln_ star_ uspe?en_uspe?n__ velik_veli?__ zanimiv_ znan_ zunanj_)
+ | |   | Types   (220)
+ | |   |
+ | |   |>- Children's similarity: 0.577470538
+ | |   | | Affixes (10): (a e ega em i ih im o ost osti)
+ | |   | | Stems   (13): (dr?avn_ enak_ javn_ mlad_ nacionaln_ nov_ podoben_podobn__ poseben_posebn__ skupen_skupn__ star_ velik_veli?__ zanimiv_ zunanj_)
+ | |   | | Types   (121)
+ | |   | |
+ | |   | |>- Affixes (9): (a e ega em i ih im o ost)
+ | |   | | | Stems   (10): (javn_ mlad_ nov_ podoben_podobn__ poseben_posebn__ skupen_skupn__ star_ velik_veli?__ zanimiv_ zunanj_)
+ | |   | | | Types   (90)
+ | |   | |
+ | |   |  >- Affixes (8): (a e ega em i ih o osti)
+ | |   |   | Stems   (10): (dr?avn_ enak_ javn_ mlad_ nacionaln_ nov_ poseben_posebn__ skupen_skupn__ star_ velik_veli?__)
+ | |   |   | Types   (80)
+ | |   |  
+ | |    >- Children's similarity: 0.518324833
+ | |     | Affixes (11): (*null* a e ega i ih im imi o ost osti)
+ | |     | Stems   (19): (druga?en_druga?n__ enak_ javn_ mlad_ notranj_ nov_ osebn_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ spoln_ star_ uspe?en_uspe?n__ velik_veli?__ zanimiv_ znan_)
+ | |     | Types   (183)
+ | |     |
+ | |     |>- Children's similarity: 0.727272727
+ | |     | | Affixes (10): (a e ega i ih im imi o ost osti)
+ | |     | | Stems   (13): (javn_ mlad_ notranj_ nov_ osebn_ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ spoln_ star_ velik_veli?__ znan_)
+ | |     | | Types   (126)
+ | |     | |
+ | |     | |>- Affixes (9): (a e ega i ih im o ost osti)
+ | |     | | | Stems   (11): (javn_ mlad_ notranj_ nov_ osebn_ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ spoln_ star_ velik_veli?__)
+ | |     | | | Types   (99)
+ | |     | |
+ | |     |  >- Affixes (9): (a e ega i ih imi o ost osti)
+ | |     |   | Stems   (11): (mlad_ notranj_ nov_ osebn_ poseben_posebn__ skupen_skupn__ slab_ spoln_ star_ velik_veli?__ znan_)
+ | |     |   | Types   (99)
+ | |     |  
+ | |      >- Children's similarity: 0.690683190
+ | |       | Affixes (9): (*null* a e ega i ih o ost osti)
+ | |       | Stems   (14): (druga?en_druga?n__ enak_ mlad_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ star_ uspe?en_uspe?n__ velik_veli?__ zanimiv_ znan_)
+ | |       | Types   (121)
+ | |       |
+ | |       |>- Affixes (8): (*null* a e ega i ih o ost)
+ | |       | | Stems   (13): (druga?en_druga?n__ mlad_ podoben_podobn__ pomemben_pomembn__ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ star_ uspe?en_uspe?n__ velik_veli?__ zanimiv_ znan_)
+ | |       | | Types   (104)
+ | |       |
+ | |        >- Affixes (8): (*null* a e ega i ih o osti)
+ | |         | Stems   (10): (enak_ mlad_ poseben_posebn__ pristojen_pristojn__ skupen_skupn__ slab_ star_ uspe?en_uspe?n__ velik_veli?__ znan_)
+ | |         | Types   (80)
+ | |        
+ |  >- Affixes (3): (a e otni)
+ |   | Stems   (4): (cel_ prv_ slab_ sob_)
+ |   | Types   (12)
+ |  
+  >- Affixes (3): (e em ote)
+   | Stems   (4): (cel_ lep_ sam_ topl_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.211507069
+ | Affixes (18): (*null* a e en i na ne nega nem nemu ni nih nim nimi no nost nosti o)
+ | Stems   (38): (delov_ dnev_ dolo?e_ druga?_ dr?av_ glav_ jav_ kakr?_ kak?_ kultur_ literar_ majh_ mog_mo?__ nevar_ nje_ oseb_ podob_ pomemb_ posamez_ poseb_ potreb_ prav_ primer_ pristoj_ promet_ razlik_razli?__ skup_ social_ spol_ sre?_ ...)
+ | Types   (365)
+ |
+ |>- Children's similarity: 0.516756644
+ | | Affixes (11): (*null* a e i na ne nega ni nih no o)
+ | | Stems   (17): (dnev_ dr?av_ glav_ kultur_ oseb_ podob_ potreb_ prav_ primer_ promet_ spol_ sre?_ stal_ tem_ vid_ vlad_ vodil_)
+ | | Types   (159)
+ | |
+ | |>- Children's similarity: 0.527644853
+ | | | Affixes (10): (*null* a e i na ne nega ni nih no)
+ | | | Stems   (13): (dnev_ dr?av_ glav_ kultur_ oseb_ podob_ prav_ promet_ spol_ stal_ vid_ vlad_ vodil_)
+ | | | Types   (118)
+ | | |
+ | | |>- Affixes (8): (*null* a na ne nega ni nih no)
+ | | | | Stems   (9): (dr?av_ glav_ oseb_ podob_ prav_ promet_ spol_ stal_ vodil_)
+ | | | | Types   (72)
+ | | |
+ | |  >- Affixes (8): (a e i na ne nega ni no)
+ | |   | Stems   (11): (dnev_ dr?av_ glav_ kultur_ oseb_ podob_ prav_ stal_ vid_ vlad_ vodil_)
+ | |   | Types   (88)
+ | |  
+ |  >- Affixes (8): (a e i na ne nih no o)
+ |   | Stems   (12): (dr?av_ glav_ kultur_ oseb_ podob_ potreb_ prav_ primer_ sre?_ stal_ tem_ vodil_)
+ |   | Types   (96)
+ |  
+  >- Children's similarity: 0.318596546
+   | Affixes (13): (en na ne nega nem nemu ni nih nim nimi no nost nosti)
+   | Stems   (28): (delov_ dolo?e_ druga?_ dr?av_ jav_ kakr?_ kak?_ kultur_ literar_ majh_ mog_mo?__ nevar_ nje_ oseb_ podob_ pomemb_ posamez_ poseb_ pristoj_ promet_ razlik_razli?__ skup_ social_ spol_ stal_ tak?_ uspe?_ zna_)
+   | Types   (248)
+   |
+   |>- Children's similarity: 0.419960526
+   | | Affixes (12): (en na ne nega nem ni nih nim nimi no nost nosti)
+   | | Stems   (26): (delov_ dolo?e_ druga?_ jav_ kakr?_ kak?_ kultur_ literar_ majh_ mog_mo?__ nevar_ nje_ oseb_ podob_ pomemb_ posamez_ poseb_ pristoj_ promet_ razlik_razli?__ skup_ social_ spol_ tak?_ uspe?_ zna_)
+   | | Types   (228)
+   | |
+   | |>- Children's similarity: 0.505181486
+   | | | Affixes (9): (na ne nega nem ni nih nim nimi no)
+   | | | Stems   (15): (delov_ dolo?e_ jav_ kak?_ kultur_ majh_ nje_ oseb_ podob_ posamez_ poseb_ promet_ skup_ spol_ tak?_)
+   | | | Types   (126)
+   | | |
+   | | |>- Affixes (8): (na ne nega nem ni nih nim no)
+   | | | | Stems   (12): (delov_ dolo?e_ jav_ kak?_ kultur_ majh_ nje_ podob_ poseb_ promet_ skup_ tak?_)
+   | | | | Types   (96)
+   | | |
+   | |  >- Affixes (8): (na ne nega ni nih nim nimi no)
+   | |   | Stems   (9): (kak?_ majh_ nje_ oseb_ podob_ posamez_ poseb_ skup_ spol_)
+   | |   | Types   (72)
+   | |  
+   |  >- Children's similarity: 0.359243716
+   |   | Affixes (10): (en na ne nega ni nih nim no nost nosti)
+   |   | Stems   (20): (druga?_ jav_ kakr?_ kak?_ literar_ majh_ mog_mo?__ nevar_ oseb_ podob_ pomemb_ poseb_ pristoj_ razlik_razli?__ skup_ social_ spol_ tak?_ uspe?_ zna_)
+   |   | Types   (162)
+   |   |
+   |   |>- Children's similarity: 0.483493778
+   |   | | Affixes (9): (na ne nega ni nih nim no nost nosti)
+   |   | | Stems   (14): (druga?_ jav_ literar_ mog_mo?__ nevar_ oseb_ podob_ poseb_ pristoj_ razlik_razli?__ skup_ spol_ uspe?_ zna_)
+   |   | | Types   (113)
+   |   | |
+   |   | |>- Affixes (8): (na ne nega ni nih nim no nost)
+   |   | | | Stems   (9): (druga?_ jav_ literar_ oseb_ podob_ poseb_ pristoj_ skup_ spol_)
+   |   | | | Types   (72)
+   |   | |
+   |   |  >- Affixes (7): (na ne ni nih no nost nosti)
+   |   |   | Stems   (11): (jav_ mog_mo?__ nevar_ oseb_ poseb_ pristoj_ razlik_razli?__ skup_ spol_ uspe?_ zna_)
+   |   |   | Types   (77)
+   |   |  
+   |    >- Affixes (7): (en na ne nega ni nih no)
+   |     | Stems   (12): (druga?_ kakr?_ kak?_ majh_ podob_ pomemb_ poseb_ pristoj_ skup_ social_ tak?_ uspe?_)
+   |     | Types   (84)
+   |    
+    >- Affixes (7): (na ne nega nemu ni nih no)
+     | Stems   (8): (delov_ dr?av_ jav_ kak?_ literar_ majh_ nje_ stal_)
+     | Types   (56)
+    
+
+>- Children's similarity: 0.015267620
+ | Affixes (18): (al ala ale ali alo an ana ane ani anih anja anje anjem anju anka ano anosti ati)
+ | Stems   (49): (ameri?_ br_ d_ delov_ glasov_ igr_ imenov_ iv_ izbr_ izd_ izvaj_ kon?_ mil_ moj_mor__ nadaljev_ napis_ naravn_ nast_ ob_ obravnav_ opravlj_ organizir_ ost_ pis_ pla?_ pokaz_ post_ potrebov_ poved_ povez_ ...)
+ | Types   (300)
+ |
+ |>- Children's similarity: 0.021166688
+ | | Affixes (17): (al ala ale ali alo an ana ane ani anih anja anje anjem anju ano anosti ati)
+ | | Stems   (45): (br_ d_ delov_ glasov_ igr_ imenov_ izbr_ izd_ izvaj_ kon?_ moj_mor__ nadaljev_ napis_ naravn_ nast_ ob_ obravnav_ opravlj_ organizir_ ost_ pis_ pla?_ pokaz_ post_ potrebov_ poved_ povez_ pove?_ po?kodov_ prepri?_ ...)
+ | | Types   (286)
+ | |
+ | |>- Children's similarity: 0.121062000
+ | | | Affixes (16): (al ala ale ali alo an ana ane ani anih anja anje anjem anju ano ati)
+ | | | Stems   (43): (br_ delov_ glasov_ igr_ imenov_ izbr_ izd_ izvaj_ kon?_ moj_mor__ nadaljev_ napis_ nast_ ob_ obravnav_ opravlj_ organizir_ ost_ pis_ pla?_ pokaz_ post_ potrebov_ poved_ povez_ pove?_ po?kodov_ prepri?_ pripelj_ prizn_ ...)
+ | | | Types   (279)
+ | | |
+ | | |>- Children's similarity: 0.149222841
+ | | | | Affixes (15): (al ala ale ali alo an ana ane ani anja anje anjem anju ano ati)
+ | | | | Stems   (40): (br_ delov_ glasov_ imenov_ izbr_ izd_ izvaj_ kon?_ moj_mor__ nadaljev_ napis_ nast_ ob_ opravlj_ organizir_ ost_ pis_ pokaz_ post_ potrebov_ poved_ povez_ pove?_ po?kodov_ prepri?_ pripelj_ prizn_ pri?akov_ sli?_ sodelov_ ...)
+ | | | | Types   (258)
+ | | | |
+ | | | |>- Children's similarity: 0.259706193
+ | | | | | Affixes (8): (al ala ali an ana ani ano ati)
+ | | | | | Stems   (14): (imenov_ izbr_ izd_ kon?_ napis_ organizir_ pis_ povez_ po?kodov_ prepri?_ prizn_ pri?akov_ zapis_ zn_)
+ | | | | | Types   (84)
+ | | | | |
+ | | | | |>- Children's similarity: 0.417312425
+ | | | | | | Affixes (7): (al ala ali an ana ano ati)
+ | | | | | | Stems   (10): (izbr_ izd_ kon?_ napis_ pis_ po?kodov_ prepri?_ prizn_ pri?akov_ zapis_)
+ | | | | | | Types   (61)
+ | | | | | |
+ | | | | | |>- Affixes (6): (al ala ali an ana ati)
+ | | | | | | | Stems   (7): (izbr_ kon?_ napis_ pis_ prepri?_ prizn_ pri?akov_)
+ | | | | | | | Types   (42)
+ | | | | | |
+ | | | | |  >- Affixes (5): (al ala ali ana ano)
+ | | | | |   | Stems   (7): (izbr_ izd_ kon?_ napis_ po?kodov_ pri?akov_ zapis_)
+ | | | | |   | Types   (35)
+ | | | | |  
+ | | | |  >- Affixes (5): (ali an ana ani ano)
+ | | | |   | Stems   (7): (imenov_ izbr_ kon?_ napis_ organizir_ povez_ zn_)
+ | | | |   | Types   (35)
+ | | | |  
+ | | |  >- Children's similarity: 0.154045677
+ | | |   | Affixes (11): (al ala ale ali alo ane anja anje anjem anju ati)
+ | | |   | Stems   (31): (br_ delov_ glasov_ izd_ izvaj_ kon?_ moj_mor__ nadaljev_ nast_ ob_ opravlj_ ost_ pis_ pokaz_ post_ potrebov_ poved_ pove?_ prepri?_ pripelj_ pri?akov_ sli?_ sodelov_ spominj_ spozn_ st_ u?iv_ vpra?_ zahtev_ zbr_ ?ak_)
+ | | |   | Types   (193)
+ | | |   |
+ | | |   |>- Children's similarity: 0.312538154
+ | | |   | | Affixes (7): (al ala ale ali alo ane ati)
+ | | |   | | Stems   (21): (izd_ izvaj_ kon?_ moj_mor__ nadaljev_ nast_ ob_ ost_ pis_ pokaz_ post_ potrebov_ poved_ pove?_ pripelj_ pri?akov_ sli?_ spominj_ st_ zahtev_ zbr_)
+ | | |   | | Types   (116)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.438178046
+ | | |   | | | Affixes (6): (al ala ali alo ane ati)
+ | | |   | | | Stems   (17): (izd_ izvaj_ kon?_ nadaljev_ nast_ ost_ pis_ pokaz_ post_ poved_ pove?_ pripelj_ pri?akov_ sli?_ st_ zahtev_ zbr_)
+ | | |   | | | Types   (91)
+ | | |   | | |
+ | | |   | | |>- Affixes (5): (al ala ali alo ane)
+ | | |   | | | | Stems   (8): (izd_ nast_ ost_ pis_ post_ pri?akov_ st_ zahtev_)
+ | | |   | | | | Types   (40)
+ | | |   | | |
+ | | |   | |  >- Affixes (5): (al ala ali alo ati)
+ | | |   | |   | Stems   (15): (izvaj_ kon?_ nadaljev_ ost_ pis_ pokaz_ post_ poved_ pove?_ pripelj_ pri?akov_ sli?_ st_ zahtev_ zbr_)
+ | | |   | |   | Types   (75)
+ | | |   | |  
+ | | |   |  >- Affixes (5): (al ala ale ali alo)
+ | | |   |   | Stems   (9): (moj_mor__ nast_ ob_ ost_ pokaz_ potrebov_ pove?_ spominj_ st_)
+ | | |   |   | Types   (45)
+ | | |   |  
+ | | |    >- Children's similarity: 0.242436611
+ | | |     | Affixes (8): (al ala ali anja anje anjem anju ati)
+ | | |     | Stems   (14): (br_ delov_ glasov_ izvaj_ opravlj_ pis_ prepri?_ pri?akov_ sodelov_ spozn_ st_ u?iv_ vpra?_ ?ak_)
+ | | |     | Types   (93)
+ | | |     |
+ | | |     |>- Affixes (7): (al ala ali anja anje anju ati)
+ | | |     | | Stems   (10): (delov_ glasov_ izvaj_ pis_ prepri?_ pri?akov_ sodelov_ st_ u?iv_ ?ak_)
+ | | |     | | Types   (70)
+ | | |     |
+ | | |      >- Affixes (5): (al anja anje anjem anju)
+ | | |       | Stems   (7): (br_ delov_ opravlj_ pis_ spozn_ vpra?_ ?ak_)
+ | | |       | Types   (35)
+ | | |      
+ | |  >- Affixes (4): (ala ali anih ati)
+ | |   | Stems   (8): (igr_ obravnav_ pla?_ pokaz_ povez_ pri?akov_ zbr_ zn_)
+ | |   | Types   (32)
+ | |  
+ |  >- Affixes (2): (anosti ati)
+ |   | Stems   (4): (d_ naravn_ organizir_ zn_)
+ |   | Types   (8)
+ |  
+  >- Affixes (3): (an ane anka)
+   | Stems   (5): (ameri?_ iv_ mil_ zn_ ?l_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.060241450
+ | Affixes (14): (*null* jo l la le li lo mo te telj telje teljev telji ti)
+ | Stems   (39): (dela_ dobavi_ dobi_ dolo?i_ do?ive_ gosti_ govori_ igra_ ime_ izgini_ izgubi_ izvaja_ kr?i_ kupi_ ljubi_ misli_ naredi_ odgovori_ osta_ pokaza_ postavi_ povabi_ pove?a_ pozabi_ predava_ predlaga_ prija_ pripravi_ ravna_ razume_ ...)
+ | Types   (255)
+ |
+ |>- Children's similarity: 0.018751465
+ | | Affixes (13): (*null* jo l la le li lo mo te telj telje teljev ti)
+ | | Stems   (37): (dela_ dobavi_ dobi_ dolo?i_ do?ive_ gosti_ govori_ igra_ ime_ izgini_ izgubi_ izvaja_ kr?i_ kupi_ misli_ naredi_ odgovori_ osta_ pokaza_ postavi_ povabi_ pove?a_ pozabi_ predlaga_ prija_ pripravi_ ravna_ razume_ spremeni_ sta_ ...)
+ | | Types   (248)
+ | |
+ | |>- Children's similarity: 0.126269068
+ | | | Affixes (11): (*null* jo l la le li lo mo te telj ti)
+ | | | Stems   (34): (dela_ dobi_ dolo?i_ do?ive_ gosti_ govori_ igra_ ime_ izgini_ izgubi_ izvaja_ kr?i_ kupi_ misli_ naredi_ odgovori_ osta_ pokaza_ postavi_ povabi_ pove?a_ pozabi_ predlaga_ pripravi_ ravna_ razume_ spremeni_ sta_ ugotovi_ u?iva_ ...)
+ | | | Types   (237)
+ | | |
+ | | |>- Children's similarity: 0.160611887
+ | | | | Affixes (10): (*null* jo l la li lo mo te telj ti)
+ | | | | Stems   (23): (dela_ dobi_ gosti_ govori_ igra_ izgubi_ izvaja_ kr?i_ kupi_ misli_ naredi_ postavi_ povabi_ pozabi_ predlaga_ pripravi_ ravna_ razume_ spremeni_ ugotovi_ u?iva_ vodi_ zahteva_)
+ | | | | Types   (168)
+ | | | |
+ | | | |>- Children's similarity: 0.278355600
+ | | | | | Affixes (9): (*null* jo l la li lo mo te ti)
+ | | | | | Stems   (21): (dela_ dobi_ govori_ igra_ izgubi_ izvaja_ kupi_ misli_ naredi_ postavi_ povabi_ pozabi_ predlaga_ pripravi_ ravna_ razume_ spremeni_ ugotovi_ u?iva_ vodi_ zahteva_)
+ | | | | | Types   (157)
+ | | | | |
+ | | | | |>- Children's similarity: 0.475457311
+ | | | | | | Affixes (8): (*null* jo l la li mo te ti)
+ | | | | | | Stems   (16): (dela_ dobi_ govori_ igra_ izgubi_ izvaja_ misli_ postavi_ pozabi_ predlaga_ pripravi_ ravna_ razume_ ugotovi_ u?iva_ vodi_)
+ | | | | | | Types   (118)
+ | | | | | |
+ | | | | | |>- Affixes (7): (*null* jo l la li mo ti)
+ | | | | | | | Stems   (13): (dobi_ govori_ igra_ izgubi_ izvaja_ misli_ postavi_ pozabi_ predlaga_ pripravi_ ravna_ ugotovi_ vodi_)
+ | | | | | | | Types   (91)
+ | | | | | |
+ | | | | |  >- Affixes (7): (*null* jo l la li te ti)
+ | | | | |   | Stems   (9): (dela_ dobi_ misli_ pozabi_ pripravi_ razume_ ugotovi_ u?iva_ vodi_)
+ | | | | |   | Types   (63)
+ | | | | |  
+ | | | |  >- Affixes (7): (*null* jo l la li lo ti)
+ | | | |   | Stems   (9): (dobi_ izvaja_ kupi_ misli_ naredi_ povabi_ spremeni_ vodi_ zahteva_)
+ | | | |   | Types   (63)
+ | | | |  
+ | | |  >- Affixes (4): (*null* l la telj)
+ | | |   | Stems   (5): (gosti_ kr?i_ predlaga_ ravna_ vodi_)
+ | | |   | Types   (20)
+ | | |  
+ | |  >- Affixes (6): (l la le li lo ti)
+ | |   | Stems   (14): (dolo?i_ do?ive_ ime_ izgini_ misli_ odgovori_ osta_ pokaza_ pove?a_ spremeni_ sta_ vodi_ zavrni_ za?e_)
+ | |   | Types   (84)
+ | |  
+ |  >- Affixes (3): (telj telje teljev)
+ |   | Stems   (4): (dobavi_ prija_ u?i_ vodi_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (teljev telji)
+   | Stems   (5): (dobavi_ ljubi_ predava_ prija_ u?i_)
+   | Types   (10)
+  
+
+>- Children's similarity: 0.028171808
+ | Affixes (17): (a ajmo ajo ajte ala ali ate ati e i ih nic nicami nice ni?ka o ovnik)
+ | Stems   (47): (bog_bo?__ del_ dnev_ dobit_ duh_ glasov_ glav_ igr_ knjig_knji?__ konje_ last_ lede_ lok_lo?__ manj?_ moj_mor__ najst_ napad_ naslov_ nastop_ obravnav_ odd_ ohranj_ omogo?_ plavut_ poslu?_ pozn_ predstavlj_ pribli?_ primerj_ prizadev_ ...)
+ | Types   (215)
+ |
+ |>- Children's similarity: 0.040824829
+ | | Affixes (16): (a ajmo ajo ajte ala ali ate ati e i ih nic nicami nice ni?ka o)
+ | | Stems   (45): (bog_bo?__ del_ dnev_ dobit_ glasov_ glav_ igr_ knjig_knji?__ konje_ last_ lede_ lok_lo?__ manj?_ moj_mor__ najst_ napad_ naslov_ nastop_ obravnav_ odd_ ohranj_ omogo?_ plavut_ poslu?_ pozn_ predstavlj_ pribli?_ primerj_ prizadev_ prodaj_ ...)
+ | | Types   (210)
+ | |
+ | |>- Children's similarity: 0.083333333
+ | | | Affixes (15): (a ajmo ajo ajte ala ali ate ati e i ih nic nicami nice o)
+ | | | Stems   (41): (bog_bo?__ del_ dnev_ dobit_ glasov_ glav_ igr_ knjig_knji?__ lok_lo?__ manj?_ moj_mor__ napad_ naslov_ nastop_ obravnav_ odd_ ohranj_ omogo?_ plavut_ poslu?_ pozn_ predstavlj_ pribli?_ primerj_ prizadev_ prodaj_ raven_ravn__ razmi?lj_ sku?_ stavek_stavk__ ...)
+ | | | Types   (200)
+ | | |
+ | | |>- Children's similarity: 0.037107802
+ | | | | Affixes (14): (a ajmo ajo ajte ala ali ate ati e i ih nic nice o)
+ | | | | Stems   (39): (bog_bo?__ del_ dnev_ dobit_ glasov_ glav_ igr_ knjig_knji?__ lok_lo?__ manj?_ moj_mor__ napad_ naslov_ nastop_ obravnav_ odd_ ohranj_ omogo?_ poslu?_ pozn_ predstavlj_ pribli?_ primerj_ prizadev_ prodaj_ raven_ravn__ razmi?lj_ sku?_ stavek_stavk__ uporablj_ ...)
+ | | | | Types   (192)
+ | | | |
+ | | | |>- Children's similarity: 0.355756237
+ | | | | | Affixes (5): (a e i nic nice)
+ | | | | | Stems   (10): (del_ dnev_ dobit_ glasov_ knjig_knji?__ lok_lo?__ naslov_ zapoj_zapor__ zbiral_ zvezd_)
+ | | | | | Types   (43)
+ | | | | |
+ | | | | |>- Affixes (4): (a e i nice)
+ | | | | | | Stems   (8): (del_ dnev_ dobit_ knjig_knji?__ lok_lo?__ naslov_ zapoj_zapor__ zvezd_)
+ | | | | | | Types   (32)
+ | | | | |
+ | | | |  >- Affixes (4): (e i nic nice)
+ | | | |   | Stems   (5): (del_ glasov_ knjig_knji?__ lok_lo?__ zbiral_)
+ | | | |   | Types   (20)
+ | | | |  
+ | | |  >- Children's similarity: 0.128102523
+ | | |   | Affixes (12): (a ajmo ajo ajte ala ali ate ati e i ih o)
+ | | |   | Stems   (30): (bog_bo?__ del_ glav_ igr_ manj?_ moj_mor__ napad_ nastop_ obravnav_ odd_ ohranj_ omogo?_ poslu?_ pozn_ predstavlj_ pribli?_ primerj_ prizadev_ prodaj_ raven_ravn__ razmi?lj_ sku?_ stavek_stavk__ uporablj_ upo?tev_ u?iv_ zabav_ zahtev_ zl_ ?tudij_?tudir__)
+ | | |   | Types   (152)
+ | | |   |
+ | | |   |>- Children's similarity: 0.152074766
+ | | |   | | Affixes (11): (a ajmo ajo ajte ala ali ate ati e i o)
+ | | |   | | Stems   (24): (bog_bo?__ del_ glav_ igr_ moj_mor__ napad_ nastop_ obravnav_ ohranj_ omogo?_ poslu?_ predstavlj_ pribli?_ primerj_ prizadev_ prodaj_ razmi?lj_ sku?_ uporablj_ upo?tev_ u?iv_ zabav_ zahtev_ ?tudij_?tudir__)
+ | | |   | | Types   (130)
+ | | |   | |
+ | | |   | |>- Children's similarity: 0.174574312
+ | | |   | | | Affixes (6): (a ajmo ajo ajte ala ali)
+ | | |   | | | Stems   (10): (del_ poslu?_ predstavlj_ pribli?_ primerj_ sku?_ uporablj_ upo?tev_ u?iv_ zahtev_)
+ | | |   | | | Types   (46)
+ | | |   | | |
+ | | |   | | |>- Affixes (3): (a ajmo ali)
+ | | |   | | | | Stems   (5): (del_ poslu?_ primerj_ upo?tev_ u?iv_)
+ | | |   | | | | Types   (15)
+ | | |   | | |
+ | | |   | |  >- Affixes (5): (a ajo ajte ala ali)
+ | | |   | |   | Stems   (7): (del_ predstavlj_ pribli?_ sku?_ uporablj_ u?iv_ zahtev_)
+ | | |   | |   | Types   (35)
+ | | |   | |  
+ | | |   |  >- Children's similarity: 0.163129478
+ | | |   |   | Affixes (9): (a ajo ala ali ate ati e i o)
+ | | |   |   | Stems   (17): (bog_bo?__ del_ glav_ igr_ moj_mor__ napad_ nastop_ obravnav_ ohranj_ omogo?_ prizadev_ prodaj_ razmi?lj_ u?iv_ zabav_ zahtev_ ?tudij_?tudir__)
+ | | |   |   | Types   (94)
+ | | |   |   |
+ | | |   |   |>- Children's similarity: 0.578637562
+ | | |   |   | | Affixes (5): (a ajo ala ate ati)
+ | | |   |   | | Stems   (8): (del_ moj_mor__ nastop_ ohranj_ omogo?_ prizadev_ razmi?lj_ u?iv_)
+ | | |   |   | | Types   (37)
+ | | |   |   | |
+ | | |   |   | |>- Affixes (4): (a ajo ala ate)
+ | | |   |   | | | Stems   (7): (del_ moj_mor__ nastop_ ohranj_ omogo?_ prizadev_ u?iv_)
+ | | |   |   | | | Types   (28)
+ | | |   |   | |
+ | | |   |   |  >- Affixes (4): (a ajo ate ati)
+ | | |   |   |   | Stems   (6): (del_ nastop_ ohranj_ prizadev_ razmi?lj_ u?iv_)
+ | | |   |   |   | Types   (24)
+ | | |   |   |  
+ | | |   |    >- Children's similarity: 0.221709598
+ | | |   |     | Affixes (7): (a ajo ali ate e i o)
+ | | |   |     | Stems   (12): (bog_bo?__ del_ glav_ igr_ moj_mor__ napad_ nastop_ obravnav_ prodaj_ zabav_ zahtev_ ?tudij_?tudir__)
+ | | |   |     | Types   (65)
+ | | |   |     |
+ | | |   |     |>- Children's similarity: 0.421637021
+ | | |   |     | | Affixes (5): (a ate e i o)
+ | | |   |     | | Stems   (7): (bog_bo?__ del_ glav_ moj_mor__ napad_ nastop_ ?tudij_?tudir__)
+ | | |   |     | | Types   (31)
+ | | |   |     | |
+ | | |   |     | |>- Affixes (4): (a ate e i)
+ | | |   |     | | | Stems   (6): (del_ glav_ moj_mor__ napad_ nastop_ ?tudij_?tudir__)
+ | | |   |     | | | Types   (24)
+ | | |   |     | |
+ | | |   |     |  >- Affixes (3): (a ate o)
+ | | |   |     |   | Stems   (5): (bog_bo?__ del_ glav_ moj_mor__ ?tudij_?tudir__)
+ | | |   |     |   | Types   (15)
+ | | |   |     |  
+ | | |   |      >- Affixes (6): (a ajo ali e i o)
+ | | |   |       | Stems   (7): (del_ igr_ moj_mor__ obravnav_ prodaj_ zabav_ zahtev_)
+ | | |   |       | Types   (42)
+ | | |   |      
+ | | |    >- Children's similarity: 0.144337567
+ | | |     | Affixes (5): (a ajo ate i ih)
+ | | |     | Stems   (8): (del_ manj?_ moj_mor__ odd_ pozn_ raven_ravn__ stavek_stavk__ zl_)
+ | | |     | Types   (30)
+ | | |     |
+ | | |     |>- Affixes (4): (a ajo i ih)
+ | | |     | | Stems   (6): (del_ manj?_ moj_mor__ pozn_ raven_ravn__ stavek_stavk__)
+ | | |     | | Types   (24)
+ | | |     |
+ | | |      >- Affixes (2): (ate ih)
+ | | |       | Stems   (4): (del_ moj_mor__ odd_ zl_)
+ | | |       | Types   (8)
+ | | |      
+ | |  >- Affixes (3): (i nic nicami)
+ | |   | Stems   (4): (del_ knjig_knji?__ plavut_ ust_)
+ | |   | Types   (12)
+ | |  
+ |  >- Affixes (2): (nice ni?ka)
+ |   | Stems   (6): (del_ konje_ last_ lede_ najst_ zvezd_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (a ovnik)
+   | Stems   (3): (del_ duh_ stebl_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.143739894
+ | Affixes (9): (*null* a ah am ami e i nikov o)
+ | Stems   (30): (bank_ besed_ drug_dru?__ dr?av_ enot_ institucij_ oblik_ ob?in_ ocen_ organizacij_ oseb_ pla?_ podob_ pogodb_ potreb_ predstav_ prehod_ raziskav_ sprememb_ strank_ to?k_ trav_ ujet_ vrst_ zadev_ zahtev_ zgodb_ zvezd_ ?tudij_?tudir__ ?ensk_)
+ | Types   (196)
+ |
+ |>- Children's similarity: 0.204896333
+ | | Affixes (8): (*null* a ah ami e i nikov o)
+ | | Stems   (18): (bank_ besed_ institucij_ oblik_ ob?in_ ocen_ organizacij_ podob_ predstav_ prehod_ raziskav_ to?k_ trav_ ujet_ vrst_ zadev_ zvezd_ ?ensk_)
+ | | Types   (121)
+ | |
+ | |>- Affixes (7): (*null* a ah ami e i o)
+ | | | Stems   (14): (bank_ besed_ institucij_ oblik_ ob?in_ ocen_ organizacij_ podob_ raziskav_ to?k_ vrst_ zadev_ zvezd_ ?ensk_)
+ | | | Types   (98)
+ | |
+ |  >- Affixes (5): (*null* a e i nikov)
+ |   | Stems   (7): (podob_ predstav_ prehod_ trav_ ujet_ vrst_ zvezd_)
+ |   | Types   (35)
+ |  
+  >- Affixes (6): (*null* a am e i o)
+   | Stems   (15): (drug_dru?__ dr?av_ enot_ ob?in_ oseb_ pla?_ pogodb_ potreb_ sprememb_ strank_ zadev_ zahtev_ zgodb_ ?tudij_?tudir__ ?ensk_)
+   | Types   (90)
+  
+
+>- Children's similarity: 0.110431526
+ | Affixes (7): (e ejo em emo eta ete e?)
+ | Stems   (71): (daj_ deluj_ dopolnjuj_ gr_ ho?_ imenuj_ izdeluj_ izpad_ izre?_ i??_ jemlj_ ka?_ kli?_ kon?uj_ moj_mor__ nadaljuj_ najd_ napi?_ napoveduj_ napreduj_ nasprotuj_ nastan_ no?_ ocenjuj_ odpelj_ odzov_ ostan_ ozna?uj_ pelj_ pi?_ ...)
+ | Types   (176)
+ |
+ |>- Children's similarity: 0.247536886
+ | | Affixes (6): (e ejo em emo eta ete)
+ | | Stems   (68): (daj_ deluj_ dopolnjuj_ ho?_ imenuj_ izdeluj_ izpad_ izre?_ i??_ jemlj_ ka?_ kli?_ kon?uj_ moj_mor__ nadaljuj_ najd_ napi?_ napoveduj_ napreduj_ nasprotuj_ nastan_ no?_ ocenjuj_ odpelj_ odzov_ ostan_ ozna?uj_ pelj_ pi?_ poi??_ ...)
+ | | Types   (164)
+ | |
+ | |>- Children's similarity: 0.330846580
+ | | | Affixes (6): (e ejo em emo eta ete)
+ | | | Stems   (10): (ho?_ moj_mor__ no?_ pi?_ postan_ potrebuj_ prid_ pri?akuj_ razum_ za?n_)
+ | | | Types   (48)
+ | | |
+ | | |>- Children's similarity: 0.578637562
+ | | | | Affixes (5): (e ejo em emo ete)
+ | | | | Stems   (8): (ho?_ moj_mor__ no?_ pi?_ potrebuj_ pri?akuj_ razum_ za?n_)
+ | | | | Types   (37)
+ | | | |
+ | | | |>- Affixes (4): (e ejo em emo)
+ | | | | | Stems   (7): (ho?_ moj_mor__ no?_ pi?_ potrebuj_ pri?akuj_ za?n_)
+ | | | | | Types   (28)
+ | | | |
+ | | |  >- Affixes (4): (e ejo em ete)
+ | | |   | Stems   (6): (ho?_ moj_mor__ no?_ potrebuj_ razum_ za?n_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (4): (e ejo em eta)
+ | |   | Stems   (5): (ho?_ postan_ potrebuj_ prid_ razum_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (2): (e ejo)
+ |   | Stems   (68): (daj_ deluj_ dopolnjuj_ ho?_ imenuj_ izdeluj_ izpad_ izre?_ i??_ jemlj_ ka?_ kli?_ kon?uj_ moj_mor__ nadaljuj_ najd_ napi?_ napoveduj_ napreduj_ nasprotuj_ nastan_ no?_ ocenjuj_ odpelj_ odzov_ ostan_ ozna?uj_ pelj_ pi?_ poi??_ ...)
+ |   | Types   (136)
+ |  
+  >- Affixes (3): (em emo e?)
+   | Stems   (6): (gr_ ho?_ moj_mor__ no?_ po?n_ verjam_)
+   | Types   (18)
+  
+
+>- Children's similarity: 0.061237244
+ | Affixes (14): (*null* a ah e ega i ic ica icah icami ice ici ico o)
+ | Stems   (29): (breg_bre?__ deln_ desn_ dnevn_ hi?_ igr_ jesen_ knjig_knji?__ knji?n_ kon?n_ lasten_lastn__ lev_ miz_ mlad_ mnog_mno?__ nov_ okol_ plo??_ posled_ prav_ resen_resn__ rok_ro?__ sam_ slik_sli?__ to?k_ uspe?en_uspe?n__ ustn_ vrv_ ?iv_)
+ | Types   (172)
+ |
+ |>- Children's similarity: 0.084609909
+ | | Affixes (13): (*null* a ah e ega i ic ica icami ice ici ico o)
+ | | Stems   (26): (deln_ desn_ dnevn_ hi?_ igr_ knjig_knji?__ knji?n_ kon?n_ lasten_lastn__ lev_ miz_ mlad_ mnog_mno?__ nov_ okol_ plo??_ prav_ resen_resn__ rok_ro?__ sam_ slik_sli?__ to?k_ uspe?en_uspe?n__ ustn_ vrv_ ?iv_)
+ | | Types   (160)
+ | |
+ | |>- Children's similarity: 0.107269065
+ | | | Affixes (12): (*null* a ah e ega i ic ica ice ici ico o)
+ | | | Stems   (23): (desn_ dnevn_ hi?_ igr_ knjig_knji?__ knji?n_ kon?n_ lasten_lastn__ lev_ miz_ mlad_ mnog_mno?__ nov_ okol_ plo??_ prav_ resen_resn__ rok_ro?__ sam_ slik_sli?__ to?k_ uspe?en_uspe?n__ vrv_)
+ | | | Types   (149)
+ | | |
+ | | |>- Children's similarity: 0.255155182
+ | | | | Affixes (8): (*null* a ah e ega i ice o)
+ | | | | Stems   (16): (desn_ dnevn_ hi?_ knjig_knji?__ kon?n_ lev_ miz_ mlad_ nov_ plo??_ prav_ rok_ro?__ sam_ slik_sli?__ to?k_ uspe?en_uspe?n__)
+ | | | | Types   (103)
+ | | | |
+ | | | |>- Children's similarity: 0.476190476
+ | | | | | Affixes (7): (*null* a ah e i ice o)
+ | | | | | Stems   (10): (hi?_ knjig_knji?__ miz_ mlad_ plo??_ prav_ rok_ro?__ slik_sli?__ to?k_ uspe?en_uspe?n__)
+ | | | | | Types   (64)
+ | | | | |
+ | | | | |>- Affixes (6): (*null* a e i ice o)
+ | | | | | | Stems   (7): (knjig_knji?__ mlad_ plo??_ prav_ slik_sli?__ to?k_ uspe?en_uspe?n__)
+ | | | | | | Types   (42)
+ | | | | |
+ | | | |  >- Affixes (6): (a ah e i ice o)
+ | | | |   | Stems   (7): (hi?_ knjig_knji?__ miz_ plo??_ rok_ro?__ slik_sli?__ to?k_)
+ | | | |   | Types   (42)
+ | | | |  
+ | | |  >- Affixes (6): (a e ega i ice o)
+ | | |   | Stems   (9): (desn_ dnevn_ kon?n_ lev_ mlad_ nov_ prav_ sam_ uspe?en_uspe?n__)
+ | | |   | Types   (54)
+ | | |  
+ | |  >- Children's similarity: 0.200000000
+ | |   | Affixes (8): (a i ic ica ice ici ico o)
+ | |   | Stems   (9): (igr_ knji?n_ lasten_lastn__ mnog_mno?__ okol_ prav_ resen_resn__ sam_ vrv_)
+ | |   | Types   (54)
+ | |   |
+ | |   |>- Affixes (5): (a i ic ice o)
+ | |   | | Stems   (6): (igr_ knji?n_ mnog_mno?__ prav_ resen_resn__ sam_)
+ | |   | | Types   (30)
+ | |   |
+ | |    >- Affixes (5): (i ica ice ici ico)
+ | |     | Stems   (6): (lasten_lastn__ mnog_mno?__ okol_ prav_ resen_resn__ vrv_)
+ | |     | Types   (30)
+ | |    
+ |  >- Affixes (3): (icami ice o)
+ |   | Stems   (5): (deln_ knji?n_ nov_ ustn_ ?iv_)
+ |   | Types   (15)
+ |  
+  >- Affixes (3): (ic icah ice)
+   | Stems   (5): (breg_bre?__ jesen_ posled_ prav_ ustn_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.119522861
+ | Affixes (10): (a ajo al ala alcev ali am amo anje a?)
+ | Stems   (23): (gled_ igr_ izvaj_ moj_mor__ odlok_odlo?__ pod_ poslu?_ pozn_ predlag_ prodaj_ raven_ravn__ skriv_ spominj_ spozn_ sprehaj_ sprejem_ spremlj_ ugotavlj_ u?iv_ zagotavlj_ zahtev_ zaved_ zmanj?_)
+ | Types   (140)
+ |
+ |>- Children's similarity: 0.158113883
+ | | Affixes (9): (a ajo al ala alcev ali am amo anje)
+ | | Stems   (20): (gled_ igr_ izvaj_ moj_mor__ odlok_odlo?__ poslu?_ pozn_ predlag_ prodaj_ raven_ravn__ spominj_ spozn_ sprejem_ spremlj_ ugotavlj_ u?iv_ zagotavlj_ zahtev_ zaved_ zmanj?_)
+ | | Types   (126)
+ | |
+ | |>- Children's similarity: 0.182574186
+ | | | Affixes (8): (a ajo al ala ali am amo anje)
+ | | | Stems   (19): (gled_ igr_ izvaj_ moj_mor__ odlok_odlo?__ poslu?_ pozn_ predlag_ raven_ravn__ spominj_ spozn_ sprejem_ spremlj_ ugotavlj_ u?iv_ zagotavlj_ zahtev_ zaved_ zmanj?_)
+ | | | Types   (120)
+ | | |
+ | | |>- Affixes (6): (a ajo al ala ali am)
+ | | | | Stems   (12): (gled_ igr_ moj_mor__ poslu?_ pozn_ predlag_ spominj_ spozn_ spremlj_ u?iv_ zagotavlj_ zahtev_)
+ | | | | Types   (72)
+ | | |
+ | |  >- Affixes (6): (a ajo al ali amo anje)
+ | |   | Stems   (10): (igr_ izvaj_ odlok_odlo?__ raven_ravn__ sprejem_ spremlj_ ugotavlj_ zagotavlj_ zaved_ zmanj?_)
+ | |   | Types   (60)
+ | |  
+ |  >- Affixes (3): (a alcev ali)
+ |   | Stems   (4): (gled_ igr_ izvaj_ prodaj_)
+ |   | Types   (12)
+ |  
+  >- Affixes (4): (a ajo al a?)
+   | Stems   (5): (gled_ moj_mor__ pod_ skriv_ sprehaj_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.035136418
+ | Affixes (11): (l la li nj nja nje njem njskem njsko nju ti)
+ | Stems   (25): (bra_ deja_ delova_ dogaja_ giba_ glasova_ gore_ izvaja_ ko_ kuhi_ mne_ opravlja_ pisa_ predava_ prepri?a_ pri?akova_ sodelova_ spozna_ sre?a_ sta_ stanova_ u?iva_ vede_ vpra?a_ ?aka_)
+ | Types   (140)
+ |
+ |>- Children's similarity: 0.089802651
+ | | Affixes (10): (l la li nj nja nje njem njsko nju ti)
+ | | Stems   (24): (bra_ deja_ delova_ dogaja_ giba_ glasova_ izvaja_ ko_ kuhi_ mne_ opravlja_ pisa_ predava_ prepri?a_ pri?akova_ sodelova_ spozna_ sre?a_ sta_ stanova_ u?iva_ vede_ vpra?a_ ?aka_)
+ | | Types   (135)
+ | |
+ | |>- Children's similarity: 0.242436611
+ | | | Affixes (8): (l la li nja nje njem nju ti)
+ | | | Stems   (14): (bra_ delova_ glasova_ izvaja_ opravlja_ pisa_ prepri?a_ pri?akova_ sodelova_ spozna_ sta_ u?iva_ vpra?a_ ?aka_)
+ | | | Types   (93)
+ | | |
+ | | |>- Affixes (7): (l la li nja nje nju ti)
+ | | | | Stems   (10): (delova_ glasova_ izvaja_ pisa_ prepri?a_ pri?akova_ sodelova_ sta_ u?iva_ ?aka_)
+ | | | | Types   (70)
+ | | |
+ | |  >- Affixes (5): (l nja nje njem nju)
+ | |   | Stems   (7): (bra_ delova_ opravlja_ pisa_ spozna_ vpra?a_ ?aka_)
+ | |   | Types   (35)
+ | |  
+ |  >- Children's similarity: 0.182574186
+ |   | Affixes (5): (nj nja nje njsko nju)
+ |   | Stems   (12): (deja_ dogaja_ giba_ ko_ kuhi_ mne_ predava_ spozna_ sre?a_ stanova_ vede_ vpra?a_)
+ |   | Types   (48)
+ |   |
+ |   |>- Affixes (4): (nj nja nje nju)
+ |   | | Stems   (10): (deja_ dogaja_ giba_ ko_ mne_ predava_ spozna_ sre?a_ stanova_ vpra?a_)
+ |   | | Types   (40)
+ |   |
+ |    >- Affixes (3): (nj nje njsko)
+ |     | Stems   (4): (ko_ kuhi_ stanova_ vede_)
+ |     | Types   (12)
+ |    
+  >- Affixes (2): (nja njskem)
+   | Stems   (3): (gore_ stanova_ vede_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.093750000
+ | Affixes (16): (a i oval ovala ovali ovana ovane ovanega ovanih ovanja ovanje ovanju ovano ovati uje ujejo)
+ | Stems   (21): (del_ glas_ gost_ imen_ izoblik_ mir_ napoved_ napred_ nasprot_ na?rt_ nepri?ak_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ pust_ sodel_ tekm_)
+ | Types   (133)
+ |
+ |>- Children's similarity: 0.095636507
+ | | Affixes (15): (a i oval ovala ovali ovana ovane ovanih ovanja ovanje ovanju ovano ovati uje ujejo)
+ | | Stems   (20): (del_ glas_ gost_ imen_ izoblik_ mir_ napoved_ napred_ nasprot_ na?rt_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ pust_ sodel_ tekm_)
+ | | Types   (128)
+ | |
+ | |>- Children's similarity: 0.111803399
+ | | | Affixes (14): (a i oval ovala ovali ovane ovanih ovanja ovanje ovanju ovano ovati uje ujejo)
+ | | | Stems   (19): (del_ glas_ gost_ imen_ mir_ napoved_ napred_ nasprot_ na?rt_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ pust_ sodel_ tekm_)
+ | | | Types   (123)
+ | | |
+ | | |>- Children's similarity: 0.135781362
+ | | | | Affixes (13): (a i oval ovala ovali ovanih ovanja ovanje ovanju ovano ovati uje ujejo)
+ | | | | Stems   (19): (del_ glas_ gost_ imen_ mir_ napoved_ napred_ nasprot_ na?rt_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ pust_ sodel_ tekm_)
+ | | | | Types   (120)
+ | | | |
+ | | | |>- Children's similarity: 0.167705098
+ | | | | | Affixes (12): (a i oval ovala ovali ovanja ovanje ovanju ovano ovati uje ujejo)
+ | | | | | Stems   (18): (del_ glas_ gost_ imen_ mir_ napoved_ napred_ nasprot_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ pust_ sodel_ tekm_)
+ | | | | | Types   (113)
+ | | | | |
+ | | | | |>- Children's similarity: 0.249029123
+ | | | | | | Affixes (11): (i oval ovala ovali ovanja ovanje ovanju ovano ovati uje ujejo)
+ | | | | | | Stems   (14): (del_ glas_ imen_ napoved_ napred_ nasprot_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ sodel_)
+ | | | | | | Types   (90)
+ | | | | | |
+ | | | | | |>- Children's similarity: 0.262800165
+ | | | | | | | Affixes (10): (i oval ovala ovali ovanja ovanje ovanju ovati uje ujejo)
+ | | | | | | | Stems   (14): (del_ glas_ imen_ napoved_ napred_ nasprot_ oblik_ opaz_ pot_ potreb_ povez_ po?kod_ pri?ak_ sodel_)
+ | | | | | | | Types   (86)
+ | | | | | | |
+ | | | | | | |>- Children's similarity: 0.286854866
+ | | | | | | | | Affixes (9): (i oval ovala ovanja ovanje ovanju ovati uje ujejo)
+ | | | | | | | | Stems   (12): (del_ glas_ imen_ napoved_ napred_ nasprot_ oblik_ pot_ potreb_ povez_ pri?ak_ sodel_)
+ | | | | | | | | Types   (73)
+ | | | | | | | |
+ | | | | | | | |>- Children's similarity: 0.577350269
+ | | | | | | | | | Affixes (7): (oval ovala ovanja ovanje ovanju ovati uje)
+ | | | | | | | | | Stems   (8): (del_ glas_ nasprot_ oblik_ pot_ povez_ pri?ak_ sodel_)
+ | | | | | | | | | Types   (50)
+ | | | | | | | | |
+ | | | | | | | | |>- Children's similarity: 0.666666667
+ | | | | | | | | | | Affixes (6): (oval ovala ovanja ovanje ovanju uje)
+ | | | | | | | | | | Stems   (7): (del_ glas_ nasprot_ oblik_ povez_ pri?ak_ sodel_)
+ | | | | | | | | | | Types   (40)
+ | | | | | | | | | |
+ | | | | | | | | | |>- Affixes (5): (oval ovala ovanja ovanje ovanju)
+ | | | | | | | | | | | Stems   (6): (del_ glas_ oblik_ povez_ pri?ak_ sodel_)
+ | | | | | | | | | | | Types   (30)
+ | | | | | | | | | |
+ | | | | | | | | |  >- Affixes (5): (oval ovala ovanja ovanje uje)
+ | | | | | | | | |   | Stems   (6): (del_ nasprot_ oblik_ povez_ pri?ak_ sodel_)
+ | | | | | | | | |   | Types   (30)
+ | | | | | | | | |  
+ | | | | | | | |  >- Affixes (5): (ovala ovanja ovanje ovanju ovati)
+ | | | | | | | |   | Stems   (6): (del_ glas_ oblik_ pot_ pri?ak_ sodel_)
+ | | | | | | | |   | Types   (30)
+ | | | | | | | |  
+ | | | | | | |  >- Children's similarity: 0.410791918
+ | | | | | | |   | Affixes (5): (i oval ovanje uje ujejo)
+ | | | | | | |   | Stems   (8): (del_ imen_ napoved_ napred_ nasprot_ potreb_ pri?ak_ sodel_)
+ | | | | | | |   | Types   (35)
+ | | | | | | |   |
+ | | | | | | |   |>- Affixes (4): (i oval uje ujejo)
+ | | | | | | |   | | Stems   (5): (del_ imen_ napoved_ nasprot_ potreb_)
+ | | | | | | |   | | Types   (20)
+ | | | | | | |   |
+ | | | | | | |    >- Affixes (4): (oval ovanje uje ujejo)
+ | | | | | | |     | Stems   (6): (del_ imen_ napred_ nasprot_ pri?ak_ sodel_)
+ | | | | | | |     | Types   (24)
+ | | | | | | |    
+ | | | | | |  >- Affixes (4): (oval ovala ovali uje)
+ | | | | | |   | Stems   (6): (del_ opaz_ potreb_ po?kod_ pri?ak_ sodel_)
+ | | | | | |   | Types   (24)
+ | | | | | |  
+ | | | | |  >- Affixes (3): (oval ovano uje)
+ | | | | |   | Stems   (4): (imen_ oblik_ po?kod_ pri?ak_)
+ | | | | |   | Types   (12)
+ | | | | |  
+ | | | |  >- Affixes (4): (a i ovanja ovanje)
+ | | | |   | Stems   (8): (del_ gost_ imen_ mir_ oblik_ pot_ pust_ tekm_)
+ | | | |   | Types   (32)
+ | | | |  
+ | | |  >- Affixes (3): (oval ovanih ovanju)
+ | | |   | Stems   (4): (imen_ na?rt_ oblik_ pri?ak_)
+ | | |   | Types   (12)
+ | | |  
+ | |  >- Affixes (2): (oval ovane)
+ | |   | Stems   (3): (imen_ po?kod_ pri?ak_)
+ | |   | Types   (6)
+ | |  
+ |  >- Affixes (2): (ovana uje)
+ |   | Stems   (4): (imen_ izoblik_ po?kod_ pri?ak_)
+ |   | Types   (8)
+ |  
+  >- Affixes (2): (ovanega ovano)
+   | Stems   (4): (imen_ nepri?ak_ oblik_ po?kod_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.037742568
+ | Affixes (10): (ja je jega jem jemu ji jih jim jo rate)
+ | Stems   (18): (bli?n_ dana?n_ ga_ leto?n_ mo_ n_ najve?_ nasledn_ nekdan_ prej?n_ spodn_ sredn_ svo_ vek_ve?__ zadn_ zgorn_ zunan_ ?tudi_)
+ | Types   (122)
+ |
+ |>- Children's similarity: 0.164398987
+ | | Affixes (9): (ja je jega jem jemu ji jih jim jo)
+ | | Stems   (16): (bli?n_ dana?n_ leto?n_ mo_ n_ najve?_ nasledn_ nekdan_ prej?n_ spodn_ sredn_ svo_ vek_ve?__ zadn_ zgorn_ zunan_)
+ | | Types   (117)
+ | |
+ | |>- Children's similarity: 0.494871659
+ | | | Affixes (8): (ja je jega jem ji jih jim jo)
+ | | | Stems   (15): (bli?n_ dana?n_ leto?n_ mo_ najve?_ nasledn_ nekdan_ prej?n_ spodn_ sredn_ svo_ vek_ve?__ zadn_ zgorn_ zunan_)
+ | | | Types   (111)
+ | | |
+ | | |>- Affixes (7): (ja je jega jem ji jih jo)
+ | | | | Stems   (12): (leto?n_ mo_ najve?_ nasledn_ prej?n_ spodn_ sredn_ svo_ vek_ve?__ zadn_ zgorn_ zunan_)
+ | | | | Types   (84)
+ | | |
+ | |  >- Affixes (7): (je jega jem ji jih jim jo)
+ | |   | Stems   (9): (bli?n_ dana?n_ leto?n_ mo_ najve?_ nekdan_ svo_ zgorn_ zunan_)
+ | |   | Types   (63)
+ | |  
+ |  >- Affixes (3): (jega jem jemu)
+ |   | Stems   (4): (mo_ n_ nasledn_ svo_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (ja rate)
+   | Stems   (3): (ga_ mo_ ?tudi_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.057166195
+ | Affixes (11): (*null* a i nik nika nike niki nikom niku o ovno)
+ | Stems   (23): (del_ dnev_ duhov_ last_ let_ mest_ nahrbt_ oblik_ podob_ podpredsed_ posamez_ pravil_ praz_ predsed_ predstav_ slik_sli?__ sod_ svet_ teh_ voz_ zapoj_zapor__ zdrav_ ?as_)
+ | Types   (112)
+ |
+ |>- Children's similarity: 0.124921948
+ | | Affixes (10): (*null* a i nik nika nike niki nikom niku o)
+ | | Stems   (20): (dnev_ duhov_ last_ let_ mest_ nahrbt_ podob_ podpredsed_ posamez_ pravil_ praz_ predsed_ predstav_ sod_ svet_ teh_ voz_ zapoj_zapor__ zdrav_ ?as_)
+ | | Types   (102)
+ | |
+ | |>- Children's similarity: 0.138527129
+ | | | Affixes (9): (*null* a i nik nika nike niki niku o)
+ | | | Stems   (17): (dnev_ duhov_ last_ let_ mest_ podob_ posamez_ pravil_ praz_ predstav_ sod_ svet_ teh_ voz_ zapoj_zapor__ zdrav_ ?as_)
+ | | | Types   (89)
+ | | |
+ | | |>- Children's similarity: 0.184288535
+ | | | | Affixes (8): (*null* a i nik nika niki niku o)
+ | | | | Stems   (12): (dnev_ duhov_ last_ let_ mest_ podob_ pravil_ predstav_ svet_ zapoj_zapor__ zdrav_ ?as_)
+ | | | | Types   (67)
+ | | | |
+ | | | |>- Children's similarity: 0.370328040
+ | | | | | Affixes (7): (*null* a i nik nika niki o)
+ | | | | | Stems   (9): (duhov_ last_ mest_ podob_ pravil_ predstav_ svet_ zapoj_zapor__ zdrav_)
+ | | | | | Types   (53)
+ | | | | |
+ | | | | |>- Affixes (5): (*null* a i nik o)
+ | | | | | | Stems   (7): (mest_ podob_ pravil_ predstav_ svet_ zapoj_zapor__ zdrav_)
+ | | | | | | Types   (35)
+ | | | | |
+ | | | |  >- Affixes (5): (*null* i nik nika niki)
+ | | | |   | Stems   (6): (duhov_ last_ pravil_ predstav_ svet_ zdrav_)
+ | | | |   | Types   (30)
+ | | | |  
+ | | |  >- Affixes (4): (a nik nika niku)
+ | | |   | Stems   (5): (dnev_ let_ predstav_ zdrav_ ?as_)
+ | | |   | Types   (20)
+ | | |  
+ | |  >- Affixes (4): (nik nika nike niki)
+ | |   | Stems   (7): (last_ posamez_ praz_ predstav_ sod_ teh_ voz_)
+ | |   | Types   (28)
+ | |  
+ |  >- Affixes (3): (nika nikom niku)
+ |   | Stems   (6): (dnev_ nahrbt_ podpredsed_ predsed_ sod_ zdrav_)
+ |   | Types   (18)
+ |  
+  >- Affixes (3): (a o ovno)
+   | Stems   (4): (del_ oblik_ slik_sli?__ svet_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.106066017
+ | Affixes (11): (i il ila ili itev iti itvah itvam itve itvi itvijo)
+ | Stems   (19): (del_ kr?_ nastan_ obrazlo?_ odlok_odlo?__ omej_ predstav_ pridob_ re?_ sklen_ stor_ trd_ ugotov_ ustanov_ vlog_vlo?__ vol_ vrn_ zaposl_ zavrn_)
+ | Types   (105)
+ |
+ |>- Children's similarity: 0.136082763
+ | | Affixes (10): (i il ila ili itev iti itvah itve itvi itvijo)
+ | | Stems   (18): (del_ kr?_ obrazlo?_ odlok_odlo?__ omej_ predstav_ pridob_ re?_ sklen_ stor_ trd_ ugotov_ ustanov_ vlog_vlo?__ vol_ vrn_ zaposl_ zavrn_)
+ | | Types   (100)
+ | |
+ | |>- Children's similarity: 0.127515343
+ | | | Affixes (9): (i il ila ili itev iti itvah itve itvi)
+ | | | Stems   (16): (kr?_ odlok_odlo?__ omej_ predstav_ pridob_ re?_ sklen_ stor_ trd_ ugotov_ ustanov_ vlog_vlo?__ vol_ vrn_ zaposl_ zavrn_)
+ | | | Types   (90)
+ | | |
+ | | |>- Children's similarity: 0.210386062
+ | | | | Affixes (8): (i il ila ili itev iti itve itvi)
+ | | | | Stems   (14): (kr?_ odlok_odlo?__ omej_ predstav_ pridob_ re?_ sklen_ stor_ ugotov_ ustanov_ vlog_vlo?__ vrn_ zaposl_ zavrn_)
+ | | | | Types   (82)
+ | | | |
+ | | | |>- Children's similarity: 0.565685425
+ | | | | | Affixes (6): (il ila ili itev iti itvi)
+ | | | | | Stems   (11): (odlok_odlo?__ predstav_ pridob_ re?_ sklen_ ugotov_ ustanov_ vlog_vlo?__ vrn_ zaposl_ zavrn_)
+ | | | | | Types   (61)
+ | | | | |
+ | | | | |>- Affixes (5): (il ila ili itev iti)
+ | | | | | | Stems   (9): (odlok_odlo?__ predstav_ pridob_ re?_ sklen_ ugotov_ vlog_vlo?__ vrn_ zavrn_)
+ | | | | | | Types   (45)
+ | | | | |
+ | | | |  >- Affixes (5): (il ila ili itev itvi)
+ | | | |   | Stems   (8): (odlok_odlo?__ pridob_ re?_ sklen_ ustanov_ vlog_vlo?__ vrn_ zaposl_)
+ | | | |   | Types   (40)
+ | | | |  
+ | | |  >- Affixes (5): (i il ila itev itve)
+ | | |   | Stems   (6): (kr?_ odlok_odlo?__ omej_ re?_ stor_ ugotov_)
+ | | |   | Types   (30)
+ | | |  
+ | |  >- Affixes (3): (ili itev itvah)
+ | |   | Stems   (4): (odlok_odlo?__ re?_ trd_ vol_)
+ | |   | Types   (12)
+ | |  
+ |  >- Affixes (3): (il itev itvijo)
+ |   | Stems   (5): (del_ obrazlo?_ pridob_ trd_ ustanov_)
+ |   | Types   (15)
+ |  
+  >- Affixes (2): (itev itvam)
+   | Stems   (4): (nastan_ re?_ ustanov_ vol_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.061237244
+ | Affixes (12): (*null* a e i nica o ov ovna ovne ovnih ovno ujemo)
+ | Stems   (19): (del_ imen_ knjig_knji?__ let_ nasl_ na?rt_ oblik_ osn_ pla?_ posl_ potreb_ predstav_ slik_sli?__ stal_ strok_ svet_ za??it_ zvok_ ?as_)
+ | Types   (104)
+ |
+ |>- Children's similarity: 0.547722558
+ | | Affixes (5): (ov ovna ovne ovnih ovno)
+ | | Stems   (7): (del_ nasl_ osn_ posl_ strok_ svet_ ?as_)
+ | | Types   (32)
+ | |
+ | |>- Affixes (4): (ov ovna ovne ovno)
+ | | | Stems   (6): (del_ nasl_ osn_ posl_ svet_ ?as_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (4): (ovna ovne ovnih ovno)
+ |   | Stems   (5): (del_ nasl_ osn_ strok_ svet_)
+ |   | Types   (20)
+ |  
+  >- Children's similarity: 0.278093865
+   | Affixes (8): (*null* a e i nica o ovno ujemo)
+   | Stems   (15): (del_ imen_ knjig_knji?__ let_ na?rt_ oblik_ pla?_ potreb_ predstav_ slik_sli?__ stal_ strok_ svet_ za??it_ zvok_)
+   | Types   (75)
+   |
+   |>- Children's similarity: 0.273861279
+   | | Affixes (5): (*null* a i ovno ujemo)
+   | | Stems   (9): (imen_ na?rt_ oblik_ pla?_ potreb_ slik_sli?__ strok_ svet_ zvok_)
+   | | Types   (38)
+   | |
+   | |>- Affixes (4): (*null* a i ovno)
+   | | | Stems   (5): (oblik_ slik_sli?__ strok_ svet_ zvok_)
+   | | | Types   (20)
+   | |
+   |  >- Affixes (4): (*null* a i ujemo)
+   |   | Stems   (6): (imen_ na?rt_ oblik_ pla?_ potreb_ svet_)
+   |   | Types   (24)
+   |  
+    >- Children's similarity: 0.226778684
+     | Affixes (6): (a e i nica o ovno)
+     | Stems   (10): (del_ knjig_knji?__ let_ oblik_ predstav_ slik_sli?__ stal_ strok_ svet_ za??it_)
+     | Types   (49)
+     |
+     |>- Affixes (5): (a e i nica o)
+     | | Stems   (7): (del_ knjig_knji?__ let_ predstav_ stal_ svet_ za??it_)
+     | | Types   (35)
+     |
+      >- Affixes (4): (a e i ovno)
+       | Stems   (5): (del_ oblik_ slik_sli?__ strok_ svet_)
+       | Types   (20)
+      
+
+>- Children's similarity: 0.111369209
+ | Affixes (12): (a i il ili lja ljajo ljal ljala ljali ljam ljamo ljanje)
+ | Stems   (15): (izgub_ objav_ odpe_ oprav_ pojav_ predstav_ pripe_ priprav_ razmi?_ razprav_ sprav_ sprem_ ugotav_ uporab_ zagotav_)
+ | Types   (97)
+ |
+ |>- Children's similarity: 0.346153846
+ | | Affixes (11): (a i il ili lja ljajo ljal ljali ljam ljamo ljanje)
+ | | Stems   (12): (izgub_ objav_ oprav_ pojav_ predstav_ priprav_ razmi?_ sprav_ sprem_ ugotav_ uporab_ zagotav_)
+ | | Types   (86)
+ | |
+ | |>- Children's similarity: 0.563436170
+ | | | Affixes (7): (a i il ili lja ljajo ljali)
+ | | | Stems   (8): (izgub_ objav_ oprav_ pojav_ predstav_ priprav_ sprav_ uporab_)
+ | | | Types   (52)
+ | | |
+ | | |>- Affixes (6): (a i il ili lja ljajo)
+ | | | | Stems   (7): (izgub_ objav_ pojav_ predstav_ priprav_ sprav_ uporab_)
+ | | | | Types   (42)
+ | | |
+ | |  >- Affixes (5): (il ili lja ljajo ljali)
+ | |   | Stems   (6): (izgub_ oprav_ predstav_ priprav_ sprav_ uporab_)
+ | |   | Types   (30)
+ | |  
+ |  >- Children's similarity: 0.448210729
+ |   | Affixes (7): (lja ljajo ljal ljali ljam ljamo ljanje)
+ |   | Stems   (10): (izgub_ oprav_ predstav_ priprav_ razmi?_ sprav_ sprem_ ugotav_ uporab_ zagotav_)
+ |   | Types   (52)
+ |   |
+ |   |>- Children's similarity: 0.547722558
+ |   | | Affixes (5): (lja ljajo ljal ljali ljanje)
+ |   | | Stems   (7): (izgub_ oprav_ razmi?_ sprav_ sprem_ ugotav_ zagotav_)
+ |   | | Types   (32)
+ |   | |
+ |   | |>- Affixes (4): (lja ljajo ljal ljali)
+ |   | | | Stems   (5): (oprav_ razmi?_ sprem_ ugotav_ zagotav_)
+ |   | | | Types   (20)
+ |   | |
+ |   |  >- Affixes (4): (lja ljajo ljali ljanje)
+ |   |   | Stems   (6): (izgub_ oprav_ sprav_ sprem_ ugotav_ zagotav_)
+ |   |   | Types   (24)
+ |   |  
+ |    >- Children's similarity: 0.410791918
+ |     | Affixes (5): (lja ljajo ljali ljam ljamo)
+ |     | Stems   (8): (izgub_ predstav_ priprav_ razmi?_ sprem_ ugotav_ uporab_ zagotav_)
+ |     | Types   (35)
+ |     |
+ |     |>- Affixes (4): (lja ljajo ljali ljam)
+ |     | | Stems   (5): (izgub_ razmi?_ sprem_ ugotav_ zagotav_)
+ |     | | Types   (20)
+ |     |
+ |      >- Affixes (4): (lja ljajo ljali ljamo)
+ |       | Stems   (6): (predstav_ priprav_ sprem_ ugotav_ uporab_ zagotav_)
+ |       | Types   (24)
+ |      
+  >- Affixes (3): (ljal ljala ljali)
+   | Stems   (5): (odpe_ pripe_ razprav_ sprem_ zagotav_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.060048058
+ | Affixes (9): (k ka ke ki kom kov kovih ku ?tva)
+ | Stems   (22): (dnevni_ henri_ jezi_ lastni_ otro_ politi_ posamezni_ pote_ pou_ predsedni_ predstavni_ pritis_ smre_ sodni_ to_ uredni_ voja_ vozni_ vzro_ zdravni_ zra_ ?love_)
+ | Types   (97)
+ |
+ |>- Children's similarity: 0.182574186
+ | | Affixes (6): (k ka ke ki kov ?tva)
+ | | Stems   (10): (lastni_ otro_ politi_ posamezni_ predstavni_ uredni_ voja_ vozni_ vzro_ ?love_)
+ | | Types   (48)
+ | |
+ | |>- Affixes (5): (k ka ke ki kov)
+ | | | Stems   (8): (lastni_ otro_ politi_ posamezni_ predstavni_ voja_ vozni_ vzro_)
+ | | | Types   (40)
+ | |
+ |  >- Affixes (3): (k ka ?tva)
+ |   | Stems   (4): (lastni_ otro_ uredni_ ?love_)
+ |   | Types   (12)
+ |  
+  >- Children's similarity: 0.095346259
+   | Affixes (5): (k ka kom kovih ku)
+   | Stems   (14): (dnevni_ henri_ jezi_ otro_ pote_ pou_ predsedni_ pritis_ smre_ sodni_ to_ zdravni_ zra_ ?love_)
+   | Types   (52)
+   |
+   |>- Affixes (4): (k ka kom ku)
+   | | Stems   (11): (dnevni_ henri_ jezi_ otro_ pote_ pou_ predsedni_ pritis_ sodni_ zdravni_ zra_)
+   | | Types   (44)
+   |
+    >- Affixes (2): (ka kovih)
+     | Stems   (5): (otro_ predsedni_ smre_ to_ ?love_)
+     | Types   (10)
+    
+
+>- Children's similarity: 0.086548464
+ | Affixes (10): (ska ske skega skem skemu ski skih skim sko ??ino)
+ | Stems   (15): (arab_ britan_ dru?in_ evrop_ franco_ italijan_ japon_ kitaj_ lan_ ljud_ polj_ posav_ sloven_ ?ol_ ?en_)
+ | Types   (93)
+ |
+ |>- Children's similarity: 0.173205081
+ | | Affixes (9): (ska ske skega skem skemu ski skih skim sko)
+ | | Stems   (14): (britan_ dru?in_ evrop_ franco_ italijan_ japon_ kitaj_ lan_ ljud_ polj_ posav_ sloven_ ?ol_ ?en_)
+ | | Types   (89)
+ | |
+ | |>- Children's similarity: 0.359573260
+ | | | Affixes (8): (ska ske skega skem ski skih skim sko)
+ | | | Stems   (12): (britan_ evrop_ franco_ italijan_ japon_ kitaj_ lan_ ljud_ polj_ sloven_ ?ol_ ?en_)
+ | | | Types   (80)
+ | | |
+ | | |>- Children's similarity: 0.629940788
+ | | | | Affixes (7): (ska ske skega skem ski skih sko)
+ | | | | Stems   (10): (evrop_ franco_ italijan_ japon_ kitaj_ lan_ ljud_ polj_ sloven_ ?en_)
+ | | | | Types   (66)
+ | | | |
+ | | | |>- Affixes (6): (ska ske skega skem ski sko)
+ | | | | | Stems   (7): (evrop_ italijan_ japon_ kitaj_ lan_ polj_ sloven_)
+ | | | | | Types   (42)
+ | | | |
+ | | |  >- Affixes (6): (ska ske skega ski skih sko)
+ | | |   | Stems   (9): (evrop_ franco_ italijan_ japon_ kitaj_ lan_ ljud_ sloven_ ?en_)
+ | | |   | Types   (54)
+ | | |  
+ | |  >- Affixes (5): (skega ski skih skim sko)
+ | |   | Stems   (6): (britan_ evrop_ italijan_ sloven_ ?ol_ ?en_)
+ | |   | Types   (30)
+ | |  
+ |  >- Affixes (3): (skega skemu ski)
+ |   | Stems   (5): (dru?in_ evrop_ italijan_ posav_ sloven_)
+ |   | Types   (15)
+ |  
+  >- Affixes (2): (ski ??ino)
+   | Stems   (3): (arab_ franco_ sloven_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.170046060
+ | Affixes (11): (a e i ili lja ljati ljen ljena ljene ljeni ljeno)
+ | Stems   (17): (izgub_ ljub_ objav_ obnov_ odda_ oprem_ postav_ pozdrav_ predstav_ premi?_ priprav_ razstav_ sestav_ uporab_ uprav_ ustanov_ zdrav_)
+ | Types   (92)
+ |
+ |>- Children's similarity: 0.151910905
+ | | Affixes (10): (a e i ili lja ljati ljen ljena ljene ljeni)
+ | | Stems   (15): (izgub_ ljub_ objav_ obnov_ oprem_ postav_ pozdrav_ predstav_ priprav_ razstav_ sestav_ uporab_ uprav_ ustanov_ zdrav_)
+ | | Types   (83)
+ | |
+ | |>- Children's similarity: 0.245718047
+ | | | Affixes (9): (a e i ili lja ljati ljen ljena ljene)
+ | | | Stems   (11): (objav_ obnov_ oprem_ postav_ predstav_ priprav_ razstav_ sestav_ uporab_ uprav_ ustanov_)
+ | | | Types   (65)
+ | | |
+ | | |>- Children's similarity: 0.298019780
+ | | | | Affixes (7): (a e i ili ljen ljena ljene)
+ | | | | Stems   (10): (objav_ obnov_ oprem_ postav_ predstav_ priprav_ razstav_ sestav_ uporab_ ustanov_)
+ | | | | Types   (53)
+ | | | |
+ | | | |>- Children's similarity: 0.489897949
+ | | | | | Affixes (6): (a e i ili ljen ljena)
+ | | | | | Stems   (7): (objav_ oprem_ postav_ predstav_ priprav_ sestav_ uporab_)
+ | | | | | Types   (38)
+ | | | | |
+ | | | | |>- Affixes (5): (a e i ili ljena)
+ | | | | | | Stems   (6): (objav_ postav_ predstav_ priprav_ sestav_ uporab_)
+ | | | | | | Types   (30)
+ | | | | |
+ | | | |  >- Affixes (4): (a e ljen ljena)
+ | | | |   | Stems   (5): (objav_ oprem_ postav_ priprav_ sestav_)
+ | | | |   | Types   (20)
+ | | | |  
+ | | |  >- Affixes (4): (a e ili ljene)
+ | | |   | Stems   (6): (obnov_ postav_ priprav_ razstav_ sestav_ ustanov_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (4): (a i lja ljati)
+ | |   | Stems   (5): (postav_ predstav_ priprav_ uporab_ uprav_)
+ | |   | Types   (20)
+ | |  
+ |  >- Affixes (4): (a e i ljeni)
+ |   | Stems   (6): (izgub_ ljub_ objav_ pozdrav_ priprav_ zdrav_)
+ |   | Types   (24)
+ |  
+  >- Affixes (3): (ljen ljena ljeno)
+   | Stems   (5): (objav_ odda_ postav_ premi?_ sestav_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.185419270
+ | Affixes (9): (a e eje ej?a ej?e ej?i ej?ih i o)
+ | Stems   (17): (bogat_ cen_ mo?n_ najuspe?n_ natan?n_ nov_ odgovorn_ ostr_ pomemben_pomembn__ pozn_ pravi?en_pravi?n__ preprost_ previden_previdn__ star_ temen_temn__ uspe?en_uspe?n__ zanimiv_)
+ | Types   (91)
+ |
+ |>- Children's similarity: 0.278524250
+ | | Affixes (7): (a e ej?e ej?i ej?ih i o)
+ | | Stems   (11): (bogat_ cen_ mo?n_ najuspe?n_ nov_ ostr_ pomemben_pomembn__ pravi?en_pravi?n__ star_ uspe?en_uspe?n__ zanimiv_)
+ | | Types   (62)
+ | |
+ | |>- Children's similarity: 0.534522484
+ | | | Affixes (6): (a e ej?e ej?i i o)
+ | | | Stems   (10): (bogat_ cen_ mo?n_ nov_ ostr_ pomemben_pomembn__ pravi?en_pravi?n__ star_ uspe?en_uspe?n__ zanimiv_)
+ | | | Types   (55)
+ | | |
+ | | |>- Affixes (5): (a e ej?e i o)
+ | | | | Stems   (7): (bogat_ cen_ mo?n_ nov_ pomemben_pomembn__ star_ uspe?en_uspe?n__)
+ | | | | Types   (35)
+ | | |
+ | |  >- Affixes (5): (a e ej?i i o)
+ | |   | Stems   (8): (mo?n_ nov_ ostr_ pomemben_pomembn__ pravi?en_pravi?n__ star_ uspe?en_uspe?n__ zanimiv_)
+ | |   | Types   (40)
+ | |  
+ |  >- Affixes (3): (ej?e ej?i ej?ih)
+ |   | Stems   (5): (mo?n_ najuspe?n_ nov_ pomemben_pomembn__ star_)
+ |   | Types   (15)
+ |  
+  >- Children's similarity: 0.273861279
+   | Affixes (5): (a eje ej?a i o)
+   | Stems   (9): (cen_ mo?n_ natan?n_ odgovorn_ pozn_ preprost_ previden_previdn__ temen_temn__ uspe?en_uspe?n__)
+   | Types   (38)
+   |
+   |>- Affixes (4): (a eje i o)
+   | | Stems   (6): (mo?n_ natan?n_ odgovorn_ pozn_ preprost_ previden_previdn__)
+   | | Types   (24)
+   |
+    >- Affixes (4): (a ej?a i o)
+     | Stems   (5): (cen_ mo?n_ natan?n_ temen_temn__ uspe?en_uspe?n__)
+     | Types   (20)
+    
+
+>- Children's similarity: 0.067988941
+ | Affixes (8): (g ga ge gi go gu ?ila ?na)
+ | Stems   (21): (dialo_ dol_ dra_ dru_ dvi_ knji_ kro_ li_ mitin_ mno_ obse_ podla_ predlo_ prilo_ pro_ razlo_ slo_ sne_ vlo_ zma_ ?o_)
+ | Types   (89)
+ |
+ |>- Children's similarity: 0.316227766
+ | | Affixes (4): (g ga gu ?na)
+ | | Stems   (10): (dialo_ dol_ dvi_ knji_ kro_ mitin_ obse_ predlo_ slo_ sne_)
+ | | Types   (33)
+ | |
+ | |>- Affixes (3): (g ga gu)
+ | | | Stems   (8): (dialo_ dvi_ kro_ mitin_ obse_ predlo_ slo_ sne_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (3): (g ga ?na)
+ |   | Stems   (5): (dol_ dvi_ knji_ obse_ sne_)
+ |   | Types   (15)
+ |  
+  >- Children's similarity: 0.290473751
+   | Affixes (5): (ga ge gi go ?ila)
+   | Stems   (14): (dol_ dra_ dru_ knji_ li_ mno_ podla_ predlo_ prilo_ pro_ razlo_ vlo_ zma_ ?o_)
+   | Types   (59)
+   |
+   |>- Affixes (4): (ga ge gi go)
+   | | Stems   (12): (dol_ dra_ dru_ knji_ li_ mno_ podla_ predlo_ pro_ vlo_ zma_ ?o_)
+   | | Types   (48)
+   |
+    >- Affixes (4): (ga ge gi ?ila)
+     | Stems   (5): (dru_ predlo_ prilo_ razlo_ vlo_)
+     | Types   (20)
+    
+
+>- Children's similarity: 0.045931521
+ | Affixes (9): (*null* a e em enice ev i ih u)
+ | Stems   (13): (boj_ cilj_ gledalc_gledalec__ igralc_igralec__ konj_ kraj_ led_ mesec_ pogoj_ prijatelj_ star?_ stekl_ uslu?benc_uslu?benec__)
+ | Types   (84)
+ |
+ |>- Children's similarity: 0.482197969
+ | | Affixes (8): (*null* a e em ev i ih u)
+ | | Stems   (11): (boj_ cilj_ gledalc_gledalec__ igralc_igralec__ konj_ kraj_ mesec_ pogoj_ prijatelj_ star?_ uslu?benc_uslu?benec__)
+ | | Types   (79)
+ | |
+ | |>- Affixes (7): (*null* a e em ev i u)
+ | | | Stems   (8): (cilj_ gledalc_gledalec__ igralc_igralec__ konj_ kraj_ mesec_ pogoj_ prijatelj_)
+ | | | Types   (56)
+ | |
+ |  >- Affixes (6): (a e em ev i ih)
+ |   | Stems   (8): (boj_ konj_ kraj_ mesec_ pogoj_ prijatelj_ star?_ uslu?benc_uslu?benec__)
+ |   | Types   (48)
+ |  
+  >- Affixes (2): (enice u)
+   | Stems   (3): (konj_ led_ stekl_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.137794564
+ | Affixes (10): (*null* ?a ?e ?ega ?em ?emu ?i ?ih ?im ?o)
+ | Stems   (16): (biv_ bolj_ dalj_ du_ hi_ manj_ mlaj_ mo?nej_ na_ najbolj_ najmanj_ najuspe?nej_ nogometa_ star_ va_ ?ir_)
+ | Types   (82)
+ |
+ |>- Children's similarity: 0.166410059
+ | | Affixes (9): (*null* ?a ?e ?ega ?em ?i ?ih ?im ?o)
+ | | Stems   (16): (biv_ bolj_ dalj_ du_ hi_ manj_ mlaj_ mo?nej_ na_ najbolj_ najmanj_ najuspe?nej_ nogometa_ star_ va_ ?ir_)
+ | | Types   (79)
+ | |
+ | |>- Children's similarity: 0.243332132
+ | | | Affixes (7): (?a ?e ?ega ?i ?ih ?im ?o)
+ | | | Stems   (14): (biv_ bolj_ dalj_ du_ hi_ manj_ mlaj_ mo?nej_ na_ najmanj_ najuspe?nej_ star_ va_ ?ir_)
+ | | | Types   (65)
+ | | |
+ | | |>- Children's similarity: 0.500000000
+ | | | | Affixes (5): (?a ?e ?ega ?i ?o)
+ | | | | Stems   (8): (bolj_ dalj_ du_ hi_ mo?nej_ na_ va_ ?ir_)
+ | | | | Types   (36)
+ | | | |
+ | | | |>- Affixes (4): (?a ?e ?ega ?i)
+ | | | | | Stems   (6): (bolj_ dalj_ mo?nej_ na_ va_ ?ir_)
+ | | | | | Types   (24)
+ | | | |
+ | | |  >- Affixes (4): (?a ?e ?i ?o)
+ | | |   | Stems   (6): (bolj_ dalj_ du_ hi_ na_ va_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Children's similarity: 0.306186218
+ | |   | Affixes (5): (?a ?e ?i ?ih ?im)
+ | |   | Stems   (9): (biv_ manj_ mlaj_ mo?nej_ na_ najmanj_ najuspe?nej_ star_ va_)
+ | |   | Types   (38)
+ | |   |
+ | |   |>- Affixes (4): (?a ?e ?i ?ih)
+ | |   | | Stems   (8): (biv_ manj_ mo?nej_ na_ najmanj_ najuspe?nej_ star_ va_)
+ | |   | | Types   (32)
+ | |   |
+ | |    >- Affixes (3): (?e ?i ?im)
+ | |     | Stems   (4): (manj_ mlaj_ na_ va_)
+ | |     | Types   (12)
+ | |    
+ |  >- Affixes (4): (*null* ?a ?em ?i)
+ |   | Stems   (5): (bolj_ dalj_ najbolj_ nogometa_ star_)
+ |   | Types   (20)
+ |  
+  >- Affixes (2): (?a ?emu)
+   | Stems   (3): (bolj_ manj_ na_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.205556613
+ | Affixes (8): (ca ce cem cev ci cih cu ec)
+ | Stems   (15): (begun_ delav_ delodajal_ gledal_ igral_ izvajal_ kon_ mese_ obiskoval_ poslan_ prebival_ proizvajal_ sloven_ uslu?ben_ vrt_)
+ | Types   (77)
+ |
+ |>- Children's similarity: 0.232889004
+ | | Affixes (7): (ca ce cem cev ci cu ec)
+ | | Stems   (14): (begun_ delav_ gledal_ igral_ izvajal_ kon_ mese_ obiskoval_ poslan_ prebival_ proizvajal_ sloven_ uslu?ben_ vrt_)
+ | | Types   (71)
+ | |
+ | |>- Children's similarity: 0.441054277
+ | | | Affixes (6): (ca ce cem cev ci ec)
+ | | | Stems   (12): (begun_ delav_ gledal_ igral_ izvajal_ kon_ mese_ obiskoval_ poslan_ prebival_ sloven_ uslu?ben_)
+ | | | Types   (59)
+ | | |
+ | | |>- Children's similarity: 0.414039336
+ | | | | Affixes (6): (ca ce cem cev ci ec)
+ | | | | Stems   (9): (begun_ gledal_ igral_ izvajal_ kon_ mese_ obiskoval_ poslan_ uslu?ben_)
+ | | | | Types   (47)
+ | | | |
+ | | | |>- Affixes (5): (ca ce cem cev ci)
+ | | | | | Stems   (7): (begun_ gledal_ igral_ mese_ obiskoval_ poslan_ uslu?ben_)
+ | | | | | Types   (35)
+ | | | |
+ | | |  >- Affixes (4): (ca cem cev ec)
+ | | |   | Stems   (6): (gledal_ igral_ izvajal_ kon_ poslan_ uslu?ben_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (4): (ce cev ci ec)
+ | |   | Stems   (7): (delav_ gledal_ igral_ poslan_ prebival_ sloven_ uslu?ben_)
+ | |   | Types   (28)
+ | |  
+ |  >- Affixes (4): (ca ce cu ec)
+ |   | Stems   (5): (delav_ gledal_ igral_ proizvajal_ vrt_)
+ |   | Types   (20)
+ |  
+  >- Affixes (3): (ca cev cih)
+   | Stems   (4): (delodajal_ kon_ mese_ uslu?ben_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.085125653
+ | Affixes (9): (k ka kah kami ke ki ko kovno ?ice)
+ | Stems   (14): (ban_ dir_ obli_ pe_ razli_ ro_ sli_ stran_ stro_ tok_to?__ zbir_ znam_ zvo_ ?ens_)
+ | Types   (75)
+ |
+ |>- Children's similarity: 0.147844254
+ | | Affixes (8): (k ka kah kami ke ki ko kovno)
+ | | Stems   (12): (ban_ dir_ obli_ ro_ sli_ stran_ stro_ tok_to?__ zbir_ znam_ zvo_ ?ens_)
+ | | Types   (69)
+ | |
+ | |>- Children's similarity: 0.417312425
+ | | | Affixes (7): (k ka kah kami ke ki ko)
+ | | | Stems   (10): (ban_ dir_ obli_ ro_ sli_ stran_ tok_to?__ zbir_ znam_ ?ens_)
+ | | | Types   (61)
+ | | |
+ | | |>- Affixes (6): (k ka kah ke ki ko)
+ | | | | Stems   (7): (ban_ dir_ obli_ sli_ tok_to?__ zbir_ ?ens_)
+ | | | | Types   (42)
+ | | |
+ | |  >- Affixes (5): (ka kami ke ki ko)
+ | |   | Stems   (7): (ban_ obli_ ro_ stran_ tok_to?__ znam_ ?ens_)
+ | |   | Types   (35)
+ | |  
+ |  >- Affixes (3): (k ka kovno)
+ |   | Stems   (4): (obli_ sli_ stro_ zvo_)
+ |   | Types   (12)
+ |  
+  >- Affixes (2): (ko ?ice)
+   | Stems   (4): (pe_ razli_ ro_ sli_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.111111111
+ | Affixes (8): (a e i o skega ski skih skimi)
+ | Stems   (13): (avstrij_ dru?in_ evrop_ igral_ moj_mor__ ob?in_ olimpij_ organizacij_ policij_ trgovin_ zgodovin_ ?ol_ ?tudij_?tudir__)
+ | Types   (74)
+ |
+ |>- Affixes (6): (a e i o ski skih)
+ | | Stems   (9): (dru?in_ evrop_ moj_mor__ ob?in_ organizacij_ policij_ trgovin_ zgodovin_ ?ol_)
+ | | Types   (54)
+ |
+  >- Affixes (4): (a i skega skimi)
+   | Stems   (6): (avstrij_ evrop_ igral_ olimpij_ ?ol_ ?tudij_?tudir__)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.165144565
+ | Affixes (9): (*null* l la lca lcem lcev lci lec li)
+ | Stems   (15): (bra_ gleda_ igra_ izvaja_ meta_ nosi_ obiskova_ oblikova_ plazi_ poslu?a_ prosi_ stori_ stre_ to?i_ zbira_)
+ | Types   (67)
+ |
+ |>- Children's similarity: 0.182574186
+ | | Affixes (6): (*null* l lca lci lec li)
+ | | Stems   (9): (gleda_ igra_ izvaja_ meta_ nosi_ poslu?a_ stori_ to?i_ zbira_)
+ | | Types   (40)
+ | |
+ | |>- Affixes (4): (*null* l lca lec)
+ | | | Stems   (5): (gleda_ igra_ izvaja_ nosi_ stori_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (4): (*null* lci lec li)
+ |   | Stems   (6): (gleda_ igra_ meta_ poslu?a_ to?i_ zbira_)
+ |   | Types   (24)
+ |  
+  >- Children's similarity: 0.169030851
+   | Affixes (5): (l la lca lcem lcev)
+   | Stems   (9): (bra_ gleda_ igra_ izvaja_ obiskova_ oblikova_ plazi_ prosi_ stre_)
+   | Types   (33)
+   |
+   |>- Affixes (3): (l la lcev)
+   | | Stems   (7): (gleda_ igra_ izvaja_ oblikova_ plazi_ prosi_ stre_)
+   | | Types   (21)
+   |
+    >- Affixes (3): (l lca lcem)
+     | Stems   (5): (bra_ gleda_ igra_ izvaja_ obiskova_)
+     | Types   (15)
+    
+
+>- Children's similarity: 0.085854571
+ | Affixes (7): (evali evanja evanje evanjem evanju uje ujejo)
+ | Stems   (19): (izobra?_ izpolnj_ nadalj_ ocenj_ ogla?_ omej_ oznak_ozna?__ pospe?_ povpra?_ prehranj_ razum_ re?_ uresni?_ usklaj_ var?_ vklju?_ vzdr?_ zadrg_zadr?__ zdru?_)
+ | Types   (67)
+ |
+ |>- Children's similarity: 0.333333333
+ | | Affixes (4): (evali evanje uje ujejo)
+ | | Stems   (10): (nadalj_ ocenj_ oznak_ozna?__ pospe?_ prehranj_ re?_ var?_ vklju?_ zadrg_zadr?__ zdru?_)
+ | | Types   (33)
+ | |
+ | |>- Affixes (3): (evali evanje ujejo)
+ | | | Stems   (4): (nadalj_ ocenj_ oznak_ozna?__ var?_)
+ | | | Types   (12)
+ | |
+ |  >- Affixes (3): (evanje uje ujejo)
+ |   | Stems   (9): (nadalj_ ocenj_ oznak_ozna?__ pospe?_ prehranj_ re?_ vklju?_ zadrg_zadr?__ zdru?_)
+ |   | Types   (27)
+ |  
+  >- Children's similarity: 0.105409255
+   | Affixes (4): (evanja evanje evanjem evanju)
+   | Stems   (12): (izobra?_ izpolnj_ ocenj_ ogla?_ omej_ povpra?_ razum_ uresni?_ usklaj_ vklju?_ vzdr?_ zdru?_)
+   | Types   (37)
+   |
+   |>- Affixes (3): (evanja evanje evanjem)
+   | | Stems   (5): (ocenj_ omej_ razum_ vzdr?_ zdru?_)
+   | | Types   (15)
+   |
+    >- Affixes (3): (evanja evanje evanju)
+     | Stems   (8): (izobra?_ izpolnj_ ogla?_ povpra?_ uresni?_ usklaj_ vklju?_ vzdr?_)
+     | Types   (24)
+    
+
+>- Children's similarity: 0.048112522
+ | Affixes (7): (*null* jo m mo te ?ku ?)
+ | Stems   (12): (dobi_ ho?e_ lokal_ misli_ mora_ more_ nima_ no?e_ stroj_ vidi_ zvon_ ?eli_)
+ | Types   (61)
+ |
+ |>- Affixes (6): (*null* jo m mo te ?)
+ | | Stems   (9): (dobi_ ho?e_ misli_ mora_ more_ nima_ no?e_ vidi_ ?eli_)
+ | | Types   (54)
+ |
+  >- Affixes (2): (*null* ?ku)
+   | Stems   (4): (dobi_ lokal_ stroj_ zvon_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.285714286
+ | Affixes (7): (r rja rje rjem rjev rji rju)
+ | Stems   (14): (avto_ cesa_ dena_ direkto_ dola_ janua_ komenta_ moto_ okvi_ oska_ razme_ re?ise_ slova_ trene_)
+ | Types   (60)
+ |
+ |>- Children's similarity: 0.292770022
+ | | Affixes (5): (r rja rje rjem rju)
+ | | Stems   (9): (cesa_ dena_ direkto_ dola_ janua_ komenta_ razme_ slova_ trene_)
+ | | Types   (35)
+ | |
+ | |>- Affixes (4): (r rja rje rju)
+ | | | Stems   (5): (direkto_ komenta_ razme_ slova_ trene_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (3): (r rja rjem)
+ |   | Stems   (7): (cesa_ dena_ direkto_ dola_ janua_ slova_ trene_)
+ |   | Types   (21)
+ |  
+  >- Children's similarity: 0.292770022
+   | Affixes (5): (r rja rjev rji rju)
+   | Stems   (9): (avto_ direkto_ dola_ komenta_ moto_ okvi_ oska_ re?ise_ trene_)
+   | Types   (35)
+   |
+   |>- Affixes (4): (r rja rji rju)
+   | | Stems   (5): (avto_ direkto_ komenta_ re?ise_ trene_)
+   | | Types   (20)
+   |
+    >- Affixes (3): (r rjev rji)
+     | Stems   (7): (avto_ direkto_ dola_ moto_ okvi_ oska_ trene_)
+     | Types   (21)
+    
+
+>- Children's similarity: 0.138013112
+ | Affixes (7): (e il ila ili ilih ilom ilu)
+ | Stems   (12): (avtomob_ besed_ dokaz_ dolo?_ mam_ mer_ nadomest_ narok_naro?__ oprav_ porok_poro?__ prav_ sporo?_)
+ | Types   (55)
+ |
+ |>- Children's similarity: 0.410791918
+ | | Affixes (5): (il ila ili ilom ilu)
+ | | Stems   (8): (avtomob_ dolo?_ mer_ nadomest_ narok_naro?__ oprav_ porok_poro?__ sporo?_)
+ | | Types   (35)
+ | |
+ | |>- Affixes (4): (il ila ili ilom)
+ | | | Stems   (5): (avtomob_ mer_ oprav_ porok_poro?__ sporo?_)
+ | | | Types   (20)
+ | |
+ |  >- Affixes (4): (il ila ili ilu)
+ |   | Stems   (6): (avtomob_ dolo?_ nadomest_ narok_naro?__ porok_poro?__ sporo?_)
+ |   | Types   (24)
+ |  
+  >- Affixes (4): (e il ila ilih)
+   | Stems   (6): (besed_ dokaz_ mam_ mer_ porok_poro?__ prav_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.077151675
+ | Affixes (7): (*null* a ov ove ovi ovih ovim)
+ | Stems   (13): (brin_ dolg_dol?__ glas_ gozd_ n_ njeg_ njih_ otrok_otro?__ plod_ predsednik_ union_ urad_ ?lovek_)
+ | Types   (51)
+ |
+ |>- Children's similarity: 0.235702260
+ | | Affixes (5): (*null* ov ove ovi ovim)
+ | | Stems   (8): (dolg_dol?__ glas_ gozd_ n_ njeg_ njih_ plod_ ?lovek_)
+ | | Types   (32)
+ | |
+ | |>- Affixes (4): (*null* ov ove ovi)
+ | | | Stems   (6): (dolg_dol?__ glas_ gozd_ njih_ plod_ ?lovek_)
+ | | | Types   (24)
+ | |
+ |  >- Affixes (3): (ove ovi ovim)
+ |   | Stems   (4): (n_ njeg_ njih_ ?lovek_)
+ |   | Types   (12)
+ |  
+  >- Affixes (3): (*null* a ovih)
+   | Stems   (7): (brin_ gozd_ otrok_otro?__ predsednik_ union_ urad_ ?lovek_)
+   | Types   (21)
+  
+
+>- Children's similarity: 0.048112522
+ | Affixes (5): (ek ka kajo ke kih)
+ | Stems   (14): (doti_ izdel_ koti?_ krat_ manj_ niz_ postop_ pote_ prekr?_ sestan_ stav_ te_ umi_ znes_)
+ | Types   (47)
+ |
+ |>- Affixes (4): (ek ka ke kih)
+ | | Stems   (9): (izdel_ koti?_ krat_ niz_ postop_ prekr?_ sestan_ stav_ znes_)
+ | | Types   (36)
+ |
+  >- Affixes (2): (ka kajo)
+   | Stems   (6): (doti_ manj_ pote_ stav_ te_ umi_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.096225045
+ | Affixes (5): (stev stva stvo stvom stvu)
+ | Stems   (11): (boga_ dej_ gospodar_ gospodinj_ ljud_ ministr_ prven_ to?il_ vod_ zadovolj_ ?lan_)
+ | Types   (40)
+ |
+ |>- Affixes (4): (stev stva stvo stvu)
+ | | Stems   (6): (dej_ gospodar_ gospodinj_ ministr_ to?il_ vod_)
+ | | Types   (24)
+ |
+  >- Affixes (3): (stva stvo stvom)
+   | Stems   (6): (boga_ ljud_ prven_ vod_ zadovolj_ ?lan_)
+   | Types   (18)
+  
+
+>- Children's similarity: 0.218217890
+ | Affixes (5): (*null* a i oma ovega)
+ | Stems   (9): (dnevnik_ jezus_ mest_ namen_ otrok_otro?__ pravil_ sistem_ stolp_ ?upan_)
+ | Types   (36)
+ |
+ |>- Affixes (4): (*null* a i oma)
+ | | Stems   (7): (mest_ namen_ otrok_otro?__ pravil_ sistem_ stolp_ ?upan_)
+ | | Types   (28)
+ |
+  >- Affixes (3): (*null* a ovega)
+   | Stems   (4): (dnevnik_ jezus_ otrok_otro?__ ?upan_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.149071198
+ | Affixes (6): (l la li manju ti tje)
+ | Stems   (7): (odkri_ odpr_ prevze_ pre?ive_ ro_ sme_ spreje_)
+ | Types   (34)
+ |
+ |>- Affixes (5): (l la li ti tje)
+ | | Stems   (6): (odkri_ odpr_ prevze_ pre?ive_ sme_ spreje_)
+ | | Types   (30)
+ |
+  >- Affixes (2): (la manju)
+   | Stems   (3): (prevze_ ro_ spreje_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.112687234
+ | Affixes (4): (ost osti ostih ostni)
+ | Stems   (11): (aktivn_ dejavn_ kakov_ nevarn_ pr_ prilo?n_ skrivn_ star_ umeten_umetn__ varn_ znan_)
+ | Types   (34)
+ |
+ |>- Affixes (3): (ost osti ostih)
+ | | Stems   (7): (aktivn_ dejavn_ nevarn_ pr_ prilo?n_ skrivn_ znan_)
+ | | Types   (21)
+ |
+  >- Affixes (3): (ost osti ostni)
+   | Stems   (5): (kakov_ skrivn_ star_ umeten_umetn__ varn_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.547722558
+ | Affixes (5): (va ve vili vljen vljene)
+ | Stems   (7): (obja_ obno_ posta_ pripra_ razsta_ sesta_ ustano_)
+ | Types   (32)
+ |
+ |>- Affixes (4): (va ve vili vljen)
+ | | Stems   (5): (obja_ obno_ posta_ pripra_ sesta_)
+ | | Types   (20)
+ |
+  >- Affixes (4): (va ve vili vljene)
+   | Stems   (6): (obno_ posta_ pripra_ razsta_ sesta_ ustano_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.125988158
+ | Affixes (5): (nil nili nimo njena njeni)
+ | Stems   (9): (naklo_ name_ natis_ obj_obr__ oce_ ome_ prisluh_ sezna_ spreme_)
+ | Types   (31)
+ |
+ |>- Affixes (3): (nil nili nimo)
+ | | Stems   (4): (name_ oce_ ome_ prisluh_)
+ | | Types   (12)
+ |
+  >- Affixes (3): (nili njena njeni)
+   | Stems   (7): (naklo_ name_ natis_ obj_obr__ ome_ sezna_ spreme_)
+   | Types   (21)
+  
+
+>- Children's similarity: 0.251976315
+ | Affixes (4): (ar arja arji i)
+ | Stems   (9): (dol_ kol_ koment_ natak_ slik_sli?__ slov_ vodn_ vrat_ zgodovin_)
+ | Types   (29)
+ |
+ |>- Affixes (3): (ar arja arji)
+ | | Stems   (4): (dol_ koment_ natak_ zgodovin_)
+ | | Types   (12)
+ |
+  >- Affixes (3): (ar arja i)
+   | Stems   (7): (dol_ kol_ slik_sli?__ slov_ vodn_ vrat_ zgodovin_)
+   | Types   (21)
+  
+
+>- Children's similarity: 0.166666667
+ | Affixes (3): (*null* krat letja)
+ | Stems   (13): (deset_ dosti_ koliko_ milijard_ milijon_ mnogo_ najve?_ nekaj_ sto_ tiso?_ toliko_ veliko_ ?tiri_)
+ | Types   (28)
+ |
+ |>- Affixes (2): (*null* krat)
+ | | Stems   (12): (deset_ dosti_ koliko_ milijard_ milijon_ mnogo_ najve?_ nekaj_ tiso?_ toliko_ veliko_ ?tiri_)
+ | | Types   (24)
+ |
+  >- Affixes (2): (krat letja)
+   | Stems   (3): (deset_ sto_ tiso?_)
+   | Types   (6)
+  
+
+>- Affixes (2): (*null* koli)
+ | Stems   (11): (kadar_ kakor_ kakr?na_ kakr?nega_ kakr?no_ kamor_ katerem_ kateri_ katero_ kdor_ kjer_)
+ | Types   (22)
+
+
+>- Affixes (4): (a i i?? o)
+ | Stems   (5): (igr_ sred_ stal_ svet_ zemlj_)
+ | Types   (20)
+
+
+>- Affixes (4): (a om ovna u)
+ | Stems   (5): (del_ lik_li?__ svet_ vetr_ ?as_)
+ | Types   (20)
+
+
+>- Affixes (4): (al ali ane anega)
+ | Stems   (5): (br_ imenov_ napis_ napoved_ po?kodov_)
+ | Types   (20)
+
+
+>- Affixes (4): (e ost osti ostjo)
+ | Stems   (5): (brezposeln_ hitr_ javn_ pripravljen_ umeten_umetn__)
+ | Types   (20)
+
+
+
+

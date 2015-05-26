@@ -1,0 +1,174 @@
+\chapter{Modifications of Paramor}\label{chapter:modifications}
+
+Modifications of Paramor were conducted with two motives: 
+\begin{enumerate}
+\item Create a semi-supervised system, using manually provided seed of inflected words divided into stems and suffixes.
+
+\item Take into account basic allomorphy of stems.
+\end{enumerate} 
+\noindent The modifications were realised by directly changing Paramor's code, rather than by pre-/post-processing. Figure \ref{fig:overview} shows phases of Paramor on the left with dashed boxes representing my alterations.
+
+\begin{figure}
+\begin{center}
+\input{diagram2}
+\end{center}
+\caption{Altered Paramor's pipeline}
+\label{fig:overview}
+\end{figure}
+
+In the bottom-up search phase and the scheme cluster filtering phase, the manually provided examples of valid suffixes and their grouping to sub-paradigms are used to steer Paramor towards creating more adequate schemes and scheme clusters. 
+If the seed contains allomorphic stems, they are used to induce simple stem rewrite rules. Using these rules, part of the allomorphic stems in the corpus can be discovered, which helps to find more complete schemes.
+
+\section{Scheme seeding}
+
+\noindent
+The manual seed contains a simple list of inflected words with marked morpheme boundary. English inflections
+\begin{quote}
+\e{talk, talks, talked, talking}\\
+\e{stop, stops, stopped, stopping}\\
+\e{chat, chats, chatted, chatting}
+\end{quote}
+
+\noindent
+would be captured as:
+
+\begin{quote}
+\e{talk, stop/stopp, chat/chatt +  0, s / ed, ing}
+\end{quote}
+
+\noindent
+The format of the seed and the seeds used in the evaluation are described in the appendix \ref{chapter:seeds}. The data are used to enhance Paramor's accuracy in discovering the correct schemes and scheme clusters in the following way:
+\begin{enumerate}
+\item In the bottom-up search, Paramor starts with single-affix schemes. I added a 2-affix scheme to the initial scheme set for every suffix pair from the manual data belonging to the same inflection. Note that one cannot simply add a scheme containing all the suffixes of the whole paradigm as many of the forms will not be present in the corpus.
+
+Thus, for \e{talk + 0, s, ed, ing}, one would add the following schemes to the initial scheme set: \e{(0, s), (0, ed), (0, ing), (s, ed), (s, ing), (ed, ing)}
+
+\item Scheme clusters containing suffixes similar to some of the manually entered suffix sets are protected from the second phase of the cluster pruning. More precisely, a cluster is protected if at least half of its schemes share at least two suffixes with a particular manual suffix set.
+
+For example, a scheme cluster with suffixes (\e{í, ích, ímu, ími, ě, ím, ího, ictví}) induced from a Czech corpus was protected from discarding because it contained the suffixes (\e{í, ím, ího, ímu}), present in one of the examples in the Czech seed -- (\e{letn + í, ím, ího, ímu}) `summer' masc. sg. adjective, nom, ins, gen/acc, dat respectively.
+
+\end{enumerate}
+
+\section{Allomorphy}
+
+Paramor ignores allomorphy completely (and so do Linguistica and Mofessor). There are at least two reasons to handle allomorphy. First, linguistically, it  makes  more  sense  to  analyse  \e{winning}  as  \e{win+ing} than as  \e{winn+ing} or \e{win+ning}. For  many  applications, such as information retrieval, it is helpful to know that two morphs are variants of the same morpheme.
+%
+Second, ignoring allomorphy makes the data appear more complicated and noisier than they actually are. Thus, the process of learning morpheme boundaries or paradigms is harder and less successful.
+
+This latter problem might manifest itself in Paramor's bottom-up search phase: a linguistically correct suffix triggering a stem change might be discarded, because Paramor would not consider stem allomorphs to be variants of the same stem and c-stem ratio may drop significantly. Further more, incorrect c-suffixes may be selected.
+
+For example, suppose there are 5 English verbs in the corpus: \emph{talk, hop, stop, knit, chat}, together with their \emph{-s} (\emph{talks, hops, stops, knits, chats}) and \emph{-ing} (\emph{talking, hopping, stopping, knitting, chatting}) forms. Let's already have a scheme \{\emph{0, s}\} with 5 stems. Adding \emph{ing} would decrease the number of stems to 1, leaving only \emph{talk} in the scheme. C-stem ratio would be 0.2 and \emph{ing} would not be accepted. Moreover, incorrect c-suffixes as \emph{ping} and \emph{ting} have c-stem ratio 0.4 and may be accepted.
+
+%\subsubsection{Stem change rule induction}
+
+However, for most languages the full specification of rules constraining allomorphy is not available, or at least is not precise enough. Therefore, I automatically induce a limited number of simple rules from the seed examples and/or from the scheme clusters obtained from the previous run of algorithm. Such rules both over- and undergenerate, but nevertheless they do improve the accuracy of the whole system. For languages, where formally specified allomorphic rules are available, they can be used directly along the lines of
+\cite{tepper10,tepper-xia-2008}, see Section \ref{section:semisup_morfessor}.
+%
+Currently the system  considers only stem final changes, namely vowel epenthesis (\eg
+\e{matk+a} -- \e{matek+0}) and alternation of the final consonant (\eg \e{matk+a} -- \e{matc+e}). %The extension to other other processes such as root vowel change (\eg English \e{foot -- feet}) is quite straightforward, but we leave with for future work.
+
+
+\subsection{Stem change rule induction and application}
+Formally, the process can be described as follows.
+From every pair of stem allomorphs in the seed, $a\delta_1, a\delta_2$, where $a$ is their longest common initial substring\footnote{should $\delta_1$ or $\delta_2$ be 0, one final character is removed from $a$ and prepended to $\delta_1$ and $\delta_2$} 
+with suffix sets $F_1$, $F_2$  a correspondence rule is generated $*\delta_1 \leftrightarrow *\delta_2$ / $(F_1, F_2)$. A rule $*\delta_1 \leftrightarrow *\delta_2$ / $(F_1, F_2)$ is applicable on an unordered pair of c-stems {$x\delta_1$, $x\delta_2$} present in the corpus if:
+
+\begin{enumerate}
+\item C-suffix set of the c-stem $x\delta_1$ contains at least one of the suffixes from $F_1$ and contains no suffix from $F_2$.
+\item C-suffix set of the c-stem $x\delta_2$ contains at least one of the suffixes from $F_2$ and contains no suffix from $F_1$.
+\end{enumerate}
+
+\noindent For example, from a seed entry 
+\begin{quote}
+\e{politik/politic + a, u, ovi, em, y, ů, ům / i, ích}
+\end{quote}
+the following rule is generated:
+\begin{quote}
+$*k \leftrightarrow *c$ / (\{\e{a, u, ovi, em, y, ů, ům}\}, \{\e{i, ích}\}) 
+\end{quote}
+
+The rules are used to generate underlying form of c-stems, which I call \emph{deep} stems.  I define relation $\leftrightarrow$ between two c-stems: $s_1 \leftrightarrow s_2$ iff there is a correspondence between $s_1$ and $s_2$ licensed by any rule. The deep stems then correspond to equivalence classes induced by the reflexive and transitive closure of $\leftrightarrow$.
+%\noindent
+%Formally, the process can be described as follows.
+%From every pair of stem allomorphs in the manual input, $s\delta_1, s\delta_2$, where $s$ is their longest common initial substring,\footnote{should $\delta_1$ or $\delta_2$ be 0, one final character is removed from $s$ and prepended to $\delta_1$ and $\delta_2$} with suffix
+%sets $f_1$, $f_2$ we generate a rule $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ and also a reverse rule $*\delta_2 \rightarrow *\delta_1$ / $(f_2, f_1)$. Notation $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ means ``transform a stem $x\delta_1$ into $x\delta_2$ if following conditions hold:''
+%
+%\begin{enumerate}
+%\item $x\delta_2$ is a c-stem present in the corpus.
+%\item C-suffix set $f^x_1$ (from the corpus) of the c-stem $x\delta_1$ contains at least one of the suffixes from $f_1$ and contains no suffix from $f_2$.
+%\item C-suffix set $f^x_2$ of the c-stem $x\delta_2$ contains at least one of the suffixes from $f_2$ and contains no suffix from $f_1$.
+%\end{enumerate}
+%
+%\noindent
+%Induced rules are applied after the initialisation phase. So-called \emph{deep} stems are generated from the c-stems. A deep stem is defined as a set of surface stems.
+%
+%To obtain a deep stem for a c-stem $t$, operation of \emph{expansion} is applied. Expansion works as a breadth-first search using a queue initialised with $t$ and keeping track of the set $D$ of already generated variants. While the queue is not empty, the first member is removed and its variants found by application of all the rules. (Result of applying a rule si non-empty only if the rule is applicable and its right hand side is present in the corpus.) Variants which haven't been generated so far are added to the back of the queue and to $D$. When the queue is emptied, $D$ becomes the deep stem associated with $t$ and all other members of $D$.
+%
+Bottom-up search and all the following phases of Paramor algorithm are then using the deep stems instead of the surface ones.
+
+\subsection{Stem change rule induction from scheme clusters}\label{section:autoseed}
+
+\noindent
+In addition to deriving allomorphic rules from the manual seed, I also tested a heuristic for detecting stem allomorphy in the scheme clusters obtained from the previous run of the algorithm.
+%
+Stem allomorphy increases the sparsity problem and might prevent Paramor from finding complete paradigms. However, if the stem changes are systematic and frequent, Paramor does create the appropriate scheme clusters, although it considers the changing part of the stem to be a part of suffixes.
+
+As an example, consider again the declension of the Czech word \gloss{matka}{mother} in Table \ref{table:matka}. Paramor's scheme cluster with suffixes \{\emph{ce, ek, ka, kami, kou, ku, ky, kách, kám}\} has correctly discovered 9 of the 10 paradigm's suffixes,\footnote{Except for vocative case singular, which is rarely used.} but fused together with parts of the stem. (Practically discovering the ``engineering'' paradigm from Table \ref{table:matka_eng})
+Presence of such scheme cluster in the Paramor's output is a hint that there may be a \e{c/k} alternation and epenthesis in the language. The heuristic presented in this section tries to find scheme clusters with similar characteristics as the \{\emph{ce, ek, ka, ...}\} cluster and create stem variants by moving the morpheme boundary.
+
+In the first phase, each scheme cluster with a c-suffix set $F$ is tested by the following procedure:
+\begin{enumerate}
+\item If $F$ contains a c-suffix without a consonant, return \emph{false}.
+\item $c_c$ = count of unique left-most consonants found in the c-suffixes in $F$.
+\item If $c_c > 2$ return \emph{false}. If $c_c$ = 1 and $F$ doesn't contain any c-suffix starting with a vowel, return \emph{false}.
+\item Return \emph{true}.
+\end{enumerate}
+If a scheme cluster passes this test, each of its stems' subparadigms is examined. Subparadigm for stem $s$ consists of $s$ and $F_s$ -- all the c-suffixes from $F$ with which $s$ forms a word in the corpus. For example, let's have a stem $s = $ \emph{mat} with $F_s = $ \{\emph{ce, ek, ka, ku, ky}\}. Now, the morpheme boundary is shifted so that it is immediately to the right from the first consonant of the original c-suffixes. In the \e{matka} example, 3 stem variants emerge after the shift:\begin{quote}
+\begin{flushleft}
+\emph{matk} + \emph{a, u, y}\\
+\emph{matc} + \emph{e}\\ 
+\emph{matek} + \emph{0}\\
+\end{flushleft}
+\end{quote}
+To reduce the amount of falsely detected phonological changes, each stem variant's suffix set is checked whether it contains at least one of the c-suffixes that Paramor has already discovered in other scheme clusters. If the condition holds, rules with the same syntax as the manual seed are created. For example, \begin{quote}\emph{matk / matc / matek} + \emph{a, u, y / e / 0}\end{quote} All generated rules are gathered in a file and can be used in the same way as the manual seed or just for the induction of phonological rules.
+
+\subsubsection*{Automatically discovered rules for Czech}
+
+The heuristic, when tested on scheme clusters generated by Paramor for a Czech corpus with 25k word types, was able to detect a number of phonological/graphemic changes. Examples of detected palatalisation are shown in Table \ref{table:autoseed_palat}. Table \ref{table:autoseed_epen} presents some of the detected cases of epenthesis.
+
+\begin{table}[p]
+\centering
+\begin{tabular}{r@{\, $\rightarrow$ \,}l}
+\toprule
+%\bf Change & \bf Cost\\
+%\midrule
+\gloss{kni\textbf{h} + a}{book\subscr{nom.sg.}} & \gloss{kni\textbf{z} + e}{book\subscr{loc.sg.}}\\
+\gloss{strán\textbf{k} + a}{page\subscr{nom.sg.}} & \gloss{strán\textbf{c} + e}{page\subscr{dat.sg.}}\\
+\gloss{atmosfé\textbf{r} + a}{atmosphere\subscr{nom.sg.}} & \gloss{atmosfé\textbf{ř} + e}{atmosphere\subscr{loc.sg.}}\\
+\gloss{umě\-le\textbf{c}  + ký}{artistic\subscr{nom.sg.}} & \gloss{uměle\textbf{č} + tí}{artistic\subscr{nom.pl.}}\\
+\gloss{vojen\textbf{s}  + ký}{military\subscr{nom.sg.}} & \gloss{vojen\textbf{š} + tí}{military\subscr{nom.pl.}}\\
+\bottomrule
+\end{tabular}
+\caption{\label{table:autoseed_palat} Examples of detected palatalisation.}
+\end{table}
+
+\begin{table}[p]
+\centering
+\begin{tabular}{r@{\, $\rightarrow$ \,}l}
+\toprule
+%\bf Change & \bf Cost\\
+%\midrule
+\gloss{volb + a}{choice\subscr{nom.sg.}} & \gloss{vol\textbf{e}b + 0}{choices\subscr{gen.pl.}}\\
+\gloss{poplatk + y}{fees\subscr{nom.pl.}} & \gloss{poplat\textbf{e}k + 0}{fee\subscr{nom.sg.}}\\
+\gloss{pohádk + y}{fairy tales\subscr{nom.pl.}} & \gloss{pohád\textbf{e}k + 0}{fairy tales\subscr{gen.pl.}}\\
+\gloss{požadavk + ům}{requests\subscr{dat.pl.}} & \gloss{požadav\textbf{e}k + 0}{request\subscr{nom.sg.}}\\
+\bottomrule
+\end{tabular}
+\caption{\label{table:autoseed_epen} Examples of detected epenthesis.}
+\end{table}
+
+\noindent There were also incorrect rules generated, for example \fromTo{poklesl + a}{poklesn + e}, which relates fem. past participle and 3p. sg. future forms of \gloss{poklesnout}{to decrease}. There is no alternation \fromTo{l}{n} in Czech and the Paramor's original analysis \e{pokles + la}, \e{pokles + ne} was correct.
+
+\section{Rules for inflectional prefixes}\label{section:prefixes}
+I have also enabled supplying a list of the inflectional prefixes of the given language to Paramor. This feature was tested on Czech, which has only two inflectional prefixes (negative prefix \e{ne} and superlative prefix \e{nej}). The decision which prefixes to consider inflectional and which not is to a certain degree an arbitrary decision (\eg it can be argued that \e{ne} is a clitic and not a prefix), therefore it makes sense to provide such information manually.
+

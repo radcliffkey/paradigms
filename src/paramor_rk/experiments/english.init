@@ -1,0 +1,16 @@
+#
+# An initializations file for ParaMor v0.1
+# 
+# Written by Christian Monson -- June 26, 2009
+#
+#
+
+corpus ./TomSawyer.txt
+
+language English
+
+#throwOutNumbers on
+
+#caseSensitive off
+
+#typesToRead 50000

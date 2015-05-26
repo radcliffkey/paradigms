@@ -1,0 +1,191 @@
+\chapter{Software package}\label{chapter:swpkg}
+
+This appendix describes the usage of the software developed for the thesis. The software has two major parts: modified Paramor and the clustering framework (CF).
+
+\section{Requirements}
+For compilation of Paramor and the CF, Java Development Kit (JDK) 6 or higher and the Apache Ant is required. Some scripts in the package require Python 2 in the version 2.5 or higher.
+
+\section{Installation and usage}
+To install the SW package, first download the file \ttt{klic-morph-sw.zip} from \url{http://purl.org/klic-morph/download}. Unpack the archi\-ve to any selected directory. The structure of the package is described in Section \ref{section:sw_struct}. Now it is necessary to compile the Java projects.
+To compile Paramor, just run \ttt{ant} in the directory \ttt{paramor\_rk}. To compile the CF, run the same command in the directory \ttt{clustering}.
+
+\subsection{Structure of the package}\label{section:sw_struct}
+The package consists of the following directories:
+\begin{itemize}
+\item \ttt{paramor\_rk} The modified Paramor's source code and settings files are stored here.
+\item \ttt{clustering} This directory contains the source code and settings files of the CF.
+\item \ttt{resources} In this directory, corpora and other resources are stored. Currently it contains only the Slovene corpus, which is freely distributable.
+\end{itemize}
+
+\subsection{Using Paramor}
+Paramor is located in the directory \ttt{paramor\_rk}. The original way of using Paramor is interactive, with the user entering commands into  Paramor's command line. The commands are described in \ttt{README.txt} file. To invoke the interpreter, run
+\begin{quote}
+\tt java -cp ./bin:./trove.jar -Xmx1g monson.christian.morphology. paraMor.ParaMor -if <settings file>
+\end{quote}
+
+\subsubsection{Settings files}
+
+To illustrate the syntax of a settings file, I will show the content of one of the settings files I used in the evaluation:
+
+\begin{quote}
+\tt corpus ../resources/cz10/dev37kwPlain.txt
+
+manualSeed seed-cz.txt
+
+autoSeed autoSeed-cz10.txt
+
+prefixList prefixes-cz.txt
+
+language GENERIC
+
+throwOutNumbers on
+
+caseSensitive off
+
+typesToRead 50000
+\end{quote}
+The file contains the original Paramor's options, as well as the ones I have added for the extended Paramor features: \begin{itemize}
+\item \textbf{corpus}: the corpus location, relative to the \ttt{paramor\_rk} directory. Only plain text corpora are supported.
+
+\item \textbf{language}: This setting only influences tokenization and should be set to GE\-NE\-RIC.
+
+\item \textbf{manualSeed}: (optional) location of the manual seed. (See Appendix \ref{chapter:seeds} for syntax of the seed.)
+
+\item \textbf{autoSeed}: (optional) location of the autoseed, which will be used to induce stem allomorphy rules.
+
+\item \textbf{prefixList}: (optional) location of the inflectional prefix list.
+
+\item \textbf{throwOutNumbers}: (optional) Setting to \e{on} discards all the tokens containing numerical characters.
+
+\item \textbf{caseSensitive}: (optional) Setting to \e{off} makes all the words lowecase.
+
+\item \textbf{typesToRead}: (optional) Upper limit on the number of different word types to read from the corpus.
+\end{itemize}
+
+\subsubsection{Batch mode}
+
+To enable running Paramor in a batch mode, I have added the script \ttt{paramor.py}, which takes a settings file as its only argument:
+
+\begin{quote}
+\tt python paramor.py <settings file>
+\end{quote}
+
+\subsubsection{Output files}\label{section:paramor_outfiles}
+\begin{itemize}
+\item \textbf{clusterToWords.txt}: the file contains on each line a scheme cluster number, a c-stem and all its inflections according to the scheme cluster. For example:
+\begin{quote}\tt
+14-return\_	returning	return	returns	returned
+\end{quote}
+This file is used for evaluation of Paramor against the lexemes in a lemmatised corpus.
+
+\item \textbf{wordToClusters.txt}: for each word type, the file contains the set of scheme clusters according to which it can be segmented and for each such scheme cluster it shows the type's c-stem \eg
+\begin{quote}\tt
+inquiringly	18-inquir\_	20-inquiring\_
+\end{quote}
+The file is used for computing the paradigm distance (defined in Section \ref{section:pdgm_dist}).
+
+\item segmented corpus: If Paramor is run in the batch mode, the segmented corpus is stored in
+a file with a long name, encoding some of the settings Paramors was run with. An example of such name: \ttt{segmented-R0.25-ClusterSize20-MBTFLF\-ENTROPY-0.5-MBTFRF-ENTROPY-0.5-combinedSegmentation-segmentati\-ons.txt}
+
+\item scheme clusters: Parmor outputs the resulting scheme clusters to the file \tbf{junk-clusters.txt}. In this curiously named file, the scheme clusters are presented together with a tree structure, showing the steps of the bottom-up scheme clustering.
+\end{itemize}
+
+\subsection{Using the clustering framework}
+The clustering framework (CF) is located in the \ttt{clustering} directory. The CF is primarily a Java library. This section describes usage of the CF for running and evaluating experiments; for examples of usage of the API, see Section \ref{section:cf_api}. The evaluation is implemented by the \ttt{EvalClustering} Java class located in the package \ttt{cz.klic.eval}. It performs clustering with the settings specified in a file and evaluates the resulting clusters using a lemmatised corpus. If compiled, the class is runnable by the script \ttt{runEval.sh}, which is a shortcut for 
+\begin{quote}\tt
+java -Xmx1g -cp ./bin:trove.jar cz.klic.eval.EvalClustering 
+\end{quote}
+Usage of the script is:
+\begin{quote}\tt
+./runEval.sh [-v] <experiment settings file>
+\end{quote}
+If the \ttt{-v} option is used, the output is more verbose, logging every cluster merge and evaluating each cluster in the result set.
+
+\subsubsection{Settings files}
+
+The experiment settings files use the syntax of the \ttt{.properties} configuration files.\footnote{\url{http://en.wikipedia.org/wiki/.properties}} As an example, I will show one the files I have used in the evaluation:
+
+\begin{quote}
+\tt corpusFile = ../resources/cz10/dev37kw.p3m
+
+corpusFormat = CSTS
+
+distanceMeasure = paradigm, edit
+
+combination = Euclid
+
+clusterApproach = AVERAGE\_DISTANCE
+
+distThreshold = 0.99
+
+minClusterCount = 5500
+
+paradigmFile = ../resources/cz10/wordToClusters-noseed.txt
+\end{quote}
+The following list describes the options used in the file: 
+\begin{itemize}
+\item \textbf{corpusFile}: the location of a lemmatised corpus, relative to the \ttt{clustering} directory.
+
+\item \textbf{corpusFormat}: Currently supported values are \e{CSTS}, \e{CONLL}, \e{ TIGER\_EXPORT} and \e{SPACE\_SEP}
+
+\item \textbf{distanceMeasure}: The distance measure to be used in the clustering. Currently supported values are \e{paradigm} and \e{edit}. A comma delimited list of values may be specified. In that case, the \tbf{combination} option must be set.
+
+\item \textbf{combination}: How the metrics specified in the \textbf{distanceMeasure} option should be combined. Currently supported values are \e{Euclid} and \e{sequence}. The value \e{sequence} means that the clustering will work step-wise, in each step using different distance metric. Stopping criteria for individual steps can be specified in the \textbf{distThreshold} and \textbf{minClusterCount} options.
+
+\item \textbf{clusterApproach}: (optional) The supported values are \e{NEAREST\_MEMBER}, \e{AVERAGE\_DISTANCE}, \e{FURTHEST\_MEMBER} and \e{NO\_CLUSTERING}. The fir\-st three values correspond to the approaches described in Chapter \ref{chapter:clustering}. The value \e{NO\_CLUSTERING} means that no clustering will be run, only evaluation will be performed for the clusters in the file specified by the \textbf{paradigmFile} option. The default value of this option is \e{AVERAGE\_DISTANCE}.
+
+\item \textbf{distThreshold}: (optional) If the distance between the two closest clusters rises above the given threshold, the clustering stops.
+
+\item \textbf{minClusterCount}: (optional) If the number of clusters reaches the given number, the clustering stops.
+
+\item \textbf{paradigmFile}: If the paradigm distance is used, the value should be a file with the syntax of the \tbf{wordToClusters.txt} file from Paramor's output (see Section \ref{section:paramor_outfiles}). If \e{NO\_CLUSTERING} was specified, the value should be a file with the syntax of the \tbf{clusterToWords.txt} file from Paramor's output.
+
+\end{itemize}
+
+\subsubsection{Output of the script}
+The script \ttt{runEval.sh} writes the evaluation results to the standard output. If the \ttt{-v} option is used, it reports also each merge of clusters during the run of clustering:
+\begin{quote}\begin{flushleft}
+\ldots\\
+\ttt{merge dist: 0.4237868872193668\\
+Merging:\\
+{[}ekonomiku, ekonomiky, ekonomice{]} \\
+{[}ekonomika, ekonomikami{]} \\
+}
+\ldots
+\end{flushleft}
+\end{quote}
+and evaluates the resulting clusters by aligning them with the lexeme from the corpus which has the largest intersection. The words which should be added to the cluster and the words which should be removed from the cluster to match the lexeme are shown:
+\begin{quote}\begin{flushleft}
+\ldots\\
+\ttt{cluster:studia, studie, studiem, studiu, studium\\
+correct:studia, studiem, studiu, studium\\
+wrong:studie\\
+missed:\\
+}
+\ttt{cluster:podílel, podílet\\
+correct:podílel, podílet\\
+wrong:\\
+missed:podílí\\
+}
+\ldots
+\end{flushleft}
+\end{quote}
+
+\section{Using the clustering framework API}\label{section:cf_api}
+
+To run clustering, use the class \ttt{cz.klic.clustering.HierarchicalClustering<T>}. \ttt{T} is the class of the clustered objects. I used \ttt{String} as the value of \ttt{T} in the morphology experiments. First, instantiate the class, providing the distance metric and clustering approach to be used, for example:
+\begin{small}\begin{verbatim}
+HierarchicalClustering<String> hc = new HierarchicalClustering<String>(
+    new LevenshteinMetric(),
+    HierarchicalClustering.ClusterApproach.AVERAGE_DISTANCE);
+\end{verbatim}
+\end{small}
+You can use one of the metrics already implemented in the \ttt{cz.klic.stringDist\-ance} package or implement the \ttt{DistanceMetric<T>} interface in the same package.
+
+In the next step, run the clustering itself, using the \ttt{cluster} method, which accepts either a list of \ttt{T} instances or a list of \ttt{Cluster<T>} instances. The optional parameters \ttt{clustNum} and \ttt{distThreshold} with default values 1 and infinity, respectively, set the stopping criteria. The method returns a list of \ttt{Cluster<T>} instances.
+\begin{small}\begin{verbatim}
+List<String> words = corpus.getVocab();
+List<Cluster<String>> clusters = hc.cluster(words, 1000, 0.95);
+\end{verbatim}
+\end{small}
+A list of the members of a \ttt{Cluster<T>} instance can be retrieved by the \ttt{getMembers} method.

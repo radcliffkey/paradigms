@@ -1,0 +1,694 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/radcliff/projects/thesis/paramor_rk/../resources/cat/cat-train-minus-dev.txt
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  25 Clusters
+-----------------------
+
+>- Children's similarity: 0.022541741
+ | Affixes (5): (*null* a ament etat s)
+ | Stems   (643): (a_causa_del_ a_partir_del_ a_trav?s_del_ abocador_ abocament_ absolut_ accident_ acompanyat_ acord_ acostament_ acte_ actitud_ actiu_ activitat_ actual_ acusat_ adequat_ adjudicat_ administratiu_ adre?at_ adscrit_ advocat_ aeri_ aeroport_ afectat_ agent_ agricultor_ ajuntament_ ajut_ alcalde_ ...)
+ | Types   (1315)
+ |
+ |>- Children's similarity: 0.104419475
+ | | Affixes (4): (*null* a ament s)
+ | | Stems   (642): (a_causa_del_ a_partir_del_ a_trav?s_del_ abocador_ abocament_ absolut_ accident_ acompanyat_ acord_ acostament_ acte_ actitud_ actiu_ activitat_ actual_ acusat_ adequat_ adjudicat_ administratiu_ adre?at_ adscrit_ advocat_ aeri_ aeroport_ afectat_ agent_ agricultor_ ajuntament_ ajut_ alcalde_ ...)
+ | | Types   (1312)
+ | |
+ | |>- Affixes (4): (*null* a ament s)
+ | | | Stems   (14): (absolut_ b?sic_ conjunt_ darrer_ espec?fic_ hist?ric_ intern_ llarg_ period?stic_ pol?tic_ proper_ pr?xim_ p?blic_ ?nic_)
+ | | | Types   (56)
+ | |
+ |  >- Affixes (2): (*null* s)
+ |   | Stems   (642): (a_causa_del_ a_partir_del_ a_trav?s_del_ abocador_ abocament_ absolut_ accident_ acompanyat_ acord_ acostament_ acte_ actitud_ actiu_ activitat_ actual_ acusat_ adequat_ adjudicat_ administratiu_ adre?at_ adscrit_ advocat_ aeri_ aeroport_ afectat_ agent_ agricultor_ ajuntament_ ajut_ alcalde_ ...)
+ |   | Types   (1284)
+ |  
+  >- Affixes (2): (*null* etat)
+   | Stems   (3): (precari_ propi_ soci_)
+   | Types   (6)
+  
+
+>- Children's similarity: 0.031128640
+ | Affixes (3): (a a_civil es)
+ | Stems   (345): (acumulad_ adequad_ afectad_ agend_ agr?ri_ ag?nci_ ajud_ algun_ alt_ alternativ_ altr_ alumn_ aquell_ aquest_ arm_ arrencad_ artist_ assemble_ aturad_ audi?nci_ autonomi_ autopist_ aut?nom_ avari_ baix_ ballad_ banc?ri_ bas_ benziner_ bon_ ...)
+ | Types   (692)
+ |
+ |>- Affixes (2): (a a_civil)
+ | | Stems   (3): (guerr_ gu?rdi_ obr_)
+ | | Types   (6)
+ |
+  >- Affixes (2): (a es)
+   | Stems   (344): (acumulad_ adequad_ afectad_ agend_ agr?ri_ ag?nci_ ajud_ algun_ alt_ alternativ_ altr_ alumn_ aquell_ aquest_ arm_ arrencad_ artist_ assemble_ aturad_ audi?nci_ autonomi_ autopist_ aut?nom_ avari_ baix_ ballad_ banc?ri_ bas_ benziner_ bon_ ...)
+   | Types   (688)
+  
+
+>- Children's similarity: 0.112853219
+ | Affixes (16): (a acions aci? ada ades ant ar aran ar? at ats ava em en i in)
+ | Stems   (38): (acab_ afect_ arrib_ celebr_ centr_ cre_ dedic_ deix_ deman_ denunci_ desenvolup_ don_ entr_ esper_ expos_ form_ implic_ manifest_ millor_ oblig_ ocup_ organitz_ parl_ particip_ pass_ pens_ port_ pos_ present_ public_ ...)
+ | Types   (280)
+ |
+ |>- Children's similarity: 0.151899221
+ | | Affixes (15): (a acions aci? ada ades ant ar aran ar? at ats ava en i in)
+ | | Stems   (35): (acab_ afect_ arrib_ celebr_ centr_ cre_ dedic_ deix_ deman_ denunci_ desenvolup_ don_ entr_ expos_ form_ implic_ manifest_ oblig_ ocup_ organitz_ parl_ particip_ pass_ port_ pos_ present_ public_ qued_ realitz_ situ_ ...)
+ | | Types   (265)
+ | |
+ | |>- Children's similarity: 0.372677996
+ | | | Affixes (7): (a acions aci? ada ar at ats)
+ | | | Stems   (14): (celebr_ cre_ dedic_ form_ implic_ manifest_ oblig_ organitz_ particip_ present_ public_ realitz_ situ_ titul_)
+ | | | Types   (88)
+ | | |
+ | | |>- Affixes (6): (a acions aci? ada ar at)
+ | | | | Stems   (10): (celebr_ form_ implic_ manifest_ organitz_ particip_ present_ public_ situ_ titul_)
+ | | | | Types   (60)
+ | | |
+ | |  >- Affixes (6): (a aci? ada ar at ats)
+ | |   | Stems   (8): (cre_ dedic_ implic_ oblig_ public_ realitz_ situ_ titul_)
+ | |   | Types   (48)
+ | |  
+ |  >- Children's similarity: 0.206065147
+ |   | Affixes (12): (a ada ades ant ar aran ar? at ava en i in)
+ |   | Stems   (26): (acab_ afect_ arrib_ celebr_ centr_ deix_ deman_ denunci_ desenvolup_ don_ entr_ expos_ form_ ocup_ parl_ particip_ pass_ port_ pos_ present_ qued_ realitz_ sol?licit_ supos_ torn_ trob_)
+ |   | Types   (197)
+ |   |
+ |   |>- Children's similarity: 0.406222232
+ |   | | Affixes (10): (a ada ades ant ar aran ar? at ava en)
+ |   | | Stems   (21): (afect_ arrib_ celebr_ centr_ deman_ denunci_ desenvolup_ don_ entr_ expos_ form_ ocup_ parl_ particip_ pass_ port_ pos_ present_ realitz_ supos_ trob_)
+ |   | | Types   (157)
+ |   | |
+ |   | |>- Children's similarity: 0.479157424
+ |   | | | Affixes (8): (a ada ades ar aran ar? at en)
+ |   | | | Stems   (13): (afect_ celebr_ centr_ entr_ expos_ form_ particip_ pass_ port_ pos_ present_ realitz_ trob_)
+ |   | | | Types   (96)
+ |   | | |
+ |   | | |>- Affixes (7): (a ada ades ar aran ar? at)
+ |   | | | | Stems   (8): (afect_ entr_ expos_ pass_ port_ present_ realitz_ trob_)
+ |   | | | | Types   (56)
+ |   | | |
+ |   | |  >- Affixes (7): (a ada ar aran ar? at en)
+ |   | |   | Stems   (10): (afect_ celebr_ centr_ form_ particip_ port_ pos_ present_ realitz_ trob_)
+ |   | |   | Types   (70)
+ |   | |  
+ |   |  >- Children's similarity: 0.397276079
+ |   |   | Affixes (7): (a ant ar ar? at ava en)
+ |   |   | Stems   (16): (afect_ arrib_ celebr_ centr_ deman_ denunci_ desenvolup_ don_ ocup_ parl_ port_ pos_ present_ realitz_ supos_ trob_)
+ |   |   | Types   (101)
+ |   |   |
+ |   |   |>- Affixes (6): (a ant ar ar? at en)
+ |   |   | | Stems   (11): (arrib_ celebr_ centr_ deman_ denunci_ desenvolup_ don_ parl_ pos_ present_ realitz_)
+ |   |   | | Types   (66)
+ |   |   |
+ |   |    >- Affixes (6): (a ar ar? at ava en)
+ |   |     | Stems   (10): (afect_ deman_ denunci_ don_ ocup_ port_ present_ realitz_ supos_ trob_)
+ |   |     | Types   (60)
+ |   |    
+ |    >- Affixes (6): (a ar ar? at i in)
+ |     | Stems   (10): (acab_ afect_ deix_ deman_ particip_ port_ qued_ sol?licit_ torn_ trob_)
+ |     | Types   (60)
+ |    
+  >- Affixes (4): (a ar em en)
+   | Stems   (6): (deman_ denunci_ esper_ millor_ parl_ pens_)
+   | Types   (24)
+  
+
+>- Children's similarity: 0.072002304
+ | Affixes (5): (ionar ionat ionats ions i?)
+ | Stems   (104): (acc_ actuac_ acusac_ adhes_ administrac_ adquisic_ ambic_ aportac_ associac_ autoritzac_ cam_ celebrac_ col?lecc_ col?lis_ comiss_ comunicac_ concentrac_ concess_ conclus_ condic_ confecc_ construcc_ contractac_ decis_ declarac_ defunc_ delegac_ demarcac_ detenc_ diputac_ ...)
+ | Types   (222)
+ |
+ |>- Children's similarity: 0.182916698
+ | | Affixes (4): (ionar ionat ions i?)
+ | | Stems   (103): (acc_ actuac_ acusac_ adhes_ administrac_ adquisic_ ambic_ aportac_ associac_ autoritzac_ cam_ celebrac_ col?lecc_ col?lis_ comiss_ comunicac_ concentrac_ concess_ conclus_ condic_ confecc_ construcc_ contractac_ decis_ declarac_ defunc_ delegac_ demarcac_ detenc_ diputac_ ...)
+ | | Types   (217)
+ | |
+ | |>- Children's similarity: 0.251976315
+ | | | Affixes (4): (ionar ionat ions i?)
+ | | | Stems   (9): (acc_ condic_ confecc_ estac_ func_ ocas_ posic_ q?est_ soluc_)
+ | | | Types   (29)
+ | | |
+ | | |>- Affixes (3): (ionar ionat i?)
+ | | | | Stems   (4): (confecc_ ocas_ posic_ q?est_)
+ | | | | Types   (12)
+ | | |
+ | |  >- Affixes (3): (ionar ions i?)
+ | |   | Stems   (7): (acc_ condic_ estac_ func_ ocas_ q?est_ soluc_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (2): (ions i?)
+ |   | Stems   (101): (acc_ actuac_ acusac_ adhes_ administrac_ adquisic_ ambic_ aportac_ associac_ autoritzac_ cam_ celebrac_ col?lecc_ col?lis_ comiss_ comunicac_ concentrac_ concess_ conclus_ condic_ construcc_ contractac_ decis_ declarac_ defunc_ delegac_ demarcac_ detenc_ diputac_ direcc_ ...)
+ |   | Types   (202)
+ |  
+  >- Affixes (2): (ionats i?)
+   | Stems   (4): (gest_ relac_ selecc_ subvenc_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.123717915
+ | Affixes (10): (a al alista alistes alitat alitats alitzada alitzat alment als)
+ | Stems   (75): (actu_ ambient_ anu_ audiovisu_ can_ centr_ comarc_ comerci_ congressu_ cor_ cultur_ digit_ document_ elector_ element_ empresari_ especi_ estat_ fin_ fisc_ fluvi_ front_ gener_ glob_ grup_ habitu_ hospit_ igu_ individu_ industri_ ...)
+ | Types   (202)
+ |
+ |>- Children's similarity: 0.262358713
+ | | Affixes (9): (a al alista alistes alitat alitats alitzat alment als)
+ | | Stems   (74): (actu_ ambient_ anu_ audiovisu_ can_ centr_ comarc_ comerci_ congressu_ cor_ cultur_ digit_ document_ elector_ element_ empresari_ especi_ estat_ fin_ fisc_ fluvi_ front_ gener_ glob_ grup_ habitu_ hospit_ igu_ industri_ inici_ ...)
+ | | Types   (196)
+ | |
+ | |>- Children's similarity: 0.265742368
+ | | | Affixes (4): (al alista alistes als)
+ | | | Stems   (74): (actu_ ambient_ anu_ audiovisu_ can_ centr_ comarc_ comerci_ congressu_ cor_ cultur_ digit_ document_ elector_ element_ empresari_ especi_ estat_ fin_ fisc_ fluvi_ front_ gener_ glob_ grup_ habitu_ hospit_ igu_ industri_ inici_ ...)
+ | | | Types   (161)
+ | | |
+ | | |>- Children's similarity: 0.411475600
+ | | | | Affixes (4): (al alista alistes als)
+ | | | | Stems   (9): (elector_ especi_ fin_ gener_ municip_ nacion_ natur_ sindic_ soci_)
+ | | | | Types   (31)
+ | | | |
+ | | | |>- Affixes (3): (al alista als)
+ | | | | | Stems   (6): (especi_ fin_ gener_ municip_ nacion_ soci_)
+ | | | | | Types   (18)
+ | | | |
+ | | |  >- Affixes (3): (al alistes als)
+ | | |   | Stems   (7): (elector_ especi_ fin_ nacion_ natur_ sindic_ soci_)
+ | | |   | Types   (21)
+ | | |  
+ | |  >- Affixes (2): (al als)
+ | |   | Stems   (74): (actu_ ambient_ anu_ audiovisu_ can_ centr_ comarc_ comerci_ congressu_ cor_ cultur_ digit_ document_ elector_ element_ empresari_ especi_ estat_ fin_ fisc_ fluvi_ front_ gener_ glob_ grup_ habitu_ hospit_ igu_ industri_ inici_ ...)
+ | |   | Types   (148)
+ | |  
+ |  >- Children's similarity: 0.264039345
+ |   | Affixes (7): (a al alitat alitats alitzat alment als)
+ |   | Stems   (13): (actu_ centr_ especi_ fin_ gener_ glob_ loc_ nacion_ norm_ ofici_ person_ re_ tot_)
+ |   | Types   (61)
+ |   |
+ |   |>- Children's similarity: 0.392232270
+ |   | | Affixes (6): (a al alitat alitats alment als)
+ |   | | Stems   (11): (actu_ centr_ especi_ fin_ gener_ loc_ nacion_ norm_ person_ re_ tot_)
+ |   | | Types   (51)
+ |   | |
+ |   | |>- Children's similarity: 0.375000000
+ |   | | | Affixes (5): (a al alitat alment als)
+ |   | | | Stems   (9): (actu_ centr_ especi_ fin_ gener_ norm_ person_ re_ tot_)
+ |   | | | Types   (39)
+ |   | | |
+ |   | | |>- Affixes (4): (a al alitat als)
+ |   | | | | Stems   (6): (actu_ centr_ gener_ norm_ person_ tot_)
+ |   | | | | Types   (24)
+ |   | | |
+ |   | |  >- Affixes (4): (al alitat alment als)
+ |   | |   | Stems   (6): (actu_ especi_ fin_ norm_ re_ tot_)
+ |   | |   | Types   (24)
+ |   | |  
+ |   |  >- Affixes (4): (al alitat alitats als)
+ |   |   | Stems   (6): (especi_ fin_ loc_ nacion_ person_ re_)
+ |   |   | Types   (24)
+ |   |  
+ |    >- Affixes (3): (al alitzat als)
+ |     | Stems   (6): (actu_ especi_ glob_ ofici_ person_ re_)
+ |     | Types   (18)
+ |    
+  >- Affixes (3): (al alitzada alment)
+   | Stems   (4): (actu_ fin_ individu_ re_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.038069349
+ | Affixes (14): (eix eixen eixi eixin ent ents ides int ir iran ir? it its ?ncia)
+ | Stems   (33): (acced_ acud_ afeg_ assol_ ced_ coincid_ compl_ conced_ constitu_ constru_ contribu_ defin_ dirig_ disting_ escoll_ exist_ garant_ incid_ invert_ ofer_ pat_ presid_ proced_ produ_ recoll_ redu_ refer_ repart_ reun_ segu_ ...)
+ | Types   (156)
+ |
+ |>- Children's similarity: 0.051031036
+ | | Affixes (11): (eix eixen eixi eixin ides int ir iran ir? it its)
+ | | Stems   (31): (acced_ acud_ afeg_ assol_ ced_ coincid_ compl_ conced_ constitu_ constru_ contribu_ defin_ dirig_ disting_ escoll_ exist_ garant_ invert_ ofer_ pat_ proced_ produ_ recoll_ redu_ refer_ repart_ reun_ segu_ serv_ sorg_ un_)
+ | | Types   (138)
+ | |
+ | |>- Children's similarity: 0.123169274
+ | | | Affixes (10): (eix eixen eixi ides int ir iran ir? it its)
+ | | | Stems   (27): (afeg_ assol_ ced_ coincid_ compl_ conced_ constitu_ constru_ contribu_ defin_ dirig_ disting_ escoll_ exist_ garant_ invert_ ofer_ pat_ produ_ recoll_ redu_ refer_ repart_ reun_ segu_ serv_ un_)
+ | | | Types   (128)
+ | | |
+ | | |>- Children's similarity: 0.132260014
+ | | | | Affixes (9): (eix eixen eixi ides int ir iran ir? it)
+ | | | | Stems   (23): (afeg_ assol_ coincid_ compl_ conced_ constitu_ constru_ contribu_ defin_ dirig_ exist_ garant_ invert_ ofer_ pat_ produ_ redu_ refer_ repart_ reun_ segu_ serv_ un_)
+ | | | | Types   (113)
+ | | | |
+ | | | |>- Children's similarity: 0.240192231
+ | | | | | Affixes (8): (eix eixen eixi int ir iran ir? it)
+ | | | | | Stems   (19): (afeg_ coincid_ compl_ conced_ constitu_ constru_ contribu_ dirig_ exist_ garant_ invert_ ofer_ pat_ produ_ redu_ reun_ segu_ serv_ un_)
+ | | | | | Types   (98)
+ | | | | |
+ | | | | |>- Children's similarity: 0.453530923
+ | | | | | | Affixes (7): (eix eixen eixi int ir ir? it)
+ | | | | | | Stems   (15): (afeg_ coincid_ compl_ constitu_ contribu_ dirig_ exist_ garant_ invert_ ofer_ pat_ produ_ reun_ segu_ un_)
+ | | | | | | Types   (78)
+ | | | | | |
+ | | | | | |>- Children's similarity: 0.437078638
+ | | | | | | | Affixes (6): (eix eixen eixi ir ir? it)
+ | | | | | | | Stems   (14): (afeg_ coincid_ constitu_ contribu_ dirig_ exist_ garant_ invert_ ofer_ pat_ produ_ reun_ segu_ un_)
+ | | | | | | | Types   (67)
+ | | | | | | |
+ | | | | | | |>- Children's similarity: 0.448210729
+ | | | | | | | | Affixes (5): (eix eixen eixi ir ir?)
+ | | | | | | | | Stems   (12): (afeg_ constitu_ contribu_ dirig_ exist_ garant_ invert_ ofer_ produ_ reun_ segu_ un_)
+ | | | | | | | | Types   (53)
+ | | | | | | | |
+ | | | | | | | |>- Affixes (4): (eix eixen eixi ir)
+ | | | | | | | | | Stems   (7): (constitu_ dirig_ exist_ garant_ invert_ produ_ un_)
+ | | | | | | | | | Types   (28)
+ | | | | | | | |
+ | | | | | | |  >- Affixes (4): (eix eixen ir ir?)
+ | | | | | | |   | Stems   (10): (afeg_ contribu_ dirig_ garant_ invert_ ofer_ produ_ reun_ segu_ un_)
+ | | | | | | |   | Types   (40)
+ | | | | | | |  
+ | | | | | |  >- Affixes (4): (eix eixen ir it)
+ | | | | | |   | Stems   (8): (afeg_ coincid_ dirig_ exist_ invert_ pat_ reun_ segu_)
+ | | | | | |   | Types   (32)
+ | | | | | |  
+ | | | | |  >- Affixes (4): (eix eixen int ir)
+ | | | | |   | Stems   (8): (afeg_ coincid_ compl_ garant_ ofer_ pat_ produ_ segu_)
+ | | | | |   | Types   (32)
+ | | | | |  
+ | | | |  >- Affixes (4): (eix ir iran ir?)
+ | | | |   | Stems   (8): (conced_ constru_ dirig_ ofer_ redu_ reun_ segu_ serv_)
+ | | | |   | Types   (32)
+ | | | |  
+ | | |  >- Affixes (3): (eix ides it)
+ | | |   | Stems   (7): (assol_ defin_ dirig_ pat_ refer_ repart_ segu_)
+ | | |   | Types   (21)
+ | | |  
+ | |  >- Affixes (3): (ir it its)
+ | |   | Stems   (7): (ced_ dirig_ disting_ escoll_ invert_ recoll_ segu_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (2): (eixin ir)
+ |   | Stems   (6): (acced_ acud_ compl_ proced_ produ_ sorg_)
+ |   | Types   (12)
+ |  
+  >- Affixes (4): (ent ents it ?ncia)
+   | Stems   (5): (exist_ incid_ presid_ proced_ refer_)
+   | Types   (20)
+  
+
+>- Children's similarity: 0.066226618
+ | Affixes (4): (ci? ta te tes)
+ | Stems   (60): (ac_ al_ aques_ artis_ autopis_ car_ cer_ co_ comp_ concre_ conduc_ consul_ contrac_ correc_ cos_ da_ direc_ ecologis_ ecosocialis_ entrevis_ especialis_ fal_ fe_ fes_ finalis_ for_ gratu?_ jun_ llis_ maque_ ...)
+ | Types   (129)
+ |
+ |>- Affixes (3): (ci? te tes)
+ | | Stems   (6): (ac_ correc_ direc_ presump_ produc_ projec_)
+ | | Types   (18)
+ |
+  >- Affixes (2): (ta tes)
+   | Stems   (57): (al_ aques_ artis_ autopis_ car_ cer_ co_ comp_ concre_ conduc_ consul_ contrac_ correc_ cos_ da_ direc_ ecologis_ ecosocialis_ entrevis_ especialis_ fal_ fe_ fes_ finalis_ for_ gratu?_ jun_ llis_ maque_ mol_ ...)
+   | Types   (114)
+  
+
+>- Children's similarity: 0.082647451
+ | Affixes (10): (*null* cions ci? da r t tiu tius tiva tives)
+ | Stems   (21): (ac_ administra_ celebra_ col?lec_ comunica_ construc_ direc_ forma_ implica_ informa_ manifesta_ opera_ organitza_ participa_ presenta_ publica_ reivindica_ rela_ representa_ situa_ titula_)
+ | Types   (116)
+ |
+ |>- Children's similarity: 0.368577070
+ | | Affixes (7): (cions ci? r tiu tius tiva tives)
+ | | Stems   (13): (ac_ administra_ col?lec_ comunica_ construc_ direc_ forma_ informa_ opera_ participa_ reivindica_ rela_ representa_)
+ | | Types   (61)
+ | |
+ | |>- Children's similarity: 0.207019668
+ | | | Affixes (7): (cions ci? r tiu tius tiva tives)
+ | | | Stems   (11): (ac_ administra_ col?lec_ comunica_ forma_ informa_ opera_ participa_ reivindica_ rela_ representa_)
+ | | | Types   (53)
+ | | |
+ | | |>- Children's similarity: 0.410791918
+ | | | | Affixes (5): (cions ci? tius tiva tives)
+ | | | | Stems   (8): (ac_ administra_ col?lec_ forma_ informa_ opera_ rela_ representa_)
+ | | | | Types   (35)
+ | | | |
+ | | | |>- Affixes (4): (cions ci? tius tiva)
+ | | | | | Stems   (5): (ac_ col?lec_ informa_ opera_ rela_)
+ | | | | | Types   (20)
+ | | | |
+ | | |  >- Affixes (4): (cions ci? tius tives)
+ | | |   | Stems   (6): (administra_ col?lec_ forma_ informa_ rela_ representa_)
+ | | |   | Types   (24)
+ | | |  
+ | |  >- Affixes (4): (cions ci? r tiu)
+ | |   | Stems   (6): (administra_ comunica_ informa_ participa_ reivindica_ representa_)
+ | |   | Types   (24)
+ | |  
+ |  >- Affixes (4): (cions ci? tiva tives)
+ |   | Stems   (5): (col?lec_ construc_ direc_ informa_ rela_)
+ |   | Types   (20)
+ |  
+  >- Affixes (6): (*null* cions ci? da r t)
+   | Stems   (10): (celebra_ forma_ implica_ manifesta_ organitza_ participa_ presenta_ publica_ situa_ titula_)
+   | Types   (60)
+  
+
+>- Children's similarity: 0.076249285
+ | Affixes (10): (cacions caci? cada cades car car? cat cats quen quin)
+ | Stems   (19): (adjudi_ bus_ col?lo_ comuni_ confis_ convo_ criti_ dedi_ desta_ expli_ impli_ indi_ mar_ modifi_ perjudi_ provo_ publi_ tan_ ubi_)
+ | Types   (92)
+ |
+ |>- Children's similarity: 0.207950098
+ | | Affixes (9): (cacions caci? cada cades car car? cat cats quen)
+ | | Stems   (17): (adjudi_ col?lo_ comuni_ confis_ convo_ criti_ dedi_ desta_ expli_ impli_ indi_ mar_ modifi_ provo_ publi_ tan_ ubi_)
+ | | Types   (86)
+ | |
+ | |>- Children's similarity: 0.243757475
+ | | | Affixes (8): (caci? cada cades car car? cat cats quen)
+ | | | Stems   (15): (adjudi_ col?lo_ confis_ convo_ criti_ dedi_ desta_ expli_ impli_ indi_ mar_ provo_ publi_ tan_ ubi_)
+ | | | Types   (74)
+ | | |
+ | | |>- Children's similarity: 0.531253202
+ | | | | Affixes (6): (caci? cada cades car cat cats)
+ | | | | Stems   (10): (adjudi_ confis_ dedi_ desta_ impli_ mar_ provo_ publi_ tan_ ubi_)
+ | | | | Types   (51)
+ | | | |
+ | | | |>- Children's similarity: 0.541265877
+ | | | | | Affixes (5): (caci? cada car cat cats)
+ | | | | | Stems   (9): (adjudi_ dedi_ desta_ impli_ mar_ provo_ publi_ tan_ ubi_)
+ | | | | | Types   (41)
+ | | | | |
+ | | | | |>- Affixes (4): (caci? car cat cats)
+ | | | | | | Stems   (6): (adjudi_ dedi_ impli_ provo_ publi_ ubi_)
+ | | | | | | Types   (24)
+ | | | | |
+ | | | |  >- Affixes (4): (cada car cat cats)
+ | | | |   | Stems   (8): (dedi_ desta_ impli_ mar_ provo_ publi_ tan_ ubi_)
+ | | | |   | Types   (32)
+ | | | |  
+ | | |  >- Affixes (4): (cades car cat cats)
+ | | |   | Stems   (7): (adjudi_ confis_ dedi_ desta_ impli_ tan_ ubi_)
+ | | |   | Types   (28)
+ | | |  
+ | |  >- Children's similarity: 0.308606700
+ | |   | Affixes (4): (car car? cat quen)
+ | |   | Stems   (10): (adjudi_ col?lo_ convo_ criti_ dedi_ desta_ expli_ indi_ provo_ tan_)
+ | |   | Types   (33)
+ | |   |
+ | |   |>- Affixes (3): (car car? cat)
+ | |   | | Stems   (7): (adjudi_ col?lo_ convo_ dedi_ expli_ provo_ tan_)
+ | |   | | Types   (21)
+ | |   |
+ | |    >- Affixes (3): (car cat quen)
+ | |     | Stems   (6): (convo_ criti_ desta_ expli_ indi_ provo_)
+ | |     | Types   (18)
+ | |    
+ |  >- Affixes (4): (cacions caci? car cat)
+ |   | Stems   (5): (comuni_ expli_ impli_ modifi_ publi_)
+ |   | Types   (20)
+ |  
+  >- Affixes (2): (car quin)
+   | Stems   (4): (adjudi_ bus_ expli_ perjudi_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.146385011
+ | Affixes (8): (a ada ar at aven en essin ?s)
+ | Stems   (15): (actu_ anunci_ arrib_ canvi_ confirm_ consider_ don_ entr_ esper_ manifest_ opt_ pos_ present_ treball_ trob_)
+ | Types   (77)
+ |
+ |>- Children's similarity: 0.223606798
+ | | Affixes (6): (a ada ar at essin ?s)
+ | | Stems   (10): (actu_ anunci_ arrib_ canvi_ confirm_ don_ entr_ manifest_ pos_ present_)
+ | | Types   (48)
+ | |
+ | |>- Affixes (5): (a ada ar at ?s)
+ | | | Stems   (6): (anunci_ arrib_ confirm_ don_ pos_ present_)
+ | | | Types   (30)
+ | |
+ |  >- Affixes (4): (a ar at essin)
+ |   | Stems   (6): (actu_ arrib_ canvi_ entr_ manifest_ present_)
+ |   | Types   (24)
+ |  
+  >- Affixes (5): (a ar at aven en)
+   | Stems   (7): (consider_ don_ esper_ opt_ present_ treball_ trob_)
+   | Types   (35)
+  
+
+>- Children's similarity: 0.276026224
+ | Affixes (8): (*null* itat itats itzaci? itzades itzar itzen s)
+ | Stems   (12): (autor_ comercial_ especial_ final_ local_ nacional_ organ_ penal_ personal_ privat_ real_ util_)
+ | Types   (63)
+ |
+ |>- Children's similarity: 0.244948974
+ | | Affixes (7): (*null* itat itats itzaci? itzar itzen s)
+ | | Stems   (11): (autor_ comercial_ especial_ final_ local_ nacional_ organ_ penal_ personal_ privat_ real_)
+ | | Types   (56)
+ | |
+ | |>- Children's similarity: 0.334076552
+ | | | Affixes (6): (*null* itat itats itzaci? itzar s)
+ | | | Stems   (10): (autor_ comercial_ especial_ final_ local_ nacional_ penal_ personal_ privat_ real_)
+ | | | Types   (50)
+ | | |
+ | | |>- Affixes (4): (*null* itat itats s)
+ | | | | Stems   (7): (autor_ especial_ final_ local_ nacional_ personal_ real_)
+ | | | | Types   (28)
+ | | |
+ | |  >- Affixes (4): (*null* itzaci? itzar s)
+ | |   | Stems   (8): (autor_ comercial_ especial_ final_ local_ penal_ privat_ real_)
+ | |   | Types   (32)
+ | |  
+ |  >- Affixes (3): (itzaci? itzar itzen)
+ |   | Stems   (4): (organ_ penal_ privat_ real_)
+ |   | Types   (12)
+ |  
+  >- Affixes (3): (itzaci? itzades itzar)
+   | Stems   (5): (especial_ final_ organ_ real_ util_)
+   | Types   (15)
+  
+
+>- Children's similarity: 0.134164079
+ | Affixes (6): (aci? ador adora adores adors ar)
+ | Stems   (17): (administr_ col?labor_ coordin_ cre_ educ_ explot_ fund_ innov_ investig_ negoci_ oper_ organitz_ renov_ restaur_ transform_ treball_ trenc_)
+ | Types   (57)
+ |
+ |>- Children's similarity: 0.165379646
+ | | Affixes (5): (aci? ador adora adors ar)
+ | | Stems   (15): (administr_ col?labor_ coordin_ cre_ educ_ explot_ fund_ innov_ investig_ negoci_ oper_ organitz_ renov_ restaur_ transform_)
+ | | Types   (50)
+ | |
+ | |>- Children's similarity: 0.267261242
+ | | | Affixes (4): (aci? ador adors ar)
+ | | | Stems   (12): (administr_ col?labor_ coordin_ cre_ educ_ fund_ innov_ investig_ oper_ organitz_ renov_ restaur_)
+ | | | Types   (39)
+ | | |
+ | | |>- Affixes (3): (aci? ador ar)
+ | | | | Stems   (8): (administr_ col?labor_ coordin_ cre_ innov_ oper_ renov_ restaur_)
+ | | | | Types   (24)
+ | | |
+ | |  >- Affixes (3): (aci? adors ar)
+ | |   | Stems   (7): (col?labor_ cre_ educ_ fund_ innov_ investig_ organitz_)
+ | |   | Types   (21)
+ | |  
+ |  >- Affixes (3): (aci? adora ar)
+ |   | Stems   (5): (coordin_ explot_ negoci_ organitz_ transform_)
+ |   | Types   (15)
+ |  
+  >- Affixes (2): (adores ar)
+   | Stems   (5): (innov_ negoci_ organitz_ treball_ trenc_)
+   | Types   (10)
+  
+
+>- Children's similarity: 0.396059017
+ | Affixes (3): (ma mes m?tica)
+ | Stems   (17): (ar_ aut?no_ cine_ diplo_ for_ infor_ mar?ti_ nor_ platafor_ proble_ progra_ pr?xi_ refor_ siste_ te_ v?cti_ ?lti_)
+ | Types   (38)
+ |
+ |>- Affixes (2): (ma mes)
+ | | Stems   (17): (ar_ aut?no_ cine_ diplo_ for_ infor_ mar?ti_ nor_ platafor_ proble_ progra_ pr?xi_ refor_ siste_ te_ v?cti_ ?lti_)
+ | | Types   (34)
+ |
+  >- Affixes (3): (ma mes m?tica)
+   | Stems   (4): (infor_ proble_ siste_ te_)
+   | Types   (12)
+  
+
+>- Children's similarity: 0.125000000
+ | Affixes (3): (sions siva si?)
+ | Stems   (18): (adhe_ col?li_ comis_ conces_ conclu_ deci_ discus_ emis_ exclu_ expres_ exten_ impres_ inver_ oca_ previ_ repercus_ ses_ televi_)
+ | Types   (38)
+ |
+ |>- Affixes (2): (sions si?)
+ | | Stems   (16): (adhe_ col?li_ comis_ conces_ conclu_ deci_ discus_ emis_ expres_ impres_ inver_ oca_ previ_ repercus_ ses_ televi_)
+ | | Types   (32)
+ |
+  >- Affixes (2): (siva si?)
+   | Stems   (4): (deci_ exclu_ exten_ televi_)
+   | Types   (8)
+  
+
+>- Children's similarity: 0.410791918
+ | Affixes (5): (acions aci? ar atiu atius)
+ | Stems   (8): (administr_ comunic_ form_ inform_ oper_ particip_ reivindic_ represent_)
+ | Types   (35)
+ |
+ |>- Affixes (4): (acions aci? ar atiu)
+ | | Stems   (6): (administr_ comunic_ inform_ particip_ reivindic_ represent_)
+ | | Types   (24)
+ |
+  >- Affixes (4): (acions aci? ar atius)
+   | Stems   (5): (administr_ form_ inform_ oper_ represent_)
+   | Types   (20)
+  
+
+>- Affixes (5): (ic ica icament ics iques)
+ | Stems   (6): (b?s_ espec?f_ hist?r_ pol?t_ p?bl_ ?n_)
+ | Types   (30)
+
+
+>- Children's similarity: 0.083333333
+ | Affixes (4): (ant ants ar at?ria)
+ | Stems   (10): (concurs_ convoc_ estudi_ import_ interess_ intimid_ oblig_ represent_ restaur_ visit_)
+ | Types   (29)
+ |
+ |>- Affixes (3): (ant ants ar)
+ | | Stems   (8): (concurs_ convoc_ estudi_ import_ interess_ represent_ restaur_ visit_)
+ | | Types   (24)
+ |
+  >- Affixes (2): (ar at?ria)
+   | Stems   (3): (convoc_ intimid_ oblig_)
+   | Types   (6)
+  
+
+>- Affixes (2): (*null* _de_la_generalitat)
+ | Stems   (10): (compte_general_ departament_de_medi_ambient_ ferrocarrils_ govern_ palau_ pla?a_ policia_ pol?tica_ling??stica_ ports_ president_)
+ | Types   (20)
+
+
+>- Affixes (2): (*null* _de_tarragona)
+ | Stems   (10): (ajuntament_ audi?ncia_ autoritat_portu?ria_ biblioteca_ biblioteca_p?blica_ ciutat_ museu_nacional_arqueol?gic_ port_ setmana_cantant_ universitat_rovira_i_virgili_)
+ | Types   (20)
+
+
+>- Affixes (2): (*null* _que)
+ | Stems   (10): (aix?_ alhora_ at?s_ encara_ fins_ malgrat_ mentre_ sempre_ sin?_ tot_i_)
+ | Types   (20)
+
+
+>- Affixes (4): (_d' _de _del _dels)
+ | Stems   (5): (a_causa_ a_partir_ a_trav?s_ des_ per_part_)
+ | Types   (20)
+
+
+>- Affixes (4): (a ament aments ar)
+ | Stems   (5): (assessor_ condicion_ despla?_ pag_ parl_)
+ | Types   (20)
+
+
+>- Affixes (4): (ana anes ans ?)
+ | Stems   (5): (catal_ ciutad_ cristi_ mitj_ nord-americ_)
+ | Types   (20)
+
+
+>- Affixes (4): (ari aris ?ria ?ries)
+ | Stems   (5): (immobili_ necess_ priorit_ sanit_ universit_)
+ | Types   (20)
+
+
+>- Affixes (4): (ent ents ?ncia ?ncies)
+ | Stems   (5): (ag_ difer_ evid_ refer_ urg_)
+ | Types   (20)
+
+
+
+

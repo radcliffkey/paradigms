@@ -1,0 +1,449 @@
+byla	1-byl_
+vytvořeny	1-vytvořen_
+roky	2-ro_
+hory	1-hor_
+komory	1-komor_
+výuka	2-výu_
+jedny	1-jedn_
+hospodářskou	2-hospodářs_
+poptávka	1-poptávk_	2-poptáv_
+sazba	1-sazb_
+ekonomicky	2-ekonomic_
+voda	1-vod_
+politice	2-politi_
+platba	1-platb_
+byly	1-byl_
+zálohy	1-záloh_
+vlastníka	2-vlastní_	1-vlastník_
+zásada	1-zásad_
+manželce	2-manžel_
+zárukou	2-záru_
+vady	1-vad_
+záloha	1-záloh_
+vlastníky	2-vlastní_	1-vlastník_
+agentura	1-agentur_
+rodina	1-rodin_
+poptávky	1-poptávk_	2-poptáv_
+míra	1-mír_
+souprava	1-souprav_
+rodiny	1-rodin_
+ukázaly	1-ukázal_
+platby	1-platb_
+ztráta	1-ztrát_
+ukázala	1-ukázal_
+leteckou	2-letec_
+novinky	2-novin_
+struktura	1-struktur_
+výhody	1-výhod_
+agentury	1-agentur_
+evropy	1-evrop_
+burza	1-burz_
+měna	1-měn_
+záruka	2-záru_	1-záruk_
+chyby	1-chyb_
+experty	1-expert_
+míry	1-mír_
+prodejny	1-prodejn_
+ztráty	1-ztrát_
+válce	2-vál_
+banka	1-bank_	2-ban_
+obchodníka	1-obchodník_	2-obchodní_
+komora	1-komor_
+evropa	1-evrop_
+výhoda	1-výhod_
+banky	1-bank_	2-ban_
+sazby	1-sazb_
+obchodníky	1-obchodník_	2-obchodní_
+stránky	2-strán_
+databanky	2-databan_
+burzy	1-burz_
+záruky	2-záru_	1-záruk_
+měny	1-měn_
+soupravy	1-souprav_
+částka	1-částk_	2-část_
+sady	1-sad_
+podmínky	2-podmín_
+firmy	1-firm_
+proběhla	1-proběhl_
+návštěvy	1-návštěv_
+prokázaly	1-prokázal_
+konala	1-konal_
+analýzy	1-analýz_
+sama	1-sam_
+autory	1-autor_
+provedeny	1-proveden_
+marce	2-mar_
+experta	1-expert_
+samy	1-sam_
+dika	2-di_	1-dik_
+finska	2-fins_
+firma	1-firm_
+doby	1-dob_
+procenta	1-procent_
+moravy	1-morav_
+autora	1-autor_
+kultura	1-kultur_
+zákazníky	1-zákazník_	2-zákazní_
+sada	1-sad_
+měla	1-měl_
+konaly	1-konal_
+analýza	1-analýz_
+struktury	1-struktur_
+prokázala	1-prokázal_
+měly	1-měl_
+technice	2-techni_
+doba	1-dob_
+provedena	1-proveden_
+diky	2-di_	1-dik_
+ekonomikou	2-ekonomi_
+pojišťovna	1-pojišťovn_
+přišly	1-přišl_
+morava	1-morav_
+procenty	1-procent_
+přihlášky	1-přihlášk_	2-přihláš_
+ekonomickou	2-ekonomic_
+ekonomiky	1-ekonomik_	2-ekonomi_
+výroby	1-výrob_
+legislativa	1-legislativ_
+skupiny	1-skupin_
+zákazníka	1-zákazník_	2-zákazní_
+vada	1-vad_
+kultury	1-kultur_
+výroba	1-výrob_
+zásady	1-zásad_
+přihláška	1-přihlášk_	2-přihláš_
+vytvořena	1-vytvořen_
+legislativy	1-legislativ_
+desetina	1-desetin_
+podnikatelce	2-podnikatel_
+značkou	2-znač_
+hora	1-hor_
+správce	2-správ_
+mzdy	1-mzd_
+skupina	1-skupin_
+ruce	2-ru_
+návštěva	1-návštěv_
+proběhly	1-proběhl_
+výukou	2-výu_
+mzda	1-mzd_
+republika	2-republi_	1-republik_
+přestávky	1-přestávk_	2-přestáv_
+barva	1-barv_
+látka	1-látk_	2-lát_
+vany	1-van_
+výuce	2-výu_
+vlády	1-vlád_
+nabídkou	2-nabíd_
+podmínkou	2-podmín_
+finskou	2-fins_
+kalkulačkou	2-kalkulač_
+přestávka	1-přestávk_	2-přestáv_
+burgiba	1-burgib_
+manželka	2-manžel_
+podpory	1-podpor_
+automobilky	2-automobil_	1-automobilk_
+roce	2-ro_
+burgiby	1-burgib_
+ekonomika	1-ekonomik_	2-ekonomi_
+díla	1-díl_
+vana	1-van_
+dividenda	1-dividend_
+knihy	1-knih_
+hlava	1-hlav_
+zahrady	1-zahrad_
+chata	1-chat_
+poloviny	1-polovin_
+podpora	1-podpor_
+pojišťovny	1-pojišťovn_
+výjimky	2-výjim_	1-výjimk_
+zkušebna	1-zkušebn_
+půjčky	2-půjč_	1-půjčk_
+díly	1-díl_
+osoba	1-osob_
+automobilka	2-automobil_	1-automobilk_
+zahrada	1-zahrad_
+výhry	1-výhr_
+kniha	1-knih_
+hlavy	1-hlav_
+chaty	1-chat_
+jazyce	2-jazy_
+stránce	2-strán_
+látky	1-látk_	2-lát_
+bance	2-ban_
+všechny	1-všechn_
+vláda	1-vlád_
+osoby	1-osob_
+zkušebny	1-zkušebn_
+válkou	2-vál_
+dividendy	1-dividend_
+koruna	1-korun_
+rukou	2-ru_
+stanoveny	1-stanoven_
+dráha	1-dráh_
+částky	1-částk_	2-část_
+bety	1-bet_
+dosáhly	1-dosáhl_
+řady	1-řad_
+dosáhla	1-dosáhl_
+řada	1-řad_
+přizpůsobily	1-přizpůsobil_
+smetana	1-smetan_
+prodejna	1-prodejn_
+pokladny	1-pokladn_
+pošta	1-pošt_
+stanovena	1-stanoven_
+dráhy	1-dráh_
+koruny	1-korun_
+polovina	1-polovin_
+techniky	1-technik_	2-techni_
+změna	1-změn_
+technika	1-technik_	2-techni_
+nabídky	2-nabíd_	1-nabídk_
+škody	1-škod_
+ekonomice	2-ekonomi_
+začaly	1-začal_
+vyvolala	1-vyvolal_
+síla	1-síl_
+partnery	1-partner_
+opravny	1-opravn_
+doprava	1-doprav_
+nabídka	2-nabíd_	1-nabídk_
+škoda	1-škod_
+vyvolaly	1-vyvolal_
+většina	1-většin_
+rubrice	2-rubri_
+pokladna	1-pokladn_
+partnera	1-partner_
+republiky	2-republi_	1-republik_
+síly	1-síl_
+marka	2-mar_
+pošty	1-pošt_
+správky	2-správ_
+většiny	1-většin_
+smetany	1-smetan_
+začala	1-začal_
+dopravy	1-doprav_
+opravna	1-opravn_
+vody	1-vod_
+německa	2-němec_
+strana	1-stran_
+hodnoceny	1-hodnocen_
+správy	1-správ_
+otevřeny	1-otevřen_
+musely	1-musel_
+úspory	1-úspor_
+částkou	2-část_
+úspora	1-úspor_
+podnikatelka	2-podnikatel_
+strany	1-stran_
+kalkulačka	2-kalkulač_
+přizpůsobila	1-přizpůsobil_
+antikvy	1-antikv_
+nebyla	1-nebyl_
+změny	1-změn_
+reklamy	1-reklam_
+nebyly	1-nebyl_
+upravena	1-upraven_
+reklama	1-reklam_
+hodnocena	1-hodnocen_
+toyoty	1-toyot_
+rady	1-rad_
+položky	2-polož_	1-položk_
+krajinka	1-krajink_	2-krajin_
+čtenářky	1-čtenářk_	2-čtenář_
+beta	1-bet_
+centrály	1-centrál_
+úpravy	1-úprav_
+hospodářsky	2-hospodářs_
+letecky	2-letec_
+upraveny	1-upraven_
+antikva	1-antikv_
+chyba	1-chyb_
+jazyky	2-jazy_
+úprava	1-úprav_
+mohly	1-mohl_
+krajinky	1-krajink_	2-krajin_
+čtenářka	1-čtenářk_	2-čtenář_
+japonskou	2-japons_
+kanada	1-kanad_
+opravy	1-oprav_
+bota	1-bot_
+německou	2-němec_
+otevřena	1-otevřen_
+kanady	1-kanad_
+zásilce	2-zásil_
+centrála	1-centrál_
+položka	2-polož_	1-položk_
+kosmetiky	1-kosmetik_	2-kosmeti_
+půjčka	2-půjč_	1-půjčk_
+platila	1-platil_
+problematice	2-problemati_
+výrobce	2-výrob_
+centra	1-centr_
+kosmetika	1-kosmetik_	2-kosmeti_
+klientela	1-klientel_
+škola	1-škol_
+nabídce	2-nabíd_
+boty	1-bot_
+oprava	1-oprav_
+ostravy	1-ostrav_
+rubriky	1-rubrik_	2-rubri_
+výjimka	2-výjim_	1-výjimk_
+profesory	1-profesor_
+vazby	1-vazb_
+zařazeny	1-zařazen_
+všechna	1-všechn_
+platily	1-platil_
+novinkou	2-novin_
+administrativy	1-administrativ_
+centry	1-centr_
+rubrika	1-rubrik_	2-rubri_
+vlny	1-vln_
+objednaly	1-objednal_
+zařazena	1-zařazen_
+společníka	2-společní_	1-společník_
+barvy	1-barv_
+vazba	1-vazb_
+zvýšily	1-zvýšil_
+desetiny	1-desetin_
+praha	1-prah_
+zrušeny	1-zrušen_
+republice	2-republi_
+objednala	1-objednal_
+vzrostly	1-vzrostl_
+cena	1-cen_
+snahy	1-snah_
+administrativa	1-administrativ_
+profesora	1-profesor_
+zvýšila	1-zvýšil_
+ceny	1-cen_
+prahy	1-prah_
+vzrostla	1-vzrostl_
+výhra	1-výhr_
+kandidáty	1-kandidát_
+správa	1-správ_
+kandidáta	1-kandidát_
+snaha	1-snah_
+strava	1-strav_
+zrušena	1-zrušen_
+ostrava	1-ostrav_
+knížce	2-kníž_
+databankou	2-databan_
+společníky	2-společní_	1-společník_
+japonska	2-japons_
+školy	1-škol_
+objednávce	2-objednáv_
+tabulky	2-tabul_	1-tabulk_
+stravy	1-strav_
+udělala	1-udělal_
+vrstvy	1-vrstv_
+podstaty	1-podstat_
+vycházela	1-vycházel_
+spotřeba	1-spotřeb_
+smlouva	1-smlouv_
+kvalita	1-kvalit_
+poloha	1-poloh_
+databance	2-databan_
+otázka	2-otáz_	1-otázk_
+kvality	1-kvalit_
+dohody	1-dohod_
+výstavba	1-výstavb_
+smlouvy	1-smlouv_
+tabulka	2-tabul_	1-tabulk_
+položkou	2-polož_
+zákona	1-zákon_
+vycházely	1-vycházel_
+novy	1-nov_
+vrstva	1-vrstv_
+poptávce	2-poptáv_
+hodnoty	1-hodnot_
+udělaly	1-udělal_
+daly	1-dal_
+dohoda	1-dohod_
+výstavby	1-výstavb_
+klienta	1-klient_
+čtenářce	2-čtenář_
+olejomalba	1-olejomalb_
+nova	1-nov_
+dala	1-dal_
+zákony	1-zákon_
+věnovala	1-věnoval_
+politika	1-politik_	2-politi_
+vlna	1-vln_
+dodávky	1-dodávk_	2-dodáv_
+věnovaly	1-věnoval_
+politiky	1-politik_	2-politi_
+částce	2-část_
+klienty	1-klient_
+dodávka	1-dodávk_	2-dodáv_
+padla	1-padl_
+hodnota	1-hodnot_
+dílna	1-díln_
+zásilky	2-zásil_	1-zásilk_
+turistiky	1-turistik_	2-turisti_
+olejomalby	1-olejomalb_
+potřeba	1-potřeb_
+otázky	2-otáz_	1-otázk_
+převahy	1-převah_
+klientely	1-klientel_
+potřeby	1-potřeb_
+turistika	1-turistik_	2-turisti_
+manželkou	2-manžel_
+převaha	1-převah_
+padly	1-padl_
+polohy	1-poloh_
+zásilka	2-zásil_	1-zásilk_
+problematika	2-problemati_
+dyby	1-dyb_
+výstavy	1-výstav_
+požádaly	1-požádal_
+sázka	1-sázk_	2-sáz_
+poptávkou	2-poptáv_
+sázky	1-sázk_	2-sáz_
+bavlna	1-bavln_
+metody	1-metod_
+mohla	1-mohl_
+knížky	2-kníž_
+pauza	1-pauz_
+výrobky	2-výrob_
+výstava	1-výstav_
+výjimkou	2-výjim_
+přišla	1-přišl_
+metoda	1-metod_
+značky	2-znač_
+dílny	1-díln_
+vedeny	1-veden_
+odrazily	1-odrazil_
+pauzy	1-pauz_
+rada	1-rad_
+vedena	1-veden_
+požádala	1-požádal_
+dyba	1-dyb_
+jedna	1-jedn_
+vyhovovaly	1-vyhovoval_
+dlažby	1-dlažb_
+formy	1-form_
+příručky	1-příručk_	2-příruč_
+pracovníka	1-pracovník_	2-pracovní_
+počítaly	1-počítal_
+připraveny	1-připraven_
+toyota	1-toyot_
+pracovníky	1-pracovník_	2-pracovní_
+počítala	1-počítal_
+určena	1-určen_
+připravena	1-připraven_
+vyhovovala	1-vyhovoval_
+dlažba	1-dlažb_
+ruky	2-ru_
+odrazila	1-odrazil_
+podstata	1-podstat_
+bankou	2-ban_
+slova	1-slov_
+spotřeby	1-spotřeb_
+příručka	1-příručk_	2-příruč_
+forma	1-form_
+objednávky	2-objednáv_
+musela	1-musel_
+slovy	1-slov_
+určeny	1-určen_
+bavlny	1-bavln_

@@ -1,0 +1,331 @@
+\chapter{Experiments and Results}\label{chapter:results}
+This chapter provides description of the input data, experiment settings and the metho\-do\-logy used to evaluate the approaches developed in this thesis. It also presents the results of the experiments.
+
+\section{Corpora and manual seeds}
+The approach was tested on two Slavonic languages -- Czech and Slovene, one Germanic language -- German and on Catalan, a member of the Romanic language family. I used the following sources:
+\begin{itemize}
+\item For experiments with Czech, I used two samples from the Prague Dependency Treebank 1.\footnote{\url{http://ufal.mff.cuni.cz/pdt/}}
+\item The Slovene corpus is a subset of the jos100k corpus V2.0\footnote{\url{http://nl.ijs.si/jos/jos100k-en.html}} which contains sampled paragraphs from FidaPLUS,\footnote{\url{http://www.fidaplus.net/Info/Info_index_eng.html}} a balanced corpus of Slovene.
+\item  As a German corpus, a part of the TIGER corpus was used. The TIGER corpus\footnote{\url{http://www.ims.uni-stuttgart.de/projekte/TIGER/}} consists of German news text from the Frankfurter Rundschau newspaper.
+\item The source of the Catalan data was the Clic-TALP\footnote{\url{http://clic.ub.edu/en/what-is-clic}} corpus. 
+\end{itemize}
+The corpora sources and sizes are summarised in Table \ref{table:corpora}. I evaluated the experiments only on types at least 4 characters long to avoid most of the closed-class and irregular words. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{llrrrrr}
+\toprule
+\bf ID &\bf Source & \bf T & \bf L & \bf T $\geq$ 4 & \bf L $\geq$ 4 & \bf Seed\\
+\midrule
+cz1 & PDT1 & 11k & 6k & 10k & 5.5k & 18\\
+cz2 & PDT1 & 27k & 13k & 25k & 12k & 18\\
+si & jos100k & 27k & 15.5k & 25k & 14k & 9\\
+de & TIGER & 22k & 17k & 21k & 16k & 12\\
+ca & Clic-TALP & 11k & 8k & 10k & 7k & 62\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:corpora} Corpora used in the evaluation. T -- types, L -- lemmas,  T $\geq$ 4 -- types longer than 4 characters, L $\geq$ 4 -- lemmas longer than 4 characters}
+\end{table}
+
+Table \ref{table:corpora} also shows sizes of the manual seeds measured by number of lemmas. The content of the seeds is included in Appendix \ref{chapter:seeds}. As a Slovak speaker with high familiarity with Czech, I was able to create the Czech seed without using any external sources of information. The seeds for Slovene and German were obtained from various internet sources, mainly Wikipedia, and their completion took approximately 30 minutes each. The author of the Catalan seed is Dr. Hana, the supervisor of the thesis, who also used internet sources and needed about the same time.
+
+\section{Experiment settings}
+There is a large number of possible experiment configurations depending on which inputs Paramor uses, whether clustering is employed, what distance measures are used in case it is employed and other factors. In this section, I will describe the settings I have selected for experimental evaluation. 
+
+In the first type of experiments, the word clusters from Paramor's output are evaluated directly against lexemes (sets of all inflections of one lemma) from a lemmatised corpus. Experiments of the second type employ the clustering framework, most of them using the paradigm distance (see Section \ref{section:pdgm_dist}) based on the Paramor's output. Experiments have been assigned abbreviated names, identifying the Paramor setting (if applicable) and the distance measure used in the experiment (if applicable). Names for the Paramor settings are the following: 
+\begin{enumerate}
+\item \e{noseed} -- no seed was used. The baseline configuration.
+\item \e{seed} -- manual seed for the given language was used.
+\item \e{autoseed} -- the heuristic from Section \ref{section:autoseed} was used for stem allomorphy detection.
+\item \e{autoasman} -- results from the autoseed heuristic were used as the manual seed.
+\item \e{bothseed} -- manual seed was used and the allomorphy rules induced from the seed were merged with the ones from the autoseed. 
+\end{enumerate}
+Distance measures used in the clustering experiments: 
+\begin{enumerate}
+\item \e{edit} -- modified edit distance, preferring word-final changes, vowel to vowel changes and diacritic adding/removal.
+\item \e{pdgm} -- paradigm distance. Requires output of Paramor as its input.
+\item \e{pdgm.edit.eucl} -- Euclidean combination of the paradigm distance and the edit distance.
+\end{enumerate}
+For Czech, an additional Paramor setting was tested: \e{pref}, in which the two inflectional prefixes, \e{ne} and \e{nej} were supplied to Paramor (see Section \ref{section:prefixes}).
+
+\section{Evaluation}
+
+To evaluate the algorithms developed in this thesis against a lemmatised corpus, I used two approaches:
+\begin{enumerate}
+\item Cluster-matching evaluation: comparing clusters against the true sets of inflections. 
+\item The pairwise approach: Checking each word pair whether it belongs into the same cluster and whether it shares lemma.
+\end{enumerate}
+
+Both approaches evaluate precision and recall, from which the balanced F-score is computed.
+
+\subsection{Cluster-matching evaluation}
+The first method computes precision and recall of the word clusters in the following way: To compute precision, start with $p = 0$. For each word cluster, find a lexeme with the largest intersection. Add the intersection size to $p$. Precision = $p$ / sum of cluster sizes. For computing recall, start with $r = 0$. For each lexeme, find a word cluster with the largest intersection. Add the intersection size to $r$. Recall = $r$ / sum of the lexeme sizes.
+
+\subsection{Pairwise evaluation}
+In the pairwise approach approach, similar to one used in \cite{snover-jarosz-2002}, every pair of words belongs into one of the 4 categories:
+\begin{enumerate}
+\item True positives (TP). The words are present in a common cluster and belong to the same lemma.
+\item False positives (FP). The words are present in a common cluster but do not belong to the same lemma.
+\item False negatives (FN). The words belong to the same lemma, but are not present in the same cluster.
+\item True negatives (TN). The rest.
+\end{enumerate}
+Precision is then defined as $\frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}}$ and recall as $\frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}}$.
+
+\section{Results}
+In this section, I will present the results of the evaluation for each language, considering the pairwise evaluation method as the measure of quality. Generally,  using the seed improves the results for every evaluated language. On the other hand, using the autoseed or combination with the edit distance usually brings only negligible gains.
+ 
+\subsection{Czech}
+The experiments with Czech data were conducted on two differently sized corpora. The results for the smaller \textbf{cz1} are shown in Tables \ref{table:res:cz10:direct} and \ref{table:res:cz10:clust}. Tables \ref{table:res:cz20:direct} and \ref{table:res:cz20:clust} contain the results for the bigger \textbf{cz2} corpus. Increasing the size of the corpus improved the results quite significantly. The best result were achieved by configurations with the manual seed and the two inflectional prefixes provided. 
+The edit distance achieved low score due to producing some noisy clusters such as the one in Table \ref{table:edit_error}, where forms of 3 lemmas are mixed.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\bf Form & \bf Gloss & \bf Lemma\\
+\midrule
+plátce & payer\subscr{nom/acc.sg.;acc.pl} & plátce\\
+plátcem & payer\subscr{ins.sg.} & plátce\\
+plátci & payer\subscr{dat/loc.sg.;nom/ins.pl;} & plátce\\
+plátno & canvas\subscr{nom/acc.sg.} & plátno\\
+plátně & canvas\subscr{loc.sg.} & plátno\\
+plátek & slice\subscr{nom/acc.sg.} & plátek\\
+\bottomrule
+\end{tabular}
+\caption{\label{table:edit_error} Example of an erroneous cluster produced by edit distance}
+\end{table}
+
+
+Positive impact of seeding on the discovery of nominal paradigms can be illustrated by Table \ref{table:noun_pdgms}. The table shows the top 5 nominal scheme clusters (SCs) produced with and without seeding for the \tbf{cz2} corpus. The scheme clusters are ordered by the total number of word types in the corpus which they generate. A couple of observations can be made from the table:
+\begin{enumerate}
+\item The seeded SCs are in general supported by a higher number of types and the relative rank of the nominal SCs is higher in the \e{seed} configuration than in the \e{noseed} configuration. Recognising the allomorphic stems allowed to find more evidence for the nominal SCs in the \e{seed} configuration. 
+
+For example, let's compare the cluster \#9 (no seed) and the cluster \#3 (seed). Both are close to the Czech feminine nominal paradigm \gloss{žena}{woman} (but also include c-suffixes belonging to derived adjectives (\e{ovní, ovních, ovního})). Table \ref{table:matka}, showing declension of the word \gloss{matka}{mother} can serve as an example of this paradigm. The singular dative suffix \e{-e} is missing in the cluster \#9. This suffix triggers palatalisation, which causes either stem-final consonant change (\fromTo{mat\textbf{k} +a}{mat\textbf{c} + e}) or changing the suffix to \e{-ě} (\fromTo{žen +a}{žen + ě}). The second variant of the suffix (\e{-ě}) is included in both compared clusters. Thanks to recognition of stem allomorphs, the seeded algorithm was able to find the \e{-e} suffix as well. Thus, the cluster \#3 is not only more complete, but is supported by a larger number of word types as the cluster \#9.
+
+\item The top 5 SCs created without seeding contain 3 ``engineering'' paradigms, concretely \#5, \#19 and \#21, while the top 5 SCs created with seeding contain only one such paradigm (\#10). Seeding thus helps to place morpheme boundaries more adequately.
+
+In the engineering paradimgs, c-suffixes contain the changing part of the stems. For example, the cluster \#19 would analyse the words \gloss{služba}{service\subscr{nom.sg.}}, \gloss{služeb}{services\subscr{gen.pl.}} as \e{služ + ba}, \e{služ + eb}, whereas the corect segmentation of the words is \e{služb + a}, \e{služeb + 0}. 
+\end{enumerate}
+
+Main problem of the Paramor-based configurations was relating forms of different parts-of-speech, created by derivation. For example, in the cluster 
+\begin{quote}(\e{riziko, rizikový, rizikovost,  \ldots})\end{quote}
+there is a noun, an adjective derived from the noun, and a noun derived back from the adjective. The English translation would be \e{risk, risky, riskiness}. This type of error can be considered less serious because the forms share the same stem and treating them as inflections would not be as harmful to an IR system as relating words which are completely unrelated in reality.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lrrl}
+\toprule
+\bf Seed & \bf Rank & \bf \#Types & \bf Suffixes\\
+\midrule
+No& 5  & 158 & ek kem kovou ková kové kového kovém kový \\
+ &    &     & kových kovým kovými ku ky ků kům\\
+ & 7  & 153 & 0 a em ovi ové ových ově u y ů\\
+ & 9  & 149 & 0 a ami ou u y ách ám ě ovní ovních ovního\\
+ & 19 & 112 & ba bami bou bu by bách bám bě eb ební ebních\\
+ &    &     &  ebního ebním\\
+ & 21 & 102 & r ra rech rem rové ru ry rů rům ře\\
+\midrule
+Yes& 2  & 557 & 0 e ech emi i í ích\\
+ & 3  & 306 & 0 a ami e ou u y ách ám ě ovní ovních ovního ovním\\
+ & 6  & 241 & 0 e ech em ové ových ovým ově u y ů ům\\
+ & 8  & 167 & 0 a em i ova ovi u y ů ům\\
+ & 10 & 158 & ek kem kovou ková kové kového kovém kový\\ 
+ &    &     & kových kovým kovými ku ky ků kům\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:noun_pdgms} Top 5 nominal scheme clusters produced by Paramor for the \tbf{cz2} corpus with and without seeding.}
+\end{table}
+
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+noseed & 97.78 & 80.55 & 88.33 & 90.61 & 47.51 & 62.33\\
+seed & 97.28 & 84.22 & 90.28 & 90.14 & 53.67 & 67.28\\
+seed.pref & 96.98 & 86.62 & \bf 91.51 & 88.18 & 61.23 & \bf 72.28\\
+autoseed & 97.62 & 80.73 & 88.38 & 90.61 & 47.61 & 62.42\\
+autoasman & 96.25 & 82.23 & 88.69 & 87.28 & 50.22 & 63.76\\
+bothseed & 97.22 & 84.24 & 90.27 & 90.06 & 53.68 & 67.27\\
+bothseed.pref & 96.93 & 86.65 & 91.50 & 88.09 & 61.25 & 72.26\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cz10:direct} Direct evaluation of word clusters -- results for the \textbf{cz1} corpus. P, R, F1 mean precision, recall and F-measure, -C denotes the cluster-matching evaluation, -P denotes the pairwise evaluation.}
+\end{table}
+
+
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+edit & 89.35 & 87.10 & 88.21 & 68.67 & 56.93 & 62.25\\
+pdgm.noseed & 96.80 & 83.93 & 89.91 & 84.44 & 54.59 & 66.31\\
+pdgm.seed & 96.09 & 87.66 & 91.68 & 83.22 & 61.24 & 70.55\\
+pdgm.seed.pref & 95.25 & 90.27 & \bf 92.69 & 77.67 & 69.94 & \bf 73.61\\
+pdgm.bothseed.pref & 95.22 & 90.29 & \bf 92.69 & 77.60 & 69.96 & 73.58\\
+pdgm.edit.eucl.noseed & 97.17 & 83.60 & 89.88 & 86.93 & 53.11 & 65.93\\
+pdgm.edit.eucl.seed.pref & 96.38 & 89.09 & 92.59 & 86.13 & 64.09 & 73.50\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cz10:clust} Results of the clustering experiments for the \textbf{cz1} corpus}
+\end{table}
+
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+noseed & 96.97 & 84.23 & 90.15 & 87.65 & 57.75 & 69.63\\
+seed & 96.89 & 86.97 & 91.66 & 87.14 & 62.43 & 72.74\\
+seed.pref & 96.72 & 89.65 & \bf 93.05 & 86.31 & 71.59 & 78.26\\
+autoseed & 96.82 & 84.25 & 90.10 & 87.18 & 58.50 & 70.02\\
+autoasman & 95.81 & 86.41 & 90.87 & 82.25 & 62.21 & 70.84\\
+bothseed & 96.62 & 87.10 & 91.62 & 86.61 & 63.07 & 72.99\\
+bothseed.pref & 96.27 & 90.00 & 93.03 & 85.65 & 72.35 & \bf 78.44\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cz20:direct} Direct evaluation of word clusters -- results for the \textbf{cz2} corpus }
+\end{table}
+
+\begin{table}[hp]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+edit & 88.06 & 86.01 & 87.02 & 68.25 & 56.60 & 61.89\\
+pdgm.noseed & 93.51 & 88.72 & 91.06 & 76.44 & 66.99 & 71.40\\
+pdgm.seed & 92.77 & 90.44 & 91.59 & 75.01 & 69.72 & 72.27\\
+pdgm.seed.pref & 92.23 & 93.69 & 92.95 & 74.80 & 81.16 & \bf 77.85\\
+pdgm.bothseed.pref & 91.80 & 93.89 & 92.84 & 73.31 & 81.88 & 77.36\\
+pdgm.edit.eucl.noseed & 94.64 & 88.07 & 91.24 & 82.46 & 64.30 & 72.26\\
+pdgm.edit.eucl.seed.pref & 94.60 & 91.40 & \bf 92.98 & 84.45 & 71.17 & 77.25\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cz20:clust} Results of the clustering experiments for the \textbf{cz2} corpus}
+\end{table}
+
+\subsection{Slovene}
+Tables \ref{table:res:si:direct} and \ref{table:res:si:clust} show results for the Slovene language. The best performance was achieved by using the manual seed together with stem allomorphy rules from the autoseed, although the autoseed brought only slight improvements. Very good results were also achieved by Paramor without seeding combined with the edit distance. Similarly as in the Czech experiments, the most common error Paramor made was relating derived forms sharing a stem. For example, the cluster 
+\begin{quote}(\e{previden, previdna, previdni, previdno})
+\end{quote}
+ connects forms of the adjective \gloss{previden}{careful} and the adverb \gloss{previdno}{carefully}.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+noseed & 94.02 & 94.09 & 94.05 & 69.98 & 80.40 & 74.83\\
+seed & 94.13 & 95.46 & 94.79 & 69.60 & 82.74 & 75.61\\
+autoseed & 94.00 & 94.70 & 94.35 & 69.82 & 81.48 & 75.20\\
+autoasman & 93.21 & 95.26 & 94.22 & 61.50 & 82.74 & 70.56\\
+bothseed & 93.99 & 95.63 & \bf 94.80 & 69.65 & 83.14 & \bf 75.80\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:si:direct} Direct evaluation of word clusters -- results for the \textbf{si} corpus}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+edit & 91.33 & 90.26 & 90.80 & 75.01 & 64.36 & 69.28\\
+pdgm.noseed & 93.40 & 91.59 & 92.49 & 82.36 & 68.78 & 74.96\\
+pdgm.seed & 93.35 & 93.56 & 93.45 & 82.79 & 75.10 & 78.76\\
+pdgm.bothseed & 93.43 & 93.69 & \bf 93.56 & 83.18 & 75.36 & \bf 79.08\\
+pdgm.edit.eucl.noseed & 94.82 & 92.17 & 93.48 & 88.09 & 69.92 & 77.96\\
+pdgm.edit.eucl.seed & 94.98 & 92.01 & 93.47 & 88.43 & 68.28 & 77.06\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:si:clust} Results of the clustering experiments for the \textbf{si} corpus}
+\end{table}
+
+\subsection{German}
+The results for German are shown in Tables \ref{table:res:de:direct} and \ref{table:res:de:clust}. German is the only language where the most successful approach was using the edit distance, either alone or combined with the paradigm distance. There are probably two main reasons for that: First, Paramor is unable to handle stem-internal changes such as the German umlaut (\e{Mutter/Mütter} `mother/mothers'). Second, Paramor has also trouble with German compounds, which cause creation of schemes as (\e{0, organisation}) or (\e{0, gruppe}).
+\begin{table}[p]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+noseed & 89.81 & 93.70 & 91.72 & 56.02 & 64.87 & 60.12\\
+seed & 90.24 & 94.24 & \bf 92.19 & 54.41 & 67.19 & \bf 60.13\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:de:direct} Direct evaluation of word clusters -- results for the \textbf{de} corpus}
+\end{table}
+
+\begin{table}[p]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+edit & 92.03 & 93.99 & 93.00 & 65.68 & 64.09 & \bf 64.87\\
+pdgm.noseed & 92.48 & 92.43 & 92.46 & 65.25 & 57.61 & 61.19\\
+pdgm.seed & 92.04 & 93.12 & 92.58 & 64.19 & 60.38 & 62.23\\
+pdgm.edit.eucl.noseed & 91.81 & 93.86 & 92.83 & 62.40 & 64.19 & 63.28\\
+pdgm.edit.eucl.seed & 92.26 & 93.94 & \bf 93.09 & 65.36 & 64.20 & 64.77\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:de:clust} Results of the clustering experiments for the \textbf{de} corpus}
+\end{table}
+
+\subsection{Catalan}
+The evaluation results for the Catalan language are presented in Tables \ref{table:res:cat:direct} and \ref{table:res:cat:clust}. Providing the manual seed helped Paramor with rich inflection of the Catalan verbs.
+
+In the Catalan corups, collocations are joined together by underscores to create single tokens, which leads to lexemes like \begin{quote}(\e{porta\_a\_terme, portant\_a\_terme, portar\_a\_ter\-me, portat\_a\_terme, portava\_a\_terme})\end{quote} with lemma \gloss{portar\_a\_terme}{carry out}. This decreased the recall of Paramor, which was unable to relate such inflections and also its precision was lowered by creating schemes as (\e{0, \_de\_la\_generalitat}) and (\e{0, \_de\_tarragona}).
+
+\begin{table}[p]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+noseed & 86.34 & 93.73 & 89.89 & 57.71 & 68.72 & 62.74\\
+seed & 87.29 & 94.59 & \bf 90.80 & 60.84 & 71.99 & 65.95\\
+autoseed & 86.34 & 93.73 & 89.88 & 57.75 & 68.72 & 62.76\\
+autoasman & 86.16 & 93.75 & 89.80 & 57.17 & 68.77 & 62.44\\
+bothseed & 87.28 & 94.59 & 90.79 & 60.88 & 71.99 & \bf 65.97\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cat:direct} Direct evaluation of word clusters -- results for the \textbf{cat} corpus}
+\end{table}
+
+\begin{table}[p]
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\bf Experiment & \bf P-C & \bf R-C & \bf F1-C & \bf P-P & \bf R-P & \bf F1-P\\
+\midrule
+edit & 92.22 & 89.66 & 90.92 & 66.44 & 49.15 & 56.50\\
+pdgm.noseed & 89.27 & 94.20 & 91.67 & 58.62 & 70.18 & 63.88\\
+pdgm.seed & 89.89 & 94.52 & 92.15 & 62.15 & 71.07 & 66.31\\
+pdgm.bothseed & 89.88 & 94.52 & 92.14 & 62.03 & 71.07 & 66.24\\
+pdgm.edit.eucl.noseed & 89.32 & 94.26 & 91.72 & 58.55 & 70.35 & 63.91\\
+pdgm.edit.eucl.seed & 89.88 & 94.66 & \bf 92.21 & 61.98 & 71.75 & \bf 66.51\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{\label{table:res:cat:clust} Results of the clustering experiments for the \textbf{cat} corpus}
+\end{table}
+

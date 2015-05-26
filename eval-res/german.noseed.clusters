@@ -1,0 +1,147 @@
+Network Type:               VirtualPartialOrderNetwork
+Morphemic Analysis:         SUFFIX
+Allow Empty Stems:          false
+Corpus File:                /home/radcliff/projects/thesis/paramor_rk/../resources/de/tiger100kt.plain
+Language:                   GENERIC
+Encoding:                   utf8
+Skipping:                   1st Token
+Reading:                    50000 Types
+Throw Out Numbers:          true
+Case Sensitive:             false
+Skip Type if Length <= :    3
+Ignore SGML tags:           false
+
+Completed Search Steps in this SearchBatch
+-------------------------------------------
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoffs:      [0.25]
+Top Cutoffs:                  [0]
+Bottom Cutoffs:               [3]
+Max Level Cutoffs:            [null]
+
+
+(2) Calculate Similarity As:                 COSINE
+Cluster with Respect to:                 AFFIX_STEM_PAIRS
+Filter at Cluster Time:                  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  [20]
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie In Type Covered Filtering            true
+
+(3) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: [0.5]
+
+
+(4) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: [0.5]
+
+
+(1) Bottom-Up Search
+-----------------------------------------------
+Starting From:                ALL_LEVEL_1
+Vertical Metric:              Ratio
+Bottom Max:                   NONE
+Exhaustive Search at Level 1: false
+Use Covered:                  false
+Select Which?:                TERMINAL_ONLY
+Require |Stems| > |Affixes|:  true
+Vertical Metric Cutoff:       0.25
+Top Cutoff:                   0
+Bottom Cutoff:                3
+Max Level Cutoff:             null
+
+
+(2) Calculate Similarity As: COSINE
+Cluster with Respect to: AFFIX_STEM_PAIRS
+Filter at Cluster Time:  false
+Discriminative Clustering:               false
+Network Based Discriminative Clustering: true
+  - level 2 Scheme must have >=N Stems:  1
+Affixes in Common Required:              false
+Affixes in Common Forbidden:             false
+At least one child must cover >N Types:  20
+Use Merge Credits:                       true
+  - # of Positive Merge Credits          1
+Tie in Type Covered Filter               true
+
+(3) Types Covered Filter
+-----------------------------------------------
+Cutoff over TOTAL Covered: true
+Cutoff over AVE Covered by LEAVES: false
+Ave scheme in cluster must be level N or less to filter:          No Limit
+Cluster must cover at least this many types: 20
+
+
+(4) Morpheme Boundary Too Far Left Filter
+-----------------------------------------------
+Left-Looking Metric:         ENTROPY
+Left-Looking Metric Cutoffs: 0.5
+
+
+(5) Morpheme Boundary Too Far Right Filter
+-----------------------------------------------
+MBTF Right: Left-Looking Metric:         ENTROPY
+MBTF Right: Left-Looking Metric Cutoffs: 0.5
+
+
+-----------------------
+  2 Clusters
+-----------------------
+
+>- Children's similarity: 0.004381397
+ | Affixes (9): (*null* e en er es s t te ten)
+ | Stems   (705): (abend_ abgeordnetenrecht_ abkommen_ abschlu?bericht_ afghanistan_ afrika_ albanien_ album_ algerien_ alle_ alter_ amir_ andere_ andreotti_ angemessene_ angriffe_ anschlag_ appell_ arabische_ arafat_ arbeiter_ arbeitnehmer_ argentinien_ aristide_ aserbaidschan_ aseri_ asien_ asylrecht_ attentat_ attent?ter_ ...)
+ | Types   (1542)
+ |
+ |>- Children's similarity: 0.011228692
+ | | Affixes (8): (*null* e en er es t te ten)
+ | | Stems   (73): (besser_ billiger_ brauch_ demokratisch_ dies_ droh_ eigen_ eindeutig_ einig_ einzig_ entscheidend_ entsprechend_ erh?h_ erkl?rt_ erst_ europ?isch_ folg_ frei_ fr?her_ f?hl_ f?hr_ ganz_ gebiet_ geh?r_ gemeinsam_ gleich_ gro?_ kein_ klein_ kleiner_ ...)
+ | | Types   (367)
+ | |
+ | |>- Affixes (5): (*null* e en er es)
+ | | | Stems   (47): (besser_ billiger_ demokratisch_ dies_ eigen_ eindeutig_ einig_ einzig_ entscheidend_ entsprechend_ erkl?rt_ erst_ europ?isch_ frei_ fr?her_ ganz_ gebiet_ gemeinsam_ gleich_ gro?_ kein_ klein_ kleiner_ langfristig_ mein_ milit?risch_ moralisch_ mutma?lich_ offen_ offiziell_ ...)
+ | | | Types   (234)
+ | |
+ |  >- Affixes (5): (e en t te ten)
+ |   | Stems   (27): (brauch_ droh_ erh?h_ folg_ f?hl_ f?hr_ geh?r_ k?mpf_ leg_ mach_ mein_ pr?sentier_ reich_ r?um_ sag_ schaff_ setz_ sorg_ spiel_ stell_ stimm_ such_ teil_ verfolg_ versuch_ w?nsch_ zeig_)
+ |   | Types   (135)
+ |  
+  >- Affixes (2): (*null* s)
+   | Stems   (637): (abend_ abgeordnetenrecht_ abkommen_ abschlu?bericht_ afghanistan_ afrika_ albanien_ album_ algerien_ alle_ alter_ amir_ andere_ andreotti_ angemessene_ angriffe_ anschlag_ appell_ arabische_ arafat_ arbeiter_ arbeitnehmer_ argentinien_ aristide_ aserbaidschan_ aseri_ asien_ asylrecht_ attentat_ attent?ter_ ...)
+   | Types   (1274)
+  
+
+>- Children's similarity: 0.034503278
+ | Affixes (3): (*null* - test)
+ | Stems   (72): (agrar_ alkohol_ arbeiter_ arbeitnehmer_ armee_ aufbau_ auswahl_ bahn_ balkan_ basis_ binnen_ blut_ breiten_ bundes_ b?rger_ b?ro_ chemie_ drei_ energie_ familien_ feuer_ fr?chte_ gast_ geld_ gewerbe_ golf_ handels_ hotel_ industrie_ infrastruktur_ ...)
+ | Types   (145)
+ |
+ |>- Affixes (2): (*null* -)
+ | | Stems   (70): (agrar_ arbeiter_ arbeitnehmer_ armee_ aufbau_ auswahl_ bahn_ balkan_ basis_ binnen_ breiten_ bundes_ b?rger_ b?ro_ chemie_ drei_ energie_ familien_ feuer_ fr?chte_ gast_ geld_ gewerbe_ golf_ handels_ hotel_ industrie_ infrastruktur_ innen_ insel_ ...)
+ | | Types   (140)
+ |
+  >- Affixes (2): (*null* test)
+   | Stems   (3): (alkohol_ blut_ soll_)
+   | Types   (6)
+  
+
+
+

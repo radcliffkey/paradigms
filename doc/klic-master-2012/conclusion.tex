@@ -1,0 +1,13 @@
+\chapter{Conclusion}\label{chapter:conclusion}
+The thesis presented an extension of a system for unsupervised morphology acquisition and a word clustering framework able to combine the system's output with modified edit distance. Modifications developed in the thesis enable the system to:
+\begin{enumerate}
+\item accept manually provided seed data in the form of inflections with marked morpheme boundary.
+\item handle stem allomorphy using rules induced from the seed.
+\end{enumerate} 
+
+\noindent Testing on 4 languages from 3 language families showed that providing a small number of inflections leads to improvement in the performance of the system. The testing also uncovered some of the shortcomings of the approach. There is a number of issues future work can address:
+\begin{itemize}
+\item Currently, the system does not capture stem-internal changes such as German umlaut (\e{\e{Mutter/Mütter}}). Rules for such changes could be induced from the seed, with possibility to limit the characters from which and to which the changes may take place.
+\item Frequencies of the words in the corpus are ignored, as well as the context they occur in.
+Intelligent incorporation of statistical, contextual and semantic features of words or morphemes may lead to significantly higher quality of the analysis.
+\end{itemize}
