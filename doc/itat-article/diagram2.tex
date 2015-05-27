@@ -1,0 +1,270 @@
+\newcommand{\paramorXA}{1.5}
+\newcommand{\paramorXB}{7.8}
+
+\newcommand{\parStepXA}{1.8}
+\newcommand{\parStepXB}{7.5}
+
+\newcommand{\seedXA}{9.2}
+\newcommand{\seedXB}{10.9}
+\newcommand{\seedXMid}{10.0}
+\newcommand{\seedXCorn}{10.5}
+
+\newcommand{\autoseedXA}{12.2}
+\newcommand{\autoseedXB}{16.0}
+\newcommand{\autoseedXMid}{14.1}
+\newcommand{\autoseedXCorn}{15.5}
+
+\newcommand{\clusteringXA}{8.5}
+\newcommand{\clusteringXB}{11.5}
+\newcommand{\clusteringXMid}{10.0}
+
+
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{14\unitlength}
+{\footnotesize
+\begin{tikzpicture}
+\pgftransformxscale{1.000000}
+\pgftransformyscale{-1.000000}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetlinewidth{0.075000\du}
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetdash{}{0pt}
+\draw (3.664332\du,1.100000\du)--(5.130582\du,1.100000\du)--(5.619332\du,1.588750\du)--(5.619332\du,3.043750\du)--(3.664332\du,3.043750\du)--cycle;
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetdash{}{0pt}
+\draw (5.130582\du,1.100000\du)--(5.130582\du,1.588750\du)--(5.619332\du,1.588750\du)--(5.619332\du,1.588750\du);
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetlinewidth{0.075000\du}
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetdash{}{0pt}
+%Manual seed box
+\draw (\seedXA\du,9.410000\du)--(\seedXCorn\du,9.410000\du)--(\seedXB\du,9.810000\du)--(\seedXB\du,11.410000\du)--(\seedXA\du,11.410000\du)--cycle;
+\pgfsetbuttcap
+\pgfsetmiterjoin
+\pgfsetdash{}{0pt}
+\draw (\seedXCorn\du,9.410000\du)--(\seedXCorn\du,9.810000\du)--(\seedXB\du,9.810000\du)--(\seedXB\du,9.810000\du);
+
+%Auto seed box
+%\draw (\autoseedXA\du,9.410000\du)--(\autoseedXB\du,9.410000\du)--(\autoseedXB\du,11.0\du)--(\autoseedXA\du,11.0\du)--cycle;
+
+%Paradigms from Paramor box
+%\draw (\autoseedXA\du,12.410000\du)--(\autoseedXB\du,12.410000\du)--(\autoseedXB\du,14.0000\du)--(\autoseedXA\du,14.0000\du)--cycle;
+
+% Paramor small box
+%\draw (\autoseedXA\du,15.410000\du)--(\autoseedXB\du,15.410000\du)--(\autoseedXB\du,17.0000\du)--(\autoseedXA\du,17.0000\du)--cycle;
+
+%paradigms1 box
+%\draw (\clusteringXA\du,13.0000\du)--(\clusteringXB\du,13.0000\du)--(\clusteringXB\du,14.4000\du)--(\clusteringXA\du,14.4000\du)--cycle;
+
+%Clustering box
+%\draw (\clusteringXA\du,15.410000\du)--(\clusteringXB\du,15.410000\du)--(\clusteringXB\du,17.0000\du)--(\clusteringXA\du,17.0000\du)--cycle;
+
+% Word clusters box
+%x\draw (\clusteringXA\du,17.8200\du)--(\clusteringXB\du,17.8200\du)--(\clusteringXB\du,19.410\du)--(\clusteringXA\du,19.4100\du)--cycle;
+
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+%whole Paramor box
+\draw (\paramorXA\du,3.9\du)--(\paramorXA\du,14.3\du)--(\paramorXB\du,14.3\du)--(\paramorXB\du,3.9\du)--cycle;
+%\node at (4.652188\du,6.075000\du){};
+
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+%stem-suf map box
+\draw (\parStepXA\du,4.955000\du)--(\parStepXA\du,6.855000\du)--(\parStepXB\du,6.855000\du)--(\parStepXB\du,4.955000\du)--cycle;
+\node at (4.652188\du,6.075000\du){};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+%Bottom-up search box
+\draw (\parStepXA\du,7.850000\du)--(\parStepXA\du,10.150000\du)--(\parStepXB\du,10.150000\du)--(\parStepXB\du,7.850000\du)--cycle;
+\node at (4.652188\du,9.170000\du){};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+%Scheme clustering box
+\draw (\parStepXA\du,11.460000\du)--(\parStepXA\du,13.850000\du)--(\parStepXB\du,13.850000\du)--(\parStepXB\du,11.460000\du)--cycle;
+\node at (4.652188\du,12.825000\du){};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+%Segmentation box
+\draw (\parStepXA\du,15.270000\du)--(\parStepXA\du,17.170000\du)--(\parStepXB\du,17.170000\du)--(\parStepXB\du,15.270000\du)--cycle;
+%\node at (4.652188\du,16.390000\du){Segmentation};
+\node at (4.652188\du,16.390000\du){Word clusters};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\draw (9.145000\du,4.955000\du)--(9.145000\du,6.855000\du)--(14.570000\du,6.855000\du)--(14.570000\du,4.955000\du)--cycle;
+\node at (11.857500\du,6.075000\du){};
+\node at (4.641832\du,2.066875\du){Corpus};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (4.641832\du,3.043750\du)--(4.647809\du,4.906542\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (4.652188\du,6.855000\du)--(4.652188\du,7.850000\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (4.652188\du,10.150000\du)--(4.652188\du,11.460000\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (4.652188\du,13.850000\du)--(4.652188\du,15.270000\du);
+}
+%text labels
+\node at (\seedXMid\du,10.1\du){Man.};
+\node at (\seedXMid\du,10.8\du){seed};
+%\node at (\seedXMid\du,11.9\du){Manual seed};
+%\node at (\autoseedXMid\du,10.2\du){Autoseed};
+%\node at (\autoseedXMid\du,13.2\du){Paradigms};
+%\node at (\autoseedXMid\du,16.2\du){Paramor};
+%\node at (\clusteringXMid\du,13.7\du){Paradigms};
+%\node at (\clusteringXMid\du,16.2\du){Clustering};
+%\node at (\clusteringXMid\du,18.4\du){Word};
+%\node at (\clusteringXMid\du,18.9\du){clusters};
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (9.145000\du,5.905000\du)--(7.002188\du,6.232600\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (\seedXA\du,10.410000\du)--(7.102188\du,9.351300\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (\seedXA\du,10.410000\du)--(7.113750\du,13.051300\du);
+}
+\pgfsetlinewidth{0.075000\du}
+\pgfsetdash{}{0pt}
+\pgfsetdash{}{0pt}
+%man. seed -> rule generation
+\pgfsetbuttcap
+{
+\pgfsetarrowsend{to}
+\draw (10.0\du,9.410000\du)--(11.857500\du,6.855000\du);
+}
+\node[anchor=west] at (8.045000\du,11.447500\du){};
+
+%auto seed -> rule generation
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\autoseedXMid\du,9.410000\du)--(11.857500\du,6.855000\du);
+%}
+
+%paradigms -> auto seed
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\autoseedXMid\du,12.4\du)--(\autoseedXMid\du,11.0\du);
+%}
+
+%paramor small-> paradigms
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\autoseedXMid\du,15.4\du)--(\autoseedXMid\du,14.0\du);
+%}
+
+%paramor small-> paradigms
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\parStepXB\du,13.5\du)--(\clusteringXA\du,13.5\du);
+%}
+
+%paradigms1-> clustering
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\clusteringXMid\du,14.4\du)--(\clusteringXMid\du,15.4\du);
+%}
+%
+%%clustering-> clusters
+%\pgfsetbuttcap
+%{
+%\pgfsetarrowsend{to}
+%\draw (\clusteringXMid\du,17.00\du)--(\clusteringXMid\du,17.8\du);
+%}
+
+\pgfsetlinewidth{0.050000\du}
+\pgfsetdash{{2pt}{2pt}}{0pt}
+
+\pgfsetmiterjoin
+\draw (2.302188\du,5.841300\du)--(2.302188\du,6.623900\du)--(7.002188\du,6.623900\du)--(7.002188\du,5.841300\du)--cycle;
+\node at (4.652188\du,6.348800\du){deep stems};
+
+\pgfsetlinewidth{0.050000\du}
+\pgfsetdash{{2pt}{2pt}}{0pt}
+\pgfsetmiterjoin
+\draw (2.202188\du,8.718700\du)--(2.202188\du,9.983900\du)--(7.102188\du,9.983900\du)--(7.102188\du,8.718700\du)--cycle;
+\node at (4.652188\du,9.226200\du){more starting};
+\node at (4.652188\du,9.708800\du){schemes};
+\pgfsetlinewidth{0.050000\du}
+\pgfsetdash{{2pt}{2pt}}{0pt}
+\pgfsetmiterjoin
+\draw (2.190625\du,12.418700\du)--(2.190625\du,13.683900\du)--(7.113750\du,13.683900\du)--(7.113750\du,12.418700\du)--cycle;
+\node at (4.652188\du,12.926200\du){keep some clusters };
+\node at (4.652188\du,13.408800\du){from discarding};
+\node[anchor=west] at (2.30\du,5.500000\du){Stem-suffix map};
+\node[anchor=west] at (2.3000\du,8.425000\du){Bottom-up search};
+\node[anchor=west] at (2.30\du,12.0000\du){Scheme clustering};
+\node[anchor=west] at (9.8000\du,5.90000\du){Rule induction};
+
+\node[anchor=west] at (1.30\du,4.300000\du){Paramor};
+
+
+\end{tikzpicture}
+}
