@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp ./bin:./trove.jar -Xmx1g monson.christian.morphology.paraMor.ParaMor $@
+java -jar -Xmx2g target/paradigms-0.1-SNAPSHOT.jar $@

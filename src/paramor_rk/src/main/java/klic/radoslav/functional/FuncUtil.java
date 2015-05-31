@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -11,7 +12,8 @@ import klic.radoslav.functional.transformer.SingleTypeTransformer;
 
 /**
  * 
- * functions for functional-like programming
+ * functions for functional-like programming, written before Java 8, later just
+ * adapted a little to use Java 8 interfaces.
  *
  */
 public class FuncUtil {
@@ -98,7 +100,7 @@ public class FuncUtil {
 		
 		while (iterator.hasNext()) {
 			T obj2 = iterator.next();
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;
@@ -122,7 +124,7 @@ public class FuncUtil {
 		
 		for (int i = 1; i <  collection.length; ++ i) {
 			T obj2 = collection[i];
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;
@@ -146,7 +148,7 @@ public class FuncUtil {
 		
 		for (int i = 1; i < collection.length; ++ i) {
 			double obj2 = collection[i];
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;
