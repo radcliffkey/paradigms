@@ -11,9 +11,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import klic.radoslav.functional.FuncUtil;
-import klic.radoslav.functional.transformer.Transformer;
 import klic.radoslav.util.StringUtil;
-
 import monson.christian.morphology.paraMor.morphemes.Affix;
 import monson.christian.morphology.paraMor.morphemes.SetOfMorphemes;
 
@@ -107,12 +105,7 @@ public class AffixScheme implements Comparable<AffixScheme>, Serializable {
 
 	public String affixSignature() {
 		List<Affix> affixList = new ArrayList<Affix>(this.getAffixes().getCopyOfMorphemes());
-		List<String> affixStrList = FuncUtil.transform(affixList, new Transformer<Affix, String>() {
-			@Override
-			public String transform(Affix aff) {
-				return aff.toString();
-			}
-		});
+		List<String> affixStrList = FuncUtil.transform(affixList, Affix::toString);
 		
 		Collections.sort(affixStrList);
 		return StringUtil.join(",", affixStrList);

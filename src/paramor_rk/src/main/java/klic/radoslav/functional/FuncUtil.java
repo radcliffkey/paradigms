@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
-import klic.radoslav.functional.condition.Condition;
 import klic.radoslav.functional.transformer.SingleTypeTransformer;
-import klic.radoslav.functional.transformer.Transformer;
 
 /**
  * 
@@ -22,10 +22,10 @@ public class FuncUtil {
 	 * @param collection
 	 * @param condition
 	 */
-	public static <T> void filter(Collection<T> collection, Condition<? super T> condition) {
+	public static <T> void filter(Collection<T> collection, Predicate<? super T> condition) {
 		for (Iterator<T> iterator = collection.iterator(); iterator.hasNext();) {
 			T obj = iterator.next();
-			if (!condition.isTrue(obj)) {
+			if (!condition.test(obj)) {
 				iterator.remove();
 			}
 		}
@@ -43,11 +43,11 @@ public class FuncUtil {
 	 */
 	public static <FromType, ToType> List<ToType> transform(
 			Iterable<? extends FromType> data,
-			Transformer<FromType, ToType> transformer) {
+			Function<FromType, ToType> transformer) {
 		
 		List<ToType> result = new ArrayList<ToType>();
 		for (FromType instance : data) {
-			result.add(transformer.transform(instance));
+			result.add(transformer.apply(instance));
 		}
 
 		return result;
@@ -62,7 +62,7 @@ public class FuncUtil {
 	@SuppressWarnings("unchecked")
 	public static <T> void transform(List<T> list, SingleTypeTransformer<? super T> transformer) {
 		for (int i = 0; i < list.size(); i++) {
-			list.set(i, (T) transformer.transform(list.get(i)));
+			list.set(i, (T) transformer.apply(list.get(i)));
 		}
 	}
 	
@@ -75,7 +75,7 @@ public class FuncUtil {
 	@SuppressWarnings("unchecked")
 	public static <T> void transform(T[] data, SingleTypeTransformer<? super T> transformer) {
 		for (int i = 0; i < data.length; i++) {
-			data[i] = (T) transformer.transform(data[i]);
+			data[i] = (T) transformer.apply(data[i]);
 		}
 	}
 	

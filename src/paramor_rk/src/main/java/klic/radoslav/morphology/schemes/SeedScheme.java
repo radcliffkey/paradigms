@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 import klic.radoslav.functional.FuncUtil;
-import klic.radoslav.functional.transformer.Transformer;
 import klic.radoslav.util.StringUtil;
-
 import monson.christian.morphology.paraMor.morphemes.Affix;
 import monson.christian.morphology.paraMor.morphemes.Context;
 import monson.christian.morphology.paraMor.morphemes.SetOfMorphemes;
@@ -70,13 +68,7 @@ public class SeedScheme {
 	}
 
 	public String affixSignature() {
-		List<String> signatures = FuncUtil.transform(this.subschemes, new Transformer<Scheme, String>() {
-			@Override
-			public String transform(Scheme scheme) {
-				return scheme.affixSignature();
-			}			
-		});
-		
+		List<String> signatures = FuncUtil.transform(this.subschemes, (Scheme s) -> s.affixSignature());
 		return StringUtil.join("/", signatures);
 	}
 	

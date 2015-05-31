@@ -25,7 +25,6 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import klic.radoslav.functional.FuncUtil;
-import klic.radoslav.functional.transformer.ToStringTransformer;
 import klic.radoslav.morphology.ManualData;
 import klic.radoslav.util.DataUtil;
 import klic.radoslav.util.DebugLog;
@@ -50,9 +49,9 @@ import monson.christian.morphology.paraMor.segmentation.Segmentation;
 import monson.christian.morphology.paraMor.segmentation.SegmentedWord;
 import monson.christian.morphology.paraMor.segmentation.SegmentedWordList;
 import monson.christian.morphology.paraMor.segmentation.SimpleSuffixSegmentationExplanation;
+import monson.christian.util.ComparablePair;
 import monson.christian.util.FileUtils;
 import monson.christian.util.FileUtils.Encoding;
-import monson.christian.util.ComparablePair;
 import monson.christian.util.Pair;
 
 // TODO: write this class out to a file so that we can save the results of a search.
@@ -2314,29 +2313,14 @@ public class SearchBatch implements Serializable {
 	}
 
 	private String toSeedFormat(Map<Context, Set<Affix>> shiftedStemsToAffixes) {
-		List<String> stemStrs = FuncUtil.transform(shiftedStemsToAffixes.keySet(), 
-				new ToStringTransformer<Context>(){
-			@Override
-			public String transform(Context obj) {
-				return obj.toStringAvoidUndescore();
-			}
-		});
-		
+		List<String> stemStrs = FuncUtil.transform(shiftedStemsToAffixes.keySet(), Context::toStringAvoidUndescore);
 		String stemStr = StringUtil.join("/", stemStrs);
 		List<String> affixGroups = new ArrayList<String>();
-		for (Set<Affix> affixSet : shiftedStemsToAffixes.values()) {
-			List<String> affixStrs = FuncUtil.transform(affixSet, new ToStringTransformer<Affix>() {
-				@Override
-				public String transform(Affix obj) {
-					if (obj.isNullAffix()) {
-						return "0";
-					} else {
-						return obj.toString();
-					}
-				}
-			});
-			affixGroups.add(StringUtil.join(", ", affixStrs));
-		}
+        for (Set<Affix> affixSet : shiftedStemsToAffixes.values()) {
+            List<String> affixStrs = FuncUtil.transform(affixSet, 
+                    affix -> affix.isNullAffix() ? "0" : affix.toString());
+            affixGroups.add(StringUtil.join(", ", affixStrs));
+        }
 		String affixStr = StringUtil.join("/", affixGroups);
 		String result = stemStr + " + " + affixStr;
 		
