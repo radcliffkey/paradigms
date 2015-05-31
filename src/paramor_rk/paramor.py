@@ -59,8 +59,8 @@ if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		sys.exit('usage: paramor.py <paramor init file>')
 
-	args = ['java', '-cp', './bin:./trove.jar', '-Xmx1g',
-			'monson.christian.morphology.paraMor.ParaMor', '-if', sys.argv[1]]
+	args = ['java', '-jar', '-Xmx2g',
+			'target/paradigms-0.1-SNAPSHOT.jar', '-if', sys.argv[1]]
 		
 	paramor = Popen(args, stdin = PIPE, stdout = sys.stdout, stderr = STDOUT)
 
