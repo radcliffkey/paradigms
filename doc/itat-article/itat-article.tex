@@ -19,15 +19,14 @@
 
 \title{Resource-light acquisition of inflectional paradigms}
 
-\author{Radoslav Klíč, Jirka Hana}
+\author{Radoslav Klíč\inst{1} and Jirka Hana\inst{2}}
 
-\institute{Matfyz or Geneea\\
-\email{I.Ekeland@princeton.edu},\\ WWW home page:
-\texttt{http://users/\homedir iekeland/web/welcome.html}
+\institute{Geneea Analytics, Velkopřevorské nám. 1, 118 00 Praha 1\\
+\email{radoslav.klic@gmail.com}
 \and
-Universit\'{e} de Paris-Sud,
-Laboratoire d'Analyse Num\'{e}rique, B\^{a}timent 425,\\
-F-91405 Orsay Cedex, France}
+MFF UK,
+Malostranské nám. 25, 118 00 Praha 1\\
+\email{jirka.hana@gmail.com}}
 
 \maketitle              % typeset the title of the contribution
 
@@ -42,7 +41,7 @@ The algorithm has been tested on Czech and Slovene tagged corpora and has shown 
 \end{abstract}
 \section{Introduction}
 
-Morphological analysis is used in many computer applications ranging from web search to machine translation. As \cite{hajic-2000-naacl} shows, for languages with high inflection, a morphological analyzer is an essential part of a successful tagger.
+Morphological analysis is used in many computer applications ranging from web search to machine translation. As Hajič \cite{hajic-2000-naacl} shows, for languages with high inflection, a morphological analyzer is an essential part of a successful tagger.
 
 Modern morphological analysers based on supervised machine learning and/or hand-written rules achieve very high accuracy. However, the standard way to create them for a particular language requires substantial amount of time, money and linguistic expertise. For example, the Czech analyzer by \cite{hajic-2004-hab} uses a manually created lexicon with 300,000+ entries. As a result, most of the world languages and dialects have no realistic prospect for morphological analyzers created in this way.
 
@@ -60,7 +59,7 @@ As the basis of our system, we chose Paramor \cite{monson09}, an algorithm for u
 
 %As we focus mainly on inflectional languages, a system working with paradigms seemed fit to our purposes.
 
-The rest of this paper is organized as follows: First, we discuss related work on unsupervised and semi-supervised learning. Follows a section about baseline Paramor model. After that, we motivate and describe our extension to it. Finally, we report results of experiments on Czech and Slovene.
+The rest of this paper is organized as follows: First, we discuss related work on unsupervised and semi-supervised learning. Then follows a section about baseline Paramor model. After that, we motivate and describe our extension to it. Finally, we report results of experiments on Czech and Slovene.
 
 
 \section{Previous work}
@@ -75,15 +74,15 @@ Unlike Linguistica, Morfessor splits words into morphemes in a hierarchical fash
 %Morfessor, on the other hand, is tailored for agglutinative languages and can split a word into unlimited number of morphs. Splitting is done iteratively and Morfessor returns hierarchical morphological structure for each word in a corpus.
 A probabilistic model is used to tag each morph as a prefix, suffix or stem.
 %
-\cite{kohonen-etal-2010} improve the results of Morfessor by providing a small set (1000+ for English, 100+ for Finish) of correctly segmented words.  While the precision slightly drops, the recall is significantly improved for both languages.
+Kohonen et al. \cite{kohonen-etal-2010} improve the results of Morfessor by providing a small set (1000+ for English, 100+ for Finish) of correctly segmented words.  While the precision slightly drops, the recall is significantly improved for both languages.
 %
-\cite{tepper10} use handwritten rewrite rules to improve Morfes\-sor's performance by recognising allomorphic variations.
+Tepper and Xia \cite{tepper10} use handwritten rewrite rules to improve Morfes\-sor's performance by recognising allomorphic variations.
 
-The approaches by \cite{yarowsky00} and \cite{schone01} aim at combining different information sources (e.g., corpus frequencies, edit distance similarity, or context similarity) to obtain better analysis, especially for irregular inflection.
+The approaches by Yarowsky and Wicentowski \cite{yarowsky00} and Schone and Jurafsky \cite{schone01} aim at combining different information sources (e.g., corpus frequencies, edit distance similarity, or context similarity) to obtain better analysis, especially for irregular inflection.
 
-A system requiring significantly more human supervision is presented by \cite{oflazer01}. This system takes manually entered paradigm specification as an input and generates a finite-state analyser. The user is then presented with words in a corpus which are not accepted by the analyser, but close to an accepted form. Then the user may adjust the specification and the analyser is iteratively improved.%\todojb{They do some phonology induction}
+A system requiring significantly more human supervision is presented by Oflazer et al. \cite{oflazer01}. This system takes manually entered paradigm specification as an input and generates a finite-state analyser. The user is then presented with words in a corpus which are not accepted by the analyser, but close to an accepted form. Then the user may adjust the specification and the analyser is iteratively improved.%\todojb{They do some phonology induction}
 
-\cite{hana-etal-2004-emnlp,feldman-hana-2010-rodopi}
+Feldman and Hana \cite{hana-etal-2004-emnlp,feldman-hana-2010-rodopi}
 build a system which relies on a manually specified list of paradigms, basic phonology and closed-class words and use a raw corpus to automatically acquire lexicon. For each form, all hypothetical lexical entries consistent with the information about the endings are created. Then competing entries are compared and only those supported by the highest number of forms are retained. Most of the remaining entries are still non-existent; however, in the majority of cases, they licence the same inflections as the correct entries, differing only in rare inflections.
 
 
@@ -92,8 +91,7 @@ build a system which relies on a manually specified list of paradigms, basic pho
 
 Our approach builds upon Paramor \cite{monson09}, another unsupervised approach for discovery of inflectional paradigms.
 
-Due to data sparsity, not all inflections of a word are found in a corpus. Therefore Paramor does require 
-%not attempt to reconstruct 
+Due to data sparsity, not all inflections of a word are found in a corpus. Therefore Paramor does not attempt to reconstruct 
 full paradigms, but instead works with partial paradigms, called \emph{schemes}. A scheme contains a set of c(andidate)-suffixes and a set of c(andidate)-stems inflecting according to this scheme. The corpus must contain the concatenation of every c-stem with every c-suffix in the same scheme. Thus, a scheme is uniquely defined by its c-suffix set. Several schemes might correspond to a single morphological paradigm, because different stems belonging to the paradigm occur in the corpus in different set of inflections.
 
 The algorithm to acquire schemes has several steps:
@@ -110,19 +108,10 @@ Paramor works with types and not tokens. Thus it is not using any information ab
 %
 Below, we describe some of the steps in more detail.
 
-
-%Schemes form a lattice when we consider partial ordering defined by c-suffix set inclusion.
-
-%Paramor \cite{monson09} is an unsupervised system for discovery of inflectional paradigms and using them for morpheme segmentation. In this section we provide a relatively detailed description of the system.
-
-%\subsection{Initialization}
-%
-%The algorithm starts with the initialisation phase, where sets of c-stems c-suffixes) are populated by considering every possible split into stem and suffix for every word in the corpus. Mapping from each c-stem to c-suffixes with which it occurs in the corpus is being kept.
-
 \subsection{Bottom-up Search}
 
 \noindent
-In this phase, paramor performs a bottom-up search of the scheme lattice. It starts with schemes containing exactly one c-suffix. For each of them, Paramor ascends the lattice, adding one c-suffix at a time until a stopping criterion is met. C-suffix selected for adding is the one with the biggest c-stem ratio. (Adding a c-suffix to a scheme reduces number of the stems and the suffix reducing it the least is selected. C-stem ratio is ratio between number of stems in the candidate higher-level scheme and the current scheme.) When the highest possible c-stem ratio falls under 0.25, search stops.
+In this phase, paramor performs a bottom-up search of the scheme lattice. It starts with schemes containing exactly one c-suffix. For each of them, Paramor ascends the lattice, adding one c-suffix at a time until a stopping criterion is met. C-suffix selected for adding is the one with the biggest c-stem ratio. (Adding a c-suffix to a scheme reduces number of the stems and the suffix reducing it the least is selected. C-stem ratio is ratio between number of stems in the candidate higher-level scheme and the current scheme.) When the highest possible c-stem ratio falls under 0.25, the search stops.
 
 \subsection{Scheme Clustering}
 
@@ -149,7 +138,7 @@ Then clusters modelling morpheme boundaries inconsistent with letter entropy are
 %Our approach is based on altering individual steps in Paramor's pipeline to be able to utilise the manually provided data. The data contains inflected words divided into stems and suffixes. Figure \ref{fig:overview} shows phases of Paramor on the left with dashed boxes representing our alterations.
 
 \noindent
-We have modified the individual stems in Paramor's pipeline in order to use (1) a manually provided seed of inflected words divided into stems and suffixes; and (2) to take into account basic allomorphy of stems.
+We have modified the individual steps in Paramor's pipeline in order to use (1) a manually provided seed of inflected words divided into stems and suffixes; and (2) to take into account basic allomorphy of stems.
 %
 Figure \ref{fig:overview} shows phases of Paramor on the left with dashed boxes representing our alterations.
 
@@ -214,7 +203,7 @@ The data are used to enhance Paramor's accuracy in discovering the correct schem
 
 \noindent
 Many morphemes have several contextually dependent realizations,  so-called
-allomorphs due to phonological/graphemic changes or irregularities. For example, consider the declension of the Czech word \e{matka} `mother' in Table \ref{table:matka}. It exhibits stem-final conso\-nant chan\-ge (palatalisation of \e{k} to \v{c}) triggered by the dative and local singular ending, and epenthesis (insertion of \e{-e-}) in the bare stem genitive plural.
+allomorphs due to phonological/graphemic changes or irregularities. For example, consider the declension of the Czech word \e{matka} `mother' in Table \ref{table:matka}. It exhibits stem-final conso\-nant chan\-ge (palatalisation of \e{k} to \e{c}) triggered by the dative and local singular ending, and epenthesis (insertion of \e{-e-}) in the bare stem genitive plural.
 
 \begin{table}[h]
 \begin{center}
@@ -249,11 +238,10 @@ For example, suppose there are 5 English verbs in the corpus: \emph{talk, hop, s
 
 %\subsubsection{Stem change rule induction}
 
-However, for most languages the full specification of rules constraining allomorphy is not available, or at least is not precise enough. Therefore, we automatically induce a limited number of simple rules from the seed examples and/or from the scheme clusters obtained from the previous run of algorithm. Such rules both over and undergenerate, but nevertheless they do improve the accuracy of the whole system. For languages, where formally specified allomorphic rules are available, they can be used directly along the lines of
-\cite{tepper10,tepper-xia-2008}.
+However, for most languages the full specification of rules constraining allomorphy is not available, or at least is not precise enough. Therefore, we automatically induce a limited number of simple rules from the seed examples and/or from the scheme clusters obtained from the previous run of algorithm. Such rules both over and undergenerate, but nevertheless they do improve the accuracy of the whole system. For languages, where formally specified allomorphic rules are available, they can be used directly along the lines of Tepper and Xia \cite{tepper10,tepper-xia-2008}.
 %
 For now, we consider only stem final changes, namely vowel epenthesis (\eg
-\e{matk-a} -- \e{matek-0}) and alternation of the final consonant (\eg \e{matk-a} -- \e{matc-e}). The extension to other other processes such as root vowel change (\eg English \e{foot -- feet}) is quite straightforward, but we leave with for future work.
+\e{matk-a} -- \e{matek-0}) and alternation of the final consonant (\eg \e{matk-a} -- \e{matc-e}). The extension to other other processes such as root vowel change (\eg English \e{foot -- feet}) is quite straightforward, but we leave it for future work.
 
 
 %\todoja{Description of application from below (deep-stems, etc.)}
@@ -282,9 +270,9 @@ Bottom-up search and all the following phases of Paramor algorithm are then usin
 \label{sec:autoseed}
 
 \noindent
-In addition to deriving allomorphic rules from the manual seed, we also use a heuristic for detecting stem allomorphy in the scheme clusters obtained from the previous run of algorithm.
+In addition to deriving allomorphic rules from the manual seed, we also use a heuristic for detecting stem allomorphy in the scheme clusters obtained from the previous run of the algorithm.
 %
-Stem allomorphy might increases the sparsity problem and might prevent Paramor to find some paradigms. However, if the stem changes are systematic and frequent, Paramor does create the appropriate scheme clusters. However, it considers the changing part of the stem to be a part of suffix.
+Stem allomorphy increases the sparsity problem and might prevent Paramor from finding some paradigms. However, if the stem changes are systematic and frequent, Paramor does create the appropriate scheme clusters. However, it considers the changing part of the stem to be a part of suffix.
 
 As an example, consider again the declension of the Czech word \gloss{matka}{mother} in Table \ref{table:matka}. Paramor's scheme cluster with suffixes \emph{ce, ek, ka, kami, kou, ku, ky, kách, kám} has correctly discovered 9 of 10 paradigm's suffixes,\footnote{Except for vocative case singular, which is rarely used.} but fused together with parts of the stem.
 Presence of such scheme cluster in the result is a hint that there may be a \e{c/k} alteration and epenthesis in the language.
@@ -386,7 +374,7 @@ both seeds + pref. & 96.31 & 92.49 & 94.36\\
 no seed & 95.70 & 93.00 & 94.33\\
 man.~seed & 95.62 & 94.44 & 95.02 \\
 autoseed & 95.69 & 93.13 & 94.40\\
-both seeds & 95.56  & 94.76 & 95.16\\
+both seeds & 95.56  & 94.76 & \bf 95.16\\
 %seed-edit grad. & 91.21 & 96.94 & 93.99\\
 %seed-edit Eucl. & 95.71 & 95.36 & \bf 95.53\\
 \hline
@@ -400,7 +388,7 @@ What is not shown by the numbers is that more of the morpheme boundaries make li
 
 \section{Conclusion}
 
-We have shown that providing a very little of easily obtainable information can improve the result of a purely unsupervised system. In the near future, we are planning to model a wider range of allomorphic alternations, try larger (but still easy to obtain) seeds and finally test the results on more languages.
+We have shown that providing very little of easily obtainable information can improve the result of a purely unsupervised system. In the near future, we are planning to model a wider range of allomorphic alternations, try larger (but still easy to obtain) seeds and finally test the results on more languages.
 
 %
 % ---- Bibliography ----
