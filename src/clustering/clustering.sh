@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -Xmx1g -cp ./target:trove.jar cz.klic.clustering.Clustering $@
+java -Xmx1g -jar target/clustering-0.1-SNAPSHOT.jar $@
