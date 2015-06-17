@@ -1,10 +1,11 @@
 package cz.klic.functional.condition;
 
+import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class RegexMatchCondition implements Condition<String> {
+public class RegexMatchCondition implements Predicate<String> {
 
 	private Pattern pattern;
 	
@@ -18,7 +19,7 @@ public class RegexMatchCondition implements Condition<String> {
 	}
 
 	@Override
-	public boolean isTrue(String o1) {
+	public boolean test(String o1) {
 		Matcher matcher = this.pattern.matcher(o1);
 		return matcher.matches();
 	}

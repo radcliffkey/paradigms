@@ -1,5 +1,7 @@
 package cz.klic.functional.transformer;
 
-public interface SingleTypeTransformer<T> extends Transformer<T, T> {
+import java.util.function.Function;
+
+public interface SingleTypeTransformer<T> extends Function<T, T> {
 
 }

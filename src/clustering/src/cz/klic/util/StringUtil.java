@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
 
 import cz.klic.functional.FuncUtil;
-import cz.klic.functional.transformer.Transformer;
 
 
 public class StringUtil {
@@ -93,10 +93,10 @@ public class StringUtil {
 		return Arrays.asList(members);
 	}
 	
-	public static <T> List<T> parseList(String str, Transformer<String, T> transformer) {
+	public static <T> List<T> parseList(String str, Function<String, T> transformer) {
 		List<String> strs = parseList(str);
 		
-		return FuncUtil.transform(strs, transformer);
+		return FuncUtil.map(strs, transformer);
 	}
 	
 }

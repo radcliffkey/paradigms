@@ -1,9 +1,11 @@
 package cz.klic.functional.transformer;
 
-public class ToStringTransformer<T extends Object>  implements Transformer<T, String> {
+import java.util.function.Function;
+
+public class ToStringTransformer<T extends Object>  implements Function<T, String> {
 
 	@Override
-	public String transform(T obj) {
+	public String apply(T obj) {
 		return obj.toString();
 	}
 

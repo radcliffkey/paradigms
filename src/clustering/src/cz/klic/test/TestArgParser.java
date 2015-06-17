@@ -20,7 +20,7 @@ public class TestArgParser {
 
 			for (String name : names) {
 				System.out.println(name);
-				System.out.println(parser.getOptionVal(name));
+				System.out.println(parser.<String>getOptionVal(name));
 				System.out.println(parser.getOptionVal(name).getClass());
 			}
 

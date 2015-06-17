@@ -1,6 +1,8 @@
 package cz.klic.functional.condition;
 
-public class GraterThanCondition<T extends Comparable<T>> implements Condition<T> {
+import java.util.function.Predicate;
+
+public class GraterThanCondition<T extends Comparable<T>> implements Predicate<T> {
 
 	private T value;
 	
@@ -10,7 +12,7 @@ public class GraterThanCondition<T extends Comparable<T>> implements Condition<T
 	}
 	
 	@Override
-	public boolean isTrue(T o1) {
+	public boolean test(T o1) {
 		return (o1.compareTo(this.value) > 0);
 	}	
 

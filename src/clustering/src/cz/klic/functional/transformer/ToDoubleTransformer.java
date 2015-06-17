@@ -1,9 +1,11 @@
 package cz.klic.functional.transformer;
 
-public class ToDoubleTransformer implements Transformer<String, Double> {
+import java.util.function.Function;
+
+public class ToDoubleTransformer implements Function<String, Double> {
 
 	@Override
-	public Double transform(String str) {	
+	public Double apply(String str) {	
 		return Double.valueOf(str);
 	}
 

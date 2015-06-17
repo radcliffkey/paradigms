@@ -1,32 +1,16 @@
 package cz.klic.test;
 
-import cz.klic.functional.BinaryOperator;
 import cz.klic.functional.FuncUtil;
 import cz.klic.util.Timer;
 
 public class TestMin {
 
 	public static double min2(Double ... numbers) {
-		double min = FuncUtil.reduce(numbers, new BinaryOperator<Double>() {
-			@Override
-			public Double result(Double obj1, Double obj2) {
-				return Math.min(obj1, obj2);
-			}
-			
-		});
-
-		return min;
+	    return FuncUtil.reduce(numbers, Math::min);
 	}
 	
 	public static double min2(double ... numbers) {
-		double min = FuncUtil.reduce(numbers, new BinaryOperator<Double>() {
-			@Override
-			public Double result(Double obj1, Double obj2) {
-				return Math.min(obj1, obj2);
-			}
-			
-		});
-
+		double min = FuncUtil.reduce(numbers, Math::min);
 		return min;
 	}
 

@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
-import cz.klic.functional.condition.Condition;
 import cz.klic.functional.transformer.SingleTypeTransformer;
-import cz.klic.functional.transformer.Transformer;
+
 
 /**
  * 
- * functions for functional-like programming
+ * functions for functional-like programming, written before Java 8, later just
+ * adapted a little to use Java 8 interfaces.
  *
  */
 public class FuncUtil {
@@ -22,10 +25,10 @@ public class FuncUtil {
 	 * @param collection
 	 * @param condition
 	 */
-	public static <T> void filter(Collection<T> collection, Condition<? super T> condition) {
+	public static <T> void filter(Collection<T> collection, Predicate<? super T> condition) {
 		for (Iterator<T> iterator = collection.iterator(); iterator.hasNext();) {
 			T obj = iterator.next();
-			if (!condition.isTrue(obj)) {
+			if (!condition.test(obj)) {
 				iterator.remove();
 			}
 		}
@@ -41,13 +44,13 @@ public class FuncUtil {
 	 * @param transformer
 	 * @return transformed data
 	 */
-	public static <FromType, ToType> List<ToType> transform(
+	public static <FromType, ToType> List<ToType> map(
 			Iterable<? extends FromType> data,
-			Transformer<FromType, ToType> transformer) {
+			Function<FromType, ToType> transformer) {
 		
 		List<ToType> result = new ArrayList<ToType>();
 		for (FromType instance : data) {
-			result.add(transformer.transform(instance));
+			result.add(transformer.apply(instance));
 		}
 
 		return result;
@@ -60,9 +63,9 @@ public class FuncUtil {
 	 * @param transformer
 	 */
 	@SuppressWarnings("unchecked")
-	public static <T> void transform(List<T> list, SingleTypeTransformer<? super T> transformer) {
+	public static <T> void mapInPlace(List<T> list, SingleTypeTransformer<? super T> transformer) {
 		for (int i = 0; i < list.size(); i++) {
-			list.set(i, (T) transformer.transform(list.get(i)));
+			list.set(i, (T) transformer.apply(list.get(i)));
 		}
 	}
 	
@@ -73,9 +76,9 @@ public class FuncUtil {
 	 * @param transformer
 	 */
 	@SuppressWarnings("unchecked")
-	public static <T> void transform(T[] data, SingleTypeTransformer<? super T> transformer) {
+	public static <T> void mapInPlace(T[] data, SingleTypeTransformer<? super T> transformer) {
 		for (int i = 0; i < data.length; i++) {
-			data[i] = (T) transformer.transform(data[i]);
+			data[i] = (T) transformer.apply(data[i]);
 		}
 	}
 	
@@ -98,7 +101,7 @@ public class FuncUtil {
 		
 		while (iterator.hasNext()) {
 			T obj2 = iterator.next();
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;
@@ -122,7 +125,7 @@ public class FuncUtil {
 		
 		for (int i = 1; i <  collection.length; ++ i) {
 			T obj2 = collection[i];
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;
@@ -146,7 +149,7 @@ public class FuncUtil {
 		
 		for (int i = 1; i < collection.length; ++ i) {
 			double obj2 = collection[i];
-			obj = operator.result(obj, obj2);
+			obj = operator.apply(obj, obj2);
 		}
 		
 		return obj;

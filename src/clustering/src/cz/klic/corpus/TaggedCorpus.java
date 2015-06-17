@@ -3,8 +3,8 @@ package cz.klic.corpus;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Predicate;
 
-import cz.klic.functional.condition.Condition;
 import cz.klic.functional.transformer.SingleTypeTransformer;
 
 public interface TaggedCorpus<WordType, LemmaType, TagType> extends Corpus<WordType> {
@@ -19,11 +19,11 @@ public interface TaggedCorpus<WordType, LemmaType, TagType> extends Corpus<WordT
 	
 	public int tagCount();
 	
-	public void filter(Condition<TaggedWord<WordType, LemmaType, TagType>> condition);
+	public void filter(Predicate<TaggedWord<WordType, LemmaType, TagType>> condition);
 	
-	public void filterTags(Condition<TagType> condition);
+	public void filterTags(Predicate<TagType> condition);
 	
-	public void filterLemmas(Condition<LemmaType> condition);
+	public void filterLemmas(Predicate<LemmaType> condition);
 	
 	public void transform(SingleTypeTransformer<TaggedWord<WordType, LemmaType, TagType>> transformer);
 	

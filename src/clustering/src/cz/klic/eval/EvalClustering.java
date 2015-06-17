@@ -323,7 +323,7 @@ public class EvalClustering {
 				corpus.transform(new SingleTypeTransformer<TaggedWord<String,String,String>>() {
 					
 					@Override
-					public TaggedWord<String, String, String> transform(
+					public TaggedWord<String, String, String> apply(
 							TaggedWord<String, String, String> wordStruct) {
 						if (wordStruct.getLemma().equals("--")) {
 							wordStruct.setLemma(wordStruct.getForm());

@@ -3,9 +3,9 @@ package cz.klic.corpus;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.function.Predicate;
 
 import cz.klic.functional.FuncUtil;
-import cz.klic.functional.condition.Condition;
 import cz.klic.functional.transformer.SingleTypeTransformer;
 
 public class SimpleCorpus<Token> implements Corpus<Token> {
@@ -55,14 +55,14 @@ public class SimpleCorpus<Token> implements Corpus<Token> {
 	}
 
 	@Override
-	public void filterWords(Condition<Token> condition) {
+	public void filterWords(Predicate<Token> condition) {
 		FuncUtil.filter(this.text, condition);
 		this.vocab = new ArrayList<Token>(new HashSet<Token>(text));	
 	}
 
 	@Override
 	public void transformWords(SingleTypeTransformer<Token> transformer) {
-		FuncUtil.transform(this.text, transformer);
+		FuncUtil.mapInPlace(this.text, transformer);
 		this.vocab = new ArrayList<Token>(new HashSet<Token>(text));
 	}
 }

@@ -37,7 +37,7 @@ public class PlainCorpusReader implements CorpusReader<String> {
 		while ((line = this.inputStream.readLine()) != null) {
 			String [] words = line.split("[\\s]+");
 			List<String> wordList = Arrays.asList(words);
-			FuncUtil.transform(wordList, new LowerCaser());			
+			FuncUtil.mapInPlace(wordList, new LowerCaser());
 			text.addAll(wordList);
 		}
 		

@@ -1,9 +1,11 @@
 package cz.klic.functional.transformer;
 
-public class ToIntTransformer implements Transformer<String, Integer> {
+import java.util.function.Function;
+
+public class ToIntTransformer implements Function<String, Integer> {
 
 	@Override
-	public Integer transform(String str) {	
+	public Integer apply(String str) {	
 		return Integer.valueOf(str);
 	}
 

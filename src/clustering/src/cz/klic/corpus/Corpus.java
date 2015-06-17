@@ -1,8 +1,8 @@
 package cz.klic.corpus;
 
 import java.util.List;
+import java.util.function.Predicate;
 
-import cz.klic.functional.condition.Condition;
 import cz.klic.functional.transformer.SingleTypeTransformer;
 
 public interface Corpus<Token> {
@@ -15,7 +15,7 @@ public interface Corpus<Token> {
 	
 	public int typeCount();
 	
-	public void filterWords(Condition<Token> condition);
+	public void filterWords(Predicate<Token> condition);
 	
 	public void transformWords(SingleTypeTransformer<Token> transformer);
 }

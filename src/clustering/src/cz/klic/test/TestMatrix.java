@@ -17,7 +17,7 @@ public class TestMatrix {
 		}
 		
 		try {
-			m.set(2, 0, 6);		
+			m.set(2, 0, 6);
 		} catch (Exception e) {
 			System.out.println(e);
 		}

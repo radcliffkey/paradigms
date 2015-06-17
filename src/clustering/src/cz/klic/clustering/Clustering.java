@@ -15,7 +15,6 @@ import cz.klic.corpus.reader.PlainCorpusReader;
 import cz.klic.functional.condition.RegexMatchCondition;
 import cz.klic.functional.transformer.ToDoubleTransformer;
 import cz.klic.functional.transformer.ToIntTransformer;
-import cz.klic.functional.transformer.Transformer;
 import cz.klic.stringDistance.DistanceMetric;
 import cz.klic.stringDistance.StringDistanceFactory;
 import cz.klic.util.Fileutil;
@@ -54,14 +53,8 @@ public class Clustering {
 		//ClusterApproach clustApproach = ClusterApproach.AVERAGE_DISTANCE;
 		List<ClusterApproach> clustTypes = new ArrayList<ClusterApproach>();
 		if (options.getOptionVal("clusterApproach") != null) {
-			List<ClusterApproach> confClustTypes = StringUtil.parseList(
-					(String)options.getOptionVal("clusterApproach"),
-					new Transformer<String, ClusterApproach>() {
-						@Override
-						public ClusterApproach transform(String str) {
-							return ClusterApproach.valueOf(str);
-						}
-					});
+            List<ClusterApproach> confClustTypes = StringUtil.parseList(
+                    (String) options.getOptionVal("clusterApproach"), ClusterApproach::valueOf);
 			clustTypes.addAll(confClustTypes);
 		}
 		
