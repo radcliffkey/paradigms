@@ -196,7 +196,7 @@ The data are used to enhance Paramor's accuracy in discovering the correct schem
 %\section{Seeding paradigms} - Maybe saying it via those two bullets above is enough
 
 \subsection{Allomorphy}
-
+\label{sec:allomorphy}
 %\subsubsection{Motivation for detecting allomorphs}
 
 \noindent
@@ -245,7 +245,7 @@ For now, we consider only stem final changes, namely vowel epenthesis (\eg
 %\todoja{Description of application from below (deep-stems, etc.)}
 
 \subsubsection{Stem change rule induction and application}
-
+\label{sec:ruleinduction}
 \noindent
 Formally, the process can be described as follows.
 From every pair of stem allomorphs in the manual input, $s\delta_1, s\delta_2$, where $s$ is their longest common initial substring,\footnote{should $\delta_1$ or $\delta_2$ be 0, one final character is removed from $s$ and prepended to $\delta_1$ and $\delta_2$} with suffix
@@ -260,7 +260,7 @@ sets $f_1$, $f_2$ we generate a rule $*\delta_1 \rightarrow *\delta_2$ / $(f_1, 
 \noindent
 Induced rules are applied after the initialisation phase. So-called \emph{deep} stems are generated from the c-stems. A deep stem is defined as a set of surface stems.
 
-To obtain a deep stem for a c-stem $t$, operation of \emph{expansion} is applied. Expansion works as a breadth-first search using a queue initialised with $t$ and keeping track of the set $D$ of already generated variants. While the queue is not empty, the first member is removed and its variants found by application of all the rules. (Result of applying a rule si non-empty only if the rule is applicable and its right hand side is present in the corpus.) Variants which haven't been generated so far are added to the back of the queue and to $D$. When the queue is emptied, $D$ becomes the deep stem associated with $t$ and all other members of $D$. \todojd{Any reason why? Why not keep the deep stem ambiguous? This roughly means that rules are obligatory (If I can produce another allomorph, I have to). Some example, possibly mention where it helps and where it hurts. \textbf{RK:} No special reason for that. I may try an experiment where i keep the `surface' stems }
+To obtain a deep stem for a c-stem $t$, operation of \emph{expansion} is applied. Expansion works as a breadth-first search using a queue initialised with $t$ and keeping track of the set $D$ of already generated variants. While the queue is not empty, the first member is removed and its variants found by application of all the rules. (Result of applying a rule is non-empty only if the rule is applicable and its right hand side is present in the corpus.) Variants which haven't been generated so far are added to the back of the queue and to $D$. When the queue is emptied, $D$ becomes the deep stem associated with $t$ and all other members of $D$. \todojd{Any reason why? Why not keep the deep stem ambiguous? This roughly means that rules are obligatory (If I can produce another allomorph, I have to). Some example, possibly mention where it helps and where it hurts. \textbf{RK:} No special reason for that. I may try an experiment where i keep the `surface' stems }
 
 Bottom-up search and all the following phases of Paramor algorithm are then using the deep stems instead of the surface ones.
 
@@ -299,7 +299,7 @@ The algorithm is by large a heuristic and uses a lot of parameters in each phase
 
 We tested our approach on Czech and Slovene lemmatised corpora. For Czech, we used two differently sized subsets of the PDT 1 corpus. The first, marked as \textbf{cz1}, contains 11k types belonging to 6k lemmas. The second, \textbf{cz2}, has 27k types and 13k lemmas and is a superset of \textbf{cz1}. The purpose of having two Czech corpora was to observe the effect of data size on performance of the algorithm. The Slovene corpus \textbf{si} is a subset of the jos100k corpus V2.0 (\url{http://nl.ijs.si/jos/jos100k-en.html}) with 27k types and 15.5k lemmas.
 
-The manual seed consisted of inflections of 18 lemmas for Czech and inflections of 9 lemmas for Slovene.  In both cases, examples of nouns, adjectives and verbs were provided. They were obtained from a basic grammar overview. For Czech we also added information about the only two inflectional prefixes (negative prefix \e{ne} and superlative prefix \e{nej}). The decision which prefixes to consider inflectional and which not is to a certain degree an arbitrary decision (\eg it can be argued that \e{ne} is a clitic and not a prefix), therefore it makes sense to provide such information manually.
+The manual seed consisted of inflections of 18 lemmas for Czech and inflections of 9 lemmas for Slovene.  In both cases, examples of nouns, adjectives and verbs were provided. They were obtained from a basic grammar overview. For Czech we also added information about the only two inflectional prefixes (negative prefix \e{ne} and superlative prefix \e{nej}). The decision which prefixes to consider inflectional and which not is to a certain degree an arbitrary decision (\eg it can be argued that \e{ne} is a clitic and not a prefix), therefore it makes sense to provide such information manually. (Prefixes were implemented by a special form of stem transformation rules introduced in section \ref{sec:ruleinduction} which create deep stems consisting of a stem with and without given prefix.)
 
 \subsection{Evaluation method}
 
