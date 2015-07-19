@@ -148,8 +148,9 @@ Figure \ref{fig:overview} shows phases of Paramor on the left with dashed boxes 
 \label{fig:overview}
 \end{figure}
 
-In the bottom-up search phase and the scheme cluster filtering phase, we use manually provided examples of valid suffixes and their grouping to sub-paradigms to steer Paramor towards creating more adequate schemes and scheme clusters. The data may also contain allomorphic stems, which we use to induce simple stem rewrite rules. Using these rules, some of the allomorphic stems in the corpus can be discovered and used to find more complete schemes. %
-%Detailed description of manual data utilisation and motivation for allomorphy detection is the subject of following section.
+In the bottom-up search phase and the scheme cluster filtering phase, we use manually provided examples of valid suffixes and their grouping to sub-paradigms to steer Paramor towards creating more adequate schemes and scheme clusters. The data may also contain allomorphic stems, which we use to induce simple stem rewrite rules. Using these rules, some of the allomorphic stems in the corpus can be discovered and used to find more complete schemes.
+
+Note that the Paramor algorithm is based on several heuristics with many parameters whose values  were set experimentally. We used the same settings. Moreover, when we applied similar heuristics in our modifications, we used analogical parameter values.
 
 %We also experimented with using Paramor's scheme clusters together with modified edit distance to create a string distance metric and use this metric to cluster word types in the corpus by standard bottom-up clustering algorithm. Resulting clusters then can be evaluated how well they correspond to groups of types belonging to the same lemma.
 
@@ -249,7 +250,7 @@ For now, we consider only stem final changes, namely vowel epenthesis (\eg
 \noindent
 Formally, the process can be described as follows.
 From every pair of stem allomorphs in the manual input, $s\delta_1, s\delta_2$, where $s$ is their longest common initial substring,\footnote{should $\delta_1$ or $\delta_2$ be 0, one final character is removed from $s$ and prepended to $\delta_1$ and $\delta_2$} with suffix
-sets $f_1$, $f_2$ we generate a rule $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ and also a reverse rule $*\delta_2 \rightarrow *\delta_1$ / $(f_2, f_1)$. Notation $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ means ``transform a stem $x\delta_1$ into $x\delta_2$ if following conditions hold:''
+sets $f_1$, $f_2$ we generate a rule $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ and also a reverse rule $*\delta_2 \rightarrow *\delta_1$ / $(f_2, f_1)$. Notation $*\delta_1 \rightarrow *\delta_2$ / $(f_1, f_2)$ means ``transform a stem $x\delta_1$ into $x\delta_2$ if the following conditions hold:''
 
 \begin{enumerate}
 \item $x\delta_2$ is a c-stem present in the corpus.
@@ -278,11 +279,13 @@ Presence of such scheme cluster in the result is a hint that there may be a \e{c
 First phase of the algorithm for deciding whether a scheme cluster with a c-suffix set $f$ is interesting in this respect is following:
 \begin{enumerate}
 \item If $f$ contains a c-suffix without a consonant, return \emph{false}.
-\item $c_c$ = count of unique first consonants found in c-suffixes in $f$.
-\item If $c_c > 2$ return \emph{false}. If $c_c$ = 1 and $f$ doesn't contain any c-suffix starting with a vowel, return \emph{false}.
+\item $c_c$ = count of unique initial consonants found in c-suffixes in $f$.
+\item If $c_c > 2$ return \emph{false}. (Morpheme boundary probably incorrectly shifted to the left.)
+\item If $c_c$ = 1 and $f$ doesn't contain any c-suffix starting with a vowel, return \emph{false}. (No final consonant change, no epenthesis.)
+
 \item Return \emph{true}.
 \end{enumerate}
-If a scheme cluster passes this test, each of its stems' subparadigms is examined. Subparadigm for stem $s$ consists of $s$ and $f_s$ -- all the c-suffixes from $f$ with which $s$ forms a word in the corpus. For example, let's have a stem $s = $ \emph{mat} with $f_s = $ \{\emph{ce, ek, ka, ku, ky}\}. Now, the morpheme boundary is shifted so that it is immediately to the right from the first consonant of the original c-suffixes. In our example, we get 3 stem variants: \emph{matk} + \emph{a, u, y}, \emph{matc} + \emph{e}, \emph{matek} + \emph{0}. To reduce falsely detected phonological changes, we check each stem variant's suffix set whether it contains at least one of the c-suffixes that Paramor has already discovered in other scheme clusters. If the condition holds, rules with same syntax as the manual data are created. For example, \emph{matk / matc / matek} + \emph{a, u, y / e / 0}. All generated rules are gathered in a file and can be used in the same way as the manual seed or just for the induction of phonological rules.
+If a scheme cluster passes this test, each of its stems' subparadigms is examined. Subparadigm for stem $s$ consists of $s$ and $f_s$ -- all the c-suffixes from $f$ with which $s$ forms a word in the corpus. For example, let's have a stem $s = $ \emph{mat} with $f_s = $ \{\emph{ce, ek, ka, ku, ky}\}. Now, the morpheme boundary is shifted so that it is immediately to the right from the first consonant of the original c-suffixes. In our example, we get 3 stem variants: \emph{matk} + \emph{a, u, y}, \emph{matc} + \emph{e}, \emph{matek} + \emph{0}. To reduce falsely detected phonological changes, we check each stem variant's suffix set whether it contains at least one of the c-suffixes that Paramor has already discovered in other scheme clusters. If the condition holds, rules the with same syntax as the manual data are created. For example, \emph{matk / matc / matek} + \emph{a, u, y / e / 0}. All generated rules are gathered in a file and can be used in the same way as the manual seed or just for the induction of phonological rules.
 
 %\subsection{Clustering}
 %\label{sec:editdist}
@@ -292,14 +295,11 @@ If a scheme cluster passes this test, each of its stems' subparadigms is examine
 %
 %We tested two combinations of the paradigm distance and the edit distance. First possibility is to cluster words according to the paradigm distance and then continue with clustering using the edit distance. This method can be used to increase recall of the created clusters if Paramor tends to be conservative. The second way of combination of the metrics we tested was to create a Euclidean distance using the two metrics as vector components\footnote{As the range od the edit distance is higher than the range of the paradigm distance, we scaled down the edit distance by factor 3}.
 
-\subsection{Heuristic nature of Paramor}
-The algorithm is by large a heuristic and uses a lot of parameters in each phase. We didn't experiment with tweaking them and used the default settings. Also, if we used a heuristic in our modifications which has an analogy in the original Paramor, we used analogical parameter values.
-
 \section{Experiments and results}
 
 We tested our approach on Czech and Slovene lemmatised corpora. For Czech, we used two differently sized subsets of the PDT 1 corpus. The first, marked as \textbf{cz1}, contains 11k types belonging to 6k lemmas. The second, \textbf{cz2}, has 27k types and 13k lemmas and is a superset of \textbf{cz1}. The purpose of having two Czech corpora was to observe the effect of data size on performance of the algorithm. The Slovene corpus \textbf{si} is a subset of the jos100k corpus V2.0 (\url{http://nl.ijs.si/jos/jos100k-en.html}) with 27k types and 15.5k lemmas.
 
-The manual seed consisted of inflections of 18 lemmas for Czech and inflections of 9 lemmas for Slovene.  In both cases, examples of nouns, adjectives and verbs were provided. They were obtained from a basic grammar overview. For Czech we also added information about the only two inflectional prefixes (negative prefix \e{ne} and superlative prefix \e{nej}). The decision which prefixes to consider inflectional and which not is to a certain degree an arbitrary decision (\eg it can be argued that \e{ne} is a clitic and not a prefix), therefore it makes sense to provide such information manually. (Prefixes were implemented by a special form of stem transformation rules introduced in section \ref{sec:ruleinduction} which create deep stems consisting of a stem with and without given prefix.)
+The manual seed consisted of inflections of 18 lemmas for Czech and inflections of 9 lemmas for Slovene.  In both cases, examples of nouns, adjectives and verbs were provided. They were obtained from a basic grammar overview. For Czech, we also added information about the only two inflectional prefixes (negative prefix \e{ne} and superlative prefix \e{nej}). The decision which prefixes to consider inflectional and which not is to a certain degree an arbitrary decision (\eg it can be argued that \e{ne} is a clitic and not a prefix), therefore it makes sense to provide such information manually. (Prefixes were implemented by a special form of stem transformation rules introduced in section \ref{sec:ruleinduction} which create deep stems consisting of a stem with and without given prefix.)
 
 \subsection{Evaluation method}
 
@@ -317,7 +317,7 @@ Precision and recall of the word groups can be computed in the following way: To
 \subsection{Results}
 
 \noindent
-Results of the experiments are presented in the tables \ref{table:res-cz1} -- \ref{table:res-si}. We used the following experiment settings:\begin{enumerate}
+Results of the experiments are presented in Tables \ref{table:res-cz1} -- \ref{table:res-si}. We used the following experiment settings:\begin{enumerate}
 \item \e{no seed} -- the baseline, Paramor was run without any seeding
 \item \label{exp:manseed} \e{man.~seed} -- manual seed was used
 \item \e{autoseed} -- autoseed was used for induction of the stem change rules
