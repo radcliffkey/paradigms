@@ -5,9 +5,9 @@
 \newcommand{\parStepXB}{7.5}
 
 \newcommand{\seedXA}{9.2}
-\newcommand{\seedXB}{10.9}
-\newcommand{\seedXMid}{10.0}
-\newcommand{\seedXCorn}{10.5}
+\newcommand{\seedXB}{11.2}
+\newcommand{\seedXMid}{10.2}
+\newcommand{\seedXCorn}{10.6}
 
 \newcommand{\autoseedXA}{12.2}
 \newcommand{\autoseedXB}{16.0}
@@ -56,6 +56,9 @@
 \pgfsetmiterjoin
 \pgfsetdash{}{0pt}
 \draw (\seedXCorn\du,9.410000\du)--(\seedXCorn\du,9.810000\du)--(\seedXB\du,9.810000\du)--(\seedXB\du,9.810000\du);
+
+\node at (\seedXMid\du,10.1\du){Manual};
+\node at (\seedXMid\du,10.8\du){seed};
 
 %Auto seed box
 %\draw (\autoseedXA\du,9.410000\du)--(\autoseedXB\du,9.410000\du)--(\autoseedXB\du,11.0\du)--(\autoseedXA\du,11.0\du)--cycle;
@@ -152,8 +155,7 @@
 \draw (4.652188\du,13.850000\du)--(4.652188\du,15.270000\du);
 }
 %text labels
-\node at (\seedXMid\du,10.1\du){Man.};
-\node at (\seedXMid\du,10.8\du){seed};
+
 %\node at (\seedXMid\du,11.9\du){Manual seed};
 %\node at (\autoseedXMid\du,10.2\du){Autoseed};
 %\node at (\autoseedXMid\du,13.2\du){Paradigms};
@@ -261,7 +263,8 @@
 \node[anchor=west] at (2.30\du,5.500000\du){Stem-suffix map};
 \node[anchor=west] at (2.3000\du,8.425000\du){Bottom-up search};
 \node[anchor=west] at (2.30\du,12.0000\du){Scheme clustering};
-\node[anchor=west] at (9.8000\du,5.90000\du){Rule induction};
+\node[anchor=west] at (10.2000\du,5.50000\du){Induction of};
+\node[anchor=west] at (9.7000\du,6.30000\du){stem-change rules};
 
 \node[anchor=west] at (1.30\du,4.300000\du){Paramor};
 

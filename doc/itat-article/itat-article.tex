@@ -89,7 +89,7 @@ build a system which relies on a manually specified list of paradigms, basic pho
 \section{Paramor}
 \label{sec:paramor}
 
-Our approach builds upon Paramor \cite{monson09}, another unsupervised approach for discovery of inflectional paradigms.
+Our approach builds upon Paramor \cite{monson09, monson07a, monson07b}, another unsupervised approach for discovery of inflectional paradigms.
 
 Due to data sparsity, not all inflections of a word are found in a corpus. Therefore Paramor does not attempt to reconstruct 
 full paradigms, but instead works with partial paradigms, called \emph{schemes}. A scheme contains a set of c(andidate)-suffixes and a set of c(andidate)-stems inflecting according to this scheme. The corpus must contain the concatenation of every c-stem with every c-suffix in the same scheme. Thus, a scheme is uniquely defined by its c-suffix set. Several schemes might correspond to a single morphological paradigm, because different stems belonging to the paradigm occur in the corpus in different set of inflections.
@@ -144,7 +144,7 @@ Figure \ref{fig:overview} shows phases of Paramor on the left with dashed boxes 
 
 \begin{figure}
 \input{diagram2}
-\caption{Altered Paramor's pipeline}
+\caption{Altered Paramor's pipeline (our alterations are in dashed boxes and outside the Paramor box).}
 \label{fig:overview}
 \end{figure}
 
@@ -232,7 +232,7 @@ Second, ignoring allomorphy makes the data appear more complicated and noisier t
 
 This latter problem might manifests itself in Paramor's bottom-up search phase: a linguistically correct suffix triggering a stem change might be discarded, because Paramor would not consider stem allomorphs to be variants of the same stem and c-stem ratio may drop significantly. Further more, incorrect c-suffixes may be selected.
 
-For example, suppose there are 5 English verbs in the corpus: \emph{talk, hop, stop, knit, chat}, together with their \emph{-s} (\emph{talks, hops, stops, knits, chats}) and \emph{-ing} (\emph{talking, hopping, stopping, knitting, chatting}) forms. Let's already have a scheme \{\emph{0, s}\} with 5 stems. Adding \emph{ing} would decrease number of stems to 1, leaving only \emph{talk} in the scheme. C-stem ratio would be 0.2 and \emph{ing} would not be accepted. Moreover, incorrect c-suffixes as \emph{ping} and \emph{ting} have c-stem ratio 0.4 and may be accepted.
+For example, suppose there are 5 English verbs in the corpus: \emph{talk, hop, stop, knit, chat}, together with their \emph{-s} (\emph{talks, hops, stops, knits, chats}) and \emph{-ing} (\emph{talking, hopping, stopping, knitting, chatting}) forms. Let's assume we already have a scheme \{\emph{0, s}\} with 5 stems. Unfortunately, a simple \emph{ing} suffix (without stem-final consonant doubling) combines with one out the 5 stems only, therefore adding \emph{ing} to the scheme would decrease the number of its stems to 1, leaving only \emph{talk} in the scheme.
 
 %\subsubsection{Stem change rule induction}
 
@@ -395,5 +395,5 @@ We have shown that providing very little of easily obtainable information can im
 % ---- Bibliography ----
 %
 \bibliographystyle{plain}
-\bibliography{main,wicentowski04,goldsmith01,oflazer01,monson09,creutz02,creutz05,creutz07,yarowsky00,schone01,tepper10}{}
+\bibliography{main,wicentowski04,goldsmith01,oflazer01,monson07a,monson07b,monson09,creutz02,creutz05,creutz07,yarowsky00,schone01,tepper10}{}
 \end{document}
